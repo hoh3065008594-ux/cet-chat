@@ -4,14 +4,18 @@ export interface AppSettings {
   model: string
   partnerName: string
   vocabLevel: 'cet4' | 'cet6'
+  userAvatar: string
+  aiAvatar: string
 }
 
 const defaults: AppSettings = {
   apiKey: '',
-  apiEndpoint: 'https://api.openai.com/v1',
-  model: 'gpt-3.5-turbo',
+  apiEndpoint: 'https://api.deepseek.com/v1',
+  model: 'deepseek-chat',
   partnerName: 'Alex',
   vocabLevel: 'cet4',
+  userAvatar: '',
+  aiAvatar: '',
 }
 
 export function getSettings(): AppSettings {

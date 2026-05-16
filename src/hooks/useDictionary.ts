@@ -13,7 +13,17 @@ export function useDictionary() {
       setPosition({ x: e.clientX, y: e.clientY })
     }
     const result = await lookupWord(word)
-    setSelectedWord(result)
+    if (result) {
+      setSelectedWord(result)
+    } else {
+      // Word not in vocabulary — still show something
+      setSelectedWord({
+        word,
+        phonetic: '',
+        meaning: '该词不在考纲词库中',
+        level: 'cet4',
+      })
+    }
     setLoading(false)
   }, [])
 

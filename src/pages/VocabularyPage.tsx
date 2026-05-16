@@ -66,15 +66,15 @@ export default function VocabularyPage() {
       </div>
 
       <div className="flex-1 overflow-y-auto p-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1.5 sm:gap-2">
           {filtered.map((w) => (
             <button
               key={`${w.level}-${w.word}`}
               onClick={(e) => handleWordClick(w, e)}
-              className="text-left p-3 rounded-lg border border-gray-200 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
+              className="text-left p-2 sm:p-3 rounded-lg border border-gray-200 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
             >
-              <span className="font-medium text-gray-900 text-sm">{w.word}</span>
-              <span className="text-xs text-gray-400 block mt-0.5 truncate">{w.meaning}</span>
+              <span className="font-medium text-gray-900 text-xs sm:text-sm">{w.word}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400 block mt-0.5 truncate">{w.meaning}</span>
             </button>
           ))}
         </div>

@@ -9,28 +9,35 @@ export default function StatsPage() {
   const [totalMessages, setTotalMessages] = useState(0)
   const [vocabSize, setVocabSize] = useState(0)
   const [usedWords, setUsedWords] = useState<string[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const load = async () => {
-      const chats = await getAllChats()
-      setTotalChats(chats.length)
+      try {
+        const chats = await getAllChats()
+        setTotalChats(chats.length)
 
-      let msgCount = 0
-      const allWords = new Set<string>()
-      for (const c of chats) {
-        const msgs = await getMessages(c.id)
-        msgCount += msgs.length
-        for (const m of msgs) {
-          for (const w of m.usedVocab) {
-            allWords.add(w)
+        let msgCount = 0
+        const allWords = new Set<string>()
+        for (const c of chats) {
+          const msgs = await getMessages(c.id)
+          msgCount += msgs.length
+          for (const m of msgs) {
+            for (const w of m.usedVocab) {
+              allWords.add(w)
+            }
           }
         }
-      }
-      setTotalMessages(msgCount)
-      setUsedWords([...allWords].sort())
+        setTotalMessages(msgCount)
+        setUsedWords([...allWords].sort())
 
-      const level = getSettings().vocabLevel
-      setVocabSize(await getWordCount(level))
+        const level = getSettings().vocabLevel
+        setVocabSize(await getWordCount(level))
+      } catch (e) {
+        console.error('Stats load error:', e)
+      } finally {
+        setLoading(false)
+      }
     }
     load()
   }, [])
@@ -41,7 +48,7 @@ export default function StatsPage() {
     <div className="h-full overflow-y-auto p-6">
       <h2 className="text-lg font-semibold text-gray-800 mb-6">学习统计</h2>
 
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
         <div className="bg-white rounded-xl border border-gray-200 p-5">
           <MessageSquare size={24} className="text-indigo-500 mb-2" />
           <p className="text-2xl font-bold text-gray-900">{totalChats}</p>

@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { Menu } from 'lucide-react'
 import Sidebar from './components/Sidebar'
 import ChatView from './components/ChatView'
 import VocabularyPage from './pages/VocabularyPage'
@@ -6,10 +8,21 @@ import StatsPage from './pages/StatsPage'
 import SettingsPage from './pages/SettingsPage'
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
   return (
     <div className="flex h-screen bg-gray-50">
-      <Sidebar />
-      <main className="flex-1 overflow-hidden">
+      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <main className="flex-1 overflow-hidden flex flex-col">
+        <div className="lg:hidden px-4 py-2 border-b border-gray-200 bg-white flex items-center gap-3 shrink-0">
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="text-gray-600 hover:text-gray-800 p-1"
+          >
+            <Menu size={22} />
+          </button>
+          <span className="font-semibold text-gray-800 text-sm">CET Chat</span>
+        </div>
         <Routes>
           <Route path="/" element={<ChatView />} />
           <Route path="/chat/:chatId" element={<ChatView />} />

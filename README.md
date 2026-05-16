@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# CET Chat — 英语四六级对话学习工具
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI 聊天伙伴 + 考纲词库浸润式学习。点击任意单词即可查询音标和中文释义。
 
-Currently, two official plugins are available:
+## 功能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🤖 AI 对话伙伴，自动使用四六级考纲词汇回复
+- 📖 CET-4 (3739词) / CET-6 (2078词) 完整词库
+- 🔍 点击消息中任意单词弹窗查释义
+- 💬 多段对话历史，IndexedDB 本地存储
+- 📊 学习统计：考纲词覆盖率追踪
+- 📱 响应式设计，手机/电脑均可使用
 
-## React Compiler
+## 快速开始
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+浏览器打开 http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 使用说明
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. 打开「设置」→ 填入 API Key (DeepSeek / OpenAI 兼容)
+2. 选择词库级别 (四级/六级)
+3. 点击「新建对话」开始聊天
+4. 点击消息中任意英语单词查看释义
+
+## 技术栈
+
+- React 19 + TypeScript + Vite
+- Tailwind CSS v4
+- React Router v7
+- IndexedDB (idb)
+- OpenAI 兼容 API
+
+## 构建部署
+
+```bash
+npm run build
+# dist/ 目录即为完整的静态站点，可部署到任何静态服务器
 ```
+
+## 许可
+
+MIT
