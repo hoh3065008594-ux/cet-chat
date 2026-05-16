@@ -1,0 +1,4610 @@
+[
+  {
+    "word": "abandon",
+    "phonetic": "/əˈbændən/",
+    "meaning": "v. 放弃；抛弃",
+    "level": "cet4"
+  },
+  {
+    "word": "ability",
+    "phonetic": "/əˈbɪləti/",
+    "meaning": "n. 能力；才能",
+    "level": "cet4"
+  },
+  {
+    "word": "abnormal",
+    "phonetic": "/æbˈnɔːrml/",
+    "meaning": "adj. 反常的；异常的",
+    "level": "cet4"
+  },
+  {
+    "word": "aboard",
+    "phonetic": "/əˈbɔːrd/",
+    "meaning": "adv./prep. 在船（飞机、车）上",
+    "level": "cet4"
+  },
+  {
+    "word": "abroad",
+    "phonetic": "/əˈbrɔːd/",
+    "meaning": "adv. 在国外；到国外",
+    "level": "cet4"
+  },
+  {
+    "word": "absence",
+    "phonetic": "/ˈæbsəns/",
+    "meaning": "n. 缺席；不在",
+    "level": "cet4"
+  },
+  {
+    "word": "absolute",
+    "phonetic": "/ˈæbsəluːt/",
+    "meaning": "adj. 绝对的；完全的",
+    "level": "cet4"
+  },
+  {
+    "word": "absorb",
+    "phonetic": "/əbˈzɔːrb/",
+    "meaning": "v. 吸收；吸引",
+    "level": "cet4"
+  },
+  {
+    "word": "abstract",
+    "phonetic": "/ˈæbstrækt/",
+    "meaning": "adj. 抽象的 n. 摘要",
+    "level": "cet4"
+  },
+  {
+    "word": "abundant",
+    "phonetic": "/əˈbʌndənt/",
+    "meaning": "adj. 丰富的；充裕的",
+    "level": "cet4"
+  },
+  {
+    "word": "academic",
+    "phonetic": "/ˌækəˈdemɪk/",
+    "meaning": "adj. 学术的；学院的",
+    "level": "cet4"
+  },
+  {
+    "word": "accelerate",
+    "phonetic": "/əkˈseləreɪt/",
+    "meaning": "v. 加速；促进",
+    "level": "cet4"
+  },
+  {
+    "word": "accent",
+    "phonetic": "/ˈæksent/",
+    "meaning": "n. 口音；重音",
+    "level": "cet4"
+  },
+  {
+    "word": "accept",
+    "phonetic": "/əkˈsept/",
+    "meaning": "v. 接受；承认",
+    "level": "cet4"
+  },
+  {
+    "word": "access",
+    "phonetic": "/ˈækses/",
+    "meaning": "n. 进入；通道 v. 访问",
+    "level": "cet4"
+  },
+  {
+    "word": "accident",
+    "phonetic": "/ˈæksɪdənt/",
+    "meaning": "n. 事故；意外",
+    "level": "cet4"
+  },
+  {
+    "word": "accommodation",
+    "phonetic": "/əˌkɑːməˈdeɪʃn/",
+    "meaning": "n. 住宿；膳宿",
+    "level": "cet4"
+  },
+  {
+    "word": "accompany",
+    "phonetic": "/əˈkʌmpəni/",
+    "meaning": "v. 陪伴；伴随",
+    "level": "cet4"
+  },
+  {
+    "word": "accomplish",
+    "phonetic": "/əˈkɑːmplɪʃ/",
+    "meaning": "v. 完成；实现",
+    "level": "cet4"
+  },
+  {
+    "word": "account",
+    "phonetic": "/əˈkaʊnt/",
+    "meaning": "n. 账户；说明 v. 解释",
+    "level": "cet4"
+  },
+  {
+    "word": "adjust",
+    "phonetic": "/əˈdʒʌst/",
+    "meaning": "v. 调整；适应",
+    "level": "cet4"
+  },
+  {
+    "word": "administration",
+    "phonetic": "/ədˌmɪnɪˈstreɪʃn/",
+    "meaning": "n. 管理；行政",
+    "level": "cet4"
+  },
+  {
+    "word": "admire",
+    "phonetic": "/ədˈmaɪər/",
+    "meaning": "v. 钦佩；赞赏",
+    "level": "cet4"
+  },
+  {
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "meaning": "v. 承认；准许进入",
+    "level": "cet4"
+  },
+  {
+    "word": "adopt",
+    "phonetic": "/əˈdɑːpt/",
+    "meaning": "v. 采用；收养",
+    "level": "cet4"
+  },
+  {
+    "word": "advance",
+    "phonetic": "/ədˈvæns/",
+    "meaning": "v./n. 前进；进步",
+    "level": "cet4"
+  },
+  {
+    "word": "advantage",
+    "phonetic": "/ədˈvæntɪdʒ/",
+    "meaning": "n. 优势；有利条件",
+    "level": "cet4"
+  },
+  {
+    "word": "adventure",
+    "phonetic": "/ədˈventʃər/",
+    "meaning": "n. 冒险；奇遇",
+    "level": "cet4"
+  },
+  {
+    "word": "advertise",
+    "phonetic": "/ˈædvərtaɪz/",
+    "meaning": "v. 做广告；宣传",
+    "level": "cet4"
+  },
+  {
+    "word": "affair",
+    "phonetic": "/əˈfer/",
+    "meaning": "n. 事务；事件",
+    "level": "cet4"
+  },
+  {
+    "word": "affect",
+    "phonetic": "/əˈfekt/",
+    "meaning": "v. 影响；感动",
+    "level": "cet4"
+  },
+  {
+    "word": "afford",
+    "phonetic": "/əˈfɔːrd/",
+    "meaning": "v. 负担得起；提供",
+    "level": "cet4"
+  },
+  {
+    "word": "agency",
+    "phonetic": "/ˈeɪdʒənsi/",
+    "meaning": "n. 代理处；机构",
+    "level": "cet4"
+  },
+  {
+    "word": "aggressive",
+    "phonetic": "/əˈɡresɪv/",
+    "meaning": "adj. 侵略的；好斗的；积极的",
+    "level": "cet4"
+  },
+  {
+    "word": "agreement",
+    "phonetic": "/əˈɡriːmənt/",
+    "meaning": "n. 协议；一致",
+    "level": "cet4"
+  },
+  {
+    "word": "agriculture",
+    "phonetic": "/ˈæɡrɪkʌltʃər/",
+    "meaning": "n. 农业；农学",
+    "level": "cet4"
+  },
+  {
+    "word": "aircraft",
+    "phonetic": "/ˈerkræft/",
+    "meaning": "n. 飞机；航空器",
+    "level": "cet4"
+  },
+  {
+    "word": "alarm",
+    "phonetic": "/əˈlɑːrm/",
+    "meaning": "n. 警报；闹钟 v. 使惊恐",
+    "level": "cet4"
+  },
+  {
+    "word": "alcohol",
+    "phonetic": "/ˈælkəhɔːl/",
+    "meaning": "n. 酒精；酒",
+    "level": "cet4"
+  },
+  {
+    "word": "allowance",
+    "phonetic": "/əˈlaʊəns/",
+    "meaning": "n. 津贴；零用钱",
+    "level": "cet4"
+  },
+  {
+    "word": "ally",
+    "phonetic": "/ˈælaɪ/",
+    "meaning": "n. 盟友 v. 结盟",
+    "level": "cet4"
+  },
+  {
+    "word": "alter",
+    "phonetic": "/ˈɔːltər/",
+    "meaning": "v. 改变；修改",
+    "level": "cet4"
+  },
+  {
+    "word": "alternative",
+    "phonetic": "/ɔːlˈtɜːrnətɪv/",
+    "meaning": "n. 替代品 adj. 替代的",
+    "level": "cet4"
+  },
+  {
+    "word": "amateur",
+    "phonetic": "/ˈæmətər/",
+    "meaning": "n. 业余爱好者 adj. 业余的",
+    "level": "cet4"
+  },
+  {
+    "word": "ambition",
+    "phonetic": "/æmˈbɪʃn/",
+    "meaning": "n. 雄心；野心",
+    "level": "cet4"
+  },
+  {
+    "word": "amount",
+    "phonetic": "/əˈmaʊnt/",
+    "meaning": "n. 数量；总额",
+    "level": "cet4"
+  },
+  {
+    "word": "amuse",
+    "phonetic": "/əˈmjuːz/",
+    "meaning": "v. 娱乐；逗乐",
+    "level": "cet4"
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈænəlaɪz/",
+    "meaning": "v. 分析；解析",
+    "level": "cet4"
+  },
+  {
+    "word": "ancestor",
+    "phonetic": "/ˈænsestər/",
+    "meaning": "n. 祖先；祖宗",
+    "level": "cet4"
+  },
+  {
+    "word": "angle",
+    "phonetic": "/ˈæŋɡl/",
+    "meaning": "n. 角；角度；观点",
+    "level": "cet4"
+  },
+  {
+    "word": "anniversary",
+    "phonetic": "/ˌænɪˈvɜːrsəri/",
+    "meaning": "n. 周年纪念日",
+    "level": "cet4"
+  },
+  {
+    "word": "announce",
+    "phonetic": "/əˈnaʊns/",
+    "meaning": "v. 宣布；通告",
+    "level": "cet4"
+  },
+  {
+    "word": "annual",
+    "phonetic": "/ˈænjuəl/",
+    "meaning": "adj. 每年的 n. 年刊",
+    "level": "cet4"
+  },
+  {
+    "word": "anticipate",
+    "phonetic": "/ænˈtɪsɪpeɪt/",
+    "meaning": "v. 预期；期望",
+    "level": "cet4"
+  },
+  {
+    "word": "anxiety",
+    "phonetic": "/æŋˈzaɪəti/",
+    "meaning": "n. 焦虑；忧虑",
+    "level": "cet4"
+  },
+  {
+    "word": "apart",
+    "phonetic": "/əˈpɑːrt/",
+    "meaning": "adv. 分开地；相距",
+    "level": "cet4"
+  },
+  {
+    "word": "apartment",
+    "phonetic": "/əˈpɑːrtmənt/",
+    "meaning": "n. 公寓；房间",
+    "level": "cet4"
+  },
+  {
+    "word": "apology",
+    "phonetic": "/əˈpɑːlədʒi/",
+    "meaning": "n. 道歉；歉意",
+    "level": "cet4"
+  },
+  {
+    "word": "apparent",
+    "phonetic": "/əˈpærənt/",
+    "meaning": "adj. 明显的；表面上的",
+    "level": "cet4"
+  },
+  {
+    "word": "appeal",
+    "phonetic": "/əˈpiːl/",
+    "meaning": "v./n. 呼吁；吸引；上诉",
+    "level": "cet4"
+  },
+  {
+    "word": "appetite",
+    "phonetic": "/ˈæpɪtaɪt/",
+    "meaning": "n. 食欲；胃口",
+    "level": "cet4"
+  },
+  {
+    "word": "appliance",
+    "phonetic": "/əˈplaɪəns/",
+    "meaning": "n. 电器；器具",
+    "level": "cet4"
+  },
+  {
+    "word": "application",
+    "phonetic": "/ˌæplɪˈkeɪʃn/",
+    "meaning": "n. 申请；应用；应用程序",
+    "level": "cet4"
+  },
+  {
+    "word": "appoint",
+    "phonetic": "/əˈpɔɪnt/",
+    "meaning": "v. 任命；指定",
+    "level": "cet4"
+  },
+  {
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "meaning": "v. 欣赏；感激；升值",
+    "level": "cet4"
+  },
+  {
+    "word": "approach",
+    "phonetic": "/əˈproʊtʃ/",
+    "meaning": "v./n. 接近；方法",
+    "level": "cet4"
+  },
+  {
+    "word": "appropriate",
+    "phonetic": "/əˈproʊpriət/",
+    "meaning": "adj. 适当的 v. 挪用",
+    "level": "cet4"
+  },
+  {
+    "word": "approve",
+    "phonetic": "/əˈpruːv/",
+    "meaning": "v. 批准；赞成",
+    "level": "cet4"
+  },
+  {
+    "word": "architecture",
+    "phonetic": "/ˈɑːrkɪtektʃər/",
+    "meaning": "n. 建筑；建筑学",
+    "level": "cet4"
+  },
+  {
+    "word": "argue",
+    "phonetic": "/ˈɑːrɡjuː/",
+    "meaning": "v. 争论；辩论",
+    "level": "cet4"
+  },
+  {
+    "word": "arise",
+    "phonetic": "/əˈraɪz/",
+    "meaning": "v. 出现；产生",
+    "level": "cet4"
+  },
+  {
+    "word": "arrange",
+    "phonetic": "/əˈreɪndʒ/",
+    "meaning": "v. 安排；整理",
+    "level": "cet4"
+  },
+  {
+    "word": "arrest",
+    "phonetic": "/əˈrest/",
+    "meaning": "v./n. 逮捕；拘留",
+    "level": "cet4"
+  },
+  {
+    "word": "artificial",
+    "phonetic": "/ˌɑːrtɪˈfɪʃl/",
+    "meaning": "adj. 人工的；人造的",
+    "level": "cet4"
+  },
+  {
+    "word": "aside",
+    "phonetic": "/əˈsaɪd/",
+    "meaning": "adv. 在旁边；到一边",
+    "level": "cet4"
+  },
+  {
+    "word": "aspect",
+    "phonetic": "/ˈæspekt/",
+    "meaning": "n. 方面；层面",
+    "level": "cet4"
+  },
+  {
+    "word": "assemble",
+    "phonetic": "/əˈsembl/",
+    "meaning": "v. 集合；组装",
+    "level": "cet4"
+  },
+  {
+    "word": "assess",
+    "phonetic": "/əˈses/",
+    "meaning": "v. 评估；评定",
+    "level": "cet4"
+  },
+  {
+    "word": "assign",
+    "phonetic": "/əˈsaɪn/",
+    "meaning": "v. 分配；指派",
+    "level": "cet4"
+  },
+  {
+    "word": "assist",
+    "phonetic": "/əˈsɪst/",
+    "meaning": "v. 帮助；协助",
+    "level": "cet4"
+  },
+  {
+    "word": "associate",
+    "phonetic": "/əˈsoʊʃieɪt/",
+    "meaning": "v. 联系；关联 n. 同事",
+    "level": "cet4"
+  },
+  {
+    "word": "assume",
+    "phonetic": "/əˈsuːm/",
+    "meaning": "v. 假设；承担",
+    "level": "cet4"
+  },
+  {
+    "word": "atmosphere",
+    "phonetic": "/ˈætməsfɪr/",
+    "meaning": "n. 大气；氛围",
+    "level": "cet4"
+  },
+  {
+    "word": "attach",
+    "phonetic": "/əˈtætʃ/",
+    "meaning": "v. 附上；系；依恋",
+    "level": "cet4"
+  },
+  {
+    "word": "attain",
+    "phonetic": "/əˈteɪn/",
+    "meaning": "v. 达到；获得",
+    "level": "cet4"
+  },
+  {
+    "word": "attempt",
+    "phonetic": "/əˈtempt/",
+    "meaning": "v./n. 尝试；企图",
+    "level": "cet4"
+  },
+  {
+    "word": "attend",
+    "phonetic": "/əˈtend/",
+    "meaning": "v. 参加；出席",
+    "level": "cet4"
+  },
+  {
+    "word": "attitude",
+    "phonetic": "/ˈætɪtuːd/",
+    "meaning": "n. 态度；看法",
+    "level": "cet4"
+  },
+  {
+    "word": "attract",
+    "phonetic": "/əˈtrækt/",
+    "meaning": "v. 吸引；引起",
+    "level": "cet4"
+  },
+  {
+    "word": "audience",
+    "phonetic": "/ˈɔːdiəns/",
+    "meaning": "n. 观众；听众",
+    "level": "cet4"
+  },
+  {
+    "word": "authority",
+    "phonetic": "/əˈθɔːrəti/",
+    "meaning": "n. 权威；当局",
+    "level": "cet4"
+  },
+  {
+    "word": "automatic",
+    "phonetic": "/ˌɔːtəˈmætɪk/",
+    "meaning": "adj. 自动的",
+    "level": "cet4"
+  },
+  {
+    "word": "available",
+    "phonetic": "/əˈveɪləbl/",
+    "meaning": "adj. 可用的；有效的",
+    "level": "cet4"
+  },
+  {
+    "word": "avenue",
+    "phonetic": "/ˈævənuː/",
+    "meaning": "n. 大街；途径",
+    "level": "cet4"
+  },
+  {
+    "word": "average",
+    "phonetic": "/ˈævərɪdʒ/",
+    "meaning": "n. 平均 adj. 普通的",
+    "level": "cet4"
+  },
+  {
+    "word": "avoid",
+    "phonetic": "/əˈvɔɪd/",
+    "meaning": "v. 避免；回避",
+    "level": "cet4"
+  },
+  {
+    "word": "award",
+    "phonetic": "/əˈwɔːrd/",
+    "meaning": "n. 奖品 v. 授予",
+    "level": "cet4"
+  },
+  {
+    "word": "aware",
+    "phonetic": "/əˈwer/",
+    "meaning": "adj. 意识到的；知道的",
+    "level": "cet4"
+  },
+  {
+    "word": "awful",
+    "phonetic": "/ˈɔːfl/",
+    "meaning": "adj. 可怕的；糟糕的",
+    "level": "cet4"
+  },
+  {
+    "word": "background",
+    "phonetic": "/ˈbækɡraʊnd/",
+    "meaning": "n. 背景；经历",
+    "level": "cet4"
+  },
+  {
+    "word": "balance",
+    "phonetic": "/ˈbæləns/",
+    "meaning": "n. 平衡 v. 使平衡",
+    "level": "cet4"
+  },
+  {
+    "word": "ban",
+    "phonetic": "/bæn/",
+    "meaning": "v./n. 禁止；禁令",
+    "level": "cet4"
+  },
+  {
+    "word": "barrier",
+    "phonetic": "/ˈbæriər/",
+    "meaning": "n. 障碍；屏障",
+    "level": "cet4"
+  },
+  {
+    "word": "battery",
+    "phonetic": "/ˈbætəri/",
+    "meaning": "n. 电池",
+    "level": "cet4"
+  },
+  {
+    "word": "battle",
+    "phonetic": "/ˈbætl/",
+    "meaning": "n. 战斗 v. 斗争",
+    "level": "cet4"
+  },
+  {
+    "word": "behalf",
+    "phonetic": "/bɪˈhæf/",
+    "meaning": "n. 利益；代表",
+    "level": "cet4"
+  },
+  {
+    "word": "behave",
+    "phonetic": "/bɪˈheɪv/",
+    "meaning": "v. 行为；表现",
+    "level": "cet4"
+  },
+  {
+    "word": "belief",
+    "phonetic": "/bɪˈliːf/",
+    "meaning": "n. 信念；信仰",
+    "level": "cet4"
+  },
+  {
+    "word": "belong",
+    "phonetic": "/bɪˈlɔːŋ/",
+    "meaning": "v. 属于",
+    "level": "cet4"
+  },
+  {
+    "word": "benefit",
+    "phonetic": "/ˈbenɪfɪt/",
+    "meaning": "n. 利益 v. 有益于",
+    "level": "cet4"
+  },
+  {
+    "word": "bitter",
+    "phonetic": "/ˈbɪtər/",
+    "meaning": "adj. 苦的；痛苦的",
+    "level": "cet4"
+  },
+  {
+    "word": "blame",
+    "phonetic": "/bleɪm/",
+    "meaning": "v./n. 责备；归咎",
+    "level": "cet4"
+  },
+  {
+    "word": "blank",
+    "phonetic": "/blæŋk/",
+    "meaning": "adj. 空白的 n. 空白",
+    "level": "cet4"
+  },
+  {
+    "word": "blend",
+    "phonetic": "/blend/",
+    "meaning": "v./n. 混合；融合",
+    "level": "cet4"
+  },
+  {
+    "word": "bless",
+    "phonetic": "/bles/",
+    "meaning": "v. 祝福；保佑",
+    "level": "cet4"
+  },
+  {
+    "word": "block",
+    "phonetic": "/blɑːk/",
+    "meaning": "n. 街区；块 v. 阻塞",
+    "level": "cet4"
+  },
+  {
+    "word": "board",
+    "phonetic": "/bɔːrd/",
+    "meaning": "n. 木板；董事会 v. 登上",
+    "level": "cet4"
+  },
+  {
+    "word": "boast",
+    "phonetic": "/boʊst/",
+    "meaning": "v. 自夸；以...为荣",
+    "level": "cet4"
+  },
+  {
+    "word": "bond",
+    "phonetic": "/bɑːnd/",
+    "meaning": "n. 纽带；债券 v. 联结",
+    "level": "cet4"
+  },
+  {
+    "word": "border",
+    "phonetic": "/ˈbɔːrdər/",
+    "meaning": "n. 边界 v. 接壤",
+    "level": "cet4"
+  },
+  {
+    "word": "bore",
+    "phonetic": "/bɔːr/",
+    "meaning": "v. 使厌烦 n. 令人厌烦的人",
+    "level": "cet4"
+  },
+  {
+    "word": "bound",
+    "phonetic": "/baʊnd/",
+    "meaning": "adj. 一定的；受约束的",
+    "level": "cet4"
+  },
+  {
+    "word": "brand",
+    "phonetic": "/brænd/",
+    "meaning": "n. 品牌 v. 打烙印",
+    "level": "cet4"
+  },
+  {
+    "word": "brief",
+    "phonetic": "/briːf/",
+    "meaning": "adj. 简短的 v. 简要汇报",
+    "level": "cet4"
+  },
+  {
+    "word": "broadcast",
+    "phonetic": "/ˈbrɔːdkæst/",
+    "meaning": "v./n. 广播；播送",
+    "level": "cet4"
+  },
+  {
+    "word": "budget",
+    "phonetic": "/ˈbʌdʒɪt/",
+    "meaning": "n. 预算 v. 编预算",
+    "level": "cet4"
+  },
+  {
+    "word": "burden",
+    "phonetic": "/ˈbɜːrdn/",
+    "meaning": "n. 负担 v. 使负重",
+    "level": "cet4"
+  },
+  {
+    "word": "burst",
+    "phonetic": "/bɜːrst/",
+    "meaning": "v. 爆炸；突然出现",
+    "level": "cet4"
+  },
+  {
+    "word": "cabinet",
+    "phonetic": "/ˈkæbɪnət/",
+    "meaning": "n. 橱柜；内阁",
+    "level": "cet4"
+  },
+  {
+    "word": "campaign",
+    "phonetic": "/kæmˈpeɪn/",
+    "meaning": "n. 运动；战役 v. 参加运动",
+    "level": "cet4"
+  },
+  {
+    "word": "capable",
+    "phonetic": "/ˈkeɪpəbl/",
+    "meaning": "adj. 有能力的",
+    "level": "cet4"
+  },
+  {
+    "word": "capacity",
+    "phonetic": "/kəˈpæsəti/",
+    "meaning": "n. 容量；能力",
+    "level": "cet4"
+  },
+  {
+    "word": "capture",
+    "phonetic": "/ˈkæptʃər/",
+    "meaning": "v. 捕获；俘获",
+    "level": "cet4"
+  },
+  {
+    "word": "career",
+    "phonetic": "/kəˈrɪr/",
+    "meaning": "n. 职业；生涯",
+    "level": "cet4"
+  },
+  {
+    "word": "catalog",
+    "phonetic": "/ˈkætəlɔːɡ/",
+    "meaning": "n. 目录 v. 编目",
+    "level": "cet4"
+  },
+  {
+    "word": "category",
+    "phonetic": "/ˈkætəɡɔːri/",
+    "meaning": "n. 类别；种类",
+    "level": "cet4"
+  },
+  {
+    "word": "cautious",
+    "phonetic": "/ˈkɔːʃəs/",
+    "meaning": "adj. 谨慎的",
+    "level": "cet4"
+  },
+  {
+    "word": "cease",
+    "phonetic": "/siːs/",
+    "meaning": "v. 停止；终止",
+    "level": "cet4"
+  },
+  {
+    "word": "challenge",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "meaning": "n./v. 挑战",
+    "level": "cet4"
+  },
+  {
+    "word": "champion",
+    "phonetic": "/ˈtʃæmpiən/",
+    "meaning": "n. 冠军 v. 捍卫",
+    "level": "cet4"
+  },
+  {
+    "word": "channel",
+    "phonetic": "/ˈtʃænl/",
+    "meaning": "n. 频道；渠道",
+    "level": "cet4"
+  },
+  {
+    "word": "chapter",
+    "phonetic": "/ˈtʃæptər/",
+    "meaning": "n. 章节；篇章",
+    "level": "cet4"
+  },
+  {
+    "word": "character",
+    "phonetic": "/ˈkærəktər/",
+    "meaning": "n. 性格；角色；字符",
+    "level": "cet4"
+  },
+  {
+    "word": "characteristic",
+    "phonetic": "/ˌkærəktəˈrɪstɪk/",
+    "meaning": "n. 特征 adj. 典型的",
+    "level": "cet4"
+  },
+  {
+    "word": "charity",
+    "phonetic": "/ˈtʃærəti/",
+    "meaning": "n. 慈善；慈善机构",
+    "level": "cet4"
+  },
+  {
+    "word": "chart",
+    "phonetic": "/tʃɑːrt/",
+    "meaning": "n. 图表 v. 绘制图表",
+    "level": "cet4"
+  },
+  {
+    "word": "chemical",
+    "phonetic": "/ˈkemɪkl/",
+    "meaning": "adj. 化学的 n. 化学品",
+    "level": "cet4"
+  },
+  {
+    "word": "chief",
+    "phonetic": "/tʃiːf/",
+    "meaning": "n. 首领 adj. 主要的",
+    "level": "cet4"
+  },
+  {
+    "word": "circumstance",
+    "phonetic": "/ˈsɜːrkəmstæns/",
+    "meaning": "n. 环境；情况",
+    "level": "cet4"
+  },
+  {
+    "word": "citizen",
+    "phonetic": "/ˈsɪtɪzn/",
+    "meaning": "n. 公民；市民",
+    "level": "cet4"
+  },
+  {
+    "word": "civil",
+    "phonetic": "/ˈsɪvl/",
+    "meaning": "adj. 公民的；民用的；文明的",
+    "level": "cet4"
+  },
+  {
+    "word": "claim",
+    "phonetic": "/kleɪm/",
+    "meaning": "v./n. 声称；索取",
+    "level": "cet4"
+  },
+  {
+    "word": "classic",
+    "phonetic": "/ˈklæsɪk/",
+    "meaning": "adj. 经典的 n. 经典作品",
+    "level": "cet4"
+  },
+  {
+    "word": "climate",
+    "phonetic": "/ˈklaɪmət/",
+    "meaning": "n. 气候；氛围",
+    "level": "cet4"
+  },
+  {
+    "word": "coach",
+    "phonetic": "/koʊtʃ/",
+    "meaning": "n. 教练 v. 指导",
+    "level": "cet4"
+  },
+  {
+    "word": "collapse",
+    "phonetic": "/kəˈlæps/",
+    "meaning": "v./n. 倒塌；崩溃",
+    "level": "cet4"
+  },
+  {
+    "word": "colleague",
+    "phonetic": "/ˈkɑːliːɡ/",
+    "meaning": "n. 同事",
+    "level": "cet4"
+  },
+  {
+    "word": "command",
+    "phonetic": "/kəˈmænd/",
+    "meaning": "v./n. 命令；指挥",
+    "level": "cet4"
+  },
+  {
+    "word": "comment",
+    "phonetic": "/ˈkɑːment/",
+    "meaning": "n./v. 评论；意见",
+    "level": "cet4"
+  },
+  {
+    "word": "commerce",
+    "phonetic": "/ˈkɑːmɜːrs/",
+    "meaning": "n. 商业；贸易",
+    "level": "cet4"
+  },
+  {
+    "word": "commission",
+    "phonetic": "/kəˈmɪʃn/",
+    "meaning": "n. 委员会；佣金 v. 委托",
+    "level": "cet4"
+  },
+  {
+    "word": "commit",
+    "phonetic": "/kəˈmɪt/",
+    "meaning": "v. 犯（罪）；承诺",
+    "level": "cet4"
+  },
+  {
+    "word": "communicate",
+    "phonetic": "/kəˈmjuːnɪkeɪt/",
+    "meaning": "v. 交流；沟通",
+    "level": "cet4"
+  },
+  {
+    "word": "community",
+    "phonetic": "/kəˈmjuːnəti/",
+    "meaning": "n. 社区；团体",
+    "level": "cet4"
+  },
+  {
+    "word": "companion",
+    "phonetic": "/kəmˈpæniən/",
+    "meaning": "n. 同伴；伙伴",
+    "level": "cet4"
+  },
+  {
+    "word": "compare",
+    "phonetic": "/kəmˈper/",
+    "meaning": "v. 比较；对比",
+    "level": "cet4"
+  },
+  {
+    "word": "compete",
+    "phonetic": "/kəmˈpiːt/",
+    "meaning": "v. 竞争；比赛",
+    "level": "cet4"
+  },
+  {
+    "word": "complex",
+    "phonetic": "/kəmˈpleks/",
+    "meaning": "adj. 复杂的 n. 综合体",
+    "level": "cet4"
+  },
+  {
+    "word": "component",
+    "phonetic": "/kəmˈpoʊnənt/",
+    "meaning": "n. 成分；组件",
+    "level": "cet4"
+  },
+  {
+    "word": "concentrate",
+    "phonetic": "/ˈkɑːnsntreɪt/",
+    "meaning": "v. 集中；专注",
+    "level": "cet4"
+  },
+  {
+    "word": "concept",
+    "phonetic": "/ˈkɑːnsept/",
+    "meaning": "n. 概念；观念",
+    "level": "cet4"
+  },
+  {
+    "word": "concern",
+    "phonetic": "/kənˈsɜːrn/",
+    "meaning": "v./n. 关心；担忧",
+    "level": "cet4"
+  },
+  {
+    "word": "conclude",
+    "phonetic": "/kənˈkluːd/",
+    "meaning": "v. 总结；得出结论",
+    "level": "cet4"
+  },
+  {
+    "word": "concrete",
+    "phonetic": "/ˈkɑːŋkriːt/",
+    "meaning": "adj. 具体的 n. 混凝土",
+    "level": "cet4"
+  },
+  {
+    "word": "condition",
+    "phonetic": "/kənˈdɪʃn/",
+    "meaning": "n. 条件；状况",
+    "level": "cet4"
+  },
+  {
+    "word": "conduct",
+    "phonetic": "/kənˈdʌkt/",
+    "meaning": "v. 进行；指挥 n. 行为",
+    "level": "cet4"
+  },
+  {
+    "word": "conference",
+    "phonetic": "/ˈkɑːnfərəns/",
+    "meaning": "n. 会议；讨论会",
+    "level": "cet4"
+  },
+  {
+    "word": "confident",
+    "phonetic": "/ˈkɑːnfɪdənt/",
+    "meaning": "adj. 自信的；确信的",
+    "level": "cet4"
+  },
+  {
+    "word": "confirm",
+    "phonetic": "/kənˈfɜːrm/",
+    "meaning": "v. 确认；证实",
+    "level": "cet4"
+  },
+  {
+    "word": "conflict",
+    "phonetic": "/ˈkɑːnflɪkt/",
+    "meaning": "n. 冲突 v. 抵触",
+    "level": "cet4"
+  },
+  {
+    "word": "confuse",
+    "phonetic": "/kənˈfjuːz/",
+    "meaning": "v. 使困惑；混淆",
+    "level": "cet4"
+  },
+  {
+    "word": "congress",
+    "phonetic": "/ˈkɑːŋɡrəs/",
+    "meaning": "n. 国会；代表大会",
+    "level": "cet4"
+  },
+  {
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "meaning": "v. 连接；联系",
+    "level": "cet4"
+  },
+  {
+    "word": "conscious",
+    "phonetic": "/ˈkɑːnʃəs/",
+    "meaning": "adj. 有意识的；清醒的",
+    "level": "cet4"
+  },
+  {
+    "word": "consequence",
+    "phonetic": "/ˈkɑːnsɪkwens/",
+    "meaning": "n. 结果；后果",
+    "level": "cet4"
+  },
+  {
+    "word": "conservative",
+    "phonetic": "/kənˈsɜːrvətɪv/",
+    "meaning": "adj. 保守的 n. 保守派",
+    "level": "cet4"
+  },
+  {
+    "word": "consider",
+    "phonetic": "/kənˈsɪdər/",
+    "meaning": "v. 考虑；认为",
+    "level": "cet4"
+  },
+  {
+    "word": "consist",
+    "phonetic": "/kənˈsɪst/",
+    "meaning": "v. 由...组成；存在于",
+    "level": "cet4"
+  },
+  {
+    "word": "constant",
+    "phonetic": "/ˈkɑːnstənt/",
+    "meaning": "adj. 持续的；不变的",
+    "level": "cet4"
+  },
+  {
+    "word": "construct",
+    "phonetic": "/kənˈstrʌkt/",
+    "meaning": "v. 建造；构建",
+    "level": "cet4"
+  },
+  {
+    "word": "consume",
+    "phonetic": "/kənˈsuːm/",
+    "meaning": "v. 消费；消耗",
+    "level": "cet4"
+  },
+  {
+    "word": "contact",
+    "phonetic": "/ˈkɑːntækt/",
+    "meaning": "n./v. 联系；接触",
+    "level": "cet4"
+  },
+  {
+    "word": "contain",
+    "phonetic": "/kənˈteɪn/",
+    "meaning": "v. 包含；容纳",
+    "level": "cet4"
+  },
+  {
+    "word": "contemporary",
+    "phonetic": "/kənˈtempəreri/",
+    "meaning": "adj. 当代的 n. 同代人",
+    "level": "cet4"
+  },
+  {
+    "word": "content",
+    "phonetic": "/ˈkɑːntent/",
+    "meaning": "n. 内容 adj. 满意的",
+    "level": "cet4"
+  },
+  {
+    "word": "context",
+    "phonetic": "/ˈkɑːntekst/",
+    "meaning": "n. 上下文；背景",
+    "level": "cet4"
+  },
+  {
+    "word": "contract",
+    "phonetic": "/ˈkɑːntrækt/",
+    "meaning": "n. 合同 v. 收缩",
+    "level": "cet4"
+  },
+  {
+    "word": "contribute",
+    "phonetic": "/kənˈtrɪbjuːt/",
+    "meaning": "v. 贡献；捐献",
+    "level": "cet4"
+  },
+  {
+    "word": "convenient",
+    "phonetic": "/kənˈviːniənt/",
+    "meaning": "adj. 方便的",
+    "level": "cet4"
+  },
+  {
+    "word": "convince",
+    "phonetic": "/kənˈvɪns/",
+    "meaning": "v. 说服；使确信",
+    "level": "cet4"
+  },
+  {
+    "word": "cooperate",
+    "phonetic": "/koʊˈɑːpəreɪt/",
+    "meaning": "v. 合作；协作",
+    "level": "cet4"
+  },
+  {
+    "word": "cope",
+    "phonetic": "/koʊp/",
+    "meaning": "v. 应对；处理",
+    "level": "cet4"
+  },
+  {
+    "word": "core",
+    "phonetic": "/kɔːr/",
+    "meaning": "n. 核心；中心",
+    "level": "cet4"
+  },
+  {
+    "word": "corporate",
+    "phonetic": "/ˈkɔːrpərət/",
+    "meaning": "adj. 公司的；法人的",
+    "level": "cet4"
+  },
+  {
+    "word": "correspond",
+    "phonetic": "/ˌkɔːrəˈspɑːnd/",
+    "meaning": "v. 对应；通信",
+    "level": "cet4"
+  },
+  {
+    "word": "council",
+    "phonetic": "/ˈkaʊnsl/",
+    "meaning": "n. 理事会；委员会",
+    "level": "cet4"
+  },
+  {
+    "word": "counter",
+    "phonetic": "/ˈkaʊntər/",
+    "meaning": "n. 柜台 v. 反击",
+    "level": "cet4"
+  },
+  {
+    "word": "county",
+    "phonetic": "/ˈkaʊnti/",
+    "meaning": "n. 县；郡",
+    "level": "cet4"
+  },
+  {
+    "word": "court",
+    "phonetic": "/kɔːrt/",
+    "meaning": "n. 法院；球场",
+    "level": "cet4"
+  },
+  {
+    "word": "crash",
+    "phonetic": "/kræʃ/",
+    "meaning": "v./n. 碰撞；崩溃",
+    "level": "cet4"
+  },
+  {
+    "word": "create",
+    "phonetic": "/kriˈeɪt/",
+    "meaning": "v. 创造；创建",
+    "level": "cet4"
+  },
+  {
+    "word": "crime",
+    "phonetic": "/kraɪm/",
+    "meaning": "n. 犯罪；罪行",
+    "level": "cet4"
+  },
+  {
+    "word": "crisis",
+    "phonetic": "/ˈkraɪsɪs/",
+    "meaning": "n. 危机",
+    "level": "cet4"
+  },
+  {
+    "word": "critical",
+    "phonetic": "/ˈkrɪtɪkl/",
+    "meaning": "adj. 批评的；关键的",
+    "level": "cet4"
+  },
+  {
+    "word": "cultivate",
+    "phonetic": "/ˈkʌltɪveɪt/",
+    "meaning": "v. 培养；耕作",
+    "level": "cet4"
+  },
+  {
+    "word": "culture",
+    "phonetic": "/ˈkʌltʃər/",
+    "meaning": "n. 文化；修养",
+    "level": "cet4"
+  },
+  {
+    "word": "curious",
+    "phonetic": "/ˈkjʊriəs/",
+    "meaning": "adj. 好奇的",
+    "level": "cet4"
+  },
+  {
+    "word": "current",
+    "phonetic": "/ˈkɜːrənt/",
+    "meaning": "adj. 当前的 n. 水流；电流",
+    "level": "cet4"
+  },
+  {
+    "word": "curriculum",
+    "phonetic": "/kəˈrɪkjələm/",
+    "meaning": "n. 课程",
+    "level": "cet4"
+  },
+  {
+    "word": "custom",
+    "phonetic": "/ˈkʌstəm/",
+    "meaning": "n. 习俗 adj. 定制的",
+    "level": "cet4"
+  },
+  {
+    "word": "damage",
+    "phonetic": "/ˈdæmɪdʒ/",
+    "meaning": "n./v. 损害；破坏",
+    "level": "cet4"
+  },
+  {
+    "word": "deadline",
+    "phonetic": "/ˈdedlaɪn/",
+    "meaning": "n. 截止日期",
+    "level": "cet4"
+  },
+  {
+    "word": "debate",
+    "phonetic": "/dɪˈbeɪt/",
+    "meaning": "n./v. 辩论；争论",
+    "level": "cet4"
+  },
+  {
+    "word": "debt",
+    "phonetic": "/det/",
+    "meaning": "n. 债务",
+    "level": "cet4"
+  },
+  {
+    "word": "decade",
+    "phonetic": "/ˈdekeɪd/",
+    "meaning": "n. 十年",
+    "level": "cet4"
+  },
+  {
+    "word": "decline",
+    "phonetic": "/dɪˈklaɪn/",
+    "meaning": "v./n. 下降；拒绝",
+    "level": "cet4"
+  },
+  {
+    "word": "defend",
+    "phonetic": "/dɪˈfend/",
+    "meaning": "v. 防御；辩护",
+    "level": "cet4"
+  },
+  {
+    "word": "define",
+    "phonetic": "/dɪˈfaɪn/",
+    "meaning": "v. 定义；界定",
+    "level": "cet4"
+  },
+  {
+    "word": "definitely",
+    "phonetic": "/ˈdefɪnətli/",
+    "meaning": "adv. 肯定地；明确地",
+    "level": "cet4"
+  },
+  {
+    "word": "degree",
+    "phonetic": "/dɪˈɡriː/",
+    "meaning": "n. 程度；学位；度",
+    "level": "cet4"
+  },
+  {
+    "word": "delay",
+    "phonetic": "/dɪˈleɪ/",
+    "meaning": "v./n. 延迟；推迟",
+    "level": "cet4"
+  },
+  {
+    "word": "deliberate",
+    "phonetic": "/dɪˈlɪbərət/",
+    "meaning": "adj. 故意的 v. 仔细考虑",
+    "level": "cet4"
+  },
+  {
+    "word": "delicate",
+    "phonetic": "/ˈdelɪkət/",
+    "meaning": "adj. 精致的；微妙的",
+    "level": "cet4"
+  },
+  {
+    "word": "deliver",
+    "phonetic": "/dɪˈlɪvər/",
+    "meaning": "v. 递送；发表",
+    "level": "cet4"
+  },
+  {
+    "word": "demand",
+    "phonetic": "/dɪˈmænd/",
+    "meaning": "n./v. 要求；需求",
+    "level": "cet4"
+  },
+  {
+    "word": "demonstrate",
+    "phonetic": "/ˈdemənstreɪt/",
+    "meaning": "v. 演示；证明",
+    "level": "cet4"
+  },
+  {
+    "word": "depart",
+    "phonetic": "/dɪˈpɑːrt/",
+    "meaning": "v. 离开；出发",
+    "level": "cet4"
+  },
+  {
+    "word": "depend",
+    "phonetic": "/dɪˈpend/",
+    "meaning": "v. 依赖；取决于",
+    "level": "cet4"
+  },
+  {
+    "word": "deposit",
+    "phonetic": "/dɪˈpɑːzɪt/",
+    "meaning": "v. 存放 n. 存款；押金",
+    "level": "cet4"
+  },
+  {
+    "word": "depress",
+    "phonetic": "/dɪˈpres/",
+    "meaning": "v. 使沮丧；使萧条",
+    "level": "cet4"
+  },
+  {
+    "word": "derive",
+    "phonetic": "/dɪˈraɪv/",
+    "meaning": "v. 源自；获得",
+    "level": "cet4"
+  },
+  {
+    "word": "describe",
+    "phonetic": "/dɪˈskraɪb/",
+    "meaning": "v. 描述；形容",
+    "level": "cet4"
+  },
+  {
+    "word": "deserve",
+    "phonetic": "/dɪˈzɜːrv/",
+    "meaning": "v. 值得；应得",
+    "level": "cet4"
+  },
+  {
+    "word": "desire",
+    "phonetic": "/dɪˈzaɪər/",
+    "meaning": "n./v. 渴望；欲望",
+    "level": "cet4"
+  },
+  {
+    "word": "desperate",
+    "phonetic": "/ˈdespərət/",
+    "meaning": "adj. 绝望的；不顾一切的",
+    "level": "cet4"
+  },
+  {
+    "word": "destination",
+    "phonetic": "/ˌdestɪˈneɪʃn/",
+    "meaning": "n. 目的地",
+    "level": "cet4"
+  },
+  {
+    "word": "destroy",
+    "phonetic": "/dɪˈstrɔɪ/",
+    "meaning": "v. 破坏；毁灭",
+    "level": "cet4"
+  },
+  {
+    "word": "detail",
+    "phonetic": "/ˈdiːteɪl/",
+    "meaning": "n. 细节 v. 详述",
+    "level": "cet4"
+  },
+  {
+    "word": "detect",
+    "phonetic": "/dɪˈtekt/",
+    "meaning": "v. 发现；检测",
+    "level": "cet4"
+  },
+  {
+    "word": "determine",
+    "phonetic": "/dɪˈtɜːrmɪn/",
+    "meaning": "v. 决定；确定",
+    "level": "cet4"
+  },
+  {
+    "word": "device",
+    "phonetic": "/dɪˈvaɪs/",
+    "meaning": "n. 设备；装置",
+    "level": "cet4"
+  },
+  {
+    "word": "devote",
+    "phonetic": "/dɪˈvoʊt/",
+    "meaning": "v. 致力于；奉献",
+    "level": "cet4"
+  },
+  {
+    "word": "diet",
+    "phonetic": "/ˈdaɪət/",
+    "meaning": "n. 饮食 v. 节食",
+    "level": "cet4"
+  },
+  {
+    "word": "differ",
+    "phonetic": "/ˈdɪfər/",
+    "meaning": "v. 不同；有异议",
+    "level": "cet4"
+  },
+  {
+    "word": "digest",
+    "phonetic": "/daɪˈdʒest/",
+    "meaning": "v. 消化 n. 摘要",
+    "level": "cet4"
+  },
+  {
+    "word": "digital",
+    "phonetic": "/ˈdɪdʒɪtl/",
+    "meaning": "adj. 数字的",
+    "level": "cet4"
+  },
+  {
+    "word": "dimension",
+    "phonetic": "/daɪˈmenʃn/",
+    "meaning": "n. 维度；尺寸",
+    "level": "cet4"
+  },
+  {
+    "word": "diploma",
+    "phonetic": "/dɪˈploʊmə/",
+    "meaning": "n. 文凭；毕业证书",
+    "level": "cet4"
+  },
+  {
+    "word": "disappear",
+    "phonetic": "/ˌdɪsəˈpɪr/",
+    "meaning": "v. 消失；失踪",
+    "level": "cet4"
+  },
+  {
+    "word": "discipline",
+    "phonetic": "/ˈdɪsəplɪn/",
+    "meaning": "n. 纪律；学科 v. 训练",
+    "level": "cet4"
+  },
+  {
+    "word": "discount",
+    "phonetic": "/ˈdɪskaʊnt/",
+    "meaning": "n. 折扣 v. 打折",
+    "level": "cet4"
+  },
+  {
+    "word": "display",
+    "phonetic": "/dɪˈspleɪ/",
+    "meaning": "v./n. 展示；显示",
+    "level": "cet4"
+  },
+  {
+    "word": "distinct",
+    "phonetic": "/dɪˈstɪŋkt/",
+    "meaning": "adj. 明显的；不同的",
+    "level": "cet4"
+  },
+  {
+    "word": "distribute",
+    "phonetic": "/dɪˈstrɪbjuːt/",
+    "meaning": "v. 分配；分发",
+    "level": "cet4"
+  },
+  {
+    "word": "district",
+    "phonetic": "/ˈdɪstrɪkt/",
+    "meaning": "n. 区域；地区",
+    "level": "cet4"
+  },
+  {
+    "word": "diverse",
+    "phonetic": "/daɪˈvɜːrs/",
+    "meaning": "adj. 多样的；不同的",
+    "level": "cet4"
+  },
+  {
+    "word": "document",
+    "phonetic": "/ˈdɑːkjumənt/",
+    "meaning": "n. 文件 v. 记录",
+    "level": "cet4"
+  },
+  {
+    "word": "domestic",
+    "phonetic": "/dəˈmestɪk/",
+    "meaning": "adj. 国内的；家庭的",
+    "level": "cet4"
+  },
+  {
+    "word": "dominate",
+    "phonetic": "/ˈdɑːmɪneɪt/",
+    "meaning": "v. 支配；主导",
+    "level": "cet4"
+  },
+  {
+    "word": "donate",
+    "phonetic": "/ˈdoʊneɪt/",
+    "meaning": "v. 捐赠",
+    "level": "cet4"
+  },
+  {
+    "word": "draft",
+    "phonetic": "/dræft/",
+    "meaning": "n. 草稿 v. 起草",
+    "level": "cet4"
+  },
+  {
+    "word": "dramatic",
+    "phonetic": "/drəˈmætɪk/",
+    "meaning": "adj. 戏剧性的；急剧的",
+    "level": "cet4"
+  },
+  {
+    "word": "due",
+    "phonetic": "/duː/",
+    "meaning": "adj. 到期的；由于",
+    "level": "cet4"
+  },
+  {
+    "word": "durable",
+    "phonetic": "/ˈdʊrəbl/",
+    "meaning": "adj. 耐用的；持久的",
+    "level": "cet4"
+  },
+  {
+    "word": "dynamic",
+    "phonetic": "/daɪˈnæmɪk/",
+    "meaning": "adj. 动态的；充满活力的",
+    "level": "cet4"
+  },
+  {
+    "word": "eager",
+    "phonetic": "/ˈiːɡər/",
+    "meaning": "adj. 渴望的；热切的",
+    "level": "cet4"
+  },
+  {
+    "word": "earn",
+    "phonetic": "/ɜːrn/",
+    "meaning": "v. 赚取；赢得",
+    "level": "cet4"
+  },
+  {
+    "word": "echo",
+    "phonetic": "/ˈekoʊ/",
+    "meaning": "n. 回声 v. 重复",
+    "level": "cet4"
+  },
+  {
+    "word": "economic",
+    "phonetic": "/ˌiːkəˈnɑːmɪk/",
+    "meaning": "adj. 经济的",
+    "level": "cet4"
+  },
+  {
+    "word": "edition",
+    "phonetic": "/ɪˈdɪʃn/",
+    "meaning": "n. 版本；版次",
+    "level": "cet4"
+  },
+  {
+    "word": "effect",
+    "phonetic": "/ɪˈfekt/",
+    "meaning": "n. 效果；影响",
+    "level": "cet4"
+  },
+  {
+    "word": "efficient",
+    "phonetic": "/ɪˈfɪʃnt/",
+    "meaning": "adj. 高效的",
+    "level": "cet4"
+  },
+  {
+    "word": "elaborate",
+    "phonetic": "/ɪˈlæbərət/",
+    "meaning": "adj. 详尽的 v. 详细说明",
+    "level": "cet4"
+  },
+  {
+    "word": "election",
+    "phonetic": "/ɪˈlekʃn/",
+    "meaning": "n. 选举",
+    "level": "cet4"
+  },
+  {
+    "word": "element",
+    "phonetic": "/ˈelɪmənt/",
+    "meaning": "n. 元素；要素",
+    "level": "cet4"
+  },
+  {
+    "word": "eliminate",
+    "phonetic": "/ɪˈlɪmɪneɪt/",
+    "meaning": "v. 消除；淘汰",
+    "level": "cet4"
+  },
+  {
+    "word": "embrace",
+    "phonetic": "/ɪmˈbreɪs/",
+    "meaning": "v. 拥抱；欣然接受",
+    "level": "cet4"
+  },
+  {
+    "word": "emerge",
+    "phonetic": "/iˈmɜːrdʒ/",
+    "meaning": "v. 出现；浮现",
+    "level": "cet4"
+  },
+  {
+    "word": "emotion",
+    "phonetic": "/ɪˈmoʊʃn/",
+    "meaning": "n. 情感；情绪",
+    "level": "cet4"
+  },
+  {
+    "word": "emphasis",
+    "phonetic": "/ˈemfəsɪs/",
+    "meaning": "n. 强调；重点",
+    "level": "cet4"
+  },
+  {
+    "word": "employ",
+    "phonetic": "/ɪmˈplɔɪ/",
+    "meaning": "v. 雇用；使用",
+    "level": "cet4"
+  },
+  {
+    "word": "enable",
+    "phonetic": "/ɪˈneɪbl/",
+    "meaning": "v. 使能够；启用",
+    "level": "cet4"
+  },
+  {
+    "word": "encounter",
+    "phonetic": "/ɪnˈkaʊntər/",
+    "meaning": "v./n. 遭遇；遇见",
+    "level": "cet4"
+  },
+  {
+    "word": "encourage",
+    "phonetic": "/ɪnˈkɜːrɪdʒ/",
+    "meaning": "v. 鼓励；激励",
+    "level": "cet4"
+  },
+  {
+    "word": "engage",
+    "phonetic": "/ɪnˈɡeɪdʒ/",
+    "meaning": "v. 参与；从事；订婚",
+    "level": "cet4"
+  },
+  {
+    "word": "engine",
+    "phonetic": "/ˈendʒɪn/",
+    "meaning": "n. 引擎；发动机",
+    "level": "cet4"
+  },
+  {
+    "word": "enormous",
+    "phonetic": "/ɪˈnɔːrməs/",
+    "meaning": "adj. 巨大的",
+    "level": "cet4"
+  },
+  {
+    "word": "ensure",
+    "phonetic": "/ɪnˈʃʊr/",
+    "meaning": "v. 确保；保证",
+    "level": "cet4"
+  },
+  {
+    "word": "enterprise",
+    "phonetic": "/ˈentərpraɪz/",
+    "meaning": "n. 企业；事业",
+    "level": "cet4"
+  },
+  {
+    "word": "entertain",
+    "phonetic": "/ˌentərˈteɪn/",
+    "meaning": "v. 娱乐；招待",
+    "level": "cet4"
+  },
+  {
+    "word": "enthusiasm",
+    "phonetic": "/ɪnˈθuːziæzəm/",
+    "meaning": "n. 热情；热心",
+    "level": "cet4"
+  },
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "meaning": "n. 环境",
+    "level": "cet4"
+  },
+  {
+    "word": "equip",
+    "phonetic": "/ɪˈkwɪp/",
+    "meaning": "v. 装备；配备",
+    "level": "cet4"
+  },
+  {
+    "word": "essential",
+    "phonetic": "/ɪˈsenʃl/",
+    "meaning": "adj. 必要的；本质的",
+    "level": "cet4"
+  },
+  {
+    "word": "establish",
+    "phonetic": "/ɪˈstæblɪʃ/",
+    "meaning": "v. 建立；设立",
+    "level": "cet4"
+  },
+  {
+    "word": "estimate",
+    "phonetic": "/ˈestɪmeɪt/",
+    "meaning": "v./n. 估计；估算",
+    "level": "cet4"
+  },
+  {
+    "word": "evaluate",
+    "phonetic": "/ɪˈvæljueɪt/",
+    "meaning": "v. 评估；评价",
+    "level": "cet4"
+  },
+  {
+    "word": "eventually",
+    "phonetic": "/ɪˈventʃuəli/",
+    "meaning": "adv. 最终；终于",
+    "level": "cet4"
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈevɪdəns/",
+    "meaning": "n. 证据；证明",
+    "level": "cet4"
+  },
+  {
+    "word": "evolve",
+    "phonetic": "/iˈvɑːlv/",
+    "meaning": "v. 进化；演变",
+    "level": "cet4"
+  },
+  {
+    "word": "exactly",
+    "phonetic": "/ɪɡˈzæktli/",
+    "meaning": "adv. 精确地；恰好",
+    "level": "cet4"
+  },
+  {
+    "word": "examine",
+    "phonetic": "/ɪɡˈzæmɪn/",
+    "meaning": "v. 检查；考试",
+    "level": "cet4"
+  },
+  {
+    "word": "exceed",
+    "phonetic": "/ɪkˈsiːd/",
+    "meaning": "v. 超过；超越",
+    "level": "cet4"
+  },
+  {
+    "word": "exchange",
+    "phonetic": "/ɪksˈtʃeɪndʒ/",
+    "meaning": "v./n. 交换；兑换",
+    "level": "cet4"
+  },
+  {
+    "word": "exclude",
+    "phonetic": "/ɪkˈskluːd/",
+    "meaning": "v. 排除；不包括",
+    "level": "cet4"
+  },
+  {
+    "word": "execute",
+    "phonetic": "/ˈeksɪkjuːt/",
+    "meaning": "v. 执行；处决",
+    "level": "cet4"
+  },
+  {
+    "word": "exhibit",
+    "phonetic": "/ɪɡˈzɪbɪt/",
+    "meaning": "v./n. 展览；展示",
+    "level": "cet4"
+  },
+  {
+    "word": "exist",
+    "phonetic": "/ɪɡˈzɪst/",
+    "meaning": "v. 存在；生存",
+    "level": "cet4"
+  },
+  {
+    "word": "expand",
+    "phonetic": "/ɪkˈspænd/",
+    "meaning": "v. 扩展；膨胀",
+    "level": "cet4"
+  },
+  {
+    "word": "expect",
+    "phonetic": "/ɪkˈspekt/",
+    "meaning": "v. 期望；预期",
+    "level": "cet4"
+  },
+  {
+    "word": "expense",
+    "phonetic": "/ɪkˈspens/",
+    "meaning": "n. 费用；开支",
+    "level": "cet4"
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsperɪmənt/",
+    "meaning": "n./v. 实验；试验",
+    "level": "cet4"
+  },
+  {
+    "word": "expert",
+    "phonetic": "/ˈekspɜːrt/",
+    "meaning": "n. 专家 adj. 专业的",
+    "level": "cet4"
+  },
+  {
+    "word": "explain",
+    "phonetic": "/ɪkˈspleɪn/",
+    "meaning": "v. 解释；说明",
+    "level": "cet4"
+  },
+  {
+    "word": "explore",
+    "phonetic": "/ɪkˈsplɔːr/",
+    "meaning": "v. 探索；探究",
+    "level": "cet4"
+  },
+  {
+    "word": "export",
+    "phonetic": "/ɪkˈspɔːrt/",
+    "meaning": "v. 出口 n. 出口产品",
+    "level": "cet4"
+  },
+  {
+    "word": "expose",
+    "phonetic": "/ɪkˈspoʊz/",
+    "meaning": "v. 暴露；揭露",
+    "level": "cet4"
+  },
+  {
+    "word": "extend",
+    "phonetic": "/ɪkˈstend/",
+    "meaning": "v. 延伸；扩展",
+    "level": "cet4"
+  },
+  {
+    "word": "external",
+    "phonetic": "/ɪkˈstɜːrnl/",
+    "meaning": "adj. 外部的",
+    "level": "cet4"
+  },
+  {
+    "word": "extraordinary",
+    "phonetic": "/ɪkˈstrɔːrdəneri/",
+    "meaning": "adj. 非凡的",
+    "level": "cet4"
+  },
+  {
+    "word": "extreme",
+    "phonetic": "/ɪkˈstriːm/",
+    "meaning": "adj. 极端的 n. 极端",
+    "level": "cet4"
+  },
+  {
+    "word": "facility",
+    "phonetic": "/fəˈsɪləti/",
+    "meaning": "n. 设施；设备",
+    "level": "cet4"
+  },
+  {
+    "word": "factor",
+    "phonetic": "/ˈfæktər/",
+    "meaning": "n. 因素；因子",
+    "level": "cet4"
+  },
+  {
+    "word": "faculty",
+    "phonetic": "/ˈfæklti/",
+    "meaning": "n. 学院；才能",
+    "level": "cet4"
+  },
+  {
+    "word": "fade",
+    "phonetic": "/feɪd/",
+    "meaning": "v. 褪色；逐渐消失",
+    "level": "cet4"
+  },
+  {
+    "word": "failure",
+    "phonetic": "/ˈfeɪljər/",
+    "meaning": "n. 失败；故障",
+    "level": "cet4"
+  },
+  {
+    "word": "faith",
+    "phonetic": "/feɪθ/",
+    "meaning": "n. 信仰；信念",
+    "level": "cet4"
+  },
+  {
+    "word": "familiar",
+    "phonetic": "/fəˈmɪliər/",
+    "meaning": "adj. 熟悉的",
+    "level": "cet4"
+  },
+  {
+    "word": "fancy",
+    "phonetic": "/ˈfænsi/",
+    "meaning": "v. 想象；喜欢 adj. 花式的",
+    "level": "cet4"
+  },
+  {
+    "word": "fashion",
+    "phonetic": "/ˈfæʃn/",
+    "meaning": "n. 时尚；方式",
+    "level": "cet4"
+  },
+  {
+    "word": "fatal",
+    "phonetic": "/ˈfeɪtl/",
+    "meaning": "adj. 致命的；毁灭性的",
+    "level": "cet4"
+  },
+  {
+    "word": "favor",
+    "phonetic": "/ˈfeɪvər/",
+    "meaning": "n. 恩惠；赞同 v. 偏袒",
+    "level": "cet4"
+  },
+  {
+    "word": "feature",
+    "phonetic": "/ˈfiːtʃər/",
+    "meaning": "n. 特征 v. 以...为特色",
+    "level": "cet4"
+  },
+  {
+    "word": "federal",
+    "phonetic": "/ˈfedərəl/",
+    "meaning": "adj. 联邦的",
+    "level": "cet4"
+  },
+  {
+    "word": "feedback",
+    "phonetic": "/ˈfiːdbæk/",
+    "meaning": "n. 反馈；回复",
+    "level": "cet4"
+  },
+  {
+    "word": "female",
+    "phonetic": "/ˈfiːmeɪl/",
+    "meaning": "adj. 女性的 n. 女性",
+    "level": "cet4"
+  },
+  {
+    "word": "fiction",
+    "phonetic": "/ˈfɪkʃn/",
+    "meaning": "n. 小说；虚构",
+    "level": "cet4"
+  },
+  {
+    "word": "fierce",
+    "phonetic": "/fɪrs/",
+    "meaning": "adj. 凶猛的；激烈的",
+    "level": "cet4"
+  },
+  {
+    "word": "figure",
+    "phonetic": "/ˈfɪɡjər/",
+    "meaning": "n. 数字；人物 v. 认为",
+    "level": "cet4"
+  },
+  {
+    "word": "finance",
+    "phonetic": "/ˈfaɪnæns/",
+    "meaning": "n. 金融 v. 资助",
+    "level": "cet4"
+  },
+  {
+    "word": "firm",
+    "phonetic": "/fɜːrm/",
+    "meaning": "adj. 坚固的 n. 公司",
+    "level": "cet4"
+  },
+  {
+    "word": "flame",
+    "phonetic": "/fleɪm/",
+    "meaning": "n. 火焰 v. 燃烧",
+    "level": "cet4"
+  },
+  {
+    "word": "flash",
+    "phonetic": "/flæʃ/",
+    "meaning": "n./v. 闪光；闪现",
+    "level": "cet4"
+  },
+  {
+    "word": "flexible",
+    "phonetic": "/ˈfleksəbl/",
+    "meaning": "adj. 灵活的；柔韧的",
+    "level": "cet4"
+  },
+  {
+    "word": "float",
+    "phonetic": "/floʊt/",
+    "meaning": "v. 漂浮；浮动",
+    "level": "cet4"
+  },
+  {
+    "word": "flourish",
+    "phonetic": "/ˈflɜːrɪʃ/",
+    "meaning": "v. 繁荣；兴旺",
+    "level": "cet4"
+  },
+  {
+    "word": "focus",
+    "phonetic": "/ˈfoʊkəs/",
+    "meaning": "v./n. 集中；聚焦",
+    "level": "cet4"
+  },
+  {
+    "word": "forbid",
+    "phonetic": "/fərˈbɪd/",
+    "meaning": "v. 禁止；不许",
+    "level": "cet4"
+  },
+  {
+    "word": "force",
+    "phonetic": "/fɔːrs/",
+    "meaning": "n. 力量 v. 强迫",
+    "level": "cet4"
+  },
+  {
+    "word": "forecast",
+    "phonetic": "/ˈfɔːrkæst/",
+    "meaning": "v./n. 预报；预测",
+    "level": "cet4"
+  },
+  {
+    "word": "formal",
+    "phonetic": "/ˈfɔːrml/",
+    "meaning": "adj. 正式的；形式上的",
+    "level": "cet4"
+  },
+  {
+    "word": "former",
+    "phonetic": "/ˈfɔːrmər/",
+    "meaning": "adj. 前者的；以前的",
+    "level": "cet4"
+  },
+  {
+    "word": "fortune",
+    "phonetic": "/ˈfɔːrtʃən/",
+    "meaning": "n. 财富；运气",
+    "level": "cet4"
+  },
+  {
+    "word": "foundation",
+    "phonetic": "/faʊnˈdeɪʃn/",
+    "meaning": "n. 基础；基金会",
+    "level": "cet4"
+  },
+  {
+    "word": "frank",
+    "phonetic": "/fræŋk/",
+    "meaning": "adj. 坦白的；直率的",
+    "level": "cet4"
+  },
+  {
+    "word": "frequent",
+    "phonetic": "/ˈfriːkwənt/",
+    "meaning": "adj. 频繁的",
+    "level": "cet4"
+  },
+  {
+    "word": "frown",
+    "phonetic": "/fraʊn/",
+    "meaning": "v. 皱眉 n. 皱眉",
+    "level": "cet4"
+  },
+  {
+    "word": "fulfill",
+    "phonetic": "/fʊlˈfɪl/",
+    "meaning": "v. 实现；满足",
+    "level": "cet4"
+  },
+  {
+    "word": "function",
+    "phonetic": "/ˈfʌŋkʃn/",
+    "meaning": "n. 功能；函数 v. 运行",
+    "level": "cet4"
+  },
+  {
+    "word": "fund",
+    "phonetic": "/fʌnd/",
+    "meaning": "n. 资金 v. 资助",
+    "level": "cet4"
+  },
+  {
+    "word": "fundamental",
+    "phonetic": "/ˌfʌndəˈmentl/",
+    "meaning": "adj. 基本的 n. 基本原理",
+    "level": "cet4"
+  },
+  {
+    "word": "furthermore",
+    "phonetic": "/ˌfɜːrðərˈmɔːr/",
+    "meaning": "adv. 此外；而且",
+    "level": "cet4"
+  },
+  {
+    "word": "gain",
+    "phonetic": "/ɡeɪn/",
+    "meaning": "v. 获得 n. 收益",
+    "level": "cet4"
+  },
+  {
+    "word": "gap",
+    "phonetic": "/ɡæp/",
+    "meaning": "n. 差距；缺口",
+    "level": "cet4"
+  },
+  {
+    "word": "gather",
+    "phonetic": "/ˈɡæðər/",
+    "meaning": "v. 聚集；收集",
+    "level": "cet4"
+  },
+  {
+    "word": "gaze",
+    "phonetic": "/ɡeɪz/",
+    "meaning": "v./n. 凝视；注视",
+    "level": "cet4"
+  },
+  {
+    "word": "generate",
+    "phonetic": "/ˈdʒenəreɪt/",
+    "meaning": "v. 产生；生成",
+    "level": "cet4"
+  },
+  {
+    "word": "generous",
+    "phonetic": "/ˈdʒenərəs/",
+    "meaning": "adj. 慷慨的；大方的",
+    "level": "cet4"
+  },
+  {
+    "word": "genius",
+    "phonetic": "/ˈdʒiːniəs/",
+    "meaning": "n. 天才；天赋",
+    "level": "cet4"
+  },
+  {
+    "word": "genuine",
+    "phonetic": "/ˈdʒenjuɪn/",
+    "meaning": "adj. 真正的；真诚的",
+    "level": "cet4"
+  },
+  {
+    "word": "gesture",
+    "phonetic": "/ˈdʒestʃər/",
+    "meaning": "n. 手势；姿态",
+    "level": "cet4"
+  },
+  {
+    "word": "global",
+    "phonetic": "/ˈɡloʊbl/",
+    "meaning": "adj. 全球的",
+    "level": "cet4"
+  },
+  {
+    "word": "govern",
+    "phonetic": "/ˈɡʌvərn/",
+    "meaning": "v. 统治；管理",
+    "level": "cet4"
+  },
+  {
+    "word": "grace",
+    "phonetic": "/ɡreɪs/",
+    "meaning": "n. 优雅；恩典",
+    "level": "cet4"
+  },
+  {
+    "word": "gradual",
+    "phonetic": "/ˈɡrædʒuəl/",
+    "meaning": "adj. 逐渐的",
+    "level": "cet4"
+  },
+  {
+    "word": "grand",
+    "phonetic": "/ɡrænd/",
+    "meaning": "adj. 宏伟的；盛大的",
+    "level": "cet4"
+  },
+  {
+    "word": "grant",
+    "phonetic": "/ɡrænt/",
+    "meaning": "v. 授予；承认 n. 拨款",
+    "level": "cet4"
+  },
+  {
+    "word": "grasp",
+    "phonetic": "/ɡræsp/",
+    "meaning": "v./n. 抓住；理解",
+    "level": "cet4"
+  },
+  {
+    "word": "grateful",
+    "phonetic": "/ˈɡreɪtfl/",
+    "meaning": "adj. 感激的",
+    "level": "cet4"
+  },
+  {
+    "word": "guarantee",
+    "phonetic": "/ˌɡærənˈtiː/",
+    "meaning": "n./v. 保证；担保",
+    "level": "cet4"
+  },
+  {
+    "word": "guilty",
+    "phonetic": "/ˈɡɪlti/",
+    "meaning": "adj. 有罪的；内疚的",
+    "level": "cet4"
+  },
+  {
+    "word": "handle",
+    "phonetic": "/ˈhændl/",
+    "meaning": "v. 处理 n. 把手",
+    "level": "cet4"
+  },
+  {
+    "word": "harsh",
+    "phonetic": "/hɑːrʃ/",
+    "meaning": "adj. 严厉的；刺耳的",
+    "level": "cet4"
+  },
+  {
+    "word": "haste",
+    "phonetic": "/heɪst/",
+    "meaning": "n. 匆忙；仓促",
+    "level": "cet4"
+  },
+  {
+    "word": "headline",
+    "phonetic": "/ˈhedlaɪn/",
+    "meaning": "n. 标题；头条新闻",
+    "level": "cet4"
+  },
+  {
+    "word": "hence",
+    "phonetic": "/hens/",
+    "meaning": "adv. 因此；从此",
+    "level": "cet4"
+  },
+  {
+    "word": "highlight",
+    "phonetic": "/ˈhaɪlaɪt/",
+    "meaning": "v. 强调；突出 n. 亮点",
+    "level": "cet4"
+  },
+  {
+    "word": "horizon",
+    "phonetic": "/həˈraɪzn/",
+    "meaning": "n. 地平线；视野",
+    "level": "cet4"
+  },
+  {
+    "word": "host",
+    "phonetic": "/hoʊst/",
+    "meaning": "n. 主人 v. 主办",
+    "level": "cet4"
+  },
+  {
+    "word": "household",
+    "phonetic": "/ˈhaʊshoʊld/",
+    "meaning": "n. 家庭 adj. 家用的",
+    "level": "cet4"
+  },
+  {
+    "word": "humble",
+    "phonetic": "/ˈhʌmbl/",
+    "meaning": "adj. 谦逊的 v. 使谦卑",
+    "level": "cet4"
+  },
+  {
+    "word": "humor",
+    "phonetic": "/ˈhjuːmər/",
+    "meaning": "n. 幽默 v. 迁就",
+    "level": "cet4"
+  },
+  {
+    "word": "ideal",
+    "phonetic": "/aɪˈdiːəl/",
+    "meaning": "adj. 理想的 n. 理想",
+    "level": "cet4"
+  },
+  {
+    "word": "identify",
+    "phonetic": "/aɪˈdentɪfaɪ/",
+    "meaning": "v. 识别；确认",
+    "level": "cet4"
+  },
+  {
+    "word": "ignore",
+    "phonetic": "/ɪɡˈnɔːr/",
+    "meaning": "v. 忽视；不理睬",
+    "level": "cet4"
+  },
+  {
+    "word": "illustrate",
+    "phonetic": "/ˈɪləstreɪt/",
+    "meaning": "v. 说明；举例说明",
+    "level": "cet4"
+  },
+  {
+    "word": "image",
+    "phonetic": "/ˈɪmɪdʒ/",
+    "meaning": "n. 图像；形象",
+    "level": "cet4"
+  },
+  {
+    "word": "imagine",
+    "phonetic": "/ɪˈmædʒɪn/",
+    "meaning": "v. 想象；设想",
+    "level": "cet4"
+  },
+  {
+    "word": "immediate",
+    "phonetic": "/ɪˈmiːdiət/",
+    "meaning": "adj. 立即的；直接的",
+    "level": "cet4"
+  },
+  {
+    "word": "immigrant",
+    "phonetic": "/ˈɪmɪɡrənt/",
+    "meaning": "n. 移民",
+    "level": "cet4"
+  },
+  {
+    "word": "impact",
+    "phonetic": "/ˈɪmpækt/",
+    "meaning": "n./v. 影响；冲击",
+    "level": "cet4"
+  },
+  {
+    "word": "implement",
+    "phonetic": "/ˈɪmplɪment/",
+    "meaning": "v. 实施；执行",
+    "level": "cet4"
+  },
+  {
+    "word": "imply",
+    "phonetic": "/ɪmˈplaɪ/",
+    "meaning": "v. 暗示；意味着",
+    "level": "cet4"
+  },
+  {
+    "word": "impose",
+    "phonetic": "/ɪmˈpoʊz/",
+    "meaning": "v. 强加；征收",
+    "level": "cet4"
+  },
+  {
+    "word": "impress",
+    "phonetic": "/ɪmˈpres/",
+    "meaning": "v. 给...留下印象",
+    "level": "cet4"
+  },
+  {
+    "word": "income",
+    "phonetic": "/ˈɪnkʌm/",
+    "meaning": "n. 收入；收益",
+    "level": "cet4"
+  },
+  {
+    "word": "incident",
+    "phonetic": "/ˈɪnsɪdənt/",
+    "meaning": "n. 事件；事变",
+    "level": "cet4"
+  },
+  {
+    "word": "indicate",
+    "phonetic": "/ˈɪndɪkeɪt/",
+    "meaning": "v. 表明；指示",
+    "level": "cet4"
+  },
+  {
+    "word": "individual",
+    "phonetic": "/ˌɪndɪˈvɪdʒuəl/",
+    "meaning": "n. 个人 adj. 个别的",
+    "level": "cet4"
+  },
+  {
+    "word": "industrial",
+    "phonetic": "/ɪnˈdʌstriəl/",
+    "meaning": "adj. 工业的；产业的",
+    "level": "cet4"
+  },
+  {
+    "word": "infant",
+    "phonetic": "/ˈɪnfənt/",
+    "meaning": "n. 婴儿 adj. 初期的",
+    "level": "cet4"
+  },
+  {
+    "word": "influence",
+    "phonetic": "/ˈɪnfluəns/",
+    "meaning": "n./v. 影响；作用",
+    "level": "cet4"
+  },
+  {
+    "word": "inform",
+    "phonetic": "/ɪnˈfɔːrm/",
+    "meaning": "v. 通知；告知",
+    "level": "cet4"
+  },
+  {
+    "word": "initial",
+    "phonetic": "/ɪˈnɪʃl/",
+    "meaning": "adj. 最初的 n. 首字母",
+    "level": "cet4"
+  },
+  {
+    "word": "initiative",
+    "phonetic": "/ɪˈnɪʃətɪv/",
+    "meaning": "n. 主动性；倡议",
+    "level": "cet4"
+  },
+  {
+    "word": "innocent",
+    "phonetic": "/ˈɪnəsnt/",
+    "meaning": "adj. 无辜的；天真的",
+    "level": "cet4"
+  },
+  {
+    "word": "innovation",
+    "phonetic": "/ˌɪnəˈveɪʃn/",
+    "meaning": "n. 创新；革新",
+    "level": "cet4"
+  },
+  {
+    "word": "inquire",
+    "phonetic": "/ɪnˈkwaɪər/",
+    "meaning": "v. 询问；调查",
+    "level": "cet4"
+  },
+  {
+    "word": "insist",
+    "phonetic": "/ɪnˈsɪst/",
+    "meaning": "v. 坚持；坚决主张",
+    "level": "cet4"
+  },
+  {
+    "word": "inspect",
+    "phonetic": "/ɪnˈspekt/",
+    "meaning": "v. 检查；视察",
+    "level": "cet4"
+  },
+  {
+    "word": "install",
+    "phonetic": "/ɪnˈstɔːl/",
+    "meaning": "v. 安装；安置",
+    "level": "cet4"
+  },
+  {
+    "word": "instance",
+    "phonetic": "/ˈɪnstəns/",
+    "meaning": "n. 例子；实例",
+    "level": "cet4"
+  },
+  {
+    "word": "instinct",
+    "phonetic": "/ˈɪnstɪŋkt/",
+    "meaning": "n. 本能；直觉",
+    "level": "cet4"
+  },
+  {
+    "word": "institute",
+    "phonetic": "/ˈɪnstɪtuːt/",
+    "meaning": "n. 学院；机构 v. 建立",
+    "level": "cet4"
+  },
+  {
+    "word": "insurance",
+    "phonetic": "/ɪnˈʃʊrəns/",
+    "meaning": "n. 保险",
+    "level": "cet4"
+  },
+  {
+    "word": "intellectual",
+    "phonetic": "/ˌɪntəˈlektʃuəl/",
+    "meaning": "adj. 智力的 n. 知识分子",
+    "level": "cet4"
+  },
+  {
+    "word": "intelligence",
+    "phonetic": "/ɪnˈtelɪdʒəns/",
+    "meaning": "n. 智力；情报",
+    "level": "cet4"
+  },
+  {
+    "word": "intense",
+    "phonetic": "/ɪnˈtens/",
+    "meaning": "adj. 强烈的；紧张的",
+    "level": "cet4"
+  },
+  {
+    "word": "intention",
+    "phonetic": "/ɪnˈtenʃn/",
+    "meaning": "n. 意图；目的",
+    "level": "cet4"
+  },
+  {
+    "word": "interact",
+    "phonetic": "/ˌɪntərˈækt/",
+    "meaning": "v. 互动；相互作用",
+    "level": "cet4"
+  },
+  {
+    "word": "interest",
+    "phonetic": "/ˈɪntrəst/",
+    "meaning": "n. 兴趣；利息 v. 使感兴趣",
+    "level": "cet4"
+  },
+  {
+    "word": "internal",
+    "phonetic": "/ɪnˈtɜːrnl/",
+    "meaning": "adj. 内部的",
+    "level": "cet4"
+  },
+  {
+    "word": "interpret",
+    "phonetic": "/ɪnˈtɜːrprɪt/",
+    "meaning": "v. 解释；口译",
+    "level": "cet4"
+  },
+  {
+    "word": "invest",
+    "phonetic": "/ɪnˈvest/",
+    "meaning": "v. 投资；投入",
+    "level": "cet4"
+  },
+  {
+    "word": "investigate",
+    "phonetic": "/ɪnˈvestɪɡeɪt/",
+    "meaning": "v. 调查；研究",
+    "level": "cet4"
+  },
+  {
+    "word": "involve",
+    "phonetic": "/ɪnˈvɑːlv/",
+    "meaning": "v. 涉及；包含",
+    "level": "cet4"
+  },
+  {
+    "word": "isolate",
+    "phonetic": "/ˈaɪsəleɪt/",
+    "meaning": "v. 隔离；孤立",
+    "level": "cet4"
+  },
+  {
+    "word": "issue",
+    "phonetic": "/ˈɪʃuː/",
+    "meaning": "n. 问题 v. 发布",
+    "level": "cet4"
+  },
+  {
+    "word": "journal",
+    "phonetic": "/ˈdʒɜːrnl/",
+    "meaning": "n. 期刊；日志",
+    "level": "cet4"
+  },
+  {
+    "word": "justice",
+    "phonetic": "/ˈdʒʌstɪs/",
+    "meaning": "n. 正义；司法",
+    "level": "cet4"
+  },
+  {
+    "word": "justify",
+    "phonetic": "/ˈdʒʌstɪfaɪ/",
+    "meaning": "v. 证明...正当",
+    "level": "cet4"
+  },
+  {
+    "word": "keen",
+    "phonetic": "/kiːn/",
+    "meaning": "adj. 热切的；敏锐的",
+    "level": "cet4"
+  },
+  {
+    "word": "label",
+    "phonetic": "/ˈleɪbl/",
+    "meaning": "n. 标签 v. 贴标签",
+    "level": "cet4"
+  },
+  {
+    "word": "landscape",
+    "phonetic": "/ˈlændskeɪp/",
+    "meaning": "n. 风景；景观",
+    "level": "cet4"
+  },
+  {
+    "word": "largely",
+    "phonetic": "/ˈlɑːrdʒli/",
+    "meaning": "adv. 大部分；主要地",
+    "level": "cet4"
+  },
+  {
+    "word": "latter",
+    "phonetic": "/ˈlætər/",
+    "meaning": "adj. 后者的",
+    "level": "cet4"
+  },
+  {
+    "word": "launch",
+    "phonetic": "/lɔːntʃ/",
+    "meaning": "v./n. 发射；启动",
+    "level": "cet4"
+  },
+  {
+    "word": "layer",
+    "phonetic": "/ˈleɪər/",
+    "meaning": "n. 层；层次",
+    "level": "cet4"
+  },
+  {
+    "word": "leading",
+    "phonetic": "/ˈliːdɪŋ/",
+    "meaning": "adj. 主要的；领先的",
+    "level": "cet4"
+  },
+  {
+    "word": "leak",
+    "phonetic": "/liːk/",
+    "meaning": "v./n. 泄漏；泄露",
+    "level": "cet4"
+  },
+  {
+    "word": "lean",
+    "phonetic": "/liːn/",
+    "meaning": "v. 倾斜 adj. 瘦的",
+    "level": "cet4"
+  },
+  {
+    "word": "leap",
+    "phonetic": "/liːp/",
+    "meaning": "v./n. 跳跃；飞跃",
+    "level": "cet4"
+  },
+  {
+    "word": "legal",
+    "phonetic": "/ˈliːɡl/",
+    "meaning": "adj. 法律的；合法的",
+    "level": "cet4"
+  },
+  {
+    "word": "liberal",
+    "phonetic": "/ˈlɪbərəl/",
+    "meaning": "adj. 自由的；开明的",
+    "level": "cet4"
+  },
+  {
+    "word": "license",
+    "phonetic": "/ˈlaɪsns/",
+    "meaning": "n. 许可证 v. 许可",
+    "level": "cet4"
+  },
+  {
+    "word": "likely",
+    "phonetic": "/ˈlaɪkli/",
+    "meaning": "adj./adv. 可能的（地）",
+    "level": "cet4"
+  },
+  {
+    "word": "limit",
+    "phonetic": "/ˈlɪmɪt/",
+    "meaning": "n. 限制 v. 限定",
+    "level": "cet4"
+  },
+  {
+    "word": "link",
+    "phonetic": "/lɪŋk/",
+    "meaning": "v./n. 连接；联系",
+    "level": "cet4"
+  },
+  {
+    "word": "literary",
+    "phonetic": "/ˈlɪtəreri/",
+    "meaning": "adj. 文学的",
+    "level": "cet4"
+  },
+  {
+    "word": "load",
+    "phonetic": "/loʊd/",
+    "meaning": "v. 装载 n. 负担",
+    "level": "cet4"
+  },
+  {
+    "word": "loan",
+    "phonetic": "/loʊn/",
+    "meaning": "n. 贷款 v. 借出",
+    "level": "cet4"
+  },
+  {
+    "word": "locate",
+    "phonetic": "/ˈloʊkeɪt/",
+    "meaning": "v. 找到；位于",
+    "level": "cet4"
+  },
+  {
+    "word": "logical",
+    "phonetic": "/ˈlɑːdʒɪkl/",
+    "meaning": "adj. 逻辑的；合理的",
+    "level": "cet4"
+  },
+  {
+    "word": "luxury",
+    "phonetic": "/ˈlʌkʃəri/",
+    "meaning": "n. 奢侈；奢侈品",
+    "level": "cet4"
+  },
+  {
+    "word": "magnificent",
+    "phonetic": "/mæɡˈnɪfɪsnt/",
+    "meaning": "adj. 壮丽的；宏伟的",
+    "level": "cet4"
+  },
+  {
+    "word": "maintain",
+    "phonetic": "/meɪnˈteɪn/",
+    "meaning": "v. 维持；保养",
+    "level": "cet4"
+  },
+  {
+    "word": "major",
+    "phonetic": "/ˈmeɪdʒər/",
+    "meaning": "adj. 主要的 n. 专业",
+    "level": "cet4"
+  },
+  {
+    "word": "manage",
+    "phonetic": "/ˈmænɪdʒ/",
+    "meaning": "v. 管理；设法做到",
+    "level": "cet4"
+  },
+  {
+    "word": "manufacture",
+    "phonetic": "/ˌmænjuˈfæktʃər/",
+    "meaning": "v./n. 制造；生产",
+    "level": "cet4"
+  },
+  {
+    "word": "massive",
+    "phonetic": "/ˈmæsɪv/",
+    "meaning": "adj. 巨大的；大规模的",
+    "level": "cet4"
+  },
+  {
+    "word": "material",
+    "phonetic": "/məˈtɪriəl/",
+    "meaning": "n. 材料 adj. 物质的",
+    "level": "cet4"
+  },
+  {
+    "word": "mature",
+    "phonetic": "/məˈtʃʊr/",
+    "meaning": "adj. 成熟的 v. 成熟",
+    "level": "cet4"
+  },
+  {
+    "word": "measure",
+    "phonetic": "/ˈmeʒər/",
+    "meaning": "v. 测量 n. 措施",
+    "level": "cet4"
+  },
+  {
+    "word": "medium",
+    "phonetic": "/ˈmiːdiəm/",
+    "meaning": "n. 媒介 adj. 中等的",
+    "level": "cet4"
+  },
+  {
+    "word": "mental",
+    "phonetic": "/ˈmentl/",
+    "meaning": "adj. 精神的；心理的",
+    "level": "cet4"
+  },
+  {
+    "word": "mention",
+    "phonetic": "/ˈmenʃn/",
+    "meaning": "v./n. 提到；提及",
+    "level": "cet4"
+  },
+  {
+    "word": "mercy",
+    "phonetic": "/ˈmɜːrsi/",
+    "meaning": "n. 仁慈；宽恕",
+    "level": "cet4"
+  },
+  {
+    "word": "merely",
+    "phonetic": "/ˈmɪrli/",
+    "meaning": "adv. 仅仅；只不过",
+    "level": "cet4"
+  },
+  {
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "meaning": "adj. 温和的；轻微的",
+    "level": "cet4"
+  },
+  {
+    "word": "military",
+    "phonetic": "/ˈmɪləteri/",
+    "meaning": "adj. 军事的 n. 军队",
+    "level": "cet4"
+  },
+  {
+    "word": "minor",
+    "phonetic": "/ˈmaɪnər/",
+    "meaning": "adj. 较小的；次要的",
+    "level": "cet4"
+  },
+  {
+    "word": "miracle",
+    "phonetic": "/ˈmɪrəkl/",
+    "meaning": "n. 奇迹",
+    "level": "cet4"
+  },
+  {
+    "word": "mission",
+    "phonetic": "/ˈmɪʃn/",
+    "meaning": "n. 使命；任务",
+    "level": "cet4"
+  },
+  {
+    "word": "moderate",
+    "phonetic": "/ˈmɑːdərət/",
+    "meaning": "adj. 适度的；温和的",
+    "level": "cet4"
+  },
+  {
+    "word": "modest",
+    "phonetic": "/ˈmɑːdɪst/",
+    "meaning": "adj. 谦虚的；适度的",
+    "level": "cet4"
+  },
+  {
+    "word": "monitor",
+    "phonetic": "/ˈmɑːnɪtər/",
+    "meaning": "v. 监视 n. 显示器",
+    "level": "cet4"
+  },
+  {
+    "word": "moral",
+    "phonetic": "/ˈmɔːrəl/",
+    "meaning": "adj. 道德的 n. 寓意",
+    "level": "cet4"
+  },
+  {
+    "word": "moreover",
+    "phonetic": "/mɔːrˈoʊvər/",
+    "meaning": "adv. 此外；而且",
+    "level": "cet4"
+  },
+  {
+    "word": "motion",
+    "phonetic": "/ˈmoʊʃn/",
+    "meaning": "n. 运动；动作",
+    "level": "cet4"
+  },
+  {
+    "word": "motivate",
+    "phonetic": "/ˈmoʊtɪveɪt/",
+    "meaning": "v. 激励；激发",
+    "level": "cet4"
+  },
+  {
+    "word": "multiple",
+    "phonetic": "/ˈmʌltɪpl/",
+    "meaning": "adj. 多重的 n. 倍数",
+    "level": "cet4"
+  },
+  {
+    "word": "mutual",
+    "phonetic": "/ˈmjuːtʃuəl/",
+    "meaning": "adj. 相互的；共同的",
+    "level": "cet4"
+  },
+  {
+    "word": "negative",
+    "phonetic": "/ˈneɡətɪv/",
+    "meaning": "adj. 消极的；否定的",
+    "level": "cet4"
+  },
+  {
+    "word": "neglect",
+    "phonetic": "/nɪˈɡlekt/",
+    "meaning": "v./n. 忽视；疏忽",
+    "level": "cet4"
+  },
+  {
+    "word": "negotiate",
+    "phonetic": "/nɪˈɡoʊʃieɪt/",
+    "meaning": "v. 谈判；协商",
+    "level": "cet4"
+  },
+  {
+    "word": "nerve",
+    "phonetic": "/nɜːrv/",
+    "meaning": "n. 神经；勇气",
+    "level": "cet4"
+  },
+  {
+    "word": "network",
+    "phonetic": "/ˈnetwɜːrk/",
+    "meaning": "n. 网络 v. 建立关系",
+    "level": "cet4"
+  },
+  {
+    "word": "nevertheless",
+    "phonetic": "/ˌnevərðəˈles/",
+    "meaning": "adv. 然而；不过",
+    "level": "cet4"
+  },
+  {
+    "word": "normal",
+    "phonetic": "/ˈnɔːrml/",
+    "meaning": "adj. 正常的；标准的",
+    "level": "cet4"
+  },
+  {
+    "word": "notion",
+    "phonetic": "/ˈnoʊʃn/",
+    "meaning": "n. 概念；观念",
+    "level": "cet4"
+  },
+  {
+    "word": "numerous",
+    "phonetic": "/ˈnuːmərəs/",
+    "meaning": "adj. 许多的；大量的",
+    "level": "cet4"
+  },
+  {
+    "word": "object",
+    "phonetic": "/ˈɑːbdʒɪkt/",
+    "meaning": "n. 物体；目标 v. 反对",
+    "level": "cet4"
+  },
+  {
+    "word": "objective",
+    "phonetic": "/əbˈdʒektɪv/",
+    "meaning": "n. 目标 adj. 客观的",
+    "level": "cet4"
+  },
+  {
+    "word": "observe",
+    "phonetic": "/əbˈzɜːrv/",
+    "meaning": "v. 观察；遵守",
+    "level": "cet4"
+  },
+  {
+    "word": "obtain",
+    "phonetic": "/əbˈteɪn/",
+    "meaning": "v. 获得；得到",
+    "level": "cet4"
+  },
+  {
+    "word": "obvious",
+    "phonetic": "/ˈɑːbviəs/",
+    "meaning": "adj. 明显的",
+    "level": "cet4"
+  },
+  {
+    "word": "occasion",
+    "phonetic": "/əˈkeɪʒn/",
+    "meaning": "n. 场合；时机",
+    "level": "cet4"
+  },
+  {
+    "word": "occupy",
+    "phonetic": "/ˈɑːkjupaɪ/",
+    "meaning": "v. 占据；使忙碌",
+    "level": "cet4"
+  },
+  {
+    "word": "offend",
+    "phonetic": "/əˈfend/",
+    "meaning": "v. 冒犯；得罪",
+    "level": "cet4"
+  },
+  {
+    "word": "operate",
+    "phonetic": "/ˈɑːpəreɪt/",
+    "meaning": "v. 操作；经营；动手术",
+    "level": "cet4"
+  },
+  {
+    "word": "opinion",
+    "phonetic": "/əˈpɪnjən/",
+    "meaning": "n. 意见；看法",
+    "level": "cet4"
+  },
+  {
+    "word": "opponent",
+    "phonetic": "/əˈpoʊnənt/",
+    "meaning": "n. 对手；反对者",
+    "level": "cet4"
+  },
+  {
+    "word": "opportunity",
+    "phonetic": "/ˌɑːpərˈtuːnəti/",
+    "meaning": "n. 机会；时机",
+    "level": "cet4"
+  },
+  {
+    "word": "oppose",
+    "phonetic": "/əˈpoʊz/",
+    "meaning": "v. 反对；对抗",
+    "level": "cet4"
+  },
+  {
+    "word": "option",
+    "phonetic": "/ˈɑːpʃn/",
+    "meaning": "n. 选择；选项",
+    "level": "cet4"
+  },
+  {
+    "word": "orbit",
+    "phonetic": "/ˈɔːrbɪt/",
+    "meaning": "n. 轨道 v. 绕轨道运行",
+    "level": "cet4"
+  },
+  {
+    "word": "organ",
+    "phonetic": "/ˈɔːrɡən/",
+    "meaning": "n. 器官；机构",
+    "level": "cet4"
+  },
+  {
+    "word": "origin",
+    "phonetic": "/ˈɔːrɪdʒɪn/",
+    "meaning": "n. 起源；出身",
+    "level": "cet4"
+  },
+  {
+    "word": "otherwise",
+    "phonetic": "/ˈʌðərwaɪz/",
+    "meaning": "adv. 否则；在其他方面",
+    "level": "cet4"
+  },
+  {
+    "word": "outcome",
+    "phonetic": "/ˈaʊtkʌm/",
+    "meaning": "n. 结果；成果",
+    "level": "cet4"
+  },
+  {
+    "word": "outstanding",
+    "phonetic": "/aʊtˈstændɪŋ/",
+    "meaning": "adj. 杰出的；未解决的",
+    "level": "cet4"
+  },
+  {
+    "word": "overcome",
+    "phonetic": "/ˌoʊvərˈkʌm/",
+    "meaning": "v. 克服；战胜",
+    "level": "cet4"
+  },
+  {
+    "word": "overseas",
+    "phonetic": "/ˌoʊvərˈsiːz/",
+    "meaning": "adv./adj. 在海外（的）",
+    "level": "cet4"
+  },
+  {
+    "word": "owe",
+    "phonetic": "/oʊ/",
+    "meaning": "v. 欠；归功于",
+    "level": "cet4"
+  },
+  {
+    "word": "pace",
+    "phonetic": "/peɪs/",
+    "meaning": "n. 步伐；速度",
+    "level": "cet4"
+  },
+  {
+    "word": "package",
+    "phonetic": "/ˈpækɪdʒ/",
+    "meaning": "n. 包裹 v. 打包",
+    "level": "cet4"
+  },
+  {
+    "word": "panel",
+    "phonetic": "/ˈpænl/",
+    "meaning": "n. 面板；专家组",
+    "level": "cet4"
+  },
+  {
+    "word": "participant",
+    "phonetic": "/pɑːrˈtɪsɪpənt/",
+    "meaning": "n. 参与者",
+    "level": "cet4"
+  },
+  {
+    "word": "particular",
+    "phonetic": "/pərˈtɪkjələr/",
+    "meaning": "adj. 特别的；特定的",
+    "level": "cet4"
+  },
+  {
+    "word": "passion",
+    "phonetic": "/ˈpæʃn/",
+    "meaning": "n. 热情；激情",
+    "level": "cet4"
+  },
+  {
+    "word": "passive",
+    "phonetic": "/ˈpæsɪv/",
+    "meaning": "adj. 被动的；消极的",
+    "level": "cet4"
+  },
+  {
+    "word": "pattern",
+    "phonetic": "/ˈpætərn/",
+    "meaning": "n. 模式；图案",
+    "level": "cet4"
+  },
+  {
+    "word": "peak",
+    "phonetic": "/piːk/",
+    "meaning": "n. 顶峰 adj. 高峰的",
+    "level": "cet4"
+  },
+  {
+    "word": "peer",
+    "phonetic": "/pɪr/",
+    "meaning": "n. 同龄人 v. 凝视",
+    "level": "cet4"
+  },
+  {
+    "word": "penalty",
+    "phonetic": "/ˈpenəlti/",
+    "meaning": "n. 处罚；惩罚",
+    "level": "cet4"
+  },
+  {
+    "word": "perceive",
+    "phonetic": "/pərˈsiːv/",
+    "meaning": "v. 感知；察觉",
+    "level": "cet4"
+  },
+  {
+    "word": "perform",
+    "phonetic": "/pərˈfɔːrm/",
+    "meaning": "v. 执行；表演",
+    "level": "cet4"
+  },
+  {
+    "word": "permanent",
+    "phonetic": "/ˈpɜːrmənənt/",
+    "meaning": "adj. 永久的；固定的",
+    "level": "cet4"
+  },
+  {
+    "word": "permit",
+    "phonetic": "/pərˈmɪt/",
+    "meaning": "v. 允许 n. 许可证",
+    "level": "cet4"
+  },
+  {
+    "word": "persist",
+    "phonetic": "/pərˈsɪst/",
+    "meaning": "v. 坚持；持续",
+    "level": "cet4"
+  },
+  {
+    "word": "personality",
+    "phonetic": "/ˌpɜːrsəˈnæləti/",
+    "meaning": "n. 个性；人格",
+    "level": "cet4"
+  },
+  {
+    "word": "perspective",
+    "phonetic": "/pərˈspektɪv/",
+    "meaning": "n. 视角；观点",
+    "level": "cet4"
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "/fɪˈnɑːmɪnən/",
+    "meaning": "n. 现象",
+    "level": "cet4"
+  },
+  {
+    "word": "philosophy",
+    "phonetic": "/fɪˈlɑːsəfi/",
+    "meaning": "n. 哲学",
+    "level": "cet4"
+  },
+  {
+    "word": "physical",
+    "phonetic": "/ˈfɪzɪkl/",
+    "meaning": "adj. 身体的；物理的",
+    "level": "cet4"
+  },
+  {
+    "word": "policy",
+    "phonetic": "/ˈpɑːləsi/",
+    "meaning": "n. 政策；方针",
+    "level": "cet4"
+  },
+  {
+    "word": "pollution",
+    "phonetic": "/pəˈluːʃn/",
+    "meaning": "n. 污染",
+    "level": "cet4"
+  },
+  {
+    "word": "portion",
+    "phonetic": "/ˈpɔːrʃn/",
+    "meaning": "n. 部分；份额",
+    "level": "cet4"
+  },
+  {
+    "word": "pose",
+    "phonetic": "/poʊz/",
+    "meaning": "v. 摆姿势；造成",
+    "level": "cet4"
+  },
+  {
+    "word": "positive",
+    "phonetic": "/ˈpɑːzətɪv/",
+    "meaning": "adj. 积极的；肯定的",
+    "level": "cet4"
+  },
+  {
+    "word": "possess",
+    "phonetic": "/pəˈzes/",
+    "meaning": "v. 拥有；具有",
+    "level": "cet4"
+  },
+  {
+    "word": "potential",
+    "phonetic": "/pəˈtenʃl/",
+    "meaning": "n. 潜力 adj. 潜在的",
+    "level": "cet4"
+  },
+  {
+    "word": "poverty",
+    "phonetic": "/ˈpɑːvərti/",
+    "meaning": "n. 贫困；贫穷",
+    "level": "cet4"
+  },
+  {
+    "word": "practical",
+    "phonetic": "/ˈpræktɪkl/",
+    "meaning": "adj. 实际的；实用的",
+    "level": "cet4"
+  },
+  {
+    "word": "precious",
+    "phonetic": "/ˈpreʃəs/",
+    "meaning": "adj. 珍贵的；宝贵的",
+    "level": "cet4"
+  },
+  {
+    "word": "predict",
+    "phonetic": "/prɪˈdɪkt/",
+    "meaning": "v. 预测；预言",
+    "level": "cet4"
+  },
+  {
+    "word": "prefer",
+    "phonetic": "/prɪˈfɜːr/",
+    "meaning": "v. 更喜欢；偏好",
+    "level": "cet4"
+  },
+  {
+    "word": "prejudice",
+    "phonetic": "/ˈpredʒədɪs/",
+    "meaning": "n. 偏见 v. 使有偏见",
+    "level": "cet4"
+  },
+  {
+    "word": "presentation",
+    "phonetic": "/ˌpriːzenˈteɪʃn/",
+    "meaning": "n. 演示；展示",
+    "level": "cet4"
+  },
+  {
+    "word": "preserve",
+    "phonetic": "/prɪˈzɜːrv/",
+    "meaning": "v. 保存；保护",
+    "level": "cet4"
+  },
+  {
+    "word": "pressure",
+    "phonetic": "/ˈpreʃər/",
+    "meaning": "n. 压力 v. 施压",
+    "level": "cet4"
+  },
+  {
+    "word": "previous",
+    "phonetic": "/ˈpriːviəs/",
+    "meaning": "adj. 先前的；以前的",
+    "level": "cet4"
+  },
+  {
+    "word": "principle",
+    "phonetic": "/ˈprɪnsəpl/",
+    "meaning": "n. 原则；原理",
+    "level": "cet4"
+  },
+  {
+    "word": "priority",
+    "phonetic": "/praɪˈɔːrəti/",
+    "meaning": "n. 优先；优先级",
+    "level": "cet4"
+  },
+  {
+    "word": "procedure",
+    "phonetic": "/prəˈsiːdʒər/",
+    "meaning": "n. 程序；步骤",
+    "level": "cet4"
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprɑːses/",
+    "meaning": "n. 过程 v. 处理",
+    "level": "cet4"
+  },
+  {
+    "word": "professional",
+    "phonetic": "/prəˈfeʃənl/",
+    "meaning": "adj. 专业的 n. 专业人士",
+    "level": "cet4"
+  },
+  {
+    "word": "profit",
+    "phonetic": "/ˈprɑːfɪt/",
+    "meaning": "n. 利润 v. 获利",
+    "level": "cet4"
+  },
+  {
+    "word": "progress",
+    "phonetic": "/ˈprɑːɡres/",
+    "meaning": "n./v. 进步；进展",
+    "level": "cet4"
+  },
+  {
+    "word": "promote",
+    "phonetic": "/prəˈmoʊt/",
+    "meaning": "v. 促进；推广；晋升",
+    "level": "cet4"
+  },
+  {
+    "word": "proof",
+    "phonetic": "/pruːf/",
+    "meaning": "n. 证据；证明",
+    "level": "cet4"
+  },
+  {
+    "word": "proper",
+    "phonetic": "/ˈprɑːpər/",
+    "meaning": "adj. 适当的；正确的",
+    "level": "cet4"
+  },
+  {
+    "word": "property",
+    "phonetic": "/ˈprɑːpərti/",
+    "meaning": "n. 财产；特性",
+    "level": "cet4"
+  },
+  {
+    "word": "proportion",
+    "phonetic": "/prəˈpɔːrʃn/",
+    "meaning": "n. 比例；部分",
+    "level": "cet4"
+  },
+  {
+    "word": "proposal",
+    "phonetic": "/prəˈpoʊzl/",
+    "meaning": "n. 提议；建议",
+    "level": "cet4"
+  },
+  {
+    "word": "prospect",
+    "phonetic": "/ˈprɑːspekt/",
+    "meaning": "n. 前景；预期",
+    "level": "cet4"
+  },
+  {
+    "word": "protest",
+    "phonetic": "/prəˈtest/",
+    "meaning": "v./n. 抗议；反对",
+    "level": "cet4"
+  },
+  {
+    "word": "prove",
+    "phonetic": "/pruːv/",
+    "meaning": "v. 证明；证实",
+    "level": "cet4"
+  },
+  {
+    "word": "provide",
+    "phonetic": "/prəˈvaɪd/",
+    "meaning": "v. 提供；供应",
+    "level": "cet4"
+  },
+  {
+    "word": "province",
+    "phonetic": "/ˈprɑːvɪns/",
+    "meaning": "n. 省；领域",
+    "level": "cet4"
+  },
+  {
+    "word": "publish",
+    "phonetic": "/ˈpʌblɪʃ/",
+    "meaning": "v. 出版；发布",
+    "level": "cet4"
+  },
+  {
+    "word": "punctual",
+    "phonetic": "/ˈpʌŋktʃuəl/",
+    "meaning": "adj. 准时的",
+    "level": "cet4"
+  },
+  {
+    "word": "purchase",
+    "phonetic": "/ˈpɜːrtʃəs/",
+    "meaning": "v./n. 购买；采购",
+    "level": "cet4"
+  },
+  {
+    "word": "pursue",
+    "phonetic": "/pərˈsuː/",
+    "meaning": "v. 追求；追赶",
+    "level": "cet4"
+  },
+  {
+    "word": "qualify",
+    "phonetic": "/ˈkwɑːlɪfaɪ/",
+    "meaning": "v. 使合格；限定",
+    "level": "cet4"
+  },
+  {
+    "word": "quantity",
+    "phonetic": "/ˈkwɑːntəti/",
+    "meaning": "n. 数量；大量",
+    "level": "cet4"
+  },
+  {
+    "word": "range",
+    "phonetic": "/reɪndʒ/",
+    "meaning": "n. 范围 v. 变化",
+    "level": "cet4"
+  },
+  {
+    "word": "rank",
+    "phonetic": "/ræŋk/",
+    "meaning": "n. 等级 v. 排列",
+    "level": "cet4"
+  },
+  {
+    "word": "rapid",
+    "phonetic": "/ˈræpɪd/",
+    "meaning": "adj. 快速的；迅速的",
+    "level": "cet4"
+  },
+  {
+    "word": "rare",
+    "phonetic": "/rer/",
+    "meaning": "adj. 稀有的；罕见的",
+    "level": "cet4"
+  },
+  {
+    "word": "rate",
+    "phonetic": "/reɪt/",
+    "meaning": "n. 比率 v. 评价",
+    "level": "cet4"
+  },
+  {
+    "word": "react",
+    "phonetic": "/riˈækt/",
+    "meaning": "v. 反应；回应",
+    "level": "cet4"
+  },
+  {
+    "word": "realistic",
+    "phonetic": "/ˌriːəˈlɪstɪk/",
+    "meaning": "adj. 现实的；实际的",
+    "level": "cet4"
+  },
+  {
+    "word": "reasonable",
+    "phonetic": "/ˈriːzənəbl/",
+    "meaning": "adj. 合理的；通情达理的",
+    "level": "cet4"
+  },
+  {
+    "word": "recommend",
+    "phonetic": "/ˌrekəˈmend/",
+    "meaning": "v. 推荐；建议",
+    "level": "cet4"
+  },
+  {
+    "word": "recover",
+    "phonetic": "/rɪˈkʌvər/",
+    "meaning": "v. 恢复；康复",
+    "level": "cet4"
+  },
+  {
+    "word": "reduce",
+    "phonetic": "/rɪˈduːs/",
+    "meaning": "v. 减少；降低",
+    "level": "cet4"
+  },
+  {
+    "word": "refer",
+    "phonetic": "/rɪˈfɜːr/",
+    "meaning": "v. 参考；提及",
+    "level": "cet4"
+  },
+  {
+    "word": "reflect",
+    "phonetic": "/rɪˈflekt/",
+    "meaning": "v. 反映；反射；思考",
+    "level": "cet4"
+  },
+  {
+    "word": "reform",
+    "phonetic": "/rɪˈfɔːrm/",
+    "meaning": "v./n. 改革；改造",
+    "level": "cet4"
+  },
+  {
+    "word": "regard",
+    "phonetic": "/rɪˈɡɑːrd/",
+    "meaning": "v. 认为 n. 尊重",
+    "level": "cet4"
+  },
+  {
+    "word": "register",
+    "phonetic": "/ˈredʒɪstər/",
+    "meaning": "v./n. 登记；注册",
+    "level": "cet4"
+  },
+  {
+    "word": "regulate",
+    "phonetic": "/ˈreɡjuleɪt/",
+    "meaning": "v. 调节；管理",
+    "level": "cet4"
+  },
+  {
+    "word": "reject",
+    "phonetic": "/rɪˈdʒekt/",
+    "meaning": "v. 拒绝；排斥",
+    "level": "cet4"
+  },
+  {
+    "word": "relate",
+    "phonetic": "/rɪˈleɪt/",
+    "meaning": "v. 关联；叙述",
+    "level": "cet4"
+  },
+  {
+    "word": "release",
+    "phonetic": "/rɪˈliːs/",
+    "meaning": "v./n. 释放；发布",
+    "level": "cet4"
+  },
+  {
+    "word": "relevant",
+    "phonetic": "/ˈreləvənt/",
+    "meaning": "adj. 相关的",
+    "level": "cet4"
+  },
+  {
+    "word": "reliable",
+    "phonetic": "/rɪˈlaɪəbl/",
+    "meaning": "adj. 可靠的",
+    "level": "cet4"
+  },
+  {
+    "word": "relief",
+    "phonetic": "/rɪˈliːf/",
+    "meaning": "n. 救济；减轻；安慰",
+    "level": "cet4"
+  },
+  {
+    "word": "rely",
+    "phonetic": "/rɪˈlaɪ/",
+    "meaning": "v. 依赖；依靠",
+    "level": "cet4"
+  },
+  {
+    "word": "remark",
+    "phonetic": "/rɪˈmɑːrk/",
+    "meaning": "n./v. 评论；注意",
+    "level": "cet4"
+  },
+  {
+    "word": "remote",
+    "phonetic": "/rɪˈmoʊt/",
+    "meaning": "adj. 遥远的；远程的",
+    "level": "cet4"
+  },
+  {
+    "word": "remove",
+    "phonetic": "/rɪˈmuːv/",
+    "meaning": "v. 移除；消除",
+    "level": "cet4"
+  },
+  {
+    "word": "replace",
+    "phonetic": "/rɪˈpleɪs/",
+    "meaning": "v. 替换；代替",
+    "level": "cet4"
+  },
+  {
+    "word": "represent",
+    "phonetic": "/ˌreprɪˈzent/",
+    "meaning": "v. 代表；表示",
+    "level": "cet4"
+  },
+  {
+    "word": "reputation",
+    "phonetic": "/ˌrepjuˈteɪʃn/",
+    "meaning": "n. 名声；声誉",
+    "level": "cet4"
+  },
+  {
+    "word": "request",
+    "phonetic": "/rɪˈkwest/",
+    "meaning": "n./v. 请求；要求",
+    "level": "cet4"
+  },
+  {
+    "word": "require",
+    "phonetic": "/rɪˈkwaɪər/",
+    "meaning": "v. 需要；要求",
+    "level": "cet4"
+  },
+  {
+    "word": "rescue",
+    "phonetic": "/ˈreskjuː/",
+    "meaning": "v./n. 救援；营救",
+    "level": "cet4"
+  },
+  {
+    "word": "research",
+    "phonetic": "/rɪˈsɜːrtʃ/",
+    "meaning": "n./v. 研究；调查",
+    "level": "cet4"
+  },
+  {
+    "word": "reserve",
+    "phonetic": "/rɪˈzɜːrv/",
+    "meaning": "v. 保留；预订 n. 储备",
+    "level": "cet4"
+  },
+  {
+    "word": "resign",
+    "phonetic": "/rɪˈzaɪn/",
+    "meaning": "v. 辞职；放弃",
+    "level": "cet4"
+  },
+  {
+    "word": "resist",
+    "phonetic": "/rɪˈzɪst/",
+    "meaning": "v. 抵抗；抵制",
+    "level": "cet4"
+  },
+  {
+    "word": "resolve",
+    "phonetic": "/rɪˈzɑːlv/",
+    "meaning": "v. 解决；决心",
+    "level": "cet4"
+  },
+  {
+    "word": "resource",
+    "phonetic": "/ˈriːsɔːrs/",
+    "meaning": "n. 资源；财力",
+    "level": "cet4"
+  },
+  {
+    "word": "respond",
+    "phonetic": "/rɪˈspɑːnd/",
+    "meaning": "v. 回答；回应",
+    "level": "cet4"
+  },
+  {
+    "word": "responsible",
+    "phonetic": "/rɪˈspɑːnsəbl/",
+    "meaning": "adj. 负责的；有责任的",
+    "level": "cet4"
+  },
+  {
+    "word": "restore",
+    "phonetic": "/rɪˈstɔːr/",
+    "meaning": "v. 恢复；修复",
+    "level": "cet4"
+  },
+  {
+    "word": "restrict",
+    "phonetic": "/rɪˈstrɪkt/",
+    "meaning": "v. 限制；约束",
+    "level": "cet4"
+  },
+  {
+    "word": "reveal",
+    "phonetic": "/rɪˈviːl/",
+    "meaning": "v. 揭示；透露",
+    "level": "cet4"
+  },
+  {
+    "word": "revenue",
+    "phonetic": "/ˈrevənuː/",
+    "meaning": "n. 收入；税收",
+    "level": "cet4"
+  },
+  {
+    "word": "revolution",
+    "phonetic": "/ˌrevəˈluːʃn/",
+    "meaning": "n. 革命；变革",
+    "level": "cet4"
+  },
+  {
+    "word": "risk",
+    "phonetic": "/rɪsk/",
+    "meaning": "n./v. 风险；冒险",
+    "level": "cet4"
+  },
+  {
+    "word": "rival",
+    "phonetic": "/ˈraɪvl/",
+    "meaning": "n. 竞争对手 v. 竞争",
+    "level": "cet4"
+  },
+  {
+    "word": "role",
+    "phonetic": "/roʊl/",
+    "meaning": "n. 角色；作用",
+    "level": "cet4"
+  },
+  {
+    "word": "route",
+    "phonetic": "/ruːt/",
+    "meaning": "n. 路线；路径",
+    "level": "cet4"
+  },
+  {
+    "word": "routine",
+    "phonetic": "/ruːˈtiːn/",
+    "meaning": "n. 常规 adj. 常规的",
+    "level": "cet4"
+  },
+  {
+    "word": "ruin",
+    "phonetic": "/ˈruːɪn/",
+    "meaning": "v./n. 毁灭；毁坏",
+    "level": "cet4"
+  },
+  {
+    "word": "rural",
+    "phonetic": "/ˈrʊrəl/",
+    "meaning": "adj. 农村的；乡村的",
+    "level": "cet4"
+  },
+  {
+    "word": "sacrifice",
+    "phonetic": "/ˈsækrɪfaɪs/",
+    "meaning": "v./n. 牺牲；献祭",
+    "level": "cet4"
+  },
+  {
+    "word": "sake",
+    "phonetic": "/seɪk/",
+    "meaning": "n. 缘故；目的",
+    "level": "cet4"
+  },
+  {
+    "word": "salary",
+    "phonetic": "/ˈsæləri/",
+    "meaning": "n. 薪水；工资",
+    "level": "cet4"
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsæmpl/",
+    "meaning": "n. 样本 v. 抽样",
+    "level": "cet4"
+  },
+  {
+    "word": "satellite",
+    "phonetic": "/ˈsætəlaɪt/",
+    "meaning": "n. 卫星",
+    "level": "cet4"
+  },
+  {
+    "word": "satisfy",
+    "phonetic": "/ˈsætɪsfaɪ/",
+    "meaning": "v. 满足；使满意",
+    "level": "cet4"
+  },
+  {
+    "word": "scale",
+    "phonetic": "/skeɪl/",
+    "meaning": "n. 规模；比例 v. 攀登",
+    "level": "cet4"
+  },
+  {
+    "word": "scan",
+    "phonetic": "/skæn/",
+    "meaning": "v. 扫描；浏览",
+    "level": "cet4"
+  },
+  {
+    "word": "scatter",
+    "phonetic": "/ˈskætər/",
+    "meaning": "v. 分散；散播",
+    "level": "cet4"
+  },
+  {
+    "word": "schedule",
+    "phonetic": "/ˈskedʒuːl/",
+    "meaning": "n. 时间表 v. 安排",
+    "level": "cet4"
+  },
+  {
+    "word": "scheme",
+    "phonetic": "/skiːm/",
+    "meaning": "n. 计划；方案 v. 策划",
+    "level": "cet4"
+  },
+  {
+    "word": "scholar",
+    "phonetic": "/ˈskɑːlər/",
+    "meaning": "n. 学者",
+    "level": "cet4"
+  },
+  {
+    "word": "secure",
+    "phonetic": "/sɪˈkjʊr/",
+    "meaning": "adj. 安全的 v. 获得",
+    "level": "cet4"
+  },
+  {
+    "word": "seek",
+    "phonetic": "/siːk/",
+    "meaning": "v. 寻找；寻求",
+    "level": "cet4"
+  },
+  {
+    "word": "select",
+    "phonetic": "/sɪˈlekt/",
+    "meaning": "v. 选择 adj. 精选的",
+    "level": "cet4"
+  },
+  {
+    "word": "senior",
+    "phonetic": "/ˈsiːniər/",
+    "meaning": "adj. 高级的；年长的",
+    "level": "cet4"
+  },
+  {
+    "word": "sensitive",
+    "phonetic": "/ˈsensətɪv/",
+    "meaning": "adj. 敏感的；体贴的",
+    "level": "cet4"
+  },
+  {
+    "word": "separate",
+    "phonetic": "/ˈsepəreɪt/",
+    "meaning": "v. 分离 adj. 分开的",
+    "level": "cet4"
+  },
+  {
+    "word": "sequence",
+    "phonetic": "/ˈsiːkwəns/",
+    "meaning": "n. 顺序；序列",
+    "level": "cet4"
+  },
+  {
+    "word": "series",
+    "phonetic": "/ˈsɪriːz/",
+    "meaning": "n. 系列；连续",
+    "level": "cet4"
+  },
+  {
+    "word": "settle",
+    "phonetic": "/ˈsetl/",
+    "meaning": "v. 解决；定居；安定",
+    "level": "cet4"
+  },
+  {
+    "word": "severe",
+    "phonetic": "/sɪˈvɪr/",
+    "meaning": "adj. 严重的；严厉的",
+    "level": "cet4"
+  },
+  {
+    "word": "shelter",
+    "phonetic": "/ˈʃeltər/",
+    "meaning": "n. 庇护所 v. 庇护",
+    "level": "cet4"
+  },
+  {
+    "word": "shift",
+    "phonetic": "/ʃɪft/",
+    "meaning": "v./n. 转变；轮班",
+    "level": "cet4"
+  },
+  {
+    "word": "signal",
+    "phonetic": "/ˈsɪɡnəl/",
+    "meaning": "n. 信号 v. 发信号",
+    "level": "cet4"
+  },
+  {
+    "word": "significance",
+    "phonetic": "/sɪɡˈnɪfɪkəns/",
+    "meaning": "n. 重要性；意义",
+    "level": "cet4"
+  },
+  {
+    "word": "similar",
+    "phonetic": "/ˈsɪmələr/",
+    "meaning": "adj. 相似的；类似的",
+    "level": "cet4"
+  },
+  {
+    "word": "sketch",
+    "phonetic": "/sketʃ/",
+    "meaning": "n. 草图 v. 素描",
+    "level": "cet4"
+  },
+  {
+    "word": "slice",
+    "phonetic": "/slaɪs/",
+    "meaning": "n. 薄片 v. 切片",
+    "level": "cet4"
+  },
+  {
+    "word": "slight",
+    "phonetic": "/slaɪt/",
+    "meaning": "adj. 轻微的 v. 轻视",
+    "level": "cet4"
+  },
+  {
+    "word": "social",
+    "phonetic": "/ˈsoʊʃl/",
+    "meaning": "adj. 社会的；社交的",
+    "level": "cet4"
+  },
+  {
+    "word": "solar",
+    "phonetic": "/ˈsoʊlər/",
+    "meaning": "adj. 太阳的",
+    "level": "cet4"
+  },
+  {
+    "word": "solution",
+    "phonetic": "/səˈluːʃn/",
+    "meaning": "n. 解决方案；溶液",
+    "level": "cet4"
+  },
+  {
+    "word": "solve",
+    "phonetic": "/sɑːlv/",
+    "meaning": "v. 解决；解答",
+    "level": "cet4"
+  },
+  {
+    "word": "somehow",
+    "phonetic": "/ˈsʌmhaʊ/",
+    "meaning": "adv. 以某种方式；不知何故",
+    "level": "cet4"
+  },
+  {
+    "word": "source",
+    "phonetic": "/sɔːrs/",
+    "meaning": "n. 来源；源头",
+    "level": "cet4"
+  },
+  {
+    "word": "specific",
+    "phonetic": "/spəˈsɪfɪk/",
+    "meaning": "adj. 具体的；特定的",
+    "level": "cet4"
+  },
+  {
+    "word": "split",
+    "phonetic": "/splɪt/",
+    "meaning": "v./n. 分裂；分开",
+    "level": "cet4"
+  },
+  {
+    "word": "sponsor",
+    "phonetic": "/ˈspɑːnsər/",
+    "meaning": "n. 赞助商 v. 赞助",
+    "level": "cet4"
+  },
+  {
+    "word": "spot",
+    "phonetic": "/spɑːt/",
+    "meaning": "n. 地点 v. 发现",
+    "level": "cet4"
+  },
+  {
+    "word": "stale",
+    "phonetic": "/steɪl/",
+    "meaning": "adj. 不新鲜的；陈旧的",
+    "level": "cet4"
+  },
+  {
+    "word": "strategy",
+    "phonetic": "/ˈstrætədʒi/",
+    "meaning": "n. 策略；战略",
+    "level": "cet4"
+  },
+  {
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "meaning": "n. 溪流 v. 流动",
+    "level": "cet4"
+  },
+  {
+    "word": "strength",
+    "phonetic": "/streŋθ/",
+    "meaning": "n. 力量；优点",
+    "level": "cet4"
+  },
+  {
+    "word": "stress",
+    "phonetic": "/stres/",
+    "meaning": "n. 压力 v. 强调",
+    "level": "cet4"
+  },
+  {
+    "word": "structure",
+    "phonetic": "/ˈstrʌktʃər/",
+    "meaning": "n. 结构 v. 组织",
+    "level": "cet4"
+  },
+  {
+    "word": "struggle",
+    "phonetic": "/ˈstrʌɡl/",
+    "meaning": "v./n. 斗争；挣扎",
+    "level": "cet4"
+  },
+  {
+    "word": "subject",
+    "phonetic": "/ˈsʌbdʒɪkt/",
+    "meaning": "n. 主题；学科 adj. 受制于",
+    "level": "cet4"
+  },
+  {
+    "word": "submit",
+    "phonetic": "/səbˈmɪt/",
+    "meaning": "v. 提交；服从",
+    "level": "cet4"
+  },
+  {
+    "word": "succeed",
+    "phonetic": "/səkˈsiːd/",
+    "meaning": "v. 成功；继承",
+    "level": "cet4"
+  },
+  {
+    "word": "sufficient",
+    "phonetic": "/səˈfɪʃnt/",
+    "meaning": "adj. 足够的；充分的",
+    "level": "cet4"
+  },
+  {
+    "word": "suggest",
+    "phonetic": "/səˈdʒest/",
+    "meaning": "v. 建议；暗示",
+    "level": "cet4"
+  },
+  {
+    "word": "summarize",
+    "phonetic": "/ˈsʌməraɪz/",
+    "meaning": "v. 总结；概括",
+    "level": "cet4"
+  },
+  {
+    "word": "superior",
+    "phonetic": "/suːˈpɪriər/",
+    "meaning": "adj. 优越的 n. 上级",
+    "level": "cet4"
+  },
+  {
+    "word": "supply",
+    "phonetic": "/səˈplaɪ/",
+    "meaning": "v./n. 供应；供给",
+    "level": "cet4"
+  },
+  {
+    "word": "support",
+    "phonetic": "/səˈpɔːrt/",
+    "meaning": "v./n. 支持；支撑",
+    "level": "cet4"
+  },
+  {
+    "word": "suppose",
+    "phonetic": "/səˈpoʊz/",
+    "meaning": "v. 假设；认为",
+    "level": "cet4"
+  },
+  {
+    "word": "surround",
+    "phonetic": "/səˈraʊnd/",
+    "meaning": "v. 包围；环绕",
+    "level": "cet4"
+  },
+  {
+    "word": "survive",
+    "phonetic": "/sərˈvaɪv/",
+    "meaning": "v. 幸存；生存",
+    "level": "cet4"
+  },
+  {
+    "word": "suspect",
+    "phonetic": "/səˈspekt/",
+    "meaning": "v. 怀疑 n. 嫌疑犯",
+    "level": "cet4"
+  },
+  {
+    "word": "suspend",
+    "phonetic": "/səˈspend/",
+    "meaning": "v. 暂停；悬挂",
+    "level": "cet4"
+  },
+  {
+    "word": "sustain",
+    "phonetic": "/səˈsteɪn/",
+    "meaning": "v. 维持；支撑",
+    "level": "cet4"
+  },
+  {
+    "word": "symbol",
+    "phonetic": "/ˈsɪmbl/",
+    "meaning": "n. 符号；象征",
+    "level": "cet4"
+  },
+  {
+    "word": "sympathy",
+    "phonetic": "/ˈsɪmpəθi/",
+    "meaning": "n. 同情；赞同",
+    "level": "cet4"
+  },
+  {
+    "word": "system",
+    "phonetic": "/ˈsɪstəm/",
+    "meaning": "n. 系统；制度",
+    "level": "cet4"
+  },
+  {
+    "word": "tackle",
+    "phonetic": "/ˈtækl/",
+    "meaning": "v. 处理；解决 n. 用具",
+    "level": "cet4"
+  },
+  {
+    "word": "target",
+    "phonetic": "/ˈtɑːrɡɪt/",
+    "meaning": "n. 目标 v. 针对",
+    "level": "cet4"
+  },
+  {
+    "word": "task",
+    "phonetic": "/tæsk/",
+    "meaning": "n. 任务；工作",
+    "level": "cet4"
+  },
+  {
+    "word": "technology",
+    "phonetic": "/tekˈnɑːlədʒi/",
+    "meaning": "n. 技术；科技",
+    "level": "cet4"
+  },
+  {
+    "word": "temporary",
+    "phonetic": "/ˈtempəreri/",
+    "meaning": "adj. 暂时的；临时的",
+    "level": "cet4"
+  },
+  {
+    "word": "tend",
+    "phonetic": "/tend/",
+    "meaning": "v. 倾向；照顾",
+    "level": "cet4"
+  },
+  {
+    "word": "tense",
+    "phonetic": "/tens/",
+    "meaning": "adj. 紧张的 n. 时态",
+    "level": "cet4"
+  },
+  {
+    "word": "terminal",
+    "phonetic": "/ˈtɜːrmɪnl/",
+    "meaning": "n. 终端 adj. 末期的",
+    "level": "cet4"
+  },
+  {
+    "word": "thorough",
+    "phonetic": "/ˈθɜːroʊ/",
+    "meaning": "adj. 彻底的；全面的",
+    "level": "cet4"
+  },
+  {
+    "word": "threat",
+    "phonetic": "/θret/",
+    "meaning": "n. 威胁；恐吓",
+    "level": "cet4"
+  },
+  {
+    "word": "thrill",
+    "phonetic": "/θrɪl/",
+    "meaning": "n. 兴奋 v. 使激动",
+    "level": "cet4"
+  },
+  {
+    "word": "tolerate",
+    "phonetic": "/ˈtɑːləreɪt/",
+    "meaning": "v. 容忍；忍受",
+    "level": "cet4"
+  },
+  {
+    "word": "tough",
+    "phonetic": "/tʌf/",
+    "meaning": "adj. 艰苦的；坚强的",
+    "level": "cet4"
+  },
+  {
+    "word": "trace",
+    "phonetic": "/treɪs/",
+    "meaning": "v. 追踪 n. 痕迹",
+    "level": "cet4"
+  },
+  {
+    "word": "track",
+    "phonetic": "/træk/",
+    "meaning": "n. 轨道 v. 跟踪",
+    "level": "cet4"
+  },
+  {
+    "word": "tradition",
+    "phonetic": "/trəˈdɪʃn/",
+    "meaning": "n. 传统；惯例",
+    "level": "cet4"
+  },
+  {
+    "word": "transfer",
+    "phonetic": "/trænsˈfɜːr/",
+    "meaning": "v./n. 转移；转让",
+    "level": "cet4"
+  },
+  {
+    "word": "transform",
+    "phonetic": "/trænsˈfɔːrm/",
+    "meaning": "v. 转变；改造",
+    "level": "cet4"
+  },
+  {
+    "word": "transport",
+    "phonetic": "/ˈtrænspɔːrt/",
+    "meaning": "n./v. 运输；交通",
+    "level": "cet4"
+  },
+  {
+    "word": "trend",
+    "phonetic": "/trend/",
+    "meaning": "n. 趋势；潮流",
+    "level": "cet4"
+  },
+  {
+    "word": "trigger",
+    "phonetic": "/ˈtrɪɡər/",
+    "meaning": "v. 触发 n. 扳机",
+    "level": "cet4"
+  },
+  {
+    "word": "triumph",
+    "phonetic": "/ˈtraɪʌmf/",
+    "meaning": "n. 胜利 v. 战胜",
+    "level": "cet4"
+  },
+  {
+    "word": "ultimately",
+    "phonetic": "/ˈʌltɪmətli/",
+    "meaning": "adv. 最终；根本上",
+    "level": "cet4"
+  },
+  {
+    "word": "undergo",
+    "phonetic": "/ˌʌndərˈɡoʊ/",
+    "meaning": "v. 经历；遭受",
+    "level": "cet4"
+  },
+  {
+    "word": "undertake",
+    "phonetic": "/ˌʌndərˈteɪk/",
+    "meaning": "v. 承担；从事",
+    "level": "cet4"
+  },
+  {
+    "word": "uniform",
+    "phonetic": "/ˈjuːnɪfɔːrm/",
+    "meaning": "n. 制服 adj. 统一的",
+    "level": "cet4"
+  },
+  {
+    "word": "unique",
+    "phonetic": "/juˈniːk/",
+    "meaning": "adj. 独特的；唯一的",
+    "level": "cet4"
+  },
+  {
+    "word": "universal",
+    "phonetic": "/ˌjuːnɪˈvɜːrsl/",
+    "meaning": "adj. 普遍的；全体的",
+    "level": "cet4"
+  },
+  {
+    "word": "urge",
+    "phonetic": "/ɜːrdʒ/",
+    "meaning": "v. 敦促；力劝 n. 冲动",
+    "level": "cet4"
+  },
+  {
+    "word": "valid",
+    "phonetic": "/ˈvælɪd/",
+    "meaning": "adj. 有效的；合理的",
+    "level": "cet4"
+  },
+  {
+    "word": "value",
+    "phonetic": "/ˈvæljuː/",
+    "meaning": "n. 价值 v. 重视",
+    "level": "cet4"
+  },
+  {
+    "word": "variety",
+    "phonetic": "/vəˈraɪəti/",
+    "meaning": "n. 多样性；种类",
+    "level": "cet4"
+  },
+  {
+    "word": "version",
+    "phonetic": "/ˈvɜːrʒn/",
+    "meaning": "n. 版本；说法",
+    "level": "cet4"
+  },
+  {
+    "word": "victim",
+    "phonetic": "/ˈvɪktɪm/",
+    "meaning": "n. 受害者；牺牲品",
+    "level": "cet4"
+  },
+  {
+    "word": "virtue",
+    "phonetic": "/ˈvɜːrtʃuː/",
+    "meaning": "n. 美德；优点",
+    "level": "cet4"
+  },
+  {
+    "word": "visible",
+    "phonetic": "/ˈvɪzəbl/",
+    "meaning": "adj. 可见的；明显的",
+    "level": "cet4"
+  },
+  {
+    "word": "vision",
+    "phonetic": "/ˈvɪʒn/",
+    "meaning": "n. 视力；愿景",
+    "level": "cet4"
+  },
+  {
+    "word": "visual",
+    "phonetic": "/ˈvɪʒuəl/",
+    "meaning": "adj. 视觉的；可视的",
+    "level": "cet4"
+  },
+  {
+    "word": "vital",
+    "phonetic": "/ˈvaɪtl/",
+    "meaning": "adj. 至关重要的；生命的",
+    "level": "cet4"
+  },
+  {
+    "word": "volume",
+    "phonetic": "/ˈvɑːljuːm/",
+    "meaning": "n. 音量；体积；卷",
+    "level": "cet4"
+  },
+  {
+    "word": "voluntary",
+    "phonetic": "/ˈvɑːlənteri/",
+    "meaning": "adj. 自愿的；志愿的",
+    "level": "cet4"
+  },
+  {
+    "word": "wage",
+    "phonetic": "/weɪdʒ/",
+    "meaning": "n. 工资 v. 发动",
+    "level": "cet4"
+  },
+  {
+    "word": "wander",
+    "phonetic": "/ˈwɑːndər/",
+    "meaning": "v. 漫游；走神",
+    "level": "cet4"
+  },
+  {
+    "word": "wealth",
+    "phonetic": "/welθ/",
+    "meaning": "n. 财富；丰富",
+    "level": "cet4"
+  },
+  {
+    "word": "weapon",
+    "phonetic": "/ˈwepən/",
+    "meaning": "n. 武器",
+    "level": "cet4"
+  },
+  {
+    "word": "welfare",
+    "phonetic": "/ˈwelfer/",
+    "meaning": "n. 福利；幸福",
+    "level": "cet4"
+  },
+  {
+    "word": "widespread",
+    "phonetic": "/ˈwaɪdspred/",
+    "meaning": "adj. 广泛的；普遍的",
+    "level": "cet4"
+  },
+  {
+    "word": "willing",
+    "phonetic": "/ˈwɪlɪŋ/",
+    "meaning": "adj. 愿意的",
+    "level": "cet4"
+  },
+  {
+    "word": "wisdom",
+    "phonetic": "/ˈwɪzdəm/",
+    "meaning": "n. 智慧；明智",
+    "level": "cet4"
+  },
+  {
+    "word": "withdraw",
+    "phonetic": "/wɪðˈdrɔː/",
+    "meaning": "v. 撤回；提取",
+    "level": "cet4"
+  },
+  {
+    "word": "witness",
+    "phonetic": "/ˈwɪtnəs/",
+    "meaning": "n. 目击者 v. 目击",
+    "level": "cet4"
+  },
+  {
+    "word": "worthwhile",
+    "phonetic": "/ˌwɜːrθˈwaɪl/",
+    "meaning": "adj. 值得的",
+    "level": "cet4"
+  },
+  {
+    "word": "yield",
+    "phonetic": "/jiːld/",
+    "meaning": "v. 产出；屈服 n. 产量",
+    "level": "cet4"
+  },
+  {
+    "word": "zone",
+    "phonetic": "/zoʊn/",
+    "meaning": "n. 区域；地带",
+    "level": "cet4"
+  }
+]

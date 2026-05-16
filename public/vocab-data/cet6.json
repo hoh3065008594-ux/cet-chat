@@ -1,0 +1,5828 @@
+[
+  {
+    "word": "abolish",
+    "phonetic": "/əˈbɑːlɪʃ/",
+    "meaning": "v. 废除；取消",
+    "level": "cet6"
+  },
+  {
+    "word": "absurd",
+    "phonetic": "/əbˈsɜːrd/",
+    "meaning": "adj. 荒谬的；可笑的",
+    "level": "cet6"
+  },
+  {
+    "word": "accessory",
+    "phonetic": "/əkˈsesəri/",
+    "meaning": "n. 配件；附件 adj. 附属的",
+    "level": "cet6"
+  },
+  {
+    "word": "accommodate",
+    "phonetic": "/əˈkɑːmədeɪt/",
+    "meaning": "v. 容纳；提供住宿；适应",
+    "level": "cet6"
+  },
+  {
+    "word": "acquaint",
+    "phonetic": "/əˈkweɪnt/",
+    "meaning": "v. 使熟悉；使认识",
+    "level": "cet6"
+  },
+  {
+    "word": "adhere",
+    "phonetic": "/ədˈhɪr/",
+    "meaning": "v. 坚持；黏附",
+    "level": "cet6"
+  },
+  {
+    "word": "adjacent",
+    "phonetic": "/əˈdʒeɪsnt/",
+    "meaning": "adj. 邻近的；毗连的",
+    "level": "cet6"
+  },
+  {
+    "word": "administer",
+    "phonetic": "/ədˈmɪnɪstər/",
+    "meaning": "v. 管理；执行",
+    "level": "cet6"
+  },
+  {
+    "word": "adolescent",
+    "phonetic": "/ˌædəˈlesnt/",
+    "meaning": "n. 青少年 adj. 青春期的",
+    "level": "cet6"
+  },
+  {
+    "word": "adverse",
+    "phonetic": "/ədˈvɜːrs/",
+    "meaning": "adj. 不利的；相反的",
+    "level": "cet6"
+  },
+  {
+    "word": "affiliate",
+    "phonetic": "/əˈfɪlieɪt/",
+    "meaning": "v. 使隶属 n. 附属机构",
+    "level": "cet6"
+  },
+  {
+    "word": "aggravate",
+    "phonetic": "/ˈæɡrəveɪt/",
+    "meaning": "v. 加重；使恶化",
+    "level": "cet6"
+  },
+  {
+    "word": "aggregate",
+    "phonetic": "/ˈæɡrɪɡət/",
+    "meaning": "n. 总计 v. 聚集",
+    "level": "cet6"
+  },
+  {
+    "word": "agony",
+    "phonetic": "/ˈæɡəni/",
+    "meaning": "n. 极大的痛苦",
+    "level": "cet6"
+  },
+  {
+    "word": "allege",
+    "phonetic": "/əˈledʒ/",
+    "meaning": "v. 声称；指控",
+    "level": "cet6"
+  },
+  {
+    "word": "allocate",
+    "phonetic": "/ˈæləkeɪt/",
+    "meaning": "v. 分配；拨给",
+    "level": "cet6"
+  },
+  {
+    "word": "alloy",
+    "phonetic": "/ˈælɔɪ/",
+    "meaning": "n. 合金 v. 熔合",
+    "level": "cet6"
+  },
+  {
+    "word": "ambiguous",
+    "phonetic": "/æmˈbɪɡjuəs/",
+    "meaning": "adj. 模糊不清的；模棱两可的",
+    "level": "cet6"
+  },
+  {
+    "word": "amend",
+    "phonetic": "/əˈmend/",
+    "meaning": "v. 修正；修订",
+    "level": "cet6"
+  },
+  {
+    "word": "ample",
+    "phonetic": "/ˈæmpl/",
+    "meaning": "adj. 充足的；宽敞的",
+    "level": "cet6"
+  },
+  {
+    "word": "analogy",
+    "phonetic": "/əˈnælədʒi/",
+    "meaning": "n. 类比；相似",
+    "level": "cet6"
+  },
+  {
+    "word": "anonymous",
+    "phonetic": "/əˈnɑːnɪməs/",
+    "meaning": "adj. 匿名的",
+    "level": "cet6"
+  },
+  {
+    "word": "apparatus",
+    "phonetic": "/ˌæpəˈrætəs/",
+    "meaning": "n. 设备；仪器",
+    "level": "cet6"
+  },
+  {
+    "word": "appraisal",
+    "phonetic": "/əˈpreɪzl/",
+    "meaning": "n. 评价；评估",
+    "level": "cet6"
+  },
+  {
+    "word": "apt",
+    "phonetic": "/æpt/",
+    "meaning": "adj. 恰当的；易于...的",
+    "level": "cet6"
+  },
+  {
+    "word": "array",
+    "phonetic": "/əˈreɪ/",
+    "meaning": "n. 一系列；数组 v. 排列",
+    "level": "cet6"
+  },
+  {
+    "word": "articulate",
+    "phonetic": "/ɑːrˈtɪkjuleɪt/",
+    "meaning": "v. 清晰表达 adj. 表达清楚的",
+    "level": "cet6"
+  },
+  {
+    "word": "ascend",
+    "phonetic": "/əˈsend/",
+    "meaning": "v. 上升；攀登",
+    "level": "cet6"
+  },
+  {
+    "word": "ascribe",
+    "phonetic": "/əˈskraɪb/",
+    "meaning": "v. 归因于；把...归属于",
+    "level": "cet6"
+  },
+  {
+    "word": "assault",
+    "phonetic": "/əˈsɔːlt/",
+    "meaning": "n./v. 攻击；袭击",
+    "level": "cet6"
+  },
+  {
+    "word": "assert",
+    "phonetic": "/əˈsɜːrt/",
+    "meaning": "v. 断言；坚持",
+    "level": "cet6"
+  },
+  {
+    "word": "assimilate",
+    "phonetic": "/əˈsɪməleɪt/",
+    "meaning": "v. 同化；吸收",
+    "level": "cet6"
+  },
+  {
+    "word": "authorize",
+    "phonetic": "/ˈɔːθəraɪz/",
+    "meaning": "v. 授权；批准",
+    "level": "cet6"
+  },
+  {
+    "word": "avert",
+    "phonetic": "/əˈvɜːrt/",
+    "meaning": "v. 避免；转移",
+    "level": "cet6"
+  },
+  {
+    "word": "axis",
+    "phonetic": "/ˈæksɪs/",
+    "meaning": "n. 轴；轴线",
+    "level": "cet6"
+  },
+  {
+    "word": "bachelor",
+    "phonetic": "/ˈbætʃələr/",
+    "meaning": "n. 学士；单身汉",
+    "level": "cet6"
+  },
+  {
+    "word": "bankrupt",
+    "phonetic": "/ˈbæŋkrʌpt/",
+    "meaning": "adj. 破产的 v. 使破产",
+    "level": "cet6"
+  },
+  {
+    "word": "batch",
+    "phonetic": "/bætʃ/",
+    "meaning": "n. 一批；一组",
+    "level": "cet6"
+  },
+  {
+    "word": "beforehand",
+    "phonetic": "/bɪˈfɔːrhænd/",
+    "meaning": "adv. 预先；事先",
+    "level": "cet6"
+  },
+  {
+    "word": "betray",
+    "phonetic": "/bɪˈtreɪ/",
+    "meaning": "v. 背叛；出卖",
+    "level": "cet6"
+  },
+  {
+    "word": "bewilder",
+    "phonetic": "/bɪˈwɪldər/",
+    "meaning": "v. 使迷惑；使糊涂",
+    "level": "cet6"
+  },
+  {
+    "word": "bias",
+    "phonetic": "/ˈbaɪəs/",
+    "meaning": "n. 偏见 v. 使有偏见",
+    "level": "cet6"
+  },
+  {
+    "word": "bilateral",
+    "phonetic": "/ˌbaɪˈlætərəl/",
+    "meaning": "adj. 双边的；两侧的",
+    "level": "cet6"
+  },
+  {
+    "word": "bind",
+    "phonetic": "/baɪnd/",
+    "meaning": "v. 捆绑；约束",
+    "level": "cet6"
+  },
+  {
+    "word": "bizarre",
+    "phonetic": "/bɪˈzɑːr/",
+    "meaning": "adj. 古怪的；奇异的",
+    "level": "cet6"
+  },
+  {
+    "word": "blaze",
+    "phonetic": "/bleɪz/",
+    "meaning": "n. 火焰 v. 燃烧；闪耀",
+    "level": "cet6"
+  },
+  {
+    "word": "bleak",
+    "phonetic": "/bliːk/",
+    "meaning": "adj. 荒凉的；黯淡的",
+    "level": "cet6"
+  },
+  {
+    "word": "blink",
+    "phonetic": "/blɪŋk/",
+    "meaning": "v. 眨眼；闪烁",
+    "level": "cet6"
+  },
+  {
+    "word": "blossom",
+    "phonetic": "/ˈblɑːsəm/",
+    "meaning": "n. 花 v. 开花；发展",
+    "level": "cet6"
+  },
+  {
+    "word": "blueprint",
+    "phonetic": "/ˈbluːprɪnt/",
+    "meaning": "n. 蓝图 v. 计划",
+    "level": "cet6"
+  },
+  {
+    "word": "blunder",
+    "phonetic": "/ˈblʌndər/",
+    "meaning": "n. 大错 v. 失策",
+    "level": "cet6"
+  },
+  {
+    "word": "blunt",
+    "phonetic": "/blʌnt/",
+    "meaning": "adj. 钝的；直率的",
+    "level": "cet6"
+  },
+  {
+    "word": "blur",
+    "phonetic": "/blɜːr/",
+    "meaning": "n. 模糊 v. 使模糊",
+    "level": "cet6"
+  },
+  {
+    "word": "bonus",
+    "phonetic": "/ˈboʊnəs/",
+    "meaning": "n. 奖金；红利",
+    "level": "cet6"
+  },
+  {
+    "word": "boom",
+    "phonetic": "/buːm/",
+    "meaning": "n. 繁荣 v. 激增",
+    "level": "cet6"
+  },
+  {
+    "word": "bounce",
+    "phonetic": "/baʊns/",
+    "meaning": "v. 弹跳；反弹",
+    "level": "cet6"
+  },
+  {
+    "word": "boycott",
+    "phonetic": "/ˈbɔɪkɑːt/",
+    "meaning": "v./n. 抵制",
+    "level": "cet6"
+  },
+  {
+    "word": "brace",
+    "phonetic": "/breɪs/",
+    "meaning": "n. 支架 v. 支撑",
+    "level": "cet6"
+  },
+  {
+    "word": "bracket",
+    "phonetic": "/ˈbrækɪt/",
+    "meaning": "n. 括号；支架",
+    "level": "cet6"
+  },
+  {
+    "word": "breach",
+    "phonetic": "/briːtʃ/",
+    "meaning": "n. 破坏 v. 违反",
+    "level": "cet6"
+  },
+  {
+    "word": "breakthrough",
+    "phonetic": "/ˈbreɪkθruː/",
+    "meaning": "n. 突破；重大进展",
+    "level": "cet6"
+  },
+  {
+    "word": "breed",
+    "phonetic": "/briːd/",
+    "meaning": "v. 繁殖；养育 n. 品种",
+    "level": "cet6"
+  },
+  {
+    "word": "bribe",
+    "phonetic": "/braɪb/",
+    "meaning": "v./n. 贿赂",
+    "level": "cet6"
+  },
+  {
+    "word": "brink",
+    "phonetic": "/brɪŋk/",
+    "meaning": "n. 边缘；关头",
+    "level": "cet6"
+  },
+  {
+    "word": "brisk",
+    "phonetic": "/brɪsk/",
+    "meaning": "adj. 轻快的；兴隆的",
+    "level": "cet6"
+  },
+  {
+    "word": "bronze",
+    "phonetic": "/brɑːnz/",
+    "meaning": "n. 青铜 adj. 青铜色的",
+    "level": "cet6"
+  },
+  {
+    "word": "brood",
+    "phonetic": "/bruːd/",
+    "meaning": "v. 沉思 n. 一窝",
+    "level": "cet6"
+  },
+  {
+    "word": "browse",
+    "phonetic": "/braʊz/",
+    "meaning": "v. 浏览；吃草",
+    "level": "cet6"
+  },
+  {
+    "word": "bruise",
+    "phonetic": "/bruːz/",
+    "meaning": "n. 淤青 v. 碰伤",
+    "level": "cet6"
+  },
+  {
+    "word": "brutal",
+    "phonetic": "/ˈbruːtl/",
+    "meaning": "adj. 残忍的；野蛮的",
+    "level": "cet6"
+  },
+  {
+    "word": "bubble",
+    "phonetic": "/ˈbʌbl/",
+    "meaning": "n. 气泡 v. 起泡",
+    "level": "cet6"
+  },
+  {
+    "word": "bud",
+    "phonetic": "/bʌd/",
+    "meaning": "n. 芽 v. 发芽",
+    "level": "cet6"
+  },
+  {
+    "word": "bug",
+    "phonetic": "/bʌɡ/",
+    "meaning": "n. 虫子；漏洞 v. 烦扰",
+    "level": "cet6"
+  },
+  {
+    "word": "bulk",
+    "phonetic": "/bʌlk/",
+    "meaning": "n. 大部分；大量",
+    "level": "cet6"
+  },
+  {
+    "word": "bulletin",
+    "phonetic": "/ˈbʊlətɪn/",
+    "meaning": "n. 公告；公报",
+    "level": "cet6"
+  },
+  {
+    "word": "bump",
+    "phonetic": "/bʌmp/",
+    "meaning": "v./n. 碰撞；肿块",
+    "level": "cet6"
+  },
+  {
+    "word": "bureaucracy",
+    "phonetic": "/bjʊˈrɑːkrəsi/",
+    "meaning": "n. 官僚机构",
+    "level": "cet6"
+  },
+  {
+    "word": "bypass",
+    "phonetic": "/ˈbaɪpæs/",
+    "meaning": "v. 绕过 n. 旁路",
+    "level": "cet6"
+  },
+  {
+    "word": "calorie",
+    "phonetic": "/ˈkæləri/",
+    "meaning": "n. 卡路里（热量单位）",
+    "level": "cet6"
+  },
+  {
+    "word": "cane",
+    "phonetic": "/keɪn/",
+    "meaning": "n. 手杖；甘蔗",
+    "level": "cet6"
+  },
+  {
+    "word": "canvas",
+    "phonetic": "/ˈkænvəs/",
+    "meaning": "n. 帆布；画布",
+    "level": "cet6"
+  },
+  {
+    "word": "capsule",
+    "phonetic": "/ˈkæpsl/",
+    "meaning": "n. 胶囊；太空舱",
+    "level": "cet6"
+  },
+  {
+    "word": "caption",
+    "phonetic": "/ˈkæpʃn/",
+    "meaning": "n. 标题；字幕",
+    "level": "cet6"
+  },
+  {
+    "word": "captive",
+    "phonetic": "/ˈkæptɪv/",
+    "meaning": "n. 俘虏 adj. 被囚禁的",
+    "level": "cet6"
+  },
+  {
+    "word": "cardinal",
+    "phonetic": "/ˈkɑːrdɪnl/",
+    "meaning": "adj. 主要的 n. 红衣主教",
+    "level": "cet6"
+  },
+  {
+    "word": "carve",
+    "phonetic": "/kɑːrv/",
+    "meaning": "v. 雕刻；切开",
+    "level": "cet6"
+  },
+  {
+    "word": "casualty",
+    "phonetic": "/ˈkæʒuəlti/",
+    "meaning": "n. 伤亡人员；受害者",
+    "level": "cet6"
+  },
+  {
+    "word": "catalyst",
+    "phonetic": "/ˈkætəlɪst/",
+    "meaning": "n. 催化剂",
+    "level": "cet6"
+  },
+  {
+    "word": "catastrophe",
+    "phonetic": "/kəˈtæstrəfi/",
+    "meaning": "n. 大灾难",
+    "level": "cet6"
+  },
+  {
+    "word": "caution",
+    "phonetic": "/ˈkɔːʃn/",
+    "meaning": "n. 小心 v. 警告",
+    "level": "cet6"
+  },
+  {
+    "word": "cavity",
+    "phonetic": "/ˈkævəti/",
+    "meaning": "n. 洞；腔",
+    "level": "cet6"
+  },
+  {
+    "word": "cellar",
+    "phonetic": "/ˈselər/",
+    "meaning": "n. 地窖；地下室",
+    "level": "cet6"
+  },
+  {
+    "word": "census",
+    "phonetic": "/ˈsensəs/",
+    "meaning": "n. 人口普查",
+    "level": "cet6"
+  },
+  {
+    "word": "ceramic",
+    "phonetic": "/səˈræmɪk/",
+    "meaning": "adj. 陶瓷的 n. 陶瓷",
+    "level": "cet6"
+  },
+  {
+    "word": "cereal",
+    "phonetic": "/ˈsɪriəl/",
+    "meaning": "n. 谷物；麦片",
+    "level": "cet6"
+  },
+  {
+    "word": "certify",
+    "phonetic": "/ˈsɜːrtɪfaɪ/",
+    "meaning": "v. 证明；认证",
+    "level": "cet6"
+  },
+  {
+    "word": "cherish",
+    "phonetic": "/ˈtʃerɪʃ/",
+    "meaning": "v. 珍爱；珍惜",
+    "level": "cet6"
+  },
+  {
+    "word": "cholesterol",
+    "phonetic": "/kəˈlestərɔːl/",
+    "meaning": "n. 胆固醇",
+    "level": "cet6"
+  },
+  {
+    "word": "chord",
+    "phonetic": "/kɔːrd/",
+    "meaning": "n. 和弦；弦",
+    "level": "cet6"
+  },
+  {
+    "word": "chorus",
+    "phonetic": "/ˈkɔːrəs/",
+    "meaning": "n. 合唱；副歌",
+    "level": "cet6"
+  },
+  {
+    "word": "chronic",
+    "phonetic": "/ˈkrɑːnɪk/",
+    "meaning": "adj. 慢性的；长期的",
+    "level": "cet6"
+  },
+  {
+    "word": "chunk",
+    "phonetic": "/tʃʌŋk/",
+    "meaning": "n. 大块；大量",
+    "level": "cet6"
+  },
+  {
+    "word": "circuit",
+    "phonetic": "/ˈsɜːrkɪt/",
+    "meaning": "n. 电路；环路",
+    "level": "cet6"
+  },
+  {
+    "word": "circulate",
+    "phonetic": "/ˈsɜːrkjəleɪt/",
+    "meaning": "v. 循环；流通",
+    "level": "cet6"
+  },
+  {
+    "word": "civic",
+    "phonetic": "/ˈsɪvɪk/",
+    "meaning": "adj. 公民的；市政的",
+    "level": "cet6"
+  },
+  {
+    "word": "clamp",
+    "phonetic": "/klæmp/",
+    "meaning": "n. 夹具 v. 夹紧",
+    "level": "cet6"
+  },
+  {
+    "word": "clan",
+    "phonetic": "/klæn/",
+    "meaning": "n. 家族；宗族",
+    "level": "cet6"
+  },
+  {
+    "word": "clarify",
+    "phonetic": "/ˈklærəfaɪ/",
+    "meaning": "v. 澄清；阐明",
+    "level": "cet6"
+  },
+  {
+    "word": "clash",
+    "phonetic": "/klæʃ/",
+    "meaning": "v./n. 冲突；碰撞",
+    "level": "cet6"
+  },
+  {
+    "word": "clasp",
+    "phonetic": "/klæsp/",
+    "meaning": "v. 紧握 n. 扣子",
+    "level": "cet6"
+  },
+  {
+    "word": "cleave",
+    "phonetic": "/kliːv/",
+    "meaning": "v. 劈开；黏住",
+    "level": "cet6"
+  },
+  {
+    "word": "client",
+    "phonetic": "/ˈklaɪənt/",
+    "meaning": "n. 客户；委托人",
+    "level": "cet6"
+  },
+  {
+    "word": "cling",
+    "phonetic": "/klɪŋ/",
+    "meaning": "v. 紧握；黏着；坚持",
+    "level": "cet6"
+  },
+  {
+    "word": "clinic",
+    "phonetic": "/ˈklɪnɪk/",
+    "meaning": "n. 诊所；门诊部",
+    "level": "cet6"
+  },
+  {
+    "word": "clip",
+    "phonetic": "/klɪp/",
+    "meaning": "n. 夹子 v. 剪",
+    "level": "cet6"
+  },
+  {
+    "word": "clone",
+    "phonetic": "/kloʊn/",
+    "meaning": "n./v. 克隆；复制",
+    "level": "cet6"
+  },
+  {
+    "word": "cluster",
+    "phonetic": "/ˈklʌstər/",
+    "meaning": "n. 群；簇 v. 聚集",
+    "level": "cet6"
+  },
+  {
+    "word": "clutch",
+    "phonetic": "/klʌtʃ/",
+    "meaning": "v. 紧抓 n. 离合器",
+    "level": "cet6"
+  },
+  {
+    "word": "coalition",
+    "phonetic": "/ˌkoʊəˈlɪʃn/",
+    "meaning": "n. 联盟；联合",
+    "level": "cet6"
+  },
+  {
+    "word": "cognitive",
+    "phonetic": "/ˈkɑːɡnətɪv/",
+    "meaning": "adj. 认知的",
+    "level": "cet6"
+  },
+  {
+    "word": "coherent",
+    "phonetic": "/koʊˈhɪrənt/",
+    "meaning": "adj. 连贯的；一致的",
+    "level": "cet6"
+  },
+  {
+    "word": "coincide",
+    "phonetic": "/ˌkoʊɪnˈsaɪd/",
+    "meaning": "v. 巧合；同时发生",
+    "level": "cet6"
+  },
+  {
+    "word": "collaboration",
+    "phonetic": "/kəˌlæbəˈreɪʃn/",
+    "meaning": "n. 合作；协作",
+    "level": "cet6"
+  },
+  {
+    "word": "collide",
+    "phonetic": "/kəˈlaɪd/",
+    "meaning": "v. 碰撞；冲突",
+    "level": "cet6"
+  },
+  {
+    "word": "colonial",
+    "phonetic": "/kəˈloʊniəl/",
+    "meaning": "adj. 殖民地的",
+    "level": "cet6"
+  },
+  {
+    "word": "comet",
+    "phonetic": "/ˈkɑːmɪt/",
+    "meaning": "n. 彗星",
+    "level": "cet6"
+  },
+  {
+    "word": "commence",
+    "phonetic": "/kəˈmens/",
+    "meaning": "v. 开始；着手",
+    "level": "cet6"
+  },
+  {
+    "word": "commend",
+    "phonetic": "/kəˈmend/",
+    "meaning": "v. 表扬；推荐",
+    "level": "cet6"
+  },
+  {
+    "word": "commentary",
+    "phonetic": "/ˈkɑːmənteri/",
+    "meaning": "n. 评论；解说",
+    "level": "cet6"
+  },
+  {
+    "word": "commitment",
+    "phonetic": "/kəˈmɪtmənt/",
+    "meaning": "n. 承诺；投入",
+    "level": "cet6"
+  },
+  {
+    "word": "commodity",
+    "phonetic": "/kəˈmɑːdəti/",
+    "meaning": "n. 商品；日用品",
+    "level": "cet6"
+  },
+  {
+    "word": "commonplace",
+    "phonetic": "/ˈkɑːmənpleɪs/",
+    "meaning": "adj. 平凡的 n. 常见的事",
+    "level": "cet6"
+  },
+  {
+    "word": "commute",
+    "phonetic": "/kəˈmjuːt/",
+    "meaning": "v. 通勤；减轻",
+    "level": "cet6"
+  },
+  {
+    "word": "comparable",
+    "phonetic": "/ˈkɑːmpərəbl/",
+    "meaning": "adj. 可比较的；类似的",
+    "level": "cet6"
+  },
+  {
+    "word": "compartment",
+    "phonetic": "/kəmˈpɑːrtmənt/",
+    "meaning": "n. 间隔；车厢",
+    "level": "cet6"
+  },
+  {
+    "word": "compatible",
+    "phonetic": "/kəmˈpætəbl/",
+    "meaning": "adj. 兼容的；合得来的",
+    "level": "cet6"
+  },
+  {
+    "word": "compile",
+    "phonetic": "/kəmˈpaɪl/",
+    "meaning": "v. 编译；汇编",
+    "level": "cet6"
+  },
+  {
+    "word": "complement",
+    "phonetic": "/ˈkɑːmplɪment/",
+    "meaning": "v. 补充 n. 补语",
+    "level": "cet6"
+  },
+  {
+    "word": "complication",
+    "phonetic": "/ˌkɑːmplɪˈkeɪʃn/",
+    "meaning": "n. 并发症；复杂化",
+    "level": "cet6"
+  },
+  {
+    "word": "comply",
+    "phonetic": "/kəmˈplaɪ/",
+    "meaning": "v. 遵守；服从",
+    "level": "cet6"
+  },
+  {
+    "word": "composite",
+    "phonetic": "/kəmˈpɑːzɪt/",
+    "meaning": "adj. 合成的 n. 复合材料",
+    "level": "cet6"
+  },
+  {
+    "word": "compulsory",
+    "phonetic": "/kəmˈpʌlsəri/",
+    "meaning": "adj. 强制的；义务的",
+    "level": "cet6"
+  },
+  {
+    "word": "compute",
+    "phonetic": "/kəmˈpjuːt/",
+    "meaning": "v. 计算",
+    "level": "cet6"
+  },
+  {
+    "word": "conceive",
+    "phonetic": "/kənˈsiːv/",
+    "meaning": "v. 构思；怀孕",
+    "level": "cet6"
+  },
+  {
+    "word": "concise",
+    "phonetic": "/kənˈsaɪs/",
+    "meaning": "adj. 简洁的；简明的",
+    "level": "cet6"
+  },
+  {
+    "word": "concurrent",
+    "phonetic": "/kənˈkɜːrənt/",
+    "meaning": "adj. 同时发生的；并发的",
+    "level": "cet6"
+  },
+  {
+    "word": "condemn",
+    "phonetic": "/kənˈdem/",
+    "meaning": "v. 谴责；判刑",
+    "level": "cet6"
+  },
+  {
+    "word": "condense",
+    "phonetic": "/kənˈdens/",
+    "meaning": "v. 压缩；凝结",
+    "level": "cet6"
+  },
+  {
+    "word": "confer",
+    "phonetic": "/kənˈfɜːr/",
+    "meaning": "v. 授予；商议",
+    "level": "cet6"
+  },
+  {
+    "word": "confess",
+    "phonetic": "/kənˈfes/",
+    "meaning": "v. 承认；坦白",
+    "level": "cet6"
+  },
+  {
+    "word": "configuration",
+    "phonetic": "/kənˌfɪɡjəˈreɪʃn/",
+    "meaning": "n. 配置；布局",
+    "level": "cet6"
+  },
+  {
+    "word": "confine",
+    "phonetic": "/kənˈfaɪn/",
+    "meaning": "v. 限制；监禁",
+    "level": "cet6"
+  },
+  {
+    "word": "conform",
+    "phonetic": "/kənˈfɔːrm/",
+    "meaning": "v. 遵守；符合",
+    "level": "cet6"
+  },
+  {
+    "word": "confront",
+    "phonetic": "/kənˈfrʌnt/",
+    "meaning": "v. 面对；对抗",
+    "level": "cet6"
+  },
+  {
+    "word": "conscientious",
+    "phonetic": "/ˌkɑːnʃiˈenʃəs/",
+    "meaning": "adj. 认真的；尽责的",
+    "level": "cet6"
+  },
+  {
+    "word": "consecutive",
+    "phonetic": "/kənˈsekjətɪv/",
+    "meaning": "adj. 连续的；连贯的",
+    "level": "cet6"
+  },
+  {
+    "word": "consensus",
+    "phonetic": "/kənˈsensəs/",
+    "meaning": "n. 共识；一致意见",
+    "level": "cet6"
+  },
+  {
+    "word": "consolidate",
+    "phonetic": "/kənˈsɑːlɪdeɪt/",
+    "meaning": "v. 巩固；合并",
+    "level": "cet6"
+  },
+  {
+    "word": "conspicuous",
+    "phonetic": "/kənˈspɪkjuəs/",
+    "meaning": "adj. 显眼的；引人注目的",
+    "level": "cet6"
+  },
+  {
+    "word": "constituent",
+    "phonetic": "/kənˈstɪtʃuənt/",
+    "meaning": "n. 成分；选民 adj. 组成的",
+    "level": "cet6"
+  },
+  {
+    "word": "constrain",
+    "phonetic": "/kənˈstreɪn/",
+    "meaning": "v. 限制；约束",
+    "level": "cet6"
+  },
+  {
+    "word": "contagious",
+    "phonetic": "/kənˈteɪdʒəs/",
+    "meaning": "adj. 传染性的；有感染力的",
+    "level": "cet6"
+  },
+  {
+    "word": "contemplate",
+    "phonetic": "/ˈkɑːntəmpleɪt/",
+    "meaning": "v. 沉思；考虑",
+    "level": "cet6"
+  },
+  {
+    "word": "contempt",
+    "phonetic": "/kənˈtempt/",
+    "meaning": "n. 轻视；蔑视",
+    "level": "cet6"
+  },
+  {
+    "word": "contend",
+    "phonetic": "/kənˈtend/",
+    "meaning": "v. 竞争；主张",
+    "level": "cet6"
+  },
+  {
+    "word": "contingent",
+    "phonetic": "/kənˈtɪndʒənt/",
+    "meaning": "adj. 视情况而定的 n. 代表团",
+    "level": "cet6"
+  },
+  {
+    "word": "contradict",
+    "phonetic": "/ˌkɑːntrəˈdɪkt/",
+    "meaning": "v. 反驳；与...矛盾",
+    "level": "cet6"
+  },
+  {
+    "word": "controversy",
+    "phonetic": "/ˈkɑːntrəvɜːrsi/",
+    "meaning": "n. 争议；争论",
+    "level": "cet6"
+  },
+  {
+    "word": "convene",
+    "phonetic": "/kənˈviːn/",
+    "meaning": "v. 召集；开会",
+    "level": "cet6"
+  },
+  {
+    "word": "converge",
+    "phonetic": "/kənˈvɜːrdʒ/",
+    "meaning": "v. 汇聚；集中",
+    "level": "cet6"
+  },
+  {
+    "word": "convert",
+    "phonetic": "/kənˈvɜːrt/",
+    "meaning": "v. 转变；皈依",
+    "level": "cet6"
+  },
+  {
+    "word": "convict",
+    "phonetic": "/kənˈvɪkt/",
+    "meaning": "v. 定罪 n. 囚犯",
+    "level": "cet6"
+  },
+  {
+    "word": "cordial",
+    "phonetic": "/ˈkɔːrdʒəl/",
+    "meaning": "adj. 热情的；友好的",
+    "level": "cet6"
+  },
+  {
+    "word": "corps",
+    "phonetic": "/kɔːr/",
+    "meaning": "n. 军团；团队",
+    "level": "cet6"
+  },
+  {
+    "word": "correlate",
+    "phonetic": "/ˈkɔːrəleɪt/",
+    "meaning": "v. 关联；相关",
+    "level": "cet6"
+  },
+  {
+    "word": "corrode",
+    "phonetic": "/kəˈroʊd/",
+    "meaning": "v. 腐蚀；侵蚀",
+    "level": "cet6"
+  },
+  {
+    "word": "cosmic",
+    "phonetic": "/ˈkɑːzmɪk/",
+    "meaning": "adj. 宇宙的",
+    "level": "cet6"
+  },
+  {
+    "word": "costume",
+    "phonetic": "/ˈkɑːstuːm/",
+    "meaning": "n. 服装；戏服",
+    "level": "cet6"
+  },
+  {
+    "word": "couch",
+    "phonetic": "/kaʊtʃ/",
+    "meaning": "n. 沙发 v. 表达",
+    "level": "cet6"
+  },
+  {
+    "word": "counsel",
+    "phonetic": "/ˈkaʊnsl/",
+    "meaning": "n. 忠告；律师 v. 建议",
+    "level": "cet6"
+  },
+  {
+    "word": "counterpart",
+    "phonetic": "/ˈkaʊntərpɑːrt/",
+    "meaning": "n. 对应的人或物",
+    "level": "cet6"
+  },
+  {
+    "word": "coupon",
+    "phonetic": "/ˈkuːpɑːn/",
+    "meaning": "n. 优惠券",
+    "level": "cet6"
+  },
+  {
+    "word": "courtesy",
+    "phonetic": "/ˈkɜːrtəsi/",
+    "meaning": "n. 礼貌；好意",
+    "level": "cet6"
+  },
+  {
+    "word": "coverage",
+    "phonetic": "/ˈkʌvərɪdʒ/",
+    "meaning": "n. 覆盖范围；报道",
+    "level": "cet6"
+  },
+  {
+    "word": "coward",
+    "phonetic": "/ˈkaʊərd/",
+    "meaning": "n. 懦夫",
+    "level": "cet6"
+  },
+  {
+    "word": "cozy",
+    "phonetic": "/ˈkoʊzi/",
+    "meaning": "adj. 舒适的；温馨的",
+    "level": "cet6"
+  },
+  {
+    "word": "cradle",
+    "phonetic": "/ˈkreɪdl/",
+    "meaning": "n. 摇篮；发源地",
+    "level": "cet6"
+  },
+  {
+    "word": "criterion",
+    "phonetic": "/kraɪˈtɪriən/",
+    "meaning": "n. 标准；准则",
+    "level": "cet6"
+  },
+  {
+    "word": "crouch",
+    "phonetic": "/kraʊtʃ/",
+    "meaning": "v. 蹲下；蜷缩",
+    "level": "cet6"
+  },
+  {
+    "word": "crown",
+    "phonetic": "/kraʊn/",
+    "meaning": "n. 王冠 v. 加冕",
+    "level": "cet6"
+  },
+  {
+    "word": "cruise",
+    "phonetic": "/kruːz/",
+    "meaning": "n./v. 巡航；游览",
+    "level": "cet6"
+  },
+  {
+    "word": "crumble",
+    "phonetic": "/ˈkrʌmbl/",
+    "meaning": "v. 破碎；崩溃",
+    "level": "cet6"
+  },
+  {
+    "word": "crust",
+    "phonetic": "/krʌst/",
+    "meaning": "n. 面包皮；外壳",
+    "level": "cet6"
+  },
+  {
+    "word": "crystal",
+    "phonetic": "/ˈkrɪstl/",
+    "meaning": "n. 水晶 adj. 透明的",
+    "level": "cet6"
+  },
+  {
+    "word": "cube",
+    "phonetic": "/kjuːb/",
+    "meaning": "n. 立方体 v. 求立方",
+    "level": "cet6"
+  },
+  {
+    "word": "culminate",
+    "phonetic": "/ˈkʌlmɪneɪt/",
+    "meaning": "v. 达到顶点；告终",
+    "level": "cet6"
+  },
+  {
+    "word": "cumulative",
+    "phonetic": "/ˈkjuːmjəleɪtɪv/",
+    "meaning": "adj. 累积的",
+    "level": "cet6"
+  },
+  {
+    "word": "curb",
+    "phonetic": "/kɜːrb/",
+    "meaning": "v. 控制 n. 路缘",
+    "level": "cet6"
+  },
+  {
+    "word": "curl",
+    "phonetic": "/kɜːrl/",
+    "meaning": "v. 卷曲 n. 卷发",
+    "level": "cet6"
+  },
+  {
+    "word": "custody",
+    "phonetic": "/ˈkʌstədi/",
+    "meaning": "n. 监护；拘留",
+    "level": "cet6"
+  },
+  {
+    "word": "customary",
+    "phonetic": "/ˈkʌstəmeri/",
+    "meaning": "adj. 习惯的；惯例的",
+    "level": "cet6"
+  },
+  {
+    "word": "cute",
+    "phonetic": "/kjuːt/",
+    "meaning": "adj. 可爱的；聪明的",
+    "level": "cet6"
+  },
+  {
+    "word": "cylinder",
+    "phonetic": "/ˈsɪlɪndər/",
+    "meaning": "n. 圆柱体；气缸",
+    "level": "cet6"
+  },
+  {
+    "word": "dazzle",
+    "phonetic": "/ˈdæzl/",
+    "meaning": "v. 使眼花；使惊叹",
+    "level": "cet6"
+  },
+  {
+    "word": "decisive",
+    "phonetic": "/dɪˈsaɪsɪv/",
+    "meaning": "adj. 决定性的；果断的",
+    "level": "cet6"
+  },
+  {
+    "word": "decree",
+    "phonetic": "/dɪˈkriː/",
+    "meaning": "n. 法令 v. 颁布",
+    "level": "cet6"
+  },
+  {
+    "word": "dedicate",
+    "phonetic": "/ˈdedɪkeɪt/",
+    "meaning": "v. 致力于；奉献",
+    "level": "cet6"
+  },
+  {
+    "word": "deduce",
+    "phonetic": "/dɪˈduːs/",
+    "meaning": "v. 推断；演绎",
+    "level": "cet6"
+  },
+  {
+    "word": "deem",
+    "phonetic": "/diːm/",
+    "meaning": "v. 认为；视为",
+    "level": "cet6"
+  },
+  {
+    "word": "default",
+    "phonetic": "/dɪˈfɔːlt/",
+    "meaning": "n. 默认；违约 v. 不履行",
+    "level": "cet6"
+  },
+  {
+    "word": "defect",
+    "phonetic": "/ˈdiːfekt/",
+    "meaning": "n. 缺陷 v. 背叛",
+    "level": "cet6"
+  },
+  {
+    "word": "deficit",
+    "phonetic": "/ˈdefɪsɪt/",
+    "meaning": "n. 赤字；不足",
+    "level": "cet6"
+  },
+  {
+    "word": "defy",
+    "phonetic": "/dɪˈfaɪ/",
+    "meaning": "v. 挑战；违抗",
+    "level": "cet6"
+  },
+  {
+    "word": "delegate",
+    "phonetic": "/ˈdelɪɡət/",
+    "meaning": "n. 代表 v. 委托",
+    "level": "cet6"
+  },
+  {
+    "word": "demolish",
+    "phonetic": "/dɪˈmɑːlɪʃ/",
+    "meaning": "v. 拆除；推翻",
+    "level": "cet6"
+  },
+  {
+    "word": "denial",
+    "phonetic": "/dɪˈnaɪəl/",
+    "meaning": "n. 否认；拒绝",
+    "level": "cet6"
+  },
+  {
+    "word": "denote",
+    "phonetic": "/dɪˈnoʊt/",
+    "meaning": "v. 表示；意味着",
+    "level": "cet6"
+  },
+  {
+    "word": "dentist",
+    "phonetic": "/ˈdentɪst/",
+    "meaning": "n. 牙医",
+    "level": "cet6"
+  },
+  {
+    "word": "depict",
+    "phonetic": "/dɪˈpɪkt/",
+    "meaning": "v. 描绘；描述",
+    "level": "cet6"
+  },
+  {
+    "word": "deploy",
+    "phonetic": "/dɪˈplɔɪ/",
+    "meaning": "v. 部署；展开",
+    "level": "cet6"
+  },
+  {
+    "word": "deprive",
+    "phonetic": "/dɪˈpraɪv/",
+    "meaning": "v. 剥夺；使丧失",
+    "level": "cet6"
+  },
+  {
+    "word": "descendant",
+    "phonetic": "/dɪˈsendənt/",
+    "meaning": "n. 后代；子孙",
+    "level": "cet6"
+  },
+  {
+    "word": "designate",
+    "phonetic": "/ˈdezɪɡneɪt/",
+    "meaning": "v. 指定；标明",
+    "level": "cet6"
+  },
+  {
+    "word": "despise",
+    "phonetic": "/dɪˈspaɪz/",
+    "meaning": "v. 鄙视；轻视",
+    "level": "cet6"
+  },
+  {
+    "word": "destiny",
+    "phonetic": "/ˈdestəni/",
+    "meaning": "n. 命运；天命",
+    "level": "cet6"
+  },
+  {
+    "word": "detach",
+    "phonetic": "/dɪˈtætʃ/",
+    "meaning": "v. 拆开；分离",
+    "level": "cet6"
+  },
+  {
+    "word": "detain",
+    "phonetic": "/dɪˈteɪn/",
+    "meaning": "v. 拘留；耽搁",
+    "level": "cet6"
+  },
+  {
+    "word": "deteriorate",
+    "phonetic": "/dɪˈtɪriəreɪt/",
+    "meaning": "v. 恶化；退化",
+    "level": "cet6"
+  },
+  {
+    "word": "diagnose",
+    "phonetic": "/ˌdaɪəɡˈnoʊs/",
+    "meaning": "v. 诊断",
+    "level": "cet6"
+  },
+  {
+    "word": "differentiate",
+    "phonetic": "/ˌdɪfəˈrenʃieɪt/",
+    "meaning": "v. 区分；区别",
+    "level": "cet6"
+  },
+  {
+    "word": "diffuse",
+    "phonetic": "/dɪˈfjuːz/",
+    "meaning": "v. 扩散 adj. 扩散的",
+    "level": "cet6"
+  },
+  {
+    "word": "dilemma",
+    "phonetic": "/dɪˈlemə/",
+    "meaning": "n. 困境；两难",
+    "level": "cet6"
+  },
+  {
+    "word": "diligent",
+    "phonetic": "/ˈdɪlɪdʒənt/",
+    "meaning": "adj. 勤奋的",
+    "level": "cet6"
+  },
+  {
+    "word": "dilute",
+    "phonetic": "/daɪˈluːt/",
+    "meaning": "v. 稀释；冲淡",
+    "level": "cet6"
+  },
+  {
+    "word": "diminish",
+    "phonetic": "/dɪˈmɪnɪʃ/",
+    "meaning": "v. 减少；缩小",
+    "level": "cet6"
+  },
+  {
+    "word": "directory",
+    "phonetic": "/dɪˈrektəri/",
+    "meaning": "n. 目录；指南",
+    "level": "cet6"
+  },
+  {
+    "word": "discern",
+    "phonetic": "/dɪˈsɜːrn/",
+    "meaning": "v. 辨别；察觉",
+    "level": "cet6"
+  },
+  {
+    "word": "disclose",
+    "phonetic": "/dɪsˈkloʊz/",
+    "meaning": "v. 揭露；公开",
+    "level": "cet6"
+  },
+  {
+    "word": "discreet",
+    "phonetic": "/dɪˈskriːt/",
+    "meaning": "adj. 谨慎的；慎重的",
+    "level": "cet6"
+  },
+  {
+    "word": "discrepancy",
+    "phonetic": "/dɪsˈkrepənsi/",
+    "meaning": "n. 差异；不一致",
+    "level": "cet6"
+  },
+  {
+    "word": "discrete",
+    "phonetic": "/dɪˈskriːt/",
+    "meaning": "adj. 离散的；分离的",
+    "level": "cet6"
+  },
+  {
+    "word": "discriminate",
+    "phonetic": "/dɪˈskrɪmɪneɪt/",
+    "meaning": "v. 歧视；区分",
+    "level": "cet6"
+  },
+  {
+    "word": "disguise",
+    "phonetic": "/dɪsˈɡaɪz/",
+    "meaning": "v. 伪装 n. 伪装品",
+    "level": "cet6"
+  },
+  {
+    "word": "dismay",
+    "phonetic": "/dɪsˈmeɪ/",
+    "meaning": "n. 沮丧 v. 使气馁",
+    "level": "cet6"
+  },
+  {
+    "word": "dispatch",
+    "phonetic": "/dɪˈspætʃ/",
+    "meaning": "v. 派遣 n. 急件",
+    "level": "cet6"
+  },
+  {
+    "word": "disperse",
+    "phonetic": "/dɪˈspɜːrs/",
+    "meaning": "v. 分散；散开",
+    "level": "cet6"
+  },
+  {
+    "word": "displace",
+    "phonetic": "/dɪsˈpleɪs/",
+    "meaning": "v. 取代；使移位",
+    "level": "cet6"
+  },
+  {
+    "word": "disposition",
+    "phonetic": "/ˌdɪspəˈzɪʃn/",
+    "meaning": "n. 性情；安排",
+    "level": "cet6"
+  },
+  {
+    "word": "disregard",
+    "phonetic": "/ˌdɪsrɪˈɡɑːrd/",
+    "meaning": "v./n. 忽视；漠视",
+    "level": "cet6"
+  },
+  {
+    "word": "disrupt",
+    "phonetic": "/dɪsˈrʌpt/",
+    "meaning": "v. 扰乱；中断",
+    "level": "cet6"
+  },
+  {
+    "word": "dissolve",
+    "phonetic": "/dɪˈzɑːlv/",
+    "meaning": "v. 溶解；解散",
+    "level": "cet6"
+  },
+  {
+    "word": "distort",
+    "phonetic": "/dɪˈstɔːrt/",
+    "meaning": "v. 扭曲；歪曲",
+    "level": "cet6"
+  },
+  {
+    "word": "distract",
+    "phonetic": "/dɪˈstrækt/",
+    "meaning": "v. 分散注意力；使分心",
+    "level": "cet6"
+  },
+  {
+    "word": "disturbance",
+    "phonetic": "/dɪˈstɜːrbəns/",
+    "meaning": "n. 干扰；骚动",
+    "level": "cet6"
+  },
+  {
+    "word": "diversion",
+    "phonetic": "/daɪˈvɜːrʒn/",
+    "meaning": "n. 转移；消遣",
+    "level": "cet6"
+  },
+  {
+    "word": "divert",
+    "phonetic": "/daɪˈvɜːrt/",
+    "meaning": "v. 转移；使转向",
+    "level": "cet6"
+  },
+  {
+    "word": "dock",
+    "phonetic": "/dɑːk/",
+    "meaning": "n. 码头 v. 停靠",
+    "level": "cet6"
+  },
+  {
+    "word": "doctrine",
+    "phonetic": "/ˈdɑːktrɪn/",
+    "meaning": "n. 教义；学说",
+    "level": "cet6"
+  },
+  {
+    "word": "domain",
+    "phonetic": "/doʊˈmeɪn/",
+    "meaning": "n. 领域；域名",
+    "level": "cet6"
+  },
+  {
+    "word": "donation",
+    "phonetic": "/doʊˈneɪʃn/",
+    "meaning": "n. 捐赠；捐款",
+    "level": "cet6"
+  },
+  {
+    "word": "doom",
+    "phonetic": "/duːm/",
+    "meaning": "n. 厄运 v. 注定",
+    "level": "cet6"
+  },
+  {
+    "word": "drastic",
+    "phonetic": "/ˈdræstɪk/",
+    "meaning": "adj. 激烈的；严厉的",
+    "level": "cet6"
+  },
+  {
+    "word": "drought",
+    "phonetic": "/draʊt/",
+    "meaning": "n. 干旱",
+    "level": "cet6"
+  },
+  {
+    "word": "dual",
+    "phonetic": "/ˈduːəl/",
+    "meaning": "adj. 双重的；双的",
+    "level": "cet6"
+  },
+  {
+    "word": "dubious",
+    "phonetic": "/ˈduːbiəs/",
+    "meaning": "adj. 可疑的；不确定的",
+    "level": "cet6"
+  },
+  {
+    "word": "duplicate",
+    "phonetic": "/ˈduːplɪkeɪt/",
+    "meaning": "v. 复制 n. 副本",
+    "level": "cet6"
+  },
+  {
+    "word": "dwell",
+    "phonetic": "/dwel/",
+    "meaning": "v. 居住；详述",
+    "level": "cet6"
+  },
+  {
+    "word": "eject",
+    "phonetic": "/iˈdʒekt/",
+    "meaning": "v. 弹出；逐出",
+    "level": "cet6"
+  },
+  {
+    "word": "electrician",
+    "phonetic": "/ɪˌlekˈtrɪʃn/",
+    "meaning": "n. 电工",
+    "level": "cet6"
+  },
+  {
+    "word": "elevate",
+    "phonetic": "/ˈelɪveɪt/",
+    "meaning": "v. 提高；提升",
+    "level": "cet6"
+  },
+  {
+    "word": "elicit",
+    "phonetic": "/iˈlɪsɪt/",
+    "meaning": "v. 引出；探出",
+    "level": "cet6"
+  },
+  {
+    "word": "eloquent",
+    "phonetic": "/ˈeləkwənt/",
+    "meaning": "adj. 雄辩的；有口才的",
+    "level": "cet6"
+  },
+  {
+    "word": "embark",
+    "phonetic": "/ɪmˈbɑːrk/",
+    "meaning": "v. 开始；上船",
+    "level": "cet6"
+  },
+  {
+    "word": "embed",
+    "phonetic": "/ɪmˈbed/",
+    "meaning": "v. 嵌入；植入",
+    "level": "cet6"
+  },
+  {
+    "word": "embody",
+    "phonetic": "/ɪmˈbɑːdi/",
+    "meaning": "v. 体现；包含",
+    "level": "cet6"
+  },
+  {
+    "word": "emigrate",
+    "phonetic": "/ˈemɪɡreɪt/",
+    "meaning": "v. 移居国外",
+    "level": "cet6"
+  },
+  {
+    "word": "empirical",
+    "phonetic": "/ɪmˈpɪrɪkl/",
+    "meaning": "adj. 经验主义的",
+    "level": "cet6"
+  },
+  {
+    "word": "enclosure",
+    "phonetic": "/ɪnˈkloʊʒər/",
+    "meaning": "n. 附件；围场",
+    "level": "cet6"
+  },
+  {
+    "word": "endow",
+    "phonetic": "/ɪnˈdaʊ/",
+    "meaning": "v. 捐赠；赋予",
+    "level": "cet6"
+  },
+  {
+    "word": "endure",
+    "phonetic": "/ɪnˈdʊr/",
+    "meaning": "v. 忍受；持续",
+    "level": "cet6"
+  },
+  {
+    "word": "energetic",
+    "phonetic": "/ˌenərˈdʒetɪk/",
+    "meaning": "adj. 精力充沛的",
+    "level": "cet6"
+  },
+  {
+    "word": "enlighten",
+    "phonetic": "/ɪnˈlaɪtn/",
+    "meaning": "v. 启发；启蒙",
+    "level": "cet6"
+  },
+  {
+    "word": "ensue",
+    "phonetic": "/ɪnˈsuː/",
+    "meaning": "v. 接着发生；继而",
+    "level": "cet6"
+  },
+  {
+    "word": "entail",
+    "phonetic": "/ɪnˈteɪl/",
+    "meaning": "v. 需要；牵涉",
+    "level": "cet6"
+  },
+  {
+    "word": "entity",
+    "phonetic": "/ˈentəti/",
+    "meaning": "n. 实体；存在",
+    "level": "cet6"
+  },
+  {
+    "word": "entrepreneur",
+    "phonetic": "/ˌɑːntrəprəˈnɜːr/",
+    "meaning": "n. 企业家",
+    "level": "cet6"
+  },
+  {
+    "word": "envisage",
+    "phonetic": "/ɪnˈvɪzɪdʒ/",
+    "meaning": "v. 设想；想象",
+    "level": "cet6"
+  },
+  {
+    "word": "epoch",
+    "phonetic": "/ˈepək/",
+    "meaning": "n. 时代；纪元",
+    "level": "cet6"
+  },
+  {
+    "word": "equity",
+    "phonetic": "/ˈekwəti/",
+    "meaning": "n. 公平；股权",
+    "level": "cet6"
+  },
+  {
+    "word": "erode",
+    "phonetic": "/ɪˈroʊd/",
+    "meaning": "v. 侵蚀；腐蚀",
+    "level": "cet6"
+  },
+  {
+    "word": "erroneous",
+    "phonetic": "/ɪˈroʊniəs/",
+    "meaning": "adj. 错误的",
+    "level": "cet6"
+  },
+  {
+    "word": "erupt",
+    "phonetic": "/ɪˈrʌpt/",
+    "meaning": "v. 喷发；爆发",
+    "level": "cet6"
+  },
+  {
+    "word": "escort",
+    "phonetic": "/ˈeskɔːrt/",
+    "meaning": "n. 护送者 v. 护送",
+    "level": "cet6"
+  },
+  {
+    "word": "essence",
+    "phonetic": "/ˈesns/",
+    "meaning": "n. 本质；精髓",
+    "level": "cet6"
+  },
+  {
+    "word": "esteem",
+    "phonetic": "/ɪˈstiːm/",
+    "meaning": "n./v. 尊重；尊敬",
+    "level": "cet6"
+  },
+  {
+    "word": "eternal",
+    "phonetic": "/ɪˈtɜːrnl/",
+    "meaning": "adj. 永恒的；不朽的",
+    "level": "cet6"
+  },
+  {
+    "word": "evacuate",
+    "phonetic": "/ɪˈvækjueɪt/",
+    "meaning": "v. 撤离；疏散",
+    "level": "cet6"
+  },
+  {
+    "word": "evoke",
+    "phonetic": "/ɪˈvoʊk/",
+    "meaning": "v. 唤起；引起",
+    "level": "cet6"
+  },
+  {
+    "word": "exempt",
+    "phonetic": "/ɪɡˈzempt/",
+    "meaning": "v. 免除 adj. 被免除的",
+    "level": "cet6"
+  },
+  {
+    "word": "exile",
+    "phonetic": "/ˈeksaɪl/",
+    "meaning": "n./v. 流放；放逐",
+    "level": "cet6"
+  },
+  {
+    "word": "exotic",
+    "phonetic": "/ɪɡˈzɑːtɪk/",
+    "meaning": "adj. 异国情调的；外来的",
+    "level": "cet6"
+  },
+  {
+    "word": "expedition",
+    "phonetic": "/ˌekspəˈdɪʃn/",
+    "meaning": "n. 远征；探险队",
+    "level": "cet6"
+  },
+  {
+    "word": "expel",
+    "phonetic": "/ɪkˈspel/",
+    "meaning": "v. 驱逐；开除",
+    "level": "cet6"
+  },
+  {
+    "word": "expenditure",
+    "phonetic": "/ɪkˈspendɪtʃər/",
+    "meaning": "n. 支出；花费",
+    "level": "cet6"
+  },
+  {
+    "word": "expertise",
+    "phonetic": "/ˌekspɜːrˈtiːz/",
+    "meaning": "n. 专门知识；专长",
+    "level": "cet6"
+  },
+  {
+    "word": "expire",
+    "phonetic": "/ɪkˈspaɪər/",
+    "meaning": "v. 到期；期满",
+    "level": "cet6"
+  },
+  {
+    "word": "explicit",
+    "phonetic": "/ɪkˈsplɪsɪt/",
+    "meaning": "adj. 明确的；直率的",
+    "level": "cet6"
+  },
+  {
+    "word": "exquisite",
+    "phonetic": "/ɪkˈskwɪzɪt/",
+    "meaning": "adj. 精致的；优美的",
+    "level": "cet6"
+  },
+  {
+    "word": "extinct",
+    "phonetic": "/ɪkˈstɪŋkt/",
+    "meaning": "adj. 灭绝的；绝迹的",
+    "level": "cet6"
+  },
+  {
+    "word": "extinguish",
+    "phonetic": "/ɪkˈstɪŋɡwɪʃ/",
+    "meaning": "v. 熄灭；消灭",
+    "level": "cet6"
+  },
+  {
+    "word": "extract",
+    "phonetic": "/ˈekstrækt/",
+    "meaning": "v. 提取 n. 摘录",
+    "level": "cet6"
+  },
+  {
+    "word": "fabulous",
+    "phonetic": "/ˈfæbjələs/",
+    "meaning": "adj. 极好的；惊人的",
+    "level": "cet6"
+  },
+  {
+    "word": "facet",
+    "phonetic": "/ˈfæsɪt/",
+    "meaning": "n. 方面；面",
+    "level": "cet6"
+  },
+  {
+    "word": "fake",
+    "phonetic": "/feɪk/",
+    "meaning": "adj. 假的 n. 赝品",
+    "level": "cet6"
+  },
+  {
+    "word": "famine",
+    "phonetic": "/ˈfæmɪn/",
+    "meaning": "n. 饥荒",
+    "level": "cet6"
+  },
+  {
+    "word": "fantasy",
+    "phonetic": "/ˈfæntəsi/",
+    "meaning": "n. 幻想；想象",
+    "level": "cet6"
+  },
+  {
+    "word": "fascinate",
+    "phonetic": "/ˈfæsɪneɪt/",
+    "meaning": "v. 使着迷；迷住",
+    "level": "cet6"
+  },
+  {
+    "word": "feast",
+    "phonetic": "/fiːst/",
+    "meaning": "n. 盛宴 v. 尽情享用",
+    "level": "cet6"
+  },
+  {
+    "word": "feat",
+    "phonetic": "/fiːt/",
+    "meaning": "n. 功绩；技艺",
+    "level": "cet6"
+  },
+  {
+    "word": "feeble",
+    "phonetic": "/ˈfiːbl/",
+    "meaning": "adj. 虚弱的；无力的",
+    "level": "cet6"
+  },
+  {
+    "word": "ferry",
+    "phonetic": "/ˈferi/",
+    "meaning": "n. 渡轮 v. 渡运",
+    "level": "cet6"
+  },
+  {
+    "word": "fiscal",
+    "phonetic": "/ˈfɪskl/",
+    "meaning": "adj. 财政的；国库的",
+    "level": "cet6"
+  },
+  {
+    "word": "fixture",
+    "phonetic": "/ˈfɪkstʃər/",
+    "meaning": "n. 固定装置；固定物",
+    "level": "cet6"
+  },
+  {
+    "word": "flank",
+    "phonetic": "/flæŋk/",
+    "meaning": "n. 侧面 v. 位于侧面",
+    "level": "cet6"
+  },
+  {
+    "word": "flap",
+    "phonetic": "/flæp/",
+    "meaning": "v. 拍打 n. 襟翼",
+    "level": "cet6"
+  },
+  {
+    "word": "flare",
+    "phonetic": "/fler/",
+    "meaning": "n. 闪光 v. 闪耀",
+    "level": "cet6"
+  },
+  {
+    "word": "flaw",
+    "phonetic": "/flɔː/",
+    "meaning": "n. 缺陷；瑕疵",
+    "level": "cet6"
+  },
+  {
+    "word": "flee",
+    "phonetic": "/fliː/",
+    "meaning": "v. 逃走；逃跑",
+    "level": "cet6"
+  },
+  {
+    "word": "fleet",
+    "phonetic": "/fliːt/",
+    "meaning": "n. 舰队 adj. 快速的",
+    "level": "cet6"
+  },
+  {
+    "word": "fling",
+    "phonetic": "/flɪŋ/",
+    "meaning": "v. 投掷；猛冲",
+    "level": "cet6"
+  },
+  {
+    "word": "flock",
+    "phonetic": "/flɑːk/",
+    "meaning": "n. 一群 v. 聚集",
+    "level": "cet6"
+  },
+  {
+    "word": "fluctuate",
+    "phonetic": "/ˈflʌktʃueɪt/",
+    "meaning": "v. 波动；起伏",
+    "level": "cet6"
+  },
+  {
+    "word": "flush",
+    "phonetic": "/flʌʃ/",
+    "meaning": "v. 冲洗；脸红",
+    "level": "cet6"
+  },
+  {
+    "word": "foam",
+    "phonetic": "/foʊm/",
+    "meaning": "n. 泡沫 v. 起泡沫",
+    "level": "cet6"
+  },
+  {
+    "word": "foil",
+    "phonetic": "/fɔɪl/",
+    "meaning": "n. 箔纸 v. 挫败",
+    "level": "cet6"
+  },
+  {
+    "word": "foremost",
+    "phonetic": "/ˈfɔːrmoʊst/",
+    "meaning": "adj. 最重要的；最前的",
+    "level": "cet6"
+  },
+  {
+    "word": "forfeit",
+    "phonetic": "/ˈfɔːrfɪt/",
+    "meaning": "v. 丧失 n. 罚金",
+    "level": "cet6"
+  },
+  {
+    "word": "formidable",
+    "phonetic": "/ˈfɔːrmɪdəbl/",
+    "meaning": "adj. 可怕的；难以克服的",
+    "level": "cet6"
+  },
+  {
+    "word": "formulate",
+    "phonetic": "/ˈfɔːrmjuleɪt/",
+    "meaning": "v. 制定；构想",
+    "level": "cet6"
+  },
+  {
+    "word": "fort",
+    "phonetic": "/fɔːrt/",
+    "meaning": "n. 堡垒；要塞",
+    "level": "cet6"
+  },
+  {
+    "word": "foster",
+    "phonetic": "/ˈfɔːstər/",
+    "meaning": "v. 培养；促进",
+    "level": "cet6"
+  },
+  {
+    "word": "foul",
+    "phonetic": "/faʊl/",
+    "meaning": "adj. 恶劣的 v. 犯规",
+    "level": "cet6"
+  },
+  {
+    "word": "fracture",
+    "phonetic": "/ˈfræktʃər/",
+    "meaning": "n. 骨折 v. 断裂",
+    "level": "cet6"
+  },
+  {
+    "word": "fragile",
+    "phonetic": "/ˈfrædʒl/",
+    "meaning": "adj. 脆弱的；易碎的",
+    "level": "cet6"
+  },
+  {
+    "word": "frantic",
+    "phonetic": "/ˈfræntɪk/",
+    "meaning": "adj. 疯狂的；狂乱的",
+    "level": "cet6"
+  },
+  {
+    "word": "fraud",
+    "phonetic": "/frɔːd/",
+    "meaning": "n. 欺诈；骗子",
+    "level": "cet6"
+  },
+  {
+    "word": "friction",
+    "phonetic": "/ˈfrɪkʃn/",
+    "meaning": "n. 摩擦；冲突",
+    "level": "cet6"
+  },
+  {
+    "word": "fringe",
+    "phonetic": "/frɪndʒ/",
+    "meaning": "n. 边缘；刘海",
+    "level": "cet6"
+  },
+  {
+    "word": "furious",
+    "phonetic": "/ˈfjʊriəs/",
+    "meaning": "adj. 狂怒的；激烈的",
+    "level": "cet6"
+  },
+  {
+    "word": "fuse",
+    "phonetic": "/fjuːz/",
+    "meaning": "v. 融合 n. 保险丝",
+    "level": "cet6"
+  },
+  {
+    "word": "fuss",
+    "phonetic": "/fʌs/",
+    "meaning": "n. 大惊小怪 v. 烦恼",
+    "level": "cet6"
+  },
+  {
+    "word": "galaxy",
+    "phonetic": "/ˈɡæləksi/",
+    "meaning": "n. 星系；银河",
+    "level": "cet6"
+  },
+  {
+    "word": "gamble",
+    "phonetic": "/ˈɡæmbl/",
+    "meaning": "v./n. 赌博；冒险",
+    "level": "cet6"
+  },
+  {
+    "word": "garment",
+    "phonetic": "/ˈɡɑːrmənt/",
+    "meaning": "n. 衣服；服装",
+    "level": "cet6"
+  },
+  {
+    "word": "gasp",
+    "phonetic": "/ɡæsp/",
+    "meaning": "v. 喘气 n. 喘息",
+    "level": "cet6"
+  },
+  {
+    "word": "gauge",
+    "phonetic": "/ɡeɪdʒ/",
+    "meaning": "n. 量规 v. 测量；估计",
+    "level": "cet6"
+  },
+  {
+    "word": "generalize",
+    "phonetic": "/ˈdʒenrəlaɪz/",
+    "meaning": "v. 概括；推广",
+    "level": "cet6"
+  },
+  {
+    "word": "glare",
+    "phonetic": "/ɡler/",
+    "meaning": "n. 强光 v. 怒视",
+    "level": "cet6"
+  },
+  {
+    "word": "gleam",
+    "phonetic": "/ɡliːm/",
+    "meaning": "n. 微光 v. 闪烁",
+    "level": "cet6"
+  },
+  {
+    "word": "glide",
+    "phonetic": "/ɡlaɪd/",
+    "meaning": "v. 滑行；滑动",
+    "level": "cet6"
+  },
+  {
+    "word": "glimpse",
+    "phonetic": "/ɡlɪmps/",
+    "meaning": "n. 一瞥 v. 瞥见",
+    "level": "cet6"
+  },
+  {
+    "word": "glitter",
+    "phonetic": "/ˈɡlɪtər/",
+    "meaning": "v. 闪光 n. 光辉",
+    "level": "cet6"
+  },
+  {
+    "word": "gloom",
+    "phonetic": "/ɡluːm/",
+    "meaning": "n. 忧郁；昏暗",
+    "level": "cet6"
+  },
+  {
+    "word": "gorgeous",
+    "phonetic": "/ˈɡɔːrdʒəs/",
+    "meaning": "adj. 华丽的；极好的",
+    "level": "cet6"
+  },
+  {
+    "word": "gossip",
+    "phonetic": "/ˈɡɑːsɪp/",
+    "meaning": "n. 闲话 v. 说闲话",
+    "level": "cet6"
+  },
+  {
+    "word": "gracious",
+    "phonetic": "/ˈɡreɪʃəs/",
+    "meaning": "adj. 亲切的；仁慈的",
+    "level": "cet6"
+  },
+  {
+    "word": "graphic",
+    "phonetic": "/ˈɡræfɪk/",
+    "meaning": "adj. 图形的；生动的",
+    "level": "cet6"
+  },
+  {
+    "word": "graze",
+    "phonetic": "/ɡreɪz/",
+    "meaning": "v. 吃草；擦伤",
+    "level": "cet6"
+  },
+  {
+    "word": "grease",
+    "phonetic": "/ɡriːs/",
+    "meaning": "n. 油脂 v. 润滑",
+    "level": "cet6"
+  },
+  {
+    "word": "grief",
+    "phonetic": "/ɡriːf/",
+    "meaning": "n. 悲伤；悲痛",
+    "level": "cet6"
+  },
+  {
+    "word": "grieve",
+    "phonetic": "/ɡriːv/",
+    "meaning": "v. 使悲伤；哀悼",
+    "level": "cet6"
+  },
+  {
+    "word": "grim",
+    "phonetic": "/ɡrɪm/",
+    "meaning": "adj. 严肃的；阴森的",
+    "level": "cet6"
+  },
+  {
+    "word": "grin",
+    "phonetic": "/ɡrɪn/",
+    "meaning": "v. 咧嘴笑 n. 露齿笑",
+    "level": "cet6"
+  },
+  {
+    "word": "groan",
+    "phonetic": "/ɡroʊn/",
+    "meaning": "v./n. 呻吟；抱怨",
+    "level": "cet6"
+  },
+  {
+    "word": "grope",
+    "phonetic": "/ɡroʊp/",
+    "meaning": "v. 摸索；探寻",
+    "level": "cet6"
+  },
+  {
+    "word": "guardian",
+    "phonetic": "/ˈɡɑːrdiən/",
+    "meaning": "n. 监护人；保护者",
+    "level": "cet6"
+  },
+  {
+    "word": "habitat",
+    "phonetic": "/ˈhæbɪtæt/",
+    "meaning": "n. 栖息地；生境",
+    "level": "cet6"
+  },
+  {
+    "word": "hail",
+    "phonetic": "/heɪl/",
+    "meaning": "v. 欢呼；下冰雹 n. 冰雹",
+    "level": "cet6"
+  },
+  {
+    "word": "hamper",
+    "phonetic": "/ˈhæmpər/",
+    "meaning": "v. 阻碍；妨碍",
+    "level": "cet6"
+  },
+  {
+    "word": "handicap",
+    "phonetic": "/ˈhændikæp/",
+    "meaning": "n. 障碍；残疾 v. 妨碍",
+    "level": "cet6"
+  },
+  {
+    "word": "harass",
+    "phonetic": "/həˈræs/",
+    "meaning": "v. 骚扰；烦扰",
+    "level": "cet6"
+  },
+  {
+    "word": "harbor",
+    "phonetic": "/ˈhɑːrbər/",
+    "meaning": "n. 港口 v. 庇护",
+    "level": "cet6"
+  },
+  {
+    "word": "hardy",
+    "phonetic": "/ˈhɑːrdi/",
+    "meaning": "adj. 强壮的；耐寒的",
+    "level": "cet6"
+  },
+  {
+    "word": "hatch",
+    "phonetic": "/hætʃ/",
+    "meaning": "v. 孵化；策划",
+    "level": "cet6"
+  },
+  {
+    "word": "haul",
+    "phonetic": "/hɔːl/",
+    "meaning": "v. 拖；拉 n. 拖运",
+    "level": "cet6"
+  },
+  {
+    "word": "haunt",
+    "phonetic": "/hɔːnt/",
+    "meaning": "v. 萦绕心头；常去",
+    "level": "cet6"
+  },
+  {
+    "word": "heal",
+    "phonetic": "/hiːl/",
+    "meaning": "v. 治愈；愈合",
+    "level": "cet6"
+  },
+  {
+    "word": "heap",
+    "phonetic": "/hiːp/",
+    "meaning": "n. 堆 v. 堆积",
+    "level": "cet6"
+  },
+  {
+    "word": "heave",
+    "phonetic": "/hiːv/",
+    "meaning": "v. 举起；起伏",
+    "level": "cet6"
+  },
+  {
+    "word": "heighten",
+    "phonetic": "/ˈhaɪtn/",
+    "meaning": "v. 提高；增强",
+    "level": "cet6"
+  },
+  {
+    "word": "hemisphere",
+    "phonetic": "/ˈhemɪsfɪr/",
+    "meaning": "n. 半球",
+    "level": "cet6"
+  },
+  {
+    "word": "henceforth",
+    "phonetic": "/ˌhensˈfɔːrθ/",
+    "meaning": "adv. 从此以后",
+    "level": "cet6"
+  },
+  {
+    "word": "herb",
+    "phonetic": "/ɜːrb/",
+    "meaning": "n. 草本植物；香草",
+    "level": "cet6"
+  },
+  {
+    "word": "heritage",
+    "phonetic": "/ˈherɪtɪdʒ/",
+    "meaning": "n. 遗产；传统",
+    "level": "cet6"
+  },
+  {
+    "word": "hierarchy",
+    "phonetic": "/ˈhaɪərɑːrki/",
+    "meaning": "n. 等级制度；层次",
+    "level": "cet6"
+  },
+  {
+    "word": "hike",
+    "phonetic": "/haɪk/",
+    "meaning": "v./n. 徒步旅行；大幅提高",
+    "level": "cet6"
+  },
+  {
+    "word": "hinge",
+    "phonetic": "/hɪndʒ/",
+    "meaning": "n. 铰链 v. 取决于",
+    "level": "cet6"
+  },
+  {
+    "word": "hoist",
+    "phonetic": "/hɔɪst/",
+    "meaning": "v. 升起；吊起",
+    "level": "cet6"
+  },
+  {
+    "word": "homogeneous",
+    "phonetic": "/ˌhoʊməˈdʒiːniəs/",
+    "meaning": "adj. 同质的；均匀的",
+    "level": "cet6"
+  },
+  {
+    "word": "hop",
+    "phonetic": "/hɑːp/",
+    "meaning": "v. 跳跃；蹦跳",
+    "level": "cet6"
+  },
+  {
+    "word": "hose",
+    "phonetic": "/hoʊz/",
+    "meaning": "n. 软管 v. 用水管冲洗",
+    "level": "cet6"
+  },
+  {
+    "word": "hospitality",
+    "phonetic": "/ˌhɑːspɪˈtæləti/",
+    "meaning": "n. 款待；好客",
+    "level": "cet6"
+  },
+  {
+    "word": "hostage",
+    "phonetic": "/ˈhɑːstɪdʒ/",
+    "meaning": "n. 人质",
+    "level": "cet6"
+  },
+  {
+    "word": "hound",
+    "phonetic": "/haʊnd/",
+    "meaning": "n. 猎犬 v. 追逼",
+    "level": "cet6"
+  },
+  {
+    "word": "hover",
+    "phonetic": "/ˈhʌvər/",
+    "meaning": "v. 盘旋；徘徊",
+    "level": "cet6"
+  },
+  {
+    "word": "huddle",
+    "phonetic": "/ˈhʌdl/",
+    "meaning": "v. 挤作一团 n. 一堆",
+    "level": "cet6"
+  },
+  {
+    "word": "hug",
+    "phonetic": "/hʌɡ/",
+    "meaning": "v./n. 拥抱；紧抱",
+    "level": "cet6"
+  },
+  {
+    "word": "hum",
+    "phonetic": "/hʌm/",
+    "meaning": "v. 哼唱 n. 嗡嗡声",
+    "level": "cet6"
+  },
+  {
+    "word": "humidity",
+    "phonetic": "/hjuːˈmɪdəti/",
+    "meaning": "n. 湿度；湿气",
+    "level": "cet6"
+  },
+  {
+    "word": "hurl",
+    "phonetic": "/hɜːrl/",
+    "meaning": "v. 猛投；用力扔",
+    "level": "cet6"
+  },
+  {
+    "word": "hurricane",
+    "phonetic": "/ˈhɜːrɪkeɪn/",
+    "meaning": "n. 飓风",
+    "level": "cet6"
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɑːθəsɪs/",
+    "meaning": "n. 假设；假说",
+    "level": "cet6"
+  },
+  {
+    "word": "hysterical",
+    "phonetic": "/hɪˈsterɪkl/",
+    "meaning": "adj. 歇斯底里的",
+    "level": "cet6"
+  },
+  {
+    "word": "identification",
+    "phonetic": "/aɪˌdentɪfɪˈkeɪʃn/",
+    "meaning": "n. 识别；身份证明",
+    "level": "cet6"
+  },
+  {
+    "word": "ideology",
+    "phonetic": "/ˌaɪdiˈɑːlədʒi/",
+    "meaning": "n. 意识形态；思想体系",
+    "level": "cet6"
+  },
+  {
+    "word": "idiom",
+    "phonetic": "/ˈɪdiəm/",
+    "meaning": "n. 习语；惯用语",
+    "level": "cet6"
+  },
+  {
+    "word": "ignite",
+    "phonetic": "/ɪɡˈnaɪt/",
+    "meaning": "v. 点燃；着火",
+    "level": "cet6"
+  },
+  {
+    "word": "illuminate",
+    "phonetic": "/ɪˈluːmɪneɪt/",
+    "meaning": "v. 照亮；阐明",
+    "level": "cet6"
+  },
+  {
+    "word": "illusion",
+    "phonetic": "/ɪˈluːʒn/",
+    "meaning": "n. 幻觉；错觉",
+    "level": "cet6"
+  },
+  {
+    "word": "immerse",
+    "phonetic": "/ɪˈmɜːrs/",
+    "meaning": "v. 沉浸；浸入",
+    "level": "cet6"
+  },
+  {
+    "word": "immune",
+    "phonetic": "/ɪˈmjuːn/",
+    "meaning": "adj. 免疫的；不受影响的",
+    "level": "cet6"
+  },
+  {
+    "word": "impair",
+    "phonetic": "/ɪmˈper/",
+    "meaning": "v. 削弱；损害",
+    "level": "cet6"
+  },
+  {
+    "word": "impart",
+    "phonetic": "/ɪmˈpɑːrt/",
+    "meaning": "v. 传授；给予",
+    "level": "cet6"
+  },
+  {
+    "word": "imperative",
+    "phonetic": "/ɪmˈperətɪv/",
+    "meaning": "adj. 必要的 n. 命令",
+    "level": "cet6"
+  },
+  {
+    "word": "impetus",
+    "phonetic": "/ˈɪmpɪtəs/",
+    "meaning": "n. 动力；推动力",
+    "level": "cet6"
+  },
+  {
+    "word": "implicit",
+    "phonetic": "/ɪmˈplɪsɪt/",
+    "meaning": "adj. 含蓄的；隐含的",
+    "level": "cet6"
+  },
+  {
+    "word": "impulse",
+    "phonetic": "/ˈɪmpʌls/",
+    "meaning": "n. 冲动 v. 推动",
+    "level": "cet6"
+  },
+  {
+    "word": "inaugurate",
+    "phonetic": "/ɪˈnɔːɡjəreɪt/",
+    "meaning": "v. 为...举行就职典礼；开创",
+    "level": "cet6"
+  },
+  {
+    "word": "incentive",
+    "phonetic": "/ɪnˈsentɪv/",
+    "meaning": "n. 激励；动力",
+    "level": "cet6"
+  },
+  {
+    "word": "incidence",
+    "phonetic": "/ˈɪnsɪdəns/",
+    "meaning": "n. 发生率；影响范围",
+    "level": "cet6"
+  },
+  {
+    "word": "incline",
+    "phonetic": "/ɪnˈklaɪn/",
+    "meaning": "v. 倾向；倾斜",
+    "level": "cet6"
+  },
+  {
+    "word": "inclusive",
+    "phonetic": "/ɪnˈkluːsɪv/",
+    "meaning": "adj. 包容的；包括一切的",
+    "level": "cet6"
+  },
+  {
+    "word": "incorporate",
+    "phonetic": "/ɪnˈkɔːrpəreɪt/",
+    "meaning": "v. 合并；包含",
+    "level": "cet6"
+  },
+  {
+    "word": "incur",
+    "phonetic": "/ɪnˈkɜːr/",
+    "meaning": "v. 招致；引起",
+    "level": "cet6"
+  },
+  {
+    "word": "indefinite",
+    "phonetic": "/ɪnˈdefɪnət/",
+    "meaning": "adj. 不确定的；含糊的",
+    "level": "cet6"
+  },
+  {
+    "word": "indignant",
+    "phonetic": "/ɪnˈdɪɡnənt/",
+    "meaning": "adj. 愤怒的；愤慨的",
+    "level": "cet6"
+  },
+  {
+    "word": "indispensable",
+    "phonetic": "/ˌɪndɪˈspensəbl/",
+    "meaning": "adj. 不可或缺的",
+    "level": "cet6"
+  },
+  {
+    "word": "induce",
+    "phonetic": "/ɪnˈduːs/",
+    "meaning": "v. 引起；诱导",
+    "level": "cet6"
+  },
+  {
+    "word": "indulge",
+    "phonetic": "/ɪnˈdʌldʒ/",
+    "meaning": "v. 放纵；沉溺于",
+    "level": "cet6"
+  },
+  {
+    "word": "infectious",
+    "phonetic": "/ɪnˈfekʃəs/",
+    "meaning": "adj. 传染的；有感染力的",
+    "level": "cet6"
+  },
+  {
+    "word": "infer",
+    "phonetic": "/ɪnˈfɜːr/",
+    "meaning": "v. 推断；推论",
+    "level": "cet6"
+  },
+  {
+    "word": "inflation",
+    "phonetic": "/ɪnˈfleɪʃn/",
+    "meaning": "n. 通货膨胀",
+    "level": "cet6"
+  },
+  {
+    "word": "inflict",
+    "phonetic": "/ɪnˈflɪkt/",
+    "meaning": "v. 使遭受；施加",
+    "level": "cet6"
+  },
+  {
+    "word": "ingenious",
+    "phonetic": "/ɪnˈdʒiːniəs/",
+    "meaning": "adj. 巧妙的；有创造性的",
+    "level": "cet6"
+  },
+  {
+    "word": "inhabit",
+    "phonetic": "/ɪnˈhæbɪt/",
+    "meaning": "v. 居住于；栖息于",
+    "level": "cet6"
+  },
+  {
+    "word": "inhibit",
+    "phonetic": "/ɪnˈhɪbɪt/",
+    "meaning": "v. 抑制；阻止",
+    "level": "cet6"
+  },
+  {
+    "word": "inject",
+    "phonetic": "/ɪnˈdʒekt/",
+    "meaning": "v. 注射；注入",
+    "level": "cet6"
+  },
+  {
+    "word": "inland",
+    "phonetic": "/ˈɪnlænd/",
+    "meaning": "adj. 内陆的 adv. 在内陆",
+    "level": "cet6"
+  },
+  {
+    "word": "inlet",
+    "phonetic": "/ˈɪnlet/",
+    "meaning": "n. 水湾；入口",
+    "level": "cet6"
+  },
+  {
+    "word": "innovation",
+    "phonetic": "/ˌɪnəˈveɪʃn/",
+    "meaning": "n. 创新；革新",
+    "level": "cet6"
+  },
+  {
+    "word": "innumerable",
+    "phonetic": "/ɪˈnuːmərəbl/",
+    "meaning": "adj. 无数的；数不清的",
+    "level": "cet6"
+  },
+  {
+    "word": "insane",
+    "phonetic": "/ɪnˈseɪn/",
+    "meaning": "adj. 精神失常的；疯狂的",
+    "level": "cet6"
+  },
+  {
+    "word": "inspiration",
+    "phonetic": "/ˌɪnspəˈreɪʃn/",
+    "meaning": "n. 灵感；启发",
+    "level": "cet6"
+  },
+  {
+    "word": "installment",
+    "phonetic": "/ɪnˈstɔːlmənt/",
+    "meaning": "n. 分期付款；一集",
+    "level": "cet6"
+  },
+  {
+    "word": "instantaneous",
+    "phonetic": "/ˌɪnstənˈteɪniəs/",
+    "meaning": "adj. 瞬间的；即刻的",
+    "level": "cet6"
+  },
+  {
+    "word": "intact",
+    "phonetic": "/ɪnˈtækt/",
+    "meaning": "adj. 完好无损的",
+    "level": "cet6"
+  },
+  {
+    "word": "integral",
+    "phonetic": "/ˈɪntɪɡrəl/",
+    "meaning": "adj. 完整的；不可或缺的",
+    "level": "cet6"
+  },
+  {
+    "word": "integrity",
+    "phonetic": "/ɪnˈteɡrəti/",
+    "meaning": "n. 正直；完整",
+    "level": "cet6"
+  },
+  {
+    "word": "intelligible",
+    "phonetic": "/ɪnˈtelɪdʒəbl/",
+    "meaning": "adj. 可理解的；清楚的",
+    "level": "cet6"
+  },
+  {
+    "word": "intensify",
+    "phonetic": "/ɪnˈtensɪfaɪ/",
+    "meaning": "v. 加强；增强",
+    "level": "cet6"
+  },
+  {
+    "word": "intent",
+    "phonetic": "/ɪnˈtent/",
+    "meaning": "n. 意图 adj. 专注的",
+    "level": "cet6"
+  },
+  {
+    "word": "intercourse",
+    "phonetic": "/ˈɪntərkɔːrs/",
+    "meaning": "n. 交流；交往",
+    "level": "cet6"
+  },
+  {
+    "word": "interim",
+    "phonetic": "/ˈɪntərɪm/",
+    "meaning": "adj. 临时的 n. 过渡时期",
+    "level": "cet6"
+  },
+  {
+    "word": "intermittent",
+    "phonetic": "/ˌɪntərˈmɪtənt/",
+    "meaning": "adj. 间歇的；断断续续的",
+    "level": "cet6"
+  },
+  {
+    "word": "intersection",
+    "phonetic": "/ˌɪntərˈsekʃn/",
+    "meaning": "n. 交叉路口；交汇",
+    "level": "cet6"
+  },
+  {
+    "word": "intervene",
+    "phonetic": "/ˌɪntərˈviːn/",
+    "meaning": "v. 干预；介入",
+    "level": "cet6"
+  },
+  {
+    "word": "intimate",
+    "phonetic": "/ˈɪntɪmət/",
+    "meaning": "adj. 亲密的 v. 暗示",
+    "level": "cet6"
+  },
+  {
+    "word": "intricate",
+    "phonetic": "/ˈɪntrɪkət/",
+    "meaning": "adj. 复杂的；精细的",
+    "level": "cet6"
+  },
+  {
+    "word": "intrigue",
+    "phonetic": "/ɪnˈtriːɡ/",
+    "meaning": "v. 引起兴趣 n. 阴谋",
+    "level": "cet6"
+  },
+  {
+    "word": "intrinsic",
+    "phonetic": "/ɪnˈtrɪnsɪk/",
+    "meaning": "adj. 固有的；内在的",
+    "level": "cet6"
+  },
+  {
+    "word": "intuition",
+    "phonetic": "/ˌɪntuˈɪʃn/",
+    "meaning": "n. 直觉",
+    "level": "cet6"
+  },
+  {
+    "word": "invalid",
+    "phonetic": "/ɪnˈvælɪd/",
+    "meaning": "adj. 无效的 n. 病弱者",
+    "level": "cet6"
+  },
+  {
+    "word": "invaluable",
+    "phonetic": "/ɪnˈvæljuəbl/",
+    "meaning": "adj. 无价的；非常宝贵的",
+    "level": "cet6"
+  },
+  {
+    "word": "invariably",
+    "phonetic": "/ɪnˈveriəbli/",
+    "meaning": "adv. 总是；不变地",
+    "level": "cet6"
+  },
+  {
+    "word": "inventory",
+    "phonetic": "/ˈɪnvəntɔːri/",
+    "meaning": "n. 库存；清单",
+    "level": "cet6"
+  },
+  {
+    "word": "invert",
+    "phonetic": "/ɪnˈvɜːrt/",
+    "meaning": "v. 颠倒；反转",
+    "level": "cet6"
+  },
+  {
+    "word": "irony",
+    "phonetic": "/ˈaɪrəni/",
+    "meaning": "n. 讽刺；反讽",
+    "level": "cet6"
+  },
+  {
+    "word": "irrespective",
+    "phonetic": "/ˌɪrɪˈspektɪv/",
+    "meaning": "adj. 不考虑的；无关的",
+    "level": "cet6"
+  },
+  {
+    "word": "irrigation",
+    "phonetic": "/ˌɪrɪˈɡeɪʃn/",
+    "meaning": "n. 灌溉",
+    "level": "cet6"
+  },
+  {
+    "word": "irritate",
+    "phonetic": "/ˈɪrɪteɪt/",
+    "meaning": "v. 激怒；刺激",
+    "level": "cet6"
+  },
+  {
+    "word": "isle",
+    "phonetic": "/aɪl/",
+    "meaning": "n. 小岛",
+    "level": "cet6"
+  },
+  {
+    "word": "jail",
+    "phonetic": "/dʒeɪl/",
+    "meaning": "n. 监狱 v. 监禁",
+    "level": "cet6"
+  },
+  {
+    "word": "jeopardize",
+    "phonetic": "/ˈdʒepərdaɪz/",
+    "meaning": "v. 危害；危及",
+    "level": "cet6"
+  },
+  {
+    "word": "jerk",
+    "phonetic": "/dʒɜːrk/",
+    "meaning": "n. 猛拉 v. 急动",
+    "level": "cet6"
+  },
+  {
+    "word": "joint",
+    "phonetic": "/dʒɔɪnt/",
+    "meaning": "n. 关节 adj. 联合的",
+    "level": "cet6"
+  },
+  {
+    "word": "jolly",
+    "phonetic": "/ˈdʒɑːli/",
+    "meaning": "adj. 欢乐的；愉快的",
+    "level": "cet6"
+  },
+  {
+    "word": "jolt",
+    "phonetic": "/dʒoʊlt/",
+    "meaning": "v. 颠簸 n. 震动",
+    "level": "cet6"
+  },
+  {
+    "word": "judicial",
+    "phonetic": "/dʒuˈdɪʃl/",
+    "meaning": "adj. 司法的；法庭的",
+    "level": "cet6"
+  },
+  {
+    "word": "junction",
+    "phonetic": "/ˈdʒʌŋkʃn/",
+    "meaning": "n. 交叉点；枢纽",
+    "level": "cet6"
+  },
+  {
+    "word": "juvenile",
+    "phonetic": "/ˈdʒuːvənl/",
+    "meaning": "adj. 青少年的 n. 少年",
+    "level": "cet6"
+  },
+  {
+    "word": "kidnap",
+    "phonetic": "/ˈkɪdnæp/",
+    "meaning": "v. 绑架；诱拐",
+    "level": "cet6"
+  },
+  {
+    "word": "kidney",
+    "phonetic": "/ˈkɪdni/",
+    "meaning": "n. 肾脏",
+    "level": "cet6"
+  },
+  {
+    "word": "kit",
+    "phonetic": "/kɪt/",
+    "meaning": "n. 工具包；装备",
+    "level": "cet6"
+  },
+  {
+    "word": "knit",
+    "phonetic": "/nɪt/",
+    "meaning": "v. 编织；紧密结合",
+    "level": "cet6"
+  },
+  {
+    "word": "knob",
+    "phonetic": "/nɑːb/",
+    "meaning": "n. 旋钮；把手",
+    "level": "cet6"
+  },
+  {
+    "word": "lace",
+    "phonetic": "/leɪs/",
+    "meaning": "n. 花边；鞋带",
+    "level": "cet6"
+  },
+  {
+    "word": "lament",
+    "phonetic": "/ləˈment/",
+    "meaning": "v./n. 哀悼；悲痛",
+    "level": "cet6"
+  },
+  {
+    "word": "latent",
+    "phonetic": "/ˈleɪtnt/",
+    "meaning": "adj. 潜伏的；潜在的",
+    "level": "cet6"
+  },
+  {
+    "word": "latitude",
+    "phonetic": "/ˈlætɪtuːd/",
+    "meaning": "n. 纬度；自由",
+    "level": "cet6"
+  },
+  {
+    "word": "layman",
+    "phonetic": "/ˈleɪmən/",
+    "meaning": "n. 外行；门外汉",
+    "level": "cet6"
+  },
+  {
+    "word": "leaflet",
+    "phonetic": "/ˈliːflət/",
+    "meaning": "n. 传单；小册子",
+    "level": "cet6"
+  },
+  {
+    "word": "lease",
+    "phonetic": "/liːs/",
+    "meaning": "n. 租约 v. 出租",
+    "level": "cet6"
+  },
+  {
+    "word": "legislation",
+    "phonetic": "/ˌledʒɪsˈleɪʃn/",
+    "meaning": "n. 立法；法规",
+    "level": "cet6"
+  },
+  {
+    "word": "legitimate",
+    "phonetic": "/lɪˈdʒɪtɪmət/",
+    "meaning": "adj. 合法的；正当的",
+    "level": "cet6"
+  },
+  {
+    "word": "lever",
+    "phonetic": "/ˈlevər/",
+    "meaning": "n. 杠杆 v. 撬动",
+    "level": "cet6"
+  },
+  {
+    "word": "levy",
+    "phonetic": "/ˈlevi/",
+    "meaning": "v./n. 征收；征税",
+    "level": "cet6"
+  },
+  {
+    "word": "liability",
+    "phonetic": "/ˌlaɪəˈbɪləti/",
+    "meaning": "n. 责任；负债",
+    "level": "cet6"
+  },
+  {
+    "word": "likelihood",
+    "phonetic": "/ˈlaɪklihʊd/",
+    "meaning": "n. 可能性",
+    "level": "cet6"
+  },
+  {
+    "word": "limp",
+    "phonetic": "/lɪmp/",
+    "meaning": "v. 跛行 adj. 无力的",
+    "level": "cet6"
+  },
+  {
+    "word": "linear",
+    "phonetic": "/ˈlɪniər/",
+    "meaning": "adj. 线状的；线性的",
+    "level": "cet6"
+  },
+  {
+    "word": "linen",
+    "phonetic": "/ˈlɪnɪn/",
+    "meaning": "n. 亚麻布；床单",
+    "level": "cet6"
+  },
+  {
+    "word": "linger",
+    "phonetic": "/ˈlɪŋɡər/",
+    "meaning": "v. 徘徊；流连",
+    "level": "cet6"
+  },
+  {
+    "word": "literacy",
+    "phonetic": "/ˈlɪtərəsi/",
+    "meaning": "n. 读写能力；素养",
+    "level": "cet6"
+  },
+  {
+    "word": "literal",
+    "phonetic": "/ˈlɪtərəl/",
+    "meaning": "adj. 字面的；逐字的",
+    "level": "cet6"
+  },
+  {
+    "word": "litter",
+    "phonetic": "/ˈlɪtər/",
+    "meaning": "n. 垃圾 v. 乱扔",
+    "level": "cet6"
+  },
+  {
+    "word": "lobby",
+    "phonetic": "/ˈlɑːbi/",
+    "meaning": "n. 大厅 v. 游说",
+    "level": "cet6"
+  },
+  {
+    "word": "locomotive",
+    "phonetic": "/ˌloʊkəˈmoʊtɪv/",
+    "meaning": "n. 火车头 adj. 运动的",
+    "level": "cet6"
+  },
+  {
+    "word": "lofty",
+    "phonetic": "/ˈlɔːfti/",
+    "meaning": "adj. 崇高的；高耸的",
+    "level": "cet6"
+  },
+  {
+    "word": "longitude",
+    "phonetic": "/ˈlɑːndʒɪtuːd/",
+    "meaning": "n. 经度",
+    "level": "cet6"
+  },
+  {
+    "word": "loom",
+    "phonetic": "/luːm/",
+    "meaning": "v. 隐现；逼近",
+    "level": "cet6"
+  },
+  {
+    "word": "lounge",
+    "phonetic": "/laʊndʒ/",
+    "meaning": "n. 休息室 v. 闲逛",
+    "level": "cet6"
+  },
+  {
+    "word": "lubricate",
+    "phonetic": "/ˈluːbrɪkeɪt/",
+    "meaning": "v. 润滑",
+    "level": "cet6"
+  },
+  {
+    "word": "luminous",
+    "phonetic": "/ˈluːmɪnəs/",
+    "meaning": "adj. 发光的；明亮的",
+    "level": "cet6"
+  },
+  {
+    "word": "lunar",
+    "phonetic": "/ˈluːnər/",
+    "meaning": "adj. 月亮的；阴历的",
+    "level": "cet6"
+  },
+  {
+    "word": "lure",
+    "phonetic": "/lʊr/",
+    "meaning": "v. 引诱 n. 诱惑",
+    "level": "cet6"
+  },
+  {
+    "word": "magistrate",
+    "phonetic": "/ˈmædʒɪstreɪt/",
+    "meaning": "n. 地方法官",
+    "level": "cet6"
+  },
+  {
+    "word": "magnify",
+    "phonetic": "/ˈmæɡnɪfaɪ/",
+    "meaning": "v. 放大；夸大",
+    "level": "cet6"
+  },
+  {
+    "word": "magnitude",
+    "phonetic": "/ˈmæɡnɪtuːd/",
+    "meaning": "n. 大小；重要性",
+    "level": "cet6"
+  },
+  {
+    "word": "majesty",
+    "phonetic": "/ˈmædʒəsti/",
+    "meaning": "n. 威严；陛下",
+    "level": "cet6"
+  },
+  {
+    "word": "manifest",
+    "phonetic": "/ˈmænɪfest/",
+    "meaning": "v. 显示 adj. 明显的",
+    "level": "cet6"
+  },
+  {
+    "word": "manipulate",
+    "phonetic": "/məˈnɪpjuleɪt/",
+    "meaning": "v. 操纵；控制",
+    "level": "cet6"
+  },
+  {
+    "word": "mansion",
+    "phonetic": "/ˈmænʃn/",
+    "meaning": "n. 大厦；宅邸",
+    "level": "cet6"
+  },
+  {
+    "word": "manuscript",
+    "phonetic": "/ˈmænjuskrɪpt/",
+    "meaning": "n. 手稿；原稿",
+    "level": "cet6"
+  },
+  {
+    "word": "marble",
+    "phonetic": "/ˈmɑːrbl/",
+    "meaning": "n. 大理石；弹珠",
+    "level": "cet6"
+  },
+  {
+    "word": "marginal",
+    "phonetic": "/ˈmɑːrdʒɪnl/",
+    "meaning": "adj. 边缘的；微小的",
+    "level": "cet6"
+  },
+  {
+    "word": "marine",
+    "phonetic": "/məˈriːn/",
+    "meaning": "adj. 海洋的 n. 海军陆战队",
+    "level": "cet6"
+  },
+  {
+    "word": "marsh",
+    "phonetic": "/mɑːrʃ/",
+    "meaning": "n. 沼泽；湿地",
+    "level": "cet6"
+  },
+  {
+    "word": "marshal",
+    "phonetic": "/ˈmɑːrʃl/",
+    "meaning": "n. 元帅 v. 整理",
+    "level": "cet6"
+  },
+  {
+    "word": "masculine",
+    "phonetic": "/ˈmæskjəlɪn/",
+    "meaning": "adj. 男性的；阳刚的",
+    "level": "cet6"
+  },
+  {
+    "word": "massacre",
+    "phonetic": "/ˈmæsəkər/",
+    "meaning": "n./v. 大屠杀",
+    "level": "cet6"
+  },
+  {
+    "word": "masterpiece",
+    "phonetic": "/ˈmæstərpiːs/",
+    "meaning": "n. 杰作；名作",
+    "level": "cet6"
+  },
+  {
+    "word": "meadow",
+    "phonetic": "/ˈmedoʊ/",
+    "meaning": "n. 草地；牧场",
+    "level": "cet6"
+  },
+  {
+    "word": "mechanic",
+    "phonetic": "/mɪˈkænɪk/",
+    "meaning": "n. 机械工；技工",
+    "level": "cet6"
+  },
+  {
+    "word": "mediate",
+    "phonetic": "/ˈmiːdieɪt/",
+    "meaning": "v. 调解；斡旋",
+    "level": "cet6"
+  },
+  {
+    "word": "melody",
+    "phonetic": "/ˈmelədi/",
+    "meaning": "n. 旋律；曲调",
+    "level": "cet6"
+  },
+  {
+    "word": "menace",
+    "phonetic": "/ˈmenəs/",
+    "meaning": "n. 威胁 v. 威胁",
+    "level": "cet6"
+  },
+  {
+    "word": "mercury",
+    "phonetic": "/ˈmɜːrkjəri/",
+    "meaning": "n. 水银；汞",
+    "level": "cet6"
+  },
+  {
+    "word": "merge",
+    "phonetic": "/mɜːrdʒ/",
+    "meaning": "v. 合并；融合",
+    "level": "cet6"
+  },
+  {
+    "word": "merit",
+    "phonetic": "/ˈmerɪt/",
+    "meaning": "n. 优点 v. 值得",
+    "level": "cet6"
+  },
+  {
+    "word": "metallic",
+    "phonetic": "/mɪˈtælɪk/",
+    "meaning": "adj. 金属的",
+    "level": "cet6"
+  },
+  {
+    "word": "metropolitan",
+    "phonetic": "/ˌmetrəˈpɑːlɪtən/",
+    "meaning": "adj. 大都市的",
+    "level": "cet6"
+  },
+  {
+    "word": "midst",
+    "phonetic": "/mɪdst/",
+    "meaning": "n. 中间；当中",
+    "level": "cet6"
+  },
+  {
+    "word": "migrant",
+    "phonetic": "/ˈmaɪɡrənt/",
+    "meaning": "n. 移民；候鸟",
+    "level": "cet6"
+  },
+  {
+    "word": "militant",
+    "phonetic": "/ˈmɪlɪtənt/",
+    "meaning": "adj. 好战的 n. 激进分子",
+    "level": "cet6"
+  },
+  {
+    "word": "mingle",
+    "phonetic": "/ˈmɪŋɡl/",
+    "meaning": "v. 混合；交往",
+    "level": "cet6"
+  },
+  {
+    "word": "miniature",
+    "phonetic": "/ˈmɪniətʃər/",
+    "meaning": "adj. 微型的 n. 微型画",
+    "level": "cet6"
+  },
+  {
+    "word": "minimize",
+    "phonetic": "/ˈmɪnɪmaɪz/",
+    "meaning": "v. 最小化；贬低",
+    "level": "cet6"
+  },
+  {
+    "word": "mint",
+    "phonetic": "/mɪnt/",
+    "meaning": "n. 薄荷；造币厂",
+    "level": "cet6"
+  },
+  {
+    "word": "misery",
+    "phonetic": "/ˈmɪzəri/",
+    "meaning": "n. 痛苦；苦难",
+    "level": "cet6"
+  },
+  {
+    "word": "misfortune",
+    "phonetic": "/ˌmɪsˈfɔːrtʃuːn/",
+    "meaning": "n. 不幸；灾祸",
+    "level": "cet6"
+  },
+  {
+    "word": "mobilize",
+    "phonetic": "/ˈmoʊbəlaɪz/",
+    "meaning": "v. 动员；调动",
+    "level": "cet6"
+  },
+  {
+    "word": "mock",
+    "phonetic": "/mɑːk/",
+    "meaning": "v. 嘲笑 adj. 假的",
+    "level": "cet6"
+  },
+  {
+    "word": "module",
+    "phonetic": "/ˈmɑːdʒuːl/",
+    "meaning": "n. 模块；组件",
+    "level": "cet6"
+  },
+  {
+    "word": "momentum",
+    "phonetic": "/moʊˈmentəm/",
+    "meaning": "n. 势头；动力",
+    "level": "cet6"
+  },
+  {
+    "word": "monetary",
+    "phonetic": "/ˈmɑːnɪteri/",
+    "meaning": "adj. 货币的；金融的",
+    "level": "cet6"
+  },
+  {
+    "word": "monopoly",
+    "phonetic": "/məˈnɑːpəli/",
+    "meaning": "n. 垄断；独占",
+    "level": "cet6"
+  },
+  {
+    "word": "morality",
+    "phonetic": "/məˈræləti/",
+    "meaning": "n. 道德；伦理",
+    "level": "cet6"
+  },
+  {
+    "word": "mortgage",
+    "phonetic": "/ˈmɔːrɡɪdʒ/",
+    "meaning": "n./v. 抵押贷款",
+    "level": "cet6"
+  },
+  {
+    "word": "mourn",
+    "phonetic": "/mɔːrn/",
+    "meaning": "v. 哀悼；哀伤",
+    "level": "cet6"
+  },
+  {
+    "word": "muddy",
+    "phonetic": "/ˈmʌdi/",
+    "meaning": "adj. 泥泞的 v. 使浑浊",
+    "level": "cet6"
+  },
+  {
+    "word": "municipal",
+    "phonetic": "/mjuːˈnɪsɪpl/",
+    "meaning": "adj. 市政的；市的",
+    "level": "cet6"
+  },
+  {
+    "word": "murmur",
+    "phonetic": "/ˈmɜːrmər/",
+    "meaning": "v./n. 低语；小声抱怨",
+    "level": "cet6"
+  },
+  {
+    "word": "muscular",
+    "phonetic": "/ˈmʌskjələr/",
+    "meaning": "adj. 肌肉的；强壮的",
+    "level": "cet6"
+  },
+  {
+    "word": "mute",
+    "phonetic": "/mjuːt/",
+    "meaning": "adj. 沉默的 n. 弱音器",
+    "level": "cet6"
+  },
+  {
+    "word": "mutter",
+    "phonetic": "/ˈmʌtər/",
+    "meaning": "v./n. 咕哝；嘀咕",
+    "level": "cet6"
+  },
+  {
+    "word": "naive",
+    "phonetic": "/naɪˈiːv/",
+    "meaning": "adj. 天真的；幼稚的",
+    "level": "cet6"
+  },
+  {
+    "word": "narrative",
+    "phonetic": "/ˈnærətɪv/",
+    "meaning": "n. 叙述 adj. 叙述的",
+    "level": "cet6"
+  },
+  {
+    "word": "nasty",
+    "phonetic": "/ˈnæsti/",
+    "meaning": "adj. 恶劣的；下流的",
+    "level": "cet6"
+  },
+  {
+    "word": "negligible",
+    "phonetic": "/ˈneɡlɪdʒəbl/",
+    "meaning": "adj. 可以忽略的",
+    "level": "cet6"
+  },
+  {
+    "word": "nominate",
+    "phonetic": "/ˈnɑːmɪneɪt/",
+    "meaning": "v. 提名；任命",
+    "level": "cet6"
+  },
+  {
+    "word": "nonetheless",
+    "phonetic": "/ˌnʌnðəˈles/",
+    "meaning": "adv. 尽管如此；仍然",
+    "level": "cet6"
+  },
+  {
+    "word": "norm",
+    "phonetic": "/nɔːrm/",
+    "meaning": "n. 规范；标准",
+    "level": "cet6"
+  },
+  {
+    "word": "notable",
+    "phonetic": "/ˈnoʊtəbl/",
+    "meaning": "adj. 显著的 n. 名人",
+    "level": "cet6"
+  },
+  {
+    "word": "notorious",
+    "phonetic": "/noʊˈtɔːriəs/",
+    "meaning": "adj. 臭名昭著的",
+    "level": "cet6"
+  },
+  {
+    "word": "nourish",
+    "phonetic": "/ˈnɜːrɪʃ/",
+    "meaning": "v. 滋养；养育",
+    "level": "cet6"
+  },
+  {
+    "word": "novelty",
+    "phonetic": "/ˈnɑːvlti/",
+    "meaning": "n. 新奇；新颖",
+    "level": "cet6"
+  },
+  {
+    "word": "nucleus",
+    "phonetic": "/ˈnuːkliəs/",
+    "meaning": "n. 核；中心",
+    "level": "cet6"
+  },
+  {
+    "word": "nurture",
+    "phonetic": "/ˈnɜːrtʃər/",
+    "meaning": "v. 培养；养育",
+    "level": "cet6"
+  },
+  {
+    "word": "oath",
+    "phonetic": "/oʊθ/",
+    "meaning": "n. 誓言；誓约",
+    "level": "cet6"
+  },
+  {
+    "word": "obedient",
+    "phonetic": "/əˈbiːdiənt/",
+    "meaning": "adj. 顺从的；服从的",
+    "level": "cet6"
+  },
+  {
+    "word": "oblige",
+    "phonetic": "/əˈblaɪdʒ/",
+    "meaning": "v. 迫使；施恩于",
+    "level": "cet6"
+  },
+  {
+    "word": "obscure",
+    "phonetic": "/əbˈskjʊr/",
+    "meaning": "adj. 模糊的 v. 使模糊",
+    "level": "cet6"
+  },
+  {
+    "word": "odor",
+    "phonetic": "/ˈoʊdər/",
+    "meaning": "n. 气味；臭味",
+    "level": "cet6"
+  },
+  {
+    "word": "offset",
+    "phonetic": "/ˈɔːfset/",
+    "meaning": "v. 抵消 n. 补偿",
+    "level": "cet6"
+  },
+  {
+    "word": "offspring",
+    "phonetic": "/ˈɔːfsprɪŋ/",
+    "meaning": "n. 后代；子女",
+    "level": "cet6"
+  },
+  {
+    "word": "opaque",
+    "phonetic": "/oʊˈpeɪk/",
+    "meaning": "adj. 不透明的；难懂的",
+    "level": "cet6"
+  },
+  {
+    "word": "oppress",
+    "phonetic": "/əˈpres/",
+    "meaning": "v. 压迫；压抑",
+    "level": "cet6"
+  },
+  {
+    "word": "optimism",
+    "phonetic": "/ˈɑːptɪmɪzəm/",
+    "meaning": "n. 乐观；乐观主义",
+    "level": "cet6"
+  },
+  {
+    "word": "orient",
+    "phonetic": "/ˈɔːrient/",
+    "meaning": "v. 确定方向 n. 东方",
+    "level": "cet6"
+  },
+  {
+    "word": "ornamental",
+    "phonetic": "/ˌɔːrnəˈmentl/",
+    "meaning": "adj. 装饰的",
+    "level": "cet6"
+  },
+  {
+    "word": "orthodox",
+    "phonetic": "/ˈɔːrθədɑːks/",
+    "meaning": "adj. 正统的；传统的",
+    "level": "cet6"
+  },
+  {
+    "word": "outbreak",
+    "phonetic": "/ˈaʊtbreɪk/",
+    "meaning": "n. 爆发；突然发生",
+    "level": "cet6"
+  },
+  {
+    "word": "outfit",
+    "phonetic": "/ˈaʊtfɪt/",
+    "meaning": "n. 全套装备；服装",
+    "level": "cet6"
+  },
+  {
+    "word": "outrage",
+    "phonetic": "/ˈaʊtreɪdʒ/",
+    "meaning": "n. 愤怒 v. 激怒",
+    "level": "cet6"
+  },
+  {
+    "word": "overflow",
+    "phonetic": "/ˌoʊvərˈfloʊ/",
+    "meaning": "v./n. 溢出；泛滥",
+    "level": "cet6"
+  },
+  {
+    "word": "overhear",
+    "phonetic": "/ˌoʊvərˈhɪr/",
+    "meaning": "v. 无意中听到；偷听",
+    "level": "cet6"
+  },
+  {
+    "word": "overlap",
+    "phonetic": "/ˌoʊvərˈlæp/",
+    "meaning": "v./n. 重叠；交叉",
+    "level": "cet6"
+  },
+  {
+    "word": "overt",
+    "phonetic": "/oʊˈvɜːrt/",
+    "meaning": "adj. 公开的；明显的",
+    "level": "cet6"
+  },
+  {
+    "word": "overthrow",
+    "phonetic": "/ˌoʊvərˈθroʊ/",
+    "meaning": "v./n. 推翻；打倒",
+    "level": "cet6"
+  },
+  {
+    "word": "overwhelm",
+    "phonetic": "/ˌoʊvərˈwelm/",
+    "meaning": "v. 压倒；淹没",
+    "level": "cet6"
+  },
+  {
+    "word": "oxide",
+    "phonetic": "/ˈɑːksaɪd/",
+    "meaning": "n. 氧化物",
+    "level": "cet6"
+  },
+  {
+    "word": "pact",
+    "phonetic": "/pækt/",
+    "meaning": "n. 条约；协议",
+    "level": "cet6"
+  },
+  {
+    "word": "pamphlet",
+    "phonetic": "/ˈpæmflɪt/",
+    "meaning": "n. 小册子",
+    "level": "cet6"
+  },
+  {
+    "word": "paradise",
+    "phonetic": "/ˈpærədaɪs/",
+    "meaning": "n. 天堂；乐园",
+    "level": "cet6"
+  },
+  {
+    "word": "paradox",
+    "phonetic": "/ˈpærədɑːks/",
+    "meaning": "n. 悖论；矛盾",
+    "level": "cet6"
+  },
+  {
+    "word": "paralyze",
+    "phonetic": "/ˈpærəlaɪz/",
+    "meaning": "v. 使瘫痪；使麻痹",
+    "level": "cet6"
+  },
+  {
+    "word": "parameter",
+    "phonetic": "/pəˈræmɪtər/",
+    "meaning": "n. 参数；界限",
+    "level": "cet6"
+  },
+  {
+    "word": "parasite",
+    "phonetic": "/ˈpærəsaɪt/",
+    "meaning": "n. 寄生虫；寄生生物",
+    "level": "cet6"
+  },
+  {
+    "word": "partition",
+    "phonetic": "/pɑːrˈtɪʃn/",
+    "meaning": "n. 划分 v. 分割",
+    "level": "cet6"
+  },
+  {
+    "word": "pastime",
+    "phonetic": "/ˈpæstaɪm/",
+    "meaning": "n. 消遣；娱乐",
+    "level": "cet6"
+  },
+  {
+    "word": "pasture",
+    "phonetic": "/ˈpæstʃər/",
+    "meaning": "n. 牧场 v. 放牧",
+    "level": "cet6"
+  },
+  {
+    "word": "patent",
+    "phonetic": "/ˈpætnt/",
+    "meaning": "n. 专利 adj. 专利的",
+    "level": "cet6"
+  },
+  {
+    "word": "pathetic",
+    "phonetic": "/pəˈθetɪk/",
+    "meaning": "adj. 可怜的；可悲的",
+    "level": "cet6"
+  },
+  {
+    "word": "patriot",
+    "phonetic": "/ˈpeɪtriət/",
+    "meaning": "n. 爱国者",
+    "level": "cet6"
+  },
+  {
+    "word": "patrol",
+    "phonetic": "/pəˈtroʊl/",
+    "meaning": "v./n. 巡逻；巡查",
+    "level": "cet6"
+  },
+  {
+    "word": "patron",
+    "phonetic": "/ˈpeɪtrən/",
+    "meaning": "n. 赞助人；主顾",
+    "level": "cet6"
+  },
+  {
+    "word": "pave",
+    "phonetic": "/peɪv/",
+    "meaning": "v. 铺路；铺设",
+    "level": "cet6"
+  },
+  {
+    "word": "peculiar",
+    "phonetic": "/pɪˈkjuːliər/",
+    "meaning": "adj. 奇特的；独特的",
+    "level": "cet6"
+  },
+  {
+    "word": "pedal",
+    "phonetic": "/ˈpedl/",
+    "meaning": "n. 踏板 v. 踩踏板",
+    "level": "cet6"
+  },
+  {
+    "word": "peel",
+    "phonetic": "/piːl/",
+    "meaning": "v. 削皮 n. 果皮",
+    "level": "cet6"
+  },
+  {
+    "word": "peg",
+    "phonetic": "/peɡ/",
+    "meaning": "n. 钉子 v. 固定",
+    "level": "cet6"
+  },
+  {
+    "word": "pendulum",
+    "phonetic": "/ˈpendʒələm/",
+    "meaning": "n. 钟摆",
+    "level": "cet6"
+  },
+  {
+    "word": "peninsula",
+    "phonetic": "/pəˈnɪnsələ/",
+    "meaning": "n. 半岛",
+    "level": "cet6"
+  },
+  {
+    "word": "perfection",
+    "phonetic": "/pərˈfekʃn/",
+    "meaning": "n. 完美；完美的人",
+    "level": "cet6"
+  },
+  {
+    "word": "peril",
+    "phonetic": "/ˈperəl/",
+    "meaning": "n. 危险；险境",
+    "level": "cet6"
+  },
+  {
+    "word": "periodic",
+    "phonetic": "/ˌpɪriˈɑːdɪk/",
+    "meaning": "adj. 周期性的",
+    "level": "cet6"
+  },
+  {
+    "word": "perish",
+    "phonetic": "/ˈperɪʃ/",
+    "meaning": "v. 死亡；毁灭",
+    "level": "cet6"
+  },
+  {
+    "word": "permeate",
+    "phonetic": "/ˈpɜːrmieɪt/",
+    "meaning": "v. 渗透；弥漫",
+    "level": "cet6"
+  },
+  {
+    "word": "perpetual",
+    "phonetic": "/pərˈpetʃuəl/",
+    "meaning": "adj. 永久的；持续的",
+    "level": "cet6"
+  },
+  {
+    "word": "perplex",
+    "phonetic": "/pərˈpleks/",
+    "meaning": "v. 使困惑；使复杂",
+    "level": "cet6"
+  },
+  {
+    "word": "petition",
+    "phonetic": "/pəˈtɪʃn/",
+    "meaning": "n. 请愿书 v. 请愿",
+    "level": "cet6"
+  },
+  {
+    "word": "petty",
+    "phonetic": "/ˈpeti/",
+    "meaning": "adj. 琐碎的；小气的",
+    "level": "cet6"
+  },
+  {
+    "word": "physiological",
+    "phonetic": "/ˌfɪziəˈlɑːdʒɪkl/",
+    "meaning": "adj. 生理学的",
+    "level": "cet6"
+  },
+  {
+    "word": "pilgrim",
+    "phonetic": "/ˈpɪlɡrɪm/",
+    "meaning": "n. 朝圣者",
+    "level": "cet6"
+  },
+  {
+    "word": "pious",
+    "phonetic": "/ˈpaɪəs/",
+    "meaning": "adj. 虔诚的；虚伪的",
+    "level": "cet6"
+  },
+  {
+    "word": "pirate",
+    "phonetic": "/ˈpaɪrət/",
+    "meaning": "n. 海盗 v. 盗版",
+    "level": "cet6"
+  },
+  {
+    "word": "pitch",
+    "phonetic": "/pɪtʃ/",
+    "meaning": "n. 音高；场地 v. 投掷",
+    "level": "cet6"
+  },
+  {
+    "word": "plague",
+    "phonetic": "/pleɪɡ/",
+    "meaning": "n. 瘟疫 v. 困扰",
+    "level": "cet6"
+  },
+  {
+    "word": "plaster",
+    "phonetic": "/ˈplæstər/",
+    "meaning": "n. 灰泥；石膏",
+    "level": "cet6"
+  },
+  {
+    "word": "plateau",
+    "phonetic": "/plæˈtoʊ/",
+    "meaning": "n. 高原；停滞期",
+    "level": "cet6"
+  },
+  {
+    "word": "plausible",
+    "phonetic": "/ˈplɔːzəbl/",
+    "meaning": "adj. 貌似可信的；看似合理的",
+    "level": "cet6"
+  },
+  {
+    "word": "plea",
+    "phonetic": "/pliː/",
+    "meaning": "n. 恳求；抗辩",
+    "level": "cet6"
+  },
+  {
+    "word": "plead",
+    "phonetic": "/pliːd/",
+    "meaning": "v. 恳求；辩护",
+    "level": "cet6"
+  },
+  {
+    "word": "pledge",
+    "phonetic": "/pledʒ/",
+    "meaning": "n. 誓言 v. 保证",
+    "level": "cet6"
+  },
+  {
+    "word": "plight",
+    "phonetic": "/plaɪt/",
+    "meaning": "n. 困境；苦境",
+    "level": "cet6"
+  },
+  {
+    "word": "poke",
+    "phonetic": "/poʊk/",
+    "meaning": "v. 戳；捅",
+    "level": "cet6"
+  },
+  {
+    "word": "polar",
+    "phonetic": "/ˈpoʊlər/",
+    "meaning": "adj. 极地的；两极的",
+    "level": "cet6"
+  },
+  {
+    "word": "poll",
+    "phonetic": "/poʊl/",
+    "meaning": "n. 民意调查 v. 投票",
+    "level": "cet6"
+  },
+  {
+    "word": "ponder",
+    "phonetic": "/ˈpɑːndər/",
+    "meaning": "v. 沉思；考虑",
+    "level": "cet6"
+  },
+  {
+    "word": "porch",
+    "phonetic": "/pɔːrtʃ/",
+    "meaning": "n. 门廊；走廊",
+    "level": "cet6"
+  },
+  {
+    "word": "pore",
+    "phonetic": "/pɔːr/",
+    "meaning": "n. 毛孔 v. 细读",
+    "level": "cet6"
+  },
+  {
+    "word": "portray",
+    "phonetic": "/pɔːrˈtreɪ/",
+    "meaning": "v. 描绘；扮演",
+    "level": "cet6"
+  },
+  {
+    "word": "postulate",
+    "phonetic": "/ˈpɑːstʃəleɪt/",
+    "meaning": "v. 假定 n. 假设",
+    "level": "cet6"
+  },
+  {
+    "word": "preach",
+    "phonetic": "/priːtʃ/",
+    "meaning": "v. 传教；说教",
+    "level": "cet6"
+  },
+  {
+    "word": "precede",
+    "phonetic": "/prɪˈsiːd/",
+    "meaning": "v. 先于；在...之前",
+    "level": "cet6"
+  },
+  {
+    "word": "precedent",
+    "phonetic": "/ˈpresɪdənt/",
+    "meaning": "n. 先例；前例",
+    "level": "cet6"
+  },
+  {
+    "word": "preclude",
+    "phonetic": "/prɪˈkluːd/",
+    "meaning": "v. 排除；阻止",
+    "level": "cet6"
+  },
+  {
+    "word": "predecessor",
+    "phonetic": "/ˈpredəsesər/",
+    "meaning": "n. 前任；前辈",
+    "level": "cet6"
+  },
+  {
+    "word": "predominant",
+    "phonetic": "/prɪˈdɑːmɪnənt/",
+    "meaning": "adj. 主要的；占优势的",
+    "level": "cet6"
+  },
+  {
+    "word": "pregnant",
+    "phonetic": "/ˈpreɡnənt/",
+    "meaning": "adj. 怀孕的；充满的",
+    "level": "cet6"
+  },
+  {
+    "word": "premature",
+    "phonetic": "/ˌpriːməˈtʃʊr/",
+    "meaning": "adj. 过早的；不成熟的",
+    "level": "cet6"
+  },
+  {
+    "word": "premise",
+    "phonetic": "/ˈpremɪs/",
+    "meaning": "n. 前提；假定",
+    "level": "cet6"
+  },
+  {
+    "word": "premium",
+    "phonetic": "/ˈpriːmiəm/",
+    "meaning": "n. 额外费用 adj. 高级的",
+    "level": "cet6"
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪpʃn/",
+    "meaning": "n. 处方；药方",
+    "level": "cet6"
+  },
+  {
+    "word": "preside",
+    "phonetic": "/prɪˈzaɪd/",
+    "meaning": "v. 主持；担任主席",
+    "level": "cet6"
+  },
+  {
+    "word": "prestige",
+    "phonetic": "/preˈstiːʒ/",
+    "meaning": "n. 威望；声望",
+    "level": "cet6"
+  },
+  {
+    "word": "presumably",
+    "phonetic": "/prɪˈzuːməbli/",
+    "meaning": "adv. 大概；据推测",
+    "level": "cet6"
+  },
+  {
+    "word": "presume",
+    "phonetic": "/prɪˈzuːm/",
+    "meaning": "v. 假定；推测",
+    "level": "cet6"
+  },
+  {
+    "word": "pretext",
+    "phonetic": "/ˈpriːtekst/",
+    "meaning": "n. 借口；托词",
+    "level": "cet6"
+  },
+  {
+    "word": "prevail",
+    "phonetic": "/prɪˈveɪl/",
+    "meaning": "v. 盛行；占优势",
+    "level": "cet6"
+  },
+  {
+    "word": "prey",
+    "phonetic": "/preɪ/",
+    "meaning": "n. 猎物 v. 捕食",
+    "level": "cet6"
+  },
+  {
+    "word": "priest",
+    "phonetic": "/priːst/",
+    "meaning": "n. 牧师；神父",
+    "level": "cet6"
+  },
+  {
+    "word": "probe",
+    "phonetic": "/proʊb/",
+    "meaning": "v./n. 探索；调查",
+    "level": "cet6"
+  },
+  {
+    "word": "proclaim",
+    "phonetic": "/prəˈkleɪm/",
+    "meaning": "v. 宣布；声明",
+    "level": "cet6"
+  },
+  {
+    "word": "productive",
+    "phonetic": "/prəˈdʌktɪv/",
+    "meaning": "adj. 多产的；富有成效的",
+    "level": "cet6"
+  },
+  {
+    "word": "proficiency",
+    "phonetic": "/prəˈfɪʃnsi/",
+    "meaning": "n. 熟练；精通",
+    "level": "cet6"
+  },
+  {
+    "word": "profile",
+    "phonetic": "/ˈproʊfaɪl/",
+    "meaning": "n. 侧面；概貌 v. 概述",
+    "level": "cet6"
+  },
+  {
+    "word": "profound",
+    "phonetic": "/prəˈfaʊnd/",
+    "meaning": "adj. 深刻的；深奥的",
+    "level": "cet6"
+  },
+  {
+    "word": "prohibit",
+    "phonetic": "/prəˈhɪbɪt/",
+    "meaning": "v. 禁止；阻止",
+    "level": "cet6"
+  },
+  {
+    "word": "prolong",
+    "phonetic": "/prəˈlɔːŋ/",
+    "meaning": "v. 延长；拖延",
+    "level": "cet6"
+  },
+  {
+    "word": "promising",
+    "phonetic": "/ˈprɑːmɪsɪŋ/",
+    "meaning": "adj. 有前途的；有希望的",
+    "level": "cet6"
+  },
+  {
+    "word": "prone",
+    "phonetic": "/proʊn/",
+    "meaning": "adj. 有...倾向的；易于",
+    "level": "cet6"
+  },
+  {
+    "word": "propaganda",
+    "phonetic": "/ˌprɑːpəˈɡændə/",
+    "meaning": "n. 宣传；鼓吹",
+    "level": "cet6"
+  },
+  {
+    "word": "propel",
+    "phonetic": "/prəˈpel/",
+    "meaning": "v. 推进；推动",
+    "level": "cet6"
+  },
+  {
+    "word": "prophet",
+    "phonetic": "/ˈprɑːfɪt/",
+    "meaning": "n. 先知；预言家",
+    "level": "cet6"
+  },
+  {
+    "word": "prose",
+    "phonetic": "/proʊz/",
+    "meaning": "n. 散文",
+    "level": "cet6"
+  },
+  {
+    "word": "prosecute",
+    "phonetic": "/ˈprɑːsɪkjuːt/",
+    "meaning": "v. 起诉；检举",
+    "level": "cet6"
+  },
+  {
+    "word": "prospective",
+    "phonetic": "/prəˈspektɪv/",
+    "meaning": "adj. 预期的；未来的",
+    "level": "cet6"
+  },
+  {
+    "word": "prototype",
+    "phonetic": "/ˈproʊtətaɪp/",
+    "meaning": "n. 原型；雏形",
+    "level": "cet6"
+  },
+  {
+    "word": "provocative",
+    "phonetic": "/prəˈvɑːkətɪv/",
+    "meaning": "adj. 挑衅的；煽动性的",
+    "level": "cet6"
+  },
+  {
+    "word": "provoke",
+    "phonetic": "/prəˈvoʊk/",
+    "meaning": "v. 激怒；引起",
+    "level": "cet6"
+  },
+  {
+    "word": "proximity",
+    "phonetic": "/prɑːkˈsɪməti/",
+    "meaning": "n. 接近；邻近",
+    "level": "cet6"
+  },
+  {
+    "word": "prune",
+    "phonetic": "/pruːn/",
+    "meaning": "v. 修剪；削减",
+    "level": "cet6"
+  },
+  {
+    "word": "psychiatrist",
+    "phonetic": "/saɪˈkaɪətrɪst/",
+    "meaning": "n. 精神病医生",
+    "level": "cet6"
+  },
+  {
+    "word": "pump",
+    "phonetic": "/pʌmp/",
+    "meaning": "n. 泵 v. 抽水",
+    "level": "cet6"
+  },
+  {
+    "word": "punch",
+    "phonetic": "/pʌntʃ/",
+    "meaning": "v. 用拳猛击 n. 打孔器",
+    "level": "cet6"
+  },
+  {
+    "word": "purify",
+    "phonetic": "/ˈpjʊrɪfaɪ/",
+    "meaning": "v. 净化；提纯",
+    "level": "cet6"
+  },
+  {
+    "word": "purity",
+    "phonetic": "/ˈpjʊrəti/",
+    "meaning": "n. 纯净；纯洁",
+    "level": "cet6"
+  },
+  {
+    "word": "pursuit",
+    "phonetic": "/pərˈsuːt/",
+    "meaning": "n. 追求；追赶",
+    "level": "cet6"
+  },
+  {
+    "word": "puzzle",
+    "phonetic": "/ˈpʌzl/",
+    "meaning": "n. 谜 v. 使困惑",
+    "level": "cet6"
+  },
+  {
+    "word": "qualification",
+    "phonetic": "/ˌkwɑːlɪfɪˈkeɪʃn/",
+    "meaning": "n. 资格；条件",
+    "level": "cet6"
+  },
+  {
+    "word": "quest",
+    "phonetic": "/kwest/",
+    "meaning": "n./v. 探索；寻找",
+    "level": "cet6"
+  },
+  {
+    "word": "questionnaire",
+    "phonetic": "/ˌkwestʃəˈner/",
+    "meaning": "n. 问卷；调查表",
+    "level": "cet6"
+  },
+  {
+    "word": "quiver",
+    "phonetic": "/ˈkwɪvər/",
+    "meaning": "v./n. 颤抖；抖动",
+    "level": "cet6"
+  },
+  {
+    "word": "quota",
+    "phonetic": "/ˈkwoʊtə/",
+    "meaning": "n. 定额；配额",
+    "level": "cet6"
+  },
+  {
+    "word": "racket",
+    "phonetic": "/ˈrækɪt/",
+    "meaning": "n. 球拍；喧闹",
+    "level": "cet6"
+  },
+  {
+    "word": "radiate",
+    "phonetic": "/ˈreɪdieɪt/",
+    "meaning": "v. 辐射；散发",
+    "level": "cet6"
+  },
+  {
+    "word": "radical",
+    "phonetic": "/ˈrædɪkl/",
+    "meaning": "adj. 根本的；激进的",
+    "level": "cet6"
+  },
+  {
+    "word": "random",
+    "phonetic": "/ˈrændəm/",
+    "meaning": "adj. 随机的；任意的",
+    "level": "cet6"
+  },
+  {
+    "word": "rap",
+    "phonetic": "/ræp/",
+    "meaning": "n. 说唱音乐 v. 轻敲",
+    "level": "cet6"
+  },
+  {
+    "word": "rape",
+    "phonetic": "/reɪp/",
+    "meaning": "n./v. 强奸；强暴",
+    "level": "cet6"
+  },
+  {
+    "word": "rash",
+    "phonetic": "/ræʃ/",
+    "meaning": "adj. 鲁莽的 n. 皮疹",
+    "level": "cet6"
+  },
+  {
+    "word": "rating",
+    "phonetic": "/ˈreɪtɪŋ/",
+    "meaning": "n. 等级；收视率",
+    "level": "cet6"
+  },
+  {
+    "word": "reap",
+    "phonetic": "/riːp/",
+    "meaning": "v. 收获；获得",
+    "level": "cet6"
+  },
+  {
+    "word": "rebellion",
+    "phonetic": "/rɪˈbeljən/",
+    "meaning": "n. 叛乱；反抗",
+    "level": "cet6"
+  },
+  {
+    "word": "recession",
+    "phonetic": "/rɪˈseʃn/",
+    "meaning": "n. 经济衰退；后退",
+    "level": "cet6"
+  },
+  {
+    "word": "recipe",
+    "phonetic": "/ˈresəpi/",
+    "meaning": "n. 食谱；方法",
+    "level": "cet6"
+  },
+  {
+    "word": "reciprocal",
+    "phonetic": "/rɪˈsɪprəkl/",
+    "meaning": "adj. 相互的；互惠的",
+    "level": "cet6"
+  },
+  {
+    "word": "reckless",
+    "phonetic": "/ˈrekləs/",
+    "meaning": "adj. 鲁莽的；不顾后果的",
+    "level": "cet6"
+  },
+  {
+    "word": "reckon",
+    "phonetic": "/ˈrekən/",
+    "meaning": "v. 认为；估计",
+    "level": "cet6"
+  },
+  {
+    "word": "reclaim",
+    "phonetic": "/rɪˈkleɪm/",
+    "meaning": "v. 收回；开垦",
+    "level": "cet6"
+  },
+  {
+    "word": "reconcile",
+    "phonetic": "/ˈrekənsaɪl/",
+    "meaning": "v. 使和解；调和",
+    "level": "cet6"
+  },
+  {
+    "word": "recruit",
+    "phonetic": "/rɪˈkruːt/",
+    "meaning": "v. 招募 n. 新成员",
+    "level": "cet6"
+  },
+  {
+    "word": "rectify",
+    "phonetic": "/ˈrektɪfaɪ/",
+    "meaning": "v. 纠正；改正",
+    "level": "cet6"
+  },
+  {
+    "word": "recur",
+    "phonetic": "/rɪˈkɜːr/",
+    "meaning": "v. 复发；再次发生",
+    "level": "cet6"
+  },
+  {
+    "word": "redundant",
+    "phonetic": "/rɪˈdʌndənt/",
+    "meaning": "adj. 多余的；被裁员的",
+    "level": "cet6"
+  },
+  {
+    "word": "refreshment",
+    "phonetic": "/rɪˈfreʃmənt/",
+    "meaning": "n. 茶点；恢复",
+    "level": "cet6"
+  },
+  {
+    "word": "refute",
+    "phonetic": "/rɪˈfjuːt/",
+    "meaning": "v. 驳斥；反驳",
+    "level": "cet6"
+  },
+  {
+    "word": "regime",
+    "phonetic": "/reɪˈʒiːm/",
+    "meaning": "n. 政权；制度",
+    "level": "cet6"
+  },
+  {
+    "word": "rehearsal",
+    "phonetic": "/rɪˈhɜːrsl/",
+    "meaning": "n. 排练；预演",
+    "level": "cet6"
+  },
+  {
+    "word": "reign",
+    "phonetic": "/reɪn/",
+    "meaning": "n. 统治时期 v. 统治",
+    "level": "cet6"
+  },
+  {
+    "word": "rein",
+    "phonetic": "/reɪn/",
+    "meaning": "n. 缰绳 v. 控制",
+    "level": "cet6"
+  },
+  {
+    "word": "rejoice",
+    "phonetic": "/rɪˈdʒɔɪs/",
+    "meaning": "v. 欣喜；高兴",
+    "level": "cet6"
+  },
+  {
+    "word": "relay",
+    "phonetic": "/ˈriːleɪ/",
+    "meaning": "v. 转播；传达 n. 接力赛",
+    "level": "cet6"
+  },
+  {
+    "word": "relish",
+    "phonetic": "/ˈrelɪʃ/",
+    "meaning": "v. 享受 n. 调味品",
+    "level": "cet6"
+  },
+  {
+    "word": "remainder",
+    "phonetic": "/rɪˈmeɪndər/",
+    "meaning": "n. 剩余部分",
+    "level": "cet6"
+  },
+  {
+    "word": "remnant",
+    "phonetic": "/ˈremnənt/",
+    "meaning": "n. 残余；剩余",
+    "level": "cet6"
+  },
+  {
+    "word": "renaissance",
+    "phonetic": "/ˈrenəsɑːns/",
+    "meaning": "n. 文艺复兴；复兴",
+    "level": "cet6"
+  },
+  {
+    "word": "render",
+    "phonetic": "/ˈrendər/",
+    "meaning": "v. 使成为；提供",
+    "level": "cet6"
+  },
+  {
+    "word": "repay",
+    "phonetic": "/rɪˈpeɪ/",
+    "meaning": "v. 偿还；报答",
+    "level": "cet6"
+  },
+  {
+    "word": "repel",
+    "phonetic": "/rɪˈpel/",
+    "meaning": "v. 排斥；击退",
+    "level": "cet6"
+  },
+  {
+    "word": "repression",
+    "phonetic": "/rɪˈpreʃn/",
+    "meaning": "n. 压制；镇压",
+    "level": "cet6"
+  },
+  {
+    "word": "reproach",
+    "phonetic": "/rɪˈproʊtʃ/",
+    "meaning": "v./n. 责备；指责",
+    "level": "cet6"
+  },
+  {
+    "word": "resemble",
+    "phonetic": "/rɪˈzembl/",
+    "meaning": "v. 像；类似",
+    "level": "cet6"
+  },
+  {
+    "word": "resent",
+    "phonetic": "/rɪˈzent/",
+    "meaning": "v. 愤恨；怨恨",
+    "level": "cet6"
+  },
+  {
+    "word": "reside",
+    "phonetic": "/rɪˈzaɪd/",
+    "meaning": "v. 居住；存在于",
+    "level": "cet6"
+  },
+  {
+    "word": "residential",
+    "phonetic": "/ˌrezɪˈdenʃl/",
+    "meaning": "adj. 住宅的；居住的",
+    "level": "cet6"
+  },
+  {
+    "word": "resultant",
+    "phonetic": "/rɪˈzʌltənt/",
+    "meaning": "adj. 作为结果的",
+    "level": "cet6"
+  },
+  {
+    "word": "retaliate",
+    "phonetic": "/rɪˈtælieɪt/",
+    "meaning": "v. 报复；反击",
+    "level": "cet6"
+  },
+  {
+    "word": "retard",
+    "phonetic": "/rɪˈtɑːrd/",
+    "meaning": "v. 延缓；阻碍",
+    "level": "cet6"
+  },
+  {
+    "word": "retention",
+    "phonetic": "/rɪˈtenʃn/",
+    "meaning": "n. 保留；记忆力",
+    "level": "cet6"
+  },
+  {
+    "word": "retort",
+    "phonetic": "/rɪˈtɔːrt/",
+    "meaning": "v./n. 反驳；回嘴",
+    "level": "cet6"
+  },
+  {
+    "word": "retrieve",
+    "phonetic": "/rɪˈtriːv/",
+    "meaning": "v. 取回；检索",
+    "level": "cet6"
+  },
+  {
+    "word": "retrospect",
+    "phonetic": "/ˈretrəspekt/",
+    "meaning": "n. 回顾；追溯",
+    "level": "cet6"
+  },
+  {
+    "word": "revelation",
+    "phonetic": "/ˌrevəˈleɪʃn/",
+    "meaning": "n. 揭示；启示",
+    "level": "cet6"
+  },
+  {
+    "word": "revenge",
+    "phonetic": "/rɪˈvendʒ/",
+    "meaning": "n./v. 报仇；报复",
+    "level": "cet6"
+  },
+  {
+    "word": "revive",
+    "phonetic": "/rɪˈvaɪv/",
+    "meaning": "v. 复活；复兴",
+    "level": "cet6"
+  },
+  {
+    "word": "revolt",
+    "phonetic": "/rɪˈvoʊlt/",
+    "meaning": "v./n. 反抗；叛乱",
+    "level": "cet6"
+  },
+  {
+    "word": "revolve",
+    "phonetic": "/rɪˈvɑːlv/",
+    "meaning": "v. 旋转；围绕",
+    "level": "cet6"
+  },
+  {
+    "word": "rigorous",
+    "phonetic": "/ˈrɪɡərəs/",
+    "meaning": "adj. 严格的；严密的",
+    "level": "cet6"
+  },
+  {
+    "word": "rim",
+    "phonetic": "/rɪm/",
+    "meaning": "n. 边缘；边框",
+    "level": "cet6"
+  },
+  {
+    "word": "riot",
+    "phonetic": "/ˈraɪət/",
+    "meaning": "n. 暴乱 v. 闹事",
+    "level": "cet6"
+  },
+  {
+    "word": "rip",
+    "phonetic": "/rɪp/",
+    "meaning": "v. 撕裂 n. 裂口",
+    "level": "cet6"
+  },
+  {
+    "word": "ripple",
+    "phonetic": "/ˈrɪpl/",
+    "meaning": "n. 涟漪 v. 起波纹",
+    "level": "cet6"
+  },
+  {
+    "word": "ritual",
+    "phonetic": "/ˈrɪtʃuəl/",
+    "meaning": "n. 仪式 adj. 仪式的",
+    "level": "cet6"
+  },
+  {
+    "word": "roam",
+    "phonetic": "/roʊm/",
+    "meaning": "v. 漫步；闲逛",
+    "level": "cet6"
+  },
+  {
+    "word": "robust",
+    "phonetic": "/roʊˈbʌst/",
+    "meaning": "adj. 强健的；结实的",
+    "level": "cet6"
+  },
+  {
+    "word": "rot",
+    "phonetic": "/rɑːt/",
+    "meaning": "v./n. 腐烂；腐朽",
+    "level": "cet6"
+  },
+  {
+    "word": "rotary",
+    "phonetic": "/ˈroʊtəri/",
+    "meaning": "adj. 旋转的",
+    "level": "cet6"
+  },
+  {
+    "word": "rupture",
+    "phonetic": "/ˈrʌptʃər/",
+    "meaning": "v./n. 破裂；断裂",
+    "level": "cet6"
+  },
+  {
+    "word": "sacred",
+    "phonetic": "/ˈseɪkrɪd/",
+    "meaning": "adj. 神圣的；宗教的",
+    "level": "cet6"
+  },
+  {
+    "word": "safeguard",
+    "phonetic": "/ˈseɪfɡɑːrd/",
+    "meaning": "v. 保护 n. 防护措施",
+    "level": "cet6"
+  },
+  {
+    "word": "salute",
+    "phonetic": "/səˈluːt/",
+    "meaning": "v./n. 敬礼；致敬",
+    "level": "cet6"
+  },
+  {
+    "word": "sanction",
+    "phonetic": "/ˈsæŋkʃn/",
+    "meaning": "n./v. 制裁；批准",
+    "level": "cet6"
+  },
+  {
+    "word": "saturate",
+    "phonetic": "/ˈsætʃəreɪt/",
+    "meaning": "v. 使饱和；浸透",
+    "level": "cet6"
+  },
+  {
+    "word": "scandal",
+    "phonetic": "/ˈskændl/",
+    "meaning": "n. 丑闻；耻辱",
+    "level": "cet6"
+  },
+  {
+    "word": "scar",
+    "phonetic": "/skɑːr/",
+    "meaning": "n. 伤疤 v. 留下疤痕",
+    "level": "cet6"
+  },
+  {
+    "word": "scent",
+    "phonetic": "/sent/",
+    "meaning": "n. 气味；香味",
+    "level": "cet6"
+  },
+  {
+    "word": "scorn",
+    "phonetic": "/skɔːrn/",
+    "meaning": "n./v. 轻蔑；嘲笑",
+    "level": "cet6"
+  },
+  {
+    "word": "scrap",
+    "phonetic": "/skræp/",
+    "meaning": "n. 碎片 v. 废弃",
+    "level": "cet6"
+  },
+  {
+    "word": "scrape",
+    "phonetic": "/skreɪp/",
+    "meaning": "v. 刮；擦",
+    "level": "cet6"
+  },
+  {
+    "word": "screw",
+    "phonetic": "/skruː/",
+    "meaning": "n. 螺丝 v. 拧",
+    "level": "cet6"
+  },
+  {
+    "word": "scrub",
+    "phonetic": "/skrʌb/",
+    "meaning": "v. 擦洗 n. 矮树丛",
+    "level": "cet6"
+  },
+  {
+    "word": "scrutiny",
+    "phonetic": "/ˈskruːtəni/",
+    "meaning": "n. 详细审查",
+    "level": "cet6"
+  },
+  {
+    "word": "sculpture",
+    "phonetic": "/ˈskʌlptʃər/",
+    "meaning": "n. 雕塑 v. 雕刻",
+    "level": "cet6"
+  },
+  {
+    "word": "seam",
+    "phonetic": "/siːm/",
+    "meaning": "n. 缝；接缝",
+    "level": "cet6"
+  },
+  {
+    "word": "sector",
+    "phonetic": "/ˈsektər/",
+    "meaning": "n. 部门；扇形",
+    "level": "cet6"
+  },
+  {
+    "word": "seemingly",
+    "phonetic": "/ˈsiːmɪŋli/",
+    "meaning": "adv. 表面上；似乎",
+    "level": "cet6"
+  },
+  {
+    "word": "segment",
+    "phonetic": "/ˈseɡmənt/",
+    "meaning": "n. 部分；片段",
+    "level": "cet6"
+  },
+  {
+    "word": "sensation",
+    "phonetic": "/senˈseɪʃn/",
+    "meaning": "n. 感觉；轰动",
+    "level": "cet6"
+  },
+  {
+    "word": "sentiment",
+    "phonetic": "/ˈsentɪmənt/",
+    "meaning": "n. 感情；情绪",
+    "level": "cet6"
+  },
+  {
+    "word": "sergeant",
+    "phonetic": "/ˈsɑːrdʒənt/",
+    "meaning": "n. 中士；警官",
+    "level": "cet6"
+  },
+  {
+    "word": "serial",
+    "phonetic": "/ˈsɪriəl/",
+    "meaning": "adj. 连续的 n. 连载",
+    "level": "cet6"
+  },
+  {
+    "word": "setback",
+    "phonetic": "/ˈsetbæk/",
+    "meaning": "n. 挫折；倒退",
+    "level": "cet6"
+  },
+  {
+    "word": "shabby",
+    "phonetic": "/ˈʃæbi/",
+    "meaning": "adj. 破旧的；卑鄙的",
+    "level": "cet6"
+  },
+  {
+    "word": "shaft",
+    "phonetic": "/ʃæft/",
+    "meaning": "n. 轴；竖井",
+    "level": "cet6"
+  },
+  {
+    "word": "shatter",
+    "phonetic": "/ˈʃætər/",
+    "meaning": "v. 粉碎；破碎",
+    "level": "cet6"
+  },
+  {
+    "word": "shepherd",
+    "phonetic": "/ˈʃepərd/",
+    "meaning": "n. 牧羊人 v. 引导",
+    "level": "cet6"
+  },
+  {
+    "word": "shipment",
+    "phonetic": "/ˈʃɪpmənt/",
+    "meaning": "n. 运输；装运",
+    "level": "cet6"
+  },
+  {
+    "word": "shrewd",
+    "phonetic": "/ʃruːd/",
+    "meaning": "adj. 精明的；机灵的",
+    "level": "cet6"
+  },
+  {
+    "word": "shrink",
+    "phonetic": "/ʃrɪŋk/",
+    "meaning": "v. 收缩；退缩",
+    "level": "cet6"
+  },
+  {
+    "word": "shrub",
+    "phonetic": "/ʃrʌb/",
+    "meaning": "n. 灌木",
+    "level": "cet6"
+  },
+  {
+    "word": "shutter",
+    "phonetic": "/ˈʃʌtər/",
+    "meaning": "n. 百叶窗；快门",
+    "level": "cet6"
+  },
+  {
+    "word": "shuttle",
+    "phonetic": "/ˈʃʌtl/",
+    "meaning": "n. 穿梭班车；梭",
+    "level": "cet6"
+  },
+  {
+    "word": "siege",
+    "phonetic": "/siːdʒ/",
+    "meaning": "n./v. 围困；围攻",
+    "level": "cet6"
+  },
+  {
+    "word": "sieve",
+    "phonetic": "/sɪv/",
+    "meaning": "n. 筛子 v. 筛选",
+    "level": "cet6"
+  },
+  {
+    "word": "signify",
+    "phonetic": "/ˈsɪɡnɪfaɪ/",
+    "meaning": "v. 表示；意味着",
+    "level": "cet6"
+  },
+  {
+    "word": "silicon",
+    "phonetic": "/ˈsɪlɪkən/",
+    "meaning": "n. 硅",
+    "level": "cet6"
+  },
+  {
+    "word": "simulate",
+    "phonetic": "/ˈsɪmjuleɪt/",
+    "meaning": "v. 模拟；假装",
+    "level": "cet6"
+  },
+  {
+    "word": "simultaneous",
+    "phonetic": "/ˌsaɪmlˈteɪniəs/",
+    "meaning": "adj. 同时发生的",
+    "level": "cet6"
+  },
+  {
+    "word": "sip",
+    "phonetic": "/sɪp/",
+    "meaning": "v. 小口喝 n. 一小口",
+    "level": "cet6"
+  },
+  {
+    "word": "situated",
+    "phonetic": "/ˈsɪtʃueɪtɪd/",
+    "meaning": "adj. 位于...的",
+    "level": "cet6"
+  },
+  {
+    "word": "skeleton",
+    "phonetic": "/ˈskelɪtn/",
+    "meaning": "n. 骨架；梗概",
+    "level": "cet6"
+  },
+  {
+    "word": "skip",
+    "phonetic": "/skɪp/",
+    "meaning": "v. 跳过；略过",
+    "level": "cet6"
+  },
+  {
+    "word": "skull",
+    "phonetic": "/skʌl/",
+    "meaning": "n. 头骨；颅骨",
+    "level": "cet6"
+  },
+  {
+    "word": "slack",
+    "phonetic": "/slæk/",
+    "meaning": "adj. 松的；懈怠的",
+    "level": "cet6"
+  },
+  {
+    "word": "slam",
+    "phonetic": "/slæm/",
+    "meaning": "v. 猛关；抨击",
+    "level": "cet6"
+  },
+  {
+    "word": "slash",
+    "phonetic": "/slæʃ/",
+    "meaning": "v. 砍；大幅削减",
+    "level": "cet6"
+  },
+  {
+    "word": "slaughter",
+    "phonetic": "/ˈslɔːtər/",
+    "meaning": "n./v. 屠杀；屠宰",
+    "level": "cet6"
+  },
+  {
+    "word": "slim",
+    "phonetic": "/slɪm/",
+    "meaning": "adj. 苗条的 v. 减肥",
+    "level": "cet6"
+  },
+  {
+    "word": "slogan",
+    "phonetic": "/ˈsloʊɡən/",
+    "meaning": "n. 口号；标语",
+    "level": "cet6"
+  },
+  {
+    "word": "slot",
+    "phonetic": "/slɑːt/",
+    "meaning": "n. 狭槽；位置",
+    "level": "cet6"
+  },
+  {
+    "word": "slum",
+    "phonetic": "/slʌm/",
+    "meaning": "n. 贫民窟",
+    "level": "cet6"
+  },
+  {
+    "word": "smash",
+    "phonetic": "/smæʃ/",
+    "meaning": "v. 打碎；猛击",
+    "level": "cet6"
+  },
+  {
+    "word": "smuggle",
+    "phonetic": "/ˈsmʌɡl/",
+    "meaning": "v. 走私；偷运",
+    "level": "cet6"
+  },
+  {
+    "word": "snap",
+    "phonetic": "/snæp/",
+    "meaning": "v. 突然折断；快照",
+    "level": "cet6"
+  },
+  {
+    "word": "snatch",
+    "phonetic": "/snætʃ/",
+    "meaning": "v. 抢夺 n. 片段",
+    "level": "cet6"
+  },
+  {
+    "word": "soak",
+    "phonetic": "/soʊk/",
+    "meaning": "v. 浸泡；吸收",
+    "level": "cet6"
+  },
+  {
+    "word": "soar",
+    "phonetic": "/sɔːr/",
+    "meaning": "v. 翱翔；猛增",
+    "level": "cet6"
+  },
+  {
+    "word": "sober",
+    "phonetic": "/ˈsoʊbər/",
+    "meaning": "adj. 清醒的；冷静的",
+    "level": "cet6"
+  },
+  {
+    "word": "sociology",
+    "phonetic": "/ˌsoʊsiˈɑːlədʒi/",
+    "meaning": "n. 社会学",
+    "level": "cet6"
+  },
+  {
+    "word": "sodium",
+    "phonetic": "/ˈsoʊdiəm/",
+    "meaning": "n. 钠",
+    "level": "cet6"
+  },
+  {
+    "word": "solicitor",
+    "phonetic": "/səˈlɪsɪtər/",
+    "meaning": "n. 律师；法务官",
+    "level": "cet6"
+  },
+  {
+    "word": "solidarity",
+    "phonetic": "/ˌsɑːlɪˈdærəti/",
+    "meaning": "n. 团结",
+    "level": "cet6"
+  },
+  {
+    "word": "solo",
+    "phonetic": "/ˈsoʊloʊ/",
+    "meaning": "adj./adv. 单独的（地）",
+    "level": "cet6"
+  },
+  {
+    "word": "soluble",
+    "phonetic": "/ˈsɑːljəbl/",
+    "meaning": "adj. 可溶的；可解决的",
+    "level": "cet6"
+  },
+  {
+    "word": "sophisticated",
+    "phonetic": "/səˈfɪstɪkeɪtɪd/",
+    "meaning": "adj. 复杂的；精密的；老练的",
+    "level": "cet6"
+  },
+  {
+    "word": "sovereign",
+    "phonetic": "/ˈsɑːvrən/",
+    "meaning": "n. 君主 adj. 主权的",
+    "level": "cet6"
+  },
+  {
+    "word": "spacious",
+    "phonetic": "/ˈspeɪʃəs/",
+    "meaning": "adj. 宽敞的",
+    "level": "cet6"
+  },
+  {
+    "word": "sparkle",
+    "phonetic": "/ˈspɑːrkl/",
+    "meaning": "v. 闪耀 n. 闪光",
+    "level": "cet6"
+  },
+  {
+    "word": "specialize",
+    "phonetic": "/ˈspeʃəlaɪz/",
+    "meaning": "v. 专攻；专门从事",
+    "level": "cet6"
+  },
+  {
+    "word": "spectacle",
+    "phonetic": "/ˈspektəkl/",
+    "meaning": "n. 景象；眼镜",
+    "level": "cet6"
+  },
+  {
+    "word": "spectator",
+    "phonetic": "/ˈspekteɪtər/",
+    "meaning": "n. 观众；旁观者",
+    "level": "cet6"
+  },
+  {
+    "word": "spectrum",
+    "phonetic": "/ˈspektrəm/",
+    "meaning": "n. 光谱；范围",
+    "level": "cet6"
+  },
+  {
+    "word": "spice",
+    "phonetic": "/spaɪs/",
+    "meaning": "n. 香料 v. 给...加香料",
+    "level": "cet6"
+  },
+  {
+    "word": "spine",
+    "phonetic": "/spaɪn/",
+    "meaning": "n. 脊柱；书脊",
+    "level": "cet6"
+  },
+  {
+    "word": "spiral",
+    "phonetic": "/ˈspaɪrəl/",
+    "meaning": "n. 螺旋 adj. 螺旋的",
+    "level": "cet6"
+  },
+  {
+    "word": "splash",
+    "phonetic": "/splæʃ/",
+    "meaning": "v. 溅水 n. 飞溅声",
+    "level": "cet6"
+  },
+  {
+    "word": "sponge",
+    "phonetic": "/spʌndʒ/",
+    "meaning": "n. 海绵 v. 用海绵擦拭",
+    "level": "cet6"
+  },
+  {
+    "word": "spontaneous",
+    "phonetic": "/spɑːnˈteɪniəs/",
+    "meaning": "adj. 自发的；自然的",
+    "level": "cet6"
+  },
+  {
+    "word": "spouse",
+    "phonetic": "/spaʊs/",
+    "meaning": "n. 配偶",
+    "level": "cet6"
+  },
+  {
+    "word": "sprinkle",
+    "phonetic": "/ˈsprɪŋkl/",
+    "meaning": "v. 洒；撒",
+    "level": "cet6"
+  },
+  {
+    "word": "spy",
+    "phonetic": "/spaɪ/",
+    "meaning": "n. 间谍 v. 侦探",
+    "level": "cet6"
+  },
+  {
+    "word": "squad",
+    "phonetic": "/skwɑːd/",
+    "meaning": "n. 小队；小组",
+    "level": "cet6"
+  },
+  {
+    "word": "stab",
+    "phonetic": "/stæb/",
+    "meaning": "v./n. 刺；戳",
+    "level": "cet6"
+  },
+  {
+    "word": "stabilize",
+    "phonetic": "/ˈsteɪbəlaɪz/",
+    "meaning": "v. 使稳定",
+    "level": "cet6"
+  },
+  {
+    "word": "stagger",
+    "phonetic": "/ˈstæɡər/",
+    "meaning": "v. 蹒跚；使震惊",
+    "level": "cet6"
+  },
+  {
+    "word": "staircase",
+    "phonetic": "/ˈsterkeɪs/",
+    "meaning": "n. 楼梯",
+    "level": "cet6"
+  },
+  {
+    "word": "stall",
+    "phonetic": "/stɔːl/",
+    "meaning": "n. 摊位 v. 拖延",
+    "level": "cet6"
+  },
+  {
+    "word": "staple",
+    "phonetic": "/ˈsteɪpl/",
+    "meaning": "n. 主食；订书钉",
+    "level": "cet6"
+  },
+  {
+    "word": "startle",
+    "phonetic": "/ˈstɑːrtl/",
+    "meaning": "v. 使吃惊",
+    "level": "cet6"
+  },
+  {
+    "word": "stationary",
+    "phonetic": "/ˈsteɪʃəneri/",
+    "meaning": "adj. 静止的；固定的",
+    "level": "cet6"
+  },
+  {
+    "word": "statute",
+    "phonetic": "/ˈstætʃuːt/",
+    "meaning": "n. 法令；法规",
+    "level": "cet6"
+  },
+  {
+    "word": "steer",
+    "phonetic": "/stɪr/",
+    "meaning": "v. 驾驶；引导",
+    "level": "cet6"
+  },
+  {
+    "word": "stem",
+    "phonetic": "/stem/",
+    "meaning": "n. 茎 v. 起源于",
+    "level": "cet6"
+  },
+  {
+    "word": "stereo",
+    "phonetic": "/ˈsterioʊ/",
+    "meaning": "adj. 立体声的 n. 立体声",
+    "level": "cet6"
+  },
+  {
+    "word": "stereotype",
+    "phonetic": "/ˈsteriətaɪp/",
+    "meaning": "n. 刻板印象 v. 对...有成见",
+    "level": "cet6"
+  },
+  {
+    "word": "stern",
+    "phonetic": "/stɜːrn/",
+    "meaning": "adj. 严厉的 n. 船尾",
+    "level": "cet6"
+  },
+  {
+    "word": "stitch",
+    "phonetic": "/stɪtʃ/",
+    "meaning": "n. 针脚 v. 缝",
+    "level": "cet6"
+  },
+  {
+    "word": "straightforward",
+    "phonetic": "/ˌstreɪtˈfɔːrwərd/",
+    "meaning": "adj. 简单的；直接的",
+    "level": "cet6"
+  },
+  {
+    "word": "strand",
+    "phonetic": "/strænd/",
+    "meaning": "n. 一缕 v. 搁浅",
+    "level": "cet6"
+  },
+  {
+    "word": "strap",
+    "phonetic": "/stræp/",
+    "meaning": "n. 带子 v. 用带绑",
+    "level": "cet6"
+  },
+  {
+    "word": "streak",
+    "phonetic": "/striːk/",
+    "meaning": "n. 条纹；特征",
+    "level": "cet6"
+  },
+  {
+    "word": "stride",
+    "phonetic": "/straɪd/",
+    "meaning": "n. 大步 v. 阔步走",
+    "level": "cet6"
+  },
+  {
+    "word": "stripe",
+    "phonetic": "/straɪp/",
+    "meaning": "n. 条纹；袖章",
+    "level": "cet6"
+  },
+  {
+    "word": "strive",
+    "phonetic": "/straɪv/",
+    "meaning": "v. 努力；奋斗",
+    "level": "cet6"
+  },
+  {
+    "word": "stroll",
+    "phonetic": "/stroʊl/",
+    "meaning": "v./n. 散步；漫步",
+    "level": "cet6"
+  },
+  {
+    "word": "stubborn",
+    "phonetic": "/ˈstʌbərn/",
+    "meaning": "adj. 顽固的；倔强的",
+    "level": "cet6"
+  },
+  {
+    "word": "stumble",
+    "phonetic": "/ˈstʌmbl/",
+    "meaning": "v. 绊倒；蹒跚",
+    "level": "cet6"
+  },
+  {
+    "word": "stump",
+    "phonetic": "/stʌmp/",
+    "meaning": "n. 树桩 v. 难倒",
+    "level": "cet6"
+  },
+  {
+    "word": "stun",
+    "phonetic": "/stʌn/",
+    "meaning": "v. 使震惊；使昏迷",
+    "level": "cet6"
+  },
+  {
+    "word": "sturdy",
+    "phonetic": "/ˈstɜːrdi/",
+    "meaning": "adj. 结实的；坚固的",
+    "level": "cet6"
+  },
+  {
+    "word": "submarine",
+    "phonetic": "/ˈsʌbməriːn/",
+    "meaning": "n. 潜艇 adj. 海底的",
+    "level": "cet6"
+  },
+  {
+    "word": "subordinate",
+    "phonetic": "/səˈbɔːrdɪnət/",
+    "meaning": "adj. 下级的 n. 下属",
+    "level": "cet6"
+  },
+  {
+    "word": "subscribe",
+    "phonetic": "/səbˈskraɪb/",
+    "meaning": "v. 订阅；同意",
+    "level": "cet6"
+  },
+  {
+    "word": "subsidiary",
+    "phonetic": "/səbˈsɪdieri/",
+    "meaning": "adj. 辅助的 n. 子公司",
+    "level": "cet6"
+  },
+  {
+    "word": "subsidy",
+    "phonetic": "/ˈsʌbsədi/",
+    "meaning": "n. 补贴；津贴",
+    "level": "cet6"
+  },
+  {
+    "word": "subtle",
+    "phonetic": "/ˈsʌtl/",
+    "meaning": "adj. 微妙的；细微的",
+    "level": "cet6"
+  },
+  {
+    "word": "successor",
+    "phonetic": "/səkˈsesər/",
+    "meaning": "n. 继任者；接班人",
+    "level": "cet6"
+  },
+  {
+    "word": "sue",
+    "phonetic": "/suː/",
+    "meaning": "v. 起诉；控告",
+    "level": "cet6"
+  },
+  {
+    "word": "suicide",
+    "phonetic": "/ˈsuːɪsaɪd/",
+    "meaning": "n. 自杀",
+    "level": "cet6"
+  },
+  {
+    "word": "suite",
+    "phonetic": "/swiːt/",
+    "meaning": "n. 套房；一套软件",
+    "level": "cet6"
+  },
+  {
+    "word": "sulfur",
+    "phonetic": "/ˈsʌlfər/",
+    "meaning": "n. 硫",
+    "level": "cet6"
+  },
+  {
+    "word": "summon",
+    "phonetic": "/ˈsʌmən/",
+    "meaning": "v. 召唤；召集",
+    "level": "cet6"
+  },
+  {
+    "word": "superb",
+    "phonetic": "/suːˈpɜːrb/",
+    "meaning": "adj. 极好的；一流的",
+    "level": "cet6"
+  },
+  {
+    "word": "superficial",
+    "phonetic": "/ˌsuːpərˈfɪʃl/",
+    "meaning": "adj. 表面的；肤浅的",
+    "level": "cet6"
+  },
+  {
+    "word": "superintendent",
+    "phonetic": "/ˌsuːpərɪnˈtendənt/",
+    "meaning": "n. 主管；警司",
+    "level": "cet6"
+  },
+  {
+    "word": "suppress",
+    "phonetic": "/səˈpres/",
+    "meaning": "v. 镇压；抑制",
+    "level": "cet6"
+  },
+  {
+    "word": "supreme",
+    "phonetic": "/suːˈpriːm/",
+    "meaning": "adj. 最高的；最重要的",
+    "level": "cet6"
+  },
+  {
+    "word": "surge",
+    "phonetic": "/sɜːrdʒ/",
+    "meaning": "n. 激增 v. 涌动",
+    "level": "cet6"
+  },
+  {
+    "word": "surgeon",
+    "phonetic": "/ˈsɜːrdʒən/",
+    "meaning": "n. 外科医生",
+    "level": "cet6"
+  },
+  {
+    "word": "surpass",
+    "phonetic": "/sərˈpæs/",
+    "meaning": "v. 超越；超过",
+    "level": "cet6"
+  },
+  {
+    "word": "surplus",
+    "phonetic": "/ˈsɜːrplʌs/",
+    "meaning": "n. 盈余 adj. 过剩的",
+    "level": "cet6"
+  },
+  {
+    "word": "surrender",
+    "phonetic": "/səˈrendər/",
+    "meaning": "v./n. 投降；屈服",
+    "level": "cet6"
+  },
+  {
+    "word": "susceptible",
+    "phonetic": "/səˈseptəbl/",
+    "meaning": "adj. 易受影响的；敏感的",
+    "level": "cet6"
+  },
+  {
+    "word": "suspension",
+    "phonetic": "/səˈspenʃn/",
+    "meaning": "n. 暂停；悬挂",
+    "level": "cet6"
+  },
+  {
+    "word": "suspicious",
+    "phonetic": "/səˈspɪʃəs/",
+    "meaning": "adj. 怀疑的；可疑的",
+    "level": "cet6"
+  },
+  {
+    "word": "swamp",
+    "phonetic": "/swɑːmp/",
+    "meaning": "n. 沼泽 v. 淹没",
+    "level": "cet6"
+  },
+  {
+    "word": "swap",
+    "phonetic": "/swɑːp/",
+    "meaning": "v./n. 交换",
+    "level": "cet6"
+  },
+  {
+    "word": "swarm",
+    "phonetic": "/swɔːrm/",
+    "meaning": "n. 一大群 v. 蜂拥",
+    "level": "cet6"
+  },
+  {
+    "word": "symmetry",
+    "phonetic": "/ˈsɪmətri/",
+    "meaning": "n. 对称；匀称",
+    "level": "cet6"
+  },
+  {
+    "word": "symposium",
+    "phonetic": "/sɪmˈpoʊziəm/",
+    "meaning": "n. 研讨会；座谈会",
+    "level": "cet6"
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmptəm/",
+    "meaning": "n. 症状",
+    "level": "cet6"
+  },
+  {
+    "word": "syndrome",
+    "phonetic": "/ˈsɪndroʊm/",
+    "meaning": "n. 综合征",
+    "level": "cet6"
+  },
+  {
+    "word": "synthesis",
+    "phonetic": "/ˈsɪnθəsɪs/",
+    "meaning": "n. 综合；合成",
+    "level": "cet6"
+  },
+  {
+    "word": "tablet",
+    "phonetic": "/ˈtæblət/",
+    "meaning": "n. 平板电脑；药片",
+    "level": "cet6"
+  },
+  {
+    "word": "tact",
+    "phonetic": "/tækt/",
+    "meaning": "n. 机智；老练",
+    "level": "cet6"
+  },
+  {
+    "word": "tan",
+    "phonetic": "/tæn/",
+    "meaning": "v. 晒黑 n. 棕褐色",
+    "level": "cet6"
+  },
+  {
+    "word": "tangle",
+    "phonetic": "/ˈtæŋɡl/",
+    "meaning": "v. 使纠缠 n. 纠结",
+    "level": "cet6"
+  },
+  {
+    "word": "tariff",
+    "phonetic": "/ˈtærɪf/",
+    "meaning": "n. 关税",
+    "level": "cet6"
+  },
+  {
+    "word": "tease",
+    "phonetic": "/tiːz/",
+    "meaning": "v. 取笑；戏弄",
+    "level": "cet6"
+  },
+  {
+    "word": "temperament",
+    "phonetic": "/ˈtemprəmənt/",
+    "meaning": "n. 气质；性情",
+    "level": "cet6"
+  },
+  {
+    "word": "tempo",
+    "phonetic": "/ˈtempoʊ/",
+    "meaning": "n. 速度；节奏",
+    "level": "cet6"
+  },
+  {
+    "word": "tenant",
+    "phonetic": "/ˈtenənt/",
+    "meaning": "n. 租户；房客",
+    "level": "cet6"
+  },
+  {
+    "word": "tentative",
+    "phonetic": "/ˈtentətɪv/",
+    "meaning": "adj. 试探性的；暂定的",
+    "level": "cet6"
+  },
+  {
+    "word": "terminate",
+    "phonetic": "/ˈtɜːrmɪneɪt/",
+    "meaning": "v. 终止；结束",
+    "level": "cet6"
+  },
+  {
+    "word": "terrain",
+    "phonetic": "/təˈreɪn/",
+    "meaning": "n. 地形；地带",
+    "level": "cet6"
+  },
+  {
+    "word": "terrific",
+    "phonetic": "/təˈrɪfɪk/",
+    "meaning": "adj. 极好的；惊人的",
+    "level": "cet6"
+  },
+  {
+    "word": "testify",
+    "phonetic": "/ˈtestɪfaɪ/",
+    "meaning": "v. 作证；证明",
+    "level": "cet6"
+  },
+  {
+    "word": "testimony",
+    "phonetic": "/ˈtestɪmoʊni/",
+    "meaning": "n. 证词；证据",
+    "level": "cet6"
+  },
+  {
+    "word": "texture",
+    "phonetic": "/ˈtekstʃər/",
+    "meaning": "n. 质地；纹理",
+    "level": "cet6"
+  },
+  {
+    "word": "theft",
+    "phonetic": "/θeft/",
+    "meaning": "n. 偷窃；盗窃",
+    "level": "cet6"
+  },
+  {
+    "word": "thermal",
+    "phonetic": "/ˈθɜːrml/",
+    "meaning": "adj. 热的；保暖的",
+    "level": "cet6"
+  },
+  {
+    "word": "threshold",
+    "phonetic": "/ˈθreʃhoʊld/",
+    "meaning": "n. 门槛；起点",
+    "level": "cet6"
+  },
+  {
+    "word": "thrift",
+    "phonetic": "/θrɪft/",
+    "meaning": "n. 节俭；节约",
+    "level": "cet6"
+  },
+  {
+    "word": "throne",
+    "phonetic": "/θroʊn/",
+    "meaning": "n. 王位；王座",
+    "level": "cet6"
+  },
+  {
+    "word": "tick",
+    "phonetic": "/tɪk/",
+    "meaning": "v. 打勾 n. 滴答声",
+    "level": "cet6"
+  },
+  {
+    "word": "tile",
+    "phonetic": "/taɪl/",
+    "meaning": "n. 瓷砖；瓦片",
+    "level": "cet6"
+  },
+  {
+    "word": "tilt",
+    "phonetic": "/tɪlt/",
+    "meaning": "v./n. 倾斜；偏向",
+    "level": "cet6"
+  },
+  {
+    "word": "timber",
+    "phonetic": "/ˈtɪmbər/",
+    "meaning": "n. 木材；木料",
+    "level": "cet6"
+  },
+  {
+    "word": "timid",
+    "phonetic": "/ˈtɪmɪd/",
+    "meaning": "adj. 胆小的；羞怯的",
+    "level": "cet6"
+  },
+  {
+    "word": "token",
+    "phonetic": "/ˈtoʊkən/",
+    "meaning": "n. 象征；代币",
+    "level": "cet6"
+  },
+  {
+    "word": "toll",
+    "phonetic": "/toʊl/",
+    "meaning": "n. 通行费；伤亡人数",
+    "level": "cet6"
+  },
+  {
+    "word": "toss",
+    "phonetic": "/tɔːs/",
+    "meaning": "v. 抛；掷",
+    "level": "cet6"
+  },
+  {
+    "word": "tow",
+    "phonetic": "/toʊ/",
+    "meaning": "v./n. 拖；牵引",
+    "level": "cet6"
+  },
+  {
+    "word": "toxic",
+    "phonetic": "/ˈtɑːksɪk/",
+    "meaning": "adj. 有毒的",
+    "level": "cet6"
+  },
+  {
+    "word": "tract",
+    "phonetic": "/trækt/",
+    "meaning": "n. 大片土地；道",
+    "level": "cet6"
+  },
+  {
+    "word": "trademark",
+    "phonetic": "/ˈtreɪdmɑːrk/",
+    "meaning": "n. 商标",
+    "level": "cet6"
+  },
+  {
+    "word": "tragic",
+    "phonetic": "/ˈtrædʒɪk/",
+    "meaning": "adj. 悲剧的；悲惨的",
+    "level": "cet6"
+  },
+  {
+    "word": "trait",
+    "phonetic": "/treɪt/",
+    "meaning": "n. 特征；特点",
+    "level": "cet6"
+  },
+  {
+    "word": "transaction",
+    "phonetic": "/trænˈzækʃn/",
+    "meaning": "n. 交易；业务",
+    "level": "cet6"
+  },
+  {
+    "word": "transcend",
+    "phonetic": "/trænˈsend/",
+    "meaning": "v. 超越；胜过",
+    "level": "cet6"
+  },
+  {
+    "word": "transient",
+    "phonetic": "/ˈtrænʃnt/",
+    "meaning": "adj. 短暂的；临时的",
+    "level": "cet6"
+  },
+  {
+    "word": "transit",
+    "phonetic": "/ˈtrænzɪt/",
+    "meaning": "n. 运输；过境",
+    "level": "cet6"
+  },
+  {
+    "word": "transition",
+    "phonetic": "/trænˈzɪʃn/",
+    "meaning": "n. 过渡；转变",
+    "level": "cet6"
+  },
+  {
+    "word": "transplant",
+    "phonetic": "/ˈtrænsplænt/",
+    "meaning": "v./n. 移植",
+    "level": "cet6"
+  },
+  {
+    "word": "traverse",
+    "phonetic": "/trəˈvɜːrs/",
+    "meaning": "v. 穿越；横穿",
+    "level": "cet6"
+  },
+  {
+    "word": "trench",
+    "phonetic": "/trentʃ/",
+    "meaning": "n. 沟渠；战壕",
+    "level": "cet6"
+  },
+  {
+    "word": "tribe",
+    "phonetic": "/traɪb/",
+    "meaning": "n. 部落；族群",
+    "level": "cet6"
+  },
+  {
+    "word": "tribute",
+    "phonetic": "/ˈtrɪbjuːt/",
+    "meaning": "n. 敬意；贡品",
+    "level": "cet6"
+  },
+  {
+    "word": "trifle",
+    "phonetic": "/ˈtraɪfl/",
+    "meaning": "n. 琐事 v. 轻视",
+    "level": "cet6"
+  }
+]
