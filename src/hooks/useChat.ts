@@ -16,7 +16,17 @@ import { sendChatMessage, generateGreeting } from '../services/ai'
 import type { ChatMessage } from '../services/ai'
 import { getSettings } from '../services/settings'
 
-const uid = () => crypto.randomUUID()
+function uid(): string {
+  try {
+    return crypto.randomUUID()
+  } catch {
+    // Fallback for non-secure contexts (HTTP)
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+      const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 3)
+      return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16)
+    })
+  }
+}
 
 export function useChat(chatId?: string) {
   const [chats, setChats] = useState<Chat[]>([])

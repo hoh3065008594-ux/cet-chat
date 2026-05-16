@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { getAllChats, getMessages } from '../services/db'
 import { getWordCount } from '../services/dictionary'
 import { getSettings } from '../services/settings'
-import { MessageSquare, Hash, BookOpen } from 'lucide-react'
+import { MessageSquare, Hash, BookOpen, Loader2 } from 'lucide-react'
 
 export default function StatsPage() {
   const [totalChats, setTotalChats] = useState(0)
@@ -43,6 +43,14 @@ export default function StatsPage() {
   }, [])
 
   const coverage = vocabSize > 0 ? ((usedWords.length / vocabSize) * 100).toFixed(1) : '0'
+
+  if (loading) {
+    return (
+      <div className="h-full flex items-center justify-center">
+        <Loader2 size={24} className="animate-spin text-gray-400" />
+      </div>
+    )
+  }
 
   return (
     <div className="h-full overflow-y-auto p-6">
