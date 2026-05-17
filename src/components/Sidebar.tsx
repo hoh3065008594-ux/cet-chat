@@ -1,34 +1,73 @@
-import { NavLink, useNavigate, useParams } from 'react-router-dom'
-import { BookOpen, BarChart3, Settings, Plus, Trash2, X, PenLine } from 'lucide-react'
-import { useChat } from '../hooks/useChat'
+import { useState, useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { BookOpen, BarChart3, Settings, Plus, X, PenLine, Sparkles } from 'lucide-react'
+import { getAllPersonas, getAllChats, createChat, addMessage } from '../services/db'
+import { generateGreeting } from '../services/ai'
+import { getSettings, saveSettings } from '../services/settings'
+import { DEFAULT_PERSONA } from '../types/persona'
+import type { Persona } from '../types/persona'
+import type { Chat, Message } from '../services/db'
+import Avatar from './Avatar'
 
 interface Props {
   open: boolean
   onClose: () => void
 }
 
-const accent = '#8128af'
+const accent = 'oklch(45% 0.21 310)'
+
+function uid(): string {
+  try { return crypto.randomUUID() }
+  catch {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+      const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 3)
+      return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16)
+    })
+  }
+}
 
 export default function Sidebar({ open, onClose }: Props) {
-  const { chatId } = useParams<{ chatId: string }>()
   const navigate = useNavigate()
-  const { chats, loading, error, startNewChat, removeChat } = useChat(chatId)
+  const [personas, setPersonas] = useState<Persona[]>([])
+  const activeId = getSettings().activePersonaId
 
-  const handleNewChat = async () => {
-    const settings = JSON.parse(localStorage.getItem('cet-chat-settings') || '{}')
-    if (!settings.apiKey) {
-      navigate('/settings')
-      onClose()
+  useEffect(() => {
+    getAllPersonas().then((list) => setPersonas([DEFAULT_PERSONA, ...list]))
+  }, [])
+
+  const handleSelectPersona = async (p: Persona) => {
+    saveSettings({ activePersonaId: p.id, partnerName: p.name, aiAvatar: p.avatar })
+    onClose()
+
+    const settings = getSettings()
+    if (!settings.apiKey) { navigate('/settings'); return }
+
+    // Check for existing chat
+    const allChats = await getAllChats()
+    const existing = allChats
+      .filter((c) => c.personaId === p.id || (!c.personaId && p.id === '__default_alex__'))
+      .sort((a, b) => b.updatedAt - a.updatedAt)
+
+    if (existing.length > 0) {
+      navigate(`/chat/${existing[0].id}`)
       return
     }
-    const id = await startNewChat()
-    if (id) {
-      navigate(`/chat/${id}`)
-      onClose()
+
+    // No existing chat — create one
+    try {
+      const { partnerName, vocabLevel, activePersonaId } = getSettings()
+      const greeting = await generateGreeting(partnerName, vocabLevel)
+      const chatId = uid()
+      await createChat({ id: chatId, title: greeting.slice(0, 40) + '...', level: vocabLevel, partnerName, personaId: activePersonaId, createdAt: Date.now(), updatedAt: Date.now() })
+      await addMessage({ id: uid(), chatId, role: 'assistant', content: greeting, usedVocab: [], timestamp: Date.now() })
+      navigate(`/chat/${chatId}`)
+    } catch {
+      navigate('/settings')
     }
   }
 
-  const handleSelect = () => {
+  const handleNewChat = () => {
+    navigate('/')
     onClose()
   }
 
@@ -38,18 +77,18 @@ export default function Sidebar({ open, onClose }: Props) {
         <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={onClose} />
       )}
       <aside
-        className={`fixed lg:static inset-y-0 left-0 z-50 w-72 flex flex-col shrink-0 transition-transform lg:translate-x-0 ${
+        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 flex flex-col shrink-0 transition-transform lg:translate-x-0 ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
-        style={{ backgroundColor: '#fff', borderRight: '1px solid #e8e8e8' }}
+        style={{ backgroundColor: 'oklch(100% 0 0)', borderRight: '1px solid oklch(92% 0.003 310)' }}
       >
         {/* Brand */}
-        <div className="px-4 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid #e8e8e8' }}>
+        <div className="px-4 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid oklch(92% 0.003 310)' }}>
           <div>
             <h1 className="text-[17px] font-bold text-black">CET Chat</h1>
-            <p className="text-[11px] mt-0.5" style={{ color: '#8e8e8e' }}>英语对话学习伙伴</p>
+            <p className="text-[11px] mt-0.5" style={{ color: 'oklch(55% 0.003 310)' }}>英语对话学习伙伴</p>
           </div>
-          <button onClick={onClose} className="lg:hidden p-1 rounded-lg" style={{ color: '#8e8e8e' }}>
+          <button onClick={onClose} className="lg:hidden p-1 rounded-lg" style={{ color: 'oklch(55% 0.003 310)' }}>
             <X size={20} />
           </button>
         </div>
@@ -58,8 +97,7 @@ export default function Sidebar({ open, onClose }: Props) {
         <div className="px-3 pt-3 pb-2">
           <button
             onClick={handleNewChat}
-            disabled={loading}
-            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 text-white rounded-[14px] text-sm font-semibold disabled:opacity-50 transition-colors"
+            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 text-white rounded-[14px] text-sm font-semibold transition-colors"
             style={{ backgroundColor: accent }}
           >
             <Plus size={16} />
@@ -67,60 +105,39 @@ export default function Sidebar({ open, onClose }: Props) {
           </button>
         </div>
 
-        {error && (
-          <div className="px-3 py-1.5 text-xs mx-3 rounded-lg" style={{ color: '#dd2a7b', backgroundColor: '#fef0f5' }}>
-            {error}
-          </div>
-        )}
-
-        {/* Chat List */}
+        {/* Persona list */}
         <div className="flex-1 overflow-y-auto px-2 py-1 space-y-0.5">
-          {chats.map((chat) => (
-            <div key={chat.id} className="group relative">
-              <NavLink
-                to={`/chat/${chat.id}`}
-                onClick={handleSelect}
-                className={({ isActive }) =>
-                  `flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors truncate pr-8 ${
-                    isActive
-                      ? 'font-semibold text-black'
-                      : 'text-black hover:bg-[#f0f0f0]'
-                  }`
-                }
-                style={({ isActive }) =>
-                  isActive ? { backgroundColor: '#f0e6f6' } : {}
-                }
-              >
-                <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold shrink-0"
-                  style={{ backgroundColor: `color-mix(in srgb, ${accent} 15%, white)`, color: accent }}>
-                  {chat.title.charAt(0)}
-                </div>
-                <span className="truncate text-[14px]">{chat.title}</span>
-              </NavLink>
-              <button
-                onClick={(e) => {
-                  e.preventDefault()
-                  e.stopPropagation()
-                  if (confirm('删除此对话？')) {
-                    removeChat(chat.id)
-                    if (chat.id === chatId) navigate('/')
-                  }
-                }}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 opacity-0 group-hover:opacity-100 transition-all rounded-full"
-                style={{ color: '#8e8e8e' }}
-              >
-                <Trash2 size={14} />
-              </button>
-            </div>
+          {personas.map((p) => (
+            <button
+              key={p.id}
+              onClick={() => handleSelectPersona(p)}
+              className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors text-left"
+              style={{
+                backgroundColor: p.id === activeId ? 'oklch(92% 0.03 310)' : 'transparent',
+                color: '#000',
+              }}
+              onMouseEnter={(e) => {
+                if (p.id !== activeId) (e.currentTarget as HTMLElement).style.backgroundColor = 'oklch(96% 0.002 310)'
+              }}
+              onMouseLeave={(e) => {
+                if (p.id !== activeId) (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'
+              }}
+            >
+              <Avatar src={p.avatar} name={p.name} size={30} />
+              <div className="flex-1 min-w-0 text-left">
+                <p className="text-[13px] font-medium truncate">{p.name}</p>
+                <p className="text-[11px] truncate" style={{ color: 'oklch(55% 0.003 310)' }}>
+                  {p.profile.role || '朋友'}
+                </p>
+              </div>
+            </button>
           ))}
-          {chats.length === 0 && (
-            <p className="text-xs text-center py-8" style={{ color: '#8e8e8e' }}>暂无对话</p>
-          )}
         </div>
 
         {/* Nav links */}
-        <nav className="p-2 space-y-1" style={{ borderTop: '1px solid #e8e8e8' }}>
+        <nav className="p-2 space-y-1" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
           {[
+            { to: '/personas/new', icon: Sparkles, label: '人格工坊' },
             { to: '/diary', icon: PenLine, label: '英语日记' },
             { to: '/vocabulary', icon: BookOpen, label: '词库预览' },
             { to: '/stats', icon: BarChart3, label: '学习统计' },
@@ -129,15 +146,15 @@ export default function Sidebar({ open, onClose }: Props) {
             <NavLink
               key={to}
               to={to}
-              onClick={handleSelect}
+              onClick={() => onClose()}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2.5 rounded-[14px] text-[14px] transition-colors ${
                   isActive ? 'font-semibold' : ''
                 }`
               }
               style={({ isActive }) => ({
-                backgroundColor: isActive ? '#f0e6f6' : 'transparent',
-                color: isActive ? accent : '#000',
+                backgroundColor: isActive ? 'oklch(92% 0.03 310)' : 'transparent',
+                color: isActive ? accent : 'oklch(12% 0.002 310)',
               })}
             >
               <Icon size={18} />

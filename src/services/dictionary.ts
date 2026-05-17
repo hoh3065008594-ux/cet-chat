@@ -2,12 +2,12 @@ export interface VocabWord {
   word: string
   phonetic: string
   meaning: string
-  level: 'basic' | 'cet4' | 'cet6'
+  level: 'cet4' | 'cet6'
 }
 
 const vocabCache = new Map<string, VocabWord[]>()
 
-async function loadVocab(level: 'basic' | 'cet4' | 'cet6'): Promise<VocabWord[]> {
+async function loadVocab(level: 'cet4' | 'cet6'): Promise<VocabWord[]> {
   if (vocabCache.has(level)) return vocabCache.get(level)!
   try {
     const res = await fetch(`/vocab-data/${level}.json`)
@@ -30,7 +30,7 @@ function buildIndex(words: VocabWord[]): Map<string, VocabWord> {
 
 const indexCache = new Map<string, Map<string, VocabWord>>()
 
-async function getIndex(level: 'basic' | 'cet4' | 'cet6'): Promise<Map<string, VocabWord>> {
+async function getIndex(level: 'cet4' | 'cet6'): Promise<Map<string, VocabWord>> {
   if (indexCache.has(level)) return indexCache.get(level)!
   const words = await loadVocab(level)
   const idx = buildIndex(words)
@@ -38,11 +38,11 @@ async function getIndex(level: 'basic' | 'cet4' | 'cet6'): Promise<Map<string, V
   return idx
 }
 
-export async function lookupWord(word: string, level?: 'basic' | 'cet4' | 'cet6'): Promise<VocabWord | null> {
+export async function lookupWord(word: string, level?: 'cet4' | 'cet6'): Promise<VocabWord | null> {
   const key = word.toLowerCase().replace(/[^a-z-]/g, '')
   if (!key) return null
 
-  const levels: ('basic' | 'cet4' | 'cet6')[] = level ? [level] : ['cet4', 'cet6']
+  const levels: ('cet4' | 'cet6')[] = level ? [level] : ['cet4', 'cet6']
   for (const lv of levels) {
     const idx = await getIndex(lv)
     const found = idx.get(key)
@@ -51,16 +51,16 @@ export async function lookupWord(word: string, level?: 'basic' | 'cet4' | 'cet6'
   return null
 }
 
-export async function getVocabList(level: 'basic' | 'cet4' | 'cet6'): Promise<VocabWord[]> {
+export async function getVocabList(level: 'cet4' | 'cet6'): Promise<VocabWord[]> {
   return loadVocab(level)
 }
 
-export async function getWordCount(level: 'basic' | 'cet4' | 'cet6'): Promise<number> {
+export async function getWordCount(level: 'cet4' | 'cet6'): Promise<number> {
   const words = await loadVocab(level)
   return words.length
 }
 
-export async function getAvailableWords(level: 'basic' | 'cet4' | 'cet6'): Promise<string[]> {
+export async function getAvailableWords(level: 'cet4' | 'cet6'): Promise<string[]> {
   const idx = await getIndex(level)
   return Array.from(idx.keys())
 }

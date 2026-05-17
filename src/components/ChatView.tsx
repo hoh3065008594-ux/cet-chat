@@ -5,11 +5,14 @@ import { useChat } from '../hooks/useChat'
 import { useDictionary } from '../hooks/useDictionary'
 import { useTypewriter } from '../hooks/useTypewriter'
 import { getSettings } from '../services/settings'
+import { getPersona, getChat } from '../services/db'
+import { DEFAULT_PERSONA } from '../types/persona'
+import type { Persona } from '../types/persona'
 import WordTooltip from './WordTooltip'
 import Avatar from './Avatar'
 
-const accent = '#8128af'
-const accentHover = '#9b30d4'
+const accent = 'oklch(45% 0.21 310)'
+const accentHover = 'oklch(49% 0.23 310)'
 
 export default function ChatView() {
   const { chatId } = useParams<{ chatId: string }>()
@@ -17,7 +20,22 @@ export default function ChatView() {
   const { chats, messages, loading, error, startNewChat, sendMessage } = useChat(chatId)
   const { selectedWord, position, lookUp, clearWord } = useDictionary()
   const [input, setInput] = useState('')
+  const [persona, setPersona] = useState<Persona>(DEFAULT_PERSONA)
+
   const { userAvatar, aiAvatar, partnerName } = getSettings()
+
+  // Load persona: prefer chat's persona, fallback to active persona
+  useEffect(() => {
+    if (!chatId) return
+    getChat(chatId).then((chat) => {
+      const personaId = chat?.personaId || getSettings().activePersonaId
+      if (personaId && personaId !== '__default_alex__') {
+        getPersona(personaId).then((p) => { if (p) setPersona(p) })
+      } else {
+        setPersona(DEFAULT_PERSONA)
+      }
+    })
+  }, [chatId])
 
   const handleNewChat = async () => {
     const id = await startNewChat()
@@ -47,63 +65,44 @@ export default function ChatView() {
 
   if (!chatId) {
     return (
-      <div className="flex flex-col h-full bg-[#fafafa]">
+      <div className="flex flex-col h-full bg-[oklch(98.5%_0.002_310)]">
         <div className="flex-1 flex flex-col items-center justify-center space-y-5 px-6">
-          <div className="w-20 h-20 rounded-full bg-[#f0e6f6] flex items-center justify-center">
+          <div className="w-20 h-20 rounded-full bg-[oklch(92%_0.03_310)] flex items-center justify-center">
             <Send size={32} style={{ color: accent }} />
           </div>
-          <p className="text-[15px] font-medium text-black">选择对话或新建一个开始聊天</p>
+          <p className="text-[15px] font-medium text-black">选择一位伙伴开始英语对话</p>
           <button
-            onClick={() => {
-              const settings = JSON.parse(localStorage.getItem('cet-chat-settings') || '{}')
-              if (!settings.apiKey) { navigate('/settings'); return }
-              handleNewChat()
-            }}
-            disabled={loading}
-            className="text-white px-6 py-2.5 rounded-[18px] text-sm font-semibold disabled:opacity-40 transition-colors"
+            onClick={() => navigate('/')}
+            className="text-white px-6 py-2.5 rounded-[18px] text-sm font-semibold transition-colors"
             style={{ backgroundColor: accent }}
           >
-            {loading ? <Loader2 size={18} className="animate-spin inline" /> : '新建对话'}
+            选择伙伴
           </button>
-          {error && <p className="text-[#dd2a7b] text-sm">{error}</p>}
-          {(() => {
-            const settings = JSON.parse(localStorage.getItem('cet-chat-settings') || '{}')
-            if (!settings.apiKey) return <p className="text-[#8e8e8e] text-xs">请先设置 API Key</p>
-            return null
-          })()}
         </div>
       </div>
     )
   }
 
   return (
-    <div className="flex flex-col h-full relative bg-[#fafafa]">
+    <div className="flex flex-col h-full relative bg-[oklch(98.5%_0.002_310)]">
       {/* Header */}
-      <div className="px-4 py-3 bg-white flex items-center justify-between shrink-0" style={{ borderBottom: '1px solid #e8e8e8' }}>
-        <div className="flex items-center gap-2.5 min-w-0">
-          <Avatar src={aiAvatar} name={partnerName} size={28} />
-          <div className="min-w-0">
-            <h2 className="text-[14px] font-semibold text-black truncate">
-              {chats.find((c) => c.id === chatId)?.title || '新对话'}
-            </h2>
-            <p className="text-[11px] text-[#8e8e8e]">Active now</p>
-          </div>
+      <div className="px-4 py-3 bg-white flex items-center shrink-0" style={{ borderBottom: '1px solid oklch(92% 0.003 310)' }}>
+        <Avatar src={persona.avatar} name={persona.name} size={28} />
+        <div className="ml-2.5 min-w-0">
+          <h2 className="text-[14px] font-semibold text-black truncate">
+            {chats.find((c) => c.id === chatId)?.title || '新对话'}
+          </h2>
+          <p className="text-[11px]" style={{ color: 'oklch(55% 0.003 310)' }}>
+            {persona.name} · {persona.profile.role || '朋友'}
+          </p>
         </div>
-        <button
-          onClick={handleNewChat}
-          disabled={loading}
-          className="text-xs font-semibold px-3 py-1.5 rounded-[14px] transition-colors disabled:opacity-40"
-          style={{ color: accent, backgroundColor: '#f0e6f6' }}
-        >
-          + 新对话
-        </button>
       </div>
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-3 py-2 space-y-2">
         {messages.length === 0 && !loading && (
           <div className="text-center mt-10">
-            <p className="text-[13px] text-[#8e8e8e]">等待 AI 伙伴回复...</p>
+            <p className="text-[13px] text-[oklch(55%_0.003_310)]">等待 AI 伙伴回复...</p>
           </div>
         )}
         {messages.map((msg, idx) => {
@@ -115,8 +114,8 @@ export default function ChatView() {
               className={`flex items-end gap-1.5 ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
             >
               <Avatar
-                src={msg.role === 'user' ? userAvatar : aiAvatar}
-                name={msg.role === 'user' ? 'Me' : partnerName}
+                src={msg.role === 'user' ? userAvatar : persona.avatar}
+                name={msg.role === 'user' ? 'Me' : persona.name}
                 size={22}
               />
               <div
@@ -156,8 +155,8 @@ export default function ChatView() {
 
         {loading && (
           <div className="flex items-end gap-1.5">
-            <Avatar src={aiAvatar} name={partnerName} size={22} />
-            <div className="px-4 py-2.5 text-[13px] text-[#8e8e8e] flex items-center gap-2" style={{ backgroundColor: '#f0f0f0', borderRadius: '18px 18px 18px 4px' }}>
+            <Avatar src={persona.avatar} name={persona.name} size={22} />
+            <div className="px-4 py-2.5 text-[13px] text-[oklch(55%_0.003_310)] flex items-center gap-2" style={{ backgroundColor: 'oklch(96% 0.002 310)', borderRadius: '18px 18px 18px 4px' }}>
               <Loader2 size={14} className="animate-spin" />
               输入中...
             </div>
@@ -165,16 +164,16 @@ export default function ChatView() {
         )}
 
         {error && (
-          <div className="text-center text-[13px] text-[#dd2a7b] bg-[#fef0f5] rounded-xl py-2 px-4 mx-4">
+          <div className="text-center text-[13px] text-[oklch(52%_0.22_10)] bg-[oklch(97%_0.02_10)] rounded-xl py-2 px-4 mx-4">
             {error}
           </div>
         )}
       </div>
 
       {/* Input */}
-      <div className="px-3 py-2.5 bg-white" style={{ borderTop: '1px solid #e8e8e8' }}>
+      <div className="px-3 py-2.5 bg-white" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
         <div className="flex items-center gap-2 max-w-3xl mx-auto">
-          <div className="flex-1 flex items-center gap-2 rounded-[24px] px-4 py-2" style={{ backgroundColor: '#f0f0f0' }}>
+          <div className="flex-1 flex items-center gap-2 rounded-[24px] px-4 py-2" style={{ backgroundColor: 'oklch(96% 0.002 310)' }}>
             <input
               type="text"
               value={input}
@@ -182,7 +181,7 @@ export default function ChatView() {
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="Message..."
               disabled={loading}
-              className="flex-1 bg-transparent text-[14px] placeholder-[#8e8e8e] focus:outline-none disabled:opacity-50"
+              className="flex-1 bg-transparent text-[14px] placeholder-[oklch(55%_0.003_310)] focus:outline-none disabled:opacity-50"
             />
           </div>
           <button

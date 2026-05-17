@@ -7,6 +7,8 @@ import VocabularyPage from './pages/VocabularyPage'
 import StatsPage from './pages/StatsPage'
 import SettingsPage from './pages/SettingsPage'
 import DiaryPage from './pages/DiaryPage'
+import PersonaSelectPage from './pages/PersonaSelectPage'
+import PersonaWorkshop from './pages/PersonaWorkshop'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -25,7 +27,8 @@ function App() {
           <span className="font-semibold text-gray-800 text-sm">CET Chat</span>
         </div>
         <Routes>
-          <Route path="/" element={<ChatView />} />
+          <Route path="/" element={<PersonaSelectPage />} />
+          <Route path="/personas/new" element={<PersonaWorkshop />} />
           <Route path="/chat/:chatId" element={<ChatView />} />
           <Route path="/vocabulary" element={<VocabularyPage />} />
           <Route path="/stats" element={<StatsPage />} />

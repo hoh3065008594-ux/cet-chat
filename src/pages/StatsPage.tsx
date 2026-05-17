@@ -6,7 +6,7 @@ import { getSettings } from '../services/settings'
 import { MessageSquare, Hash, BookOpen, Loader2 } from 'lucide-react'
 import WordTooltip from '../components/WordTooltip'
 
-const accent = '#8128af'
+const accent = 'oklch(45% 0.21 310)'
 
 export default function StatsPage() {
   const [totalChats, setTotalChats] = useState(0)

@@ -16,7 +16,7 @@ export default function WordTooltip({ word, position, onClose }: Props) {
     return () => document.removeEventListener('keydown', handle)
   }, [onClose])
 
-  const levelLabel = { basic: '基础', cet4: '四级', cet6: '六级' }[word.level] || word.level
+  const levelLabel = { cet4: '四级', cet6: '六级' }[word.level] || word.level
 
   return (
     <>

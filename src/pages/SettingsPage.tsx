@@ -1,10 +1,13 @@
-import { useState, useRef } from 'react'
-import { Save } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
+import { Save, Trash2 } from 'lucide-react'
 import { getSettings, saveSettings } from '../services/settings'
 import type { AppSettings } from '../services/settings'
+import { getAllPersonas, deletePersona } from '../services/db'
+import { DEFAULT_PERSONA } from '../types/persona'
+import type { Persona } from '../types/persona'
 import Avatar from '../components/Avatar'
 
-const accent = '#8128af'
+const accent = 'oklch(45% 0.21 310)'
 
 export default function SettingsPage() {
   const [settings, setSettings] = useState<AppSettings>(getSettings)
@@ -86,14 +89,15 @@ export default function SettingsPage() {
             <label className="block text-[14px] font-semibold text-black mb-1.5">词库级别</label>
             <select
               value={settings.vocabLevel}
-              onChange={(e) => setSettings({ ...settings, vocabLevel: e.target.value as 'basic' | 'cet4' | 'cet6' })}
+              onChange={(e) => setSettings({ ...settings, vocabLevel: e.target.value as 'cet4' | 'cet6' })}
               className={inputClass}
             >
-              <option value="basic">基础日常 (Basic)</option>
               <option value="cet4">四级 (CET-4)</option>
               <option value="cet6">六级 (CET-6)</option>
             </select>
           </div>
+
+          <PersonaSelector />
 
           <button
             onClick={handleSave}
@@ -104,6 +108,73 @@ export default function SettingsPage() {
             {saved ? '已保存' : '保存设置'}
           </button>
         </div>
+      </div>
+    </div>
+  )
+}
+
+function PersonaSelector() {
+  const [personas, setPersonas] = useState<Persona[]>([])
+  const [activeId, setActiveId] = useState(getSettings().activePersonaId)
+
+  useEffect(() => {
+    getAllPersonas().then(setPersonas)
+  }, [])
+
+  const handleSelect = (id: string) => {
+    setActiveId(id)
+    const p = id === DEFAULT_PERSONA.id ? DEFAULT_PERSONA : personas.find((x) => x.id === id)
+    saveSettings({
+      activePersonaId: id,
+      partnerName: p?.name || 'Alex',
+      aiAvatar: p?.avatar || '',
+    })
+  }
+
+  const handleDelete = async (id: string) => {
+    if (!confirm('确定删除这个人格？')) return
+    await deletePersona(id)
+    if (activeId === id) handleSelect(DEFAULT_PERSONA.id)
+    setPersonas((prev) => prev.filter((p) => p.id !== id))
+  }
+
+  const all = [DEFAULT_PERSONA, ...personas]
+
+  return (
+    <div>
+      <label className="block text-[14px] font-semibold text-black mb-1.5">AI 伙伴人格</label>
+      <div className="space-y-1">
+        {all.map((p) => (
+          <div
+            key={p.id}
+            onClick={() => handleSelect(p.id)}
+            className="flex items-center gap-3 px-3 py-2 rounded-[12px] cursor-pointer transition-colors"
+            style={{
+              backgroundColor: activeId === p.id ? '#f0e6f6' : 'transparent',
+            }}
+          >
+            <Avatar src={p.avatar} name={p.name} size={32} />
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] font-medium text-black">{p.name}</p>
+              <p className="text-[11px]" style={{ color: '#8e8e8e' }}>
+                {p.profile.role || '朋友'}
+                {p.profile.traits.length > 0 && ` · ${p.profile.traits.slice(0, 3).join('、')}`}
+              </p>
+            </div>
+            {activeId === p.id && (
+              <span className="text-[11px] font-medium" style={{ color: accent }}>当前</span>
+            )}
+            {p.id !== DEFAULT_PERSONA.id && (
+              <button
+                onClick={(e) => { e.stopPropagation(); handleDelete(p.id) }}
+                className="p-1 rounded-full hover:bg-[#f0f0f0]"
+                style={{ color: '#8e8e8e' }}
+              >
+                <Trash2 size={14} />
+              </button>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   )

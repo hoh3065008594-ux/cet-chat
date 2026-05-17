@@ -3,8 +3,11 @@ import { ChevronLeft, ChevronRight, Sparkles, Trash2, Calendar, Plus } from 'luc
 import { useDictionary } from '../hooks/useDictionary'
 import { getSettings } from '../services/settings'
 import type { DiaryEntry } from '../services/db'
-import { getDiaryEntry, saveDiaryEntry, deleteDiaryEntry, getDiaryDates, getAllDiaryEntries } from '../services/db'
+import { getDiaryEntry, saveDiaryEntry, deleteDiaryEntry, getDiaryDates, getAllDiaryEntries, getPersona, getAllPersonas } from '../services/db'
+import { DEFAULT_PERSONA, buildPersonaPrompt } from '../types/persona'
+import type { Persona } from '../types/persona'
 import WordTooltip from '../components/WordTooltip'
+import Avatar from '../components/Avatar'
 
 // ── Morandi-inspired palette ──
 const colors = {
@@ -55,6 +58,14 @@ export default function DiaryPage() {
   const [mood, setMood] = useState('')
   const [saving, setSaving] = useState(false)
   const [aiLoading, setAiLoading] = useState(false)
+  const [commentLoading, setCommentLoading] = useState(false)
+  const [comment, setComment] = useState('')
+  const [commentPartnerId, setCommentPartnerId] = useState('')
+  const [commentPartnerName, setCommentPartnerName] = useState('')
+  const [reply, setReply] = useState('')
+  const [showPartnerPicker, setShowPartnerPicker] = useState(false)
+  const [replyText, setReplyText] = useState('')
+  const [replyLoading, setReplyLoading] = useState(false)
   const [showCalendar, setShowCalendar] = useState(false)
   const saveTimerRef = useRef<ReturnType<typeof setTimeout>>()
   const { selectedWord, position, lookUp, clearWord } = useDictionary()
@@ -79,6 +90,10 @@ export default function DiaryPage() {
     const entry = await getDiaryEntry(date)
     setContent(entry?.content || '')
     setMood(entry?.mood || '')
+    setComment(entry?.comment || '')
+    setCommentPartnerId(entry?.commentPartnerId || '')
+    setCommentPartnerName(entry?.commentPartnerName || '')
+    setReply(entry?.reply || '')
   }, [])
 
   // Auto-select today on mount
@@ -122,6 +137,62 @@ export default function DiaryPage() {
       autoSave(data.choices[0].message.content, mood)
     } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
     finally { setAiLoading(false) }
+  }
+
+  const handleComment = async (p: Persona) => {
+    setShowPartnerPicker(false)
+    const { apiKey, apiEndpoint, model } = getSettings()
+    if (!apiKey) { alert('请先设置 API Key'); return }
+    if (!content.trim()) return
+    setCommentLoading(true)
+    try {
+      const personaPrompt = buildPersonaPrompt(p)
+      const system = `${personaPrompt}\n\n你正在阅读用户的一篇英语日记。用英语给出一两句温暖的、鼓励性的评论，像朋友聊天一样。保持轻松自然。`
+      const res = await fetch(`${apiEndpoint}/chat/completions`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+        body: JSON.stringify({ model, messages: [{ role: 'system', content: system }, { role: 'user', content: `Here's my diary entry:\n\n${content}\n\nLeave a short, warm comment.` }], temperature: 0.8, max_tokens: 300 }),
+      })
+      if (!res.ok) throw new Error(`API error ${res.status}`)
+      const data = await res.json()
+      const text = data.choices[0].message.content
+      setComment(text)
+      setCommentPartnerId(p.id)
+      setCommentPartnerName(p.name)
+      const now2 = Date.now()
+      const existing = await getDiaryEntry(selectedDate)
+      await saveDiaryEntry({ date: selectedDate, content, mood, comment: text, commentPartnerId: p.id, commentPartnerName: p.name, createdAt: existing?.createdAt || now2, updatedAt: now2 })
+      await loadAll()
+    } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
+    finally { setCommentLoading(false) }
+  }
+
+  const handleReply = async () => {
+    if (!replyText.trim() || !commentPartnerId) return
+    const { apiKey, apiEndpoint, model } = getSettings()
+    if (!apiKey) { alert('请先设置 API Key'); return }
+    setReplyLoading(true)
+    try {
+      let personaPrompt = ''
+      if (commentPartnerId !== '__default_alex__') {
+        const p = await getPersona(commentPartnerId)
+        personaPrompt = p ? buildPersonaPrompt(p) : buildPersonaPrompt(DEFAULT_PERSONA)
+      }
+      const system = `${personaPrompt}\n\n用户回复了你对ta日记的评论。用你的语气自然地回应。保持简短，像朋友聊天。`
+      const res = await fetch(`${apiEndpoint}/chat/completions`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+        body: JSON.stringify({ model, messages: [{ role: 'system', content: system }, { role: 'user', content: `My diary was about: ${content.slice(0, 500)}\n\nYou commented: ${comment}\n\nMy reply to you: ${replyText}\n\nRespond naturally.` }], temperature: 0.8, max_tokens: 300 }),
+      })
+      if (!res.ok) throw new Error(`API error ${res.status}`)
+      const data = await res.json()
+      const response = data.choices[0].message.content
+      setReply(response)
+      setReplyText('')
+      const now2 = Date.now()
+      const existing = await getDiaryEntry(selectedDate)
+      await saveDiaryEntry({ date: selectedDate, content, mood, comment, commentPartnerId, commentPartnerName, reply: response, createdAt: existing?.createdAt || now2, updatedAt: now2 })
+      await loadAll()
+    } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
+    finally { setReplyLoading(false) }
   }
 
   // Calendar cells
@@ -196,30 +267,7 @@ export default function DiaryPage() {
                 <p className="text-[12px] mt-1" style={{ color: colors.textSecondary }}>点击右上角开始写吧</p>
               </div>
             ) : (
-              <div className="space-y-1">
-                {entries.map((entry) => {
-                  const entryMood = MOODS.find((m) => m.key === entry.mood)
-                  const preview = entry.content.replace(/\n/g, ' ').slice(0, 60)
-                  const isActive = entry.date === selectedDate
-                  return (
-                    <button
-                      key={entry.date}
-                      onClick={() => selectEntry(entry.date)}
-                      className="w-full text-left px-3 py-2.5 rounded-2xl transition-all"
-                      style={{
-                        backgroundColor: isActive ? colors.accentLight : 'transparent',
-                        boxShadow: isActive ? colors.shadow : 'none',
-                      }}
-                    >
-                      <div className="flex items-center gap-2">
-                        <span className="text-[13px] font-semibold" style={{ color: colors.text }}>{fmtShort(entry.date)}</span>
-                        {entryMood && <span className="text-sm">{entryMood.emoji}</span>}
-                      </div>
-                      <p className="text-[12px] mt-0.5 truncate" style={{ color: colors.textSecondary }}>{preview || '(空内容)'}</p>
-                    </button>
-                  )
-                })}
-              </div>
+              <Timeline entries={entries} selectedDate={selectedDate} onSelect={selectEntry} />
             )}
           </div>
         </div>
@@ -240,6 +288,11 @@ export default function DiaryPage() {
               {!editing && hasContent && (
                 <button onClick={() => setEditing(true)} className="text-[12px] font-medium px-3 py-1 rounded-full transition-colors" style={{backgroundColor:colors.accentLight,color:colors.accent}}>编辑</button>
               )}
+              <div className="relative">
+                <button onClick={() => setShowPartnerPicker(!showPartnerPicker)} disabled={commentLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium disabled:opacity-40 transition-colors"
+                  style={{backgroundColor:colors.accentLight,color:colors.accent}}><Sparkles size={12}/>{commentLoading?'评论中':'伙伴评论'}</button>
+                {showPartnerPicker && <PartnerPicker onSelect={handleComment} onClose={() => setShowPartnerPicker(false)} />}
+              </div>
               <button onClick={handleAiAssist} disabled={aiLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium disabled:opacity-40 transition-colors"
                 style={{backgroundColor:'#fef9e7',color:'#b7950b'}}><Sparkles size={12}/>{aiLoading?'润色中':'AI 纠错'}</button>
               {hasContent && <button onClick={handleDelete} className="p-1 rounded-lg" style={{color:colors.textSecondary}}><Trash2 size={15}/></button>}
@@ -285,6 +338,47 @@ export default function DiaryPage() {
                     <span className="text-[11px]" style={{ color: colors.textSecondary }}>{wordCount} 词</span>
                   </div>
                 )}
+                {comment && (
+                  <div className="mt-4 p-4 rounded-2xl" style={{ backgroundColor: colors.accentLight }}>
+                    <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>
+                      {commentPartnerName || getSettings().partnerName} 说
+                    </p>
+                    <p className="text-[14px] leading-relaxed" style={{ color: colors.text }}>
+                      {comment.split('\n').map((line, li) => (
+                        <span key={li}>{li > 0 && <br />}{line}</span>
+                      ))}
+                    </p>
+                    {reply ? (
+                      <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
+                        <div className="p-3 rounded-xl" style={{ backgroundColor: 'oklch(98% 0.002 310)' }}>
+                          <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>{commentPartnerName || '伙伴'} 回应</p>
+                          <p className="text-[13px] leading-relaxed" style={{ color: colors.text }}>{reply}</p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
+                        <div className="flex items-center gap-2">
+                          <input
+                            value={replyText}
+                            onChange={(e) => setReplyText(e.target.value)}
+                            placeholder={`回复${commentPartnerName || '伙伴'}...`}
+                            className="flex-1 text-[12px] px-3 py-1.5 rounded-xl focus:outline-none"
+                            style={{ backgroundColor: 'oklch(98% 0.002 310)', color: colors.text }}
+                            onKeyDown={(e) => e.key === 'Enter' && handleReply()}
+                          />
+                          <button
+                            onClick={handleReply}
+                            disabled={!replyText.trim() || replyLoading}
+                            className="text-[11px] font-medium px-3 py-1.5 rounded-xl disabled:opacity-40 transition-colors"
+                            style={{ backgroundColor: colors.accent, color: '#fff' }}
+                          >
+                            {replyLoading ? '...' : '发送'}
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           )}
@@ -293,5 +387,77 @@ export default function DiaryPage() {
 
       {selectedWord && <WordTooltip word={selectedWord} position={position} onClose={clearWord} />}
     </div>
+  )
+}
+
+function Timeline({ entries, selectedDate, onSelect }: {
+  entries: DiaryEntry[]
+  selectedDate: string
+  onSelect: (date: string) => void
+}) {
+  const byYear = new Map<string, DiaryEntry[]>()
+  for (const e of entries) {
+    const y = e.date.split('-')[0]
+    if (!byYear.has(y)) byYear.set(y, [])
+    byYear.get(y)!.push(e)
+  }
+  const years = [...byYear.keys()].sort((a, b) => Number(b) - Number(a))
+
+  return (
+    <div className="space-y-4">
+      {years.map((year) => (
+        <div key={year}>
+          <p className="text-[11px] font-semibold uppercase tracking-widest px-3 mb-1.5" style={{ color: colors.textSecondary }}>
+            {year}
+          </p>
+          <div className="space-y-1">
+            {byYear.get(year)!.map((entry) => {
+              const entryMood = MOODS.find((m) => m.key === entry.mood)
+              const preview = entry.content.replace(/\n/g, ' ').slice(0, 60)
+              const isActive = entry.date === selectedDate
+              return (
+                <button
+                  key={entry.date}
+                  onClick={() => onSelect(entry.date)}
+                  className="w-full text-left px-3 py-2.5 rounded-2xl transition-all"
+                  style={{
+                    backgroundColor: isActive ? colors.accentLight : 'transparent',
+                    boxShadow: isActive ? colors.shadow : 'none',
+                  }}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="text-[13px] font-semibold" style={{ color: colors.text }}>{fmtShort(entry.date)}</span>
+                    {entryMood && <span className="text-sm">{entryMood.emoji}</span>}
+                  </div>
+                  <p className="text-[12px] mt-0.5 truncate" style={{ color: colors.textSecondary }}>{preview || '(空内容)'}</p>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function PartnerPicker({ onSelect, onClose }: { onSelect: (p: Persona) => void; onClose: () => void }) {
+  const [list, setList] = useState<Persona[]>([])
+  useEffect(() => { getAllPersonas().then((l) => setList([DEFAULT_PERSONA, ...l])) }, [])
+  return (
+    <>
+      <div className="fixed inset-0 z-10" onClick={onClose} />
+      <div className="absolute right-0 top-full mt-1 z-20 bg-white rounded-2xl shadow-lg border py-1 min-w-[160px]" style={{ borderColor: colors.border }}>
+        {list.map((p) => (
+          <button
+            key={p.id}
+            onClick={() => onSelect(p)}
+            className="w-full text-left px-4 py-2.5 text-[13px] text-black hover:bg-[#f0ebe3] flex items-center gap-2.5"
+          >
+            <Avatar src={p.avatar} name={p.name} size={24} />
+            <span>{p.name}</span>
+          </button>
+        ))}
+      </div>
+    </>
   )
 }

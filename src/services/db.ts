@@ -1,11 +1,13 @@
 import { openDB } from 'idb'
 import type { DBSchema } from 'idb'
+import type { Persona } from '../types/persona'
 
 export interface Chat {
   id: string
   title: string
-  level: 'basic' | 'cet4' | 'cet6'
+  level: 'cet4' | 'cet6'
   partnerName: string
+  personaId: string
   createdAt: number
   updatedAt: number
 }
@@ -20,9 +22,13 @@ export interface Message {
 }
 
 export interface DiaryEntry {
-  date: string // YYYY-MM-DD
+  date: string
   content: string
-  mood?: string // emoji or mood key
+  mood?: string
+  comment?: string
+  commentPartnerId?: string
+  commentPartnerName?: string
+  reply?: string
   createdAt: number
   updatedAt: number
 }
@@ -42,9 +48,13 @@ interface CetChatDB extends DBSchema {
     value: DiaryEntry
     indexes: { updatedAt: number }
   }
+  personas: {
+    key: string
+    value: Persona
+  }
 }
 
-const dbPromise = openDB<CetChatDB>('cet-chat', 2, {
+const dbPromise = openDB<CetChatDB>('cet-chat', 3, {
   upgrade(db, oldVersion) {
     if (oldVersion < 1) {
       db.createObjectStore('chats', { keyPath: 'id' })
@@ -54,6 +64,9 @@ const dbPromise = openDB<CetChatDB>('cet-chat', 2, {
     if (oldVersion < 2) {
       const diaryStore = db.createObjectStore('diary', { keyPath: 'date' })
       diaryStore.createIndex('updatedAt', 'updatedAt')
+    }
+    if (oldVersion < 3) {
+      db.createObjectStore('personas', { keyPath: 'id' })
     }
   },
 })
@@ -145,4 +158,35 @@ export async function getDiaryDates(): Promise<string[]> {
   const db = await dbPromise
   const all = await db.getAll('diary')
   return all.map((e) => e.date)
+}
+
+// --- Personas ---
+
+export async function createPersona(persona: Persona): Promise<void> {
+  const db = await dbPromise
+  await db.add('personas', persona)
+}
+
+export async function getPersona(id: string): Promise<Persona | undefined> {
+  const db = await dbPromise
+  return db.get('personas', id)
+}
+
+export async function getAllPersonas(): Promise<Persona[]> {
+  const db = await dbPromise
+  return db.getAll('personas')
+}
+
+export async function updatePersona(id: string, updates: Partial<Persona>): Promise<void> {
+  const db = await dbPromise
+  const persona = await db.get('personas', id)
+  if (persona) {
+    Object.assign(persona, updates, { updatedAt: Date.now() })
+    await db.put('personas', persona)
+  }
+}
+
+export async function deletePersona(id: string): Promise<void> {
+  const db = await dbPromise
+  await db.delete('personas', id)
 }

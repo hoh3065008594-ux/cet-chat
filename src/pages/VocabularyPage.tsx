@@ -5,10 +5,10 @@ import { getSettings, saveSettings } from '../services/settings'
 import WordTooltip from '../components/WordTooltip'
 import { Search } from 'lucide-react'
 
-const accent = '#8128af'
+const accent = 'oklch(45% 0.21 310)'
 
 export default function VocabularyPage() {
-  const [level, setLevel] = useState<'basic' | 'cet4' | 'cet6'>(getSettings().vocabLevel)
+  const [level, setLevel] = useState<'cet4' | 'cet6'>(getSettings().vocabLevel)
   const [words, setWords] = useState<VocabWord[]>([])
   const [search, setSearch] = useState('')
   const [selectedWord, setSelectedWord] = useState<VocabWord | null>(null)
@@ -24,7 +24,7 @@ export default function VocabularyPage() {
       w.meaning.includes(search)
   )
 
-  const handleLevelChange = (lv: 'basic' | 'cet4' | 'cet6') => {
+  const handleLevelChange = (lv: 'cet4' | 'cet6') => {
     setLevel(lv)
     saveSettings({ vocabLevel: lv })
   }
@@ -45,14 +45,14 @@ export default function VocabularyPage() {
         <h2 className="text-[17px] font-bold text-black">词库预览</h2>
         <div className="flex items-center gap-3">
           <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: '1px solid #dbdbdb' }}>
-            {(['basic', 'cet4', 'cet6'] as const).map((lv) => (
+            {(['cet4', 'cet6'] as const).map((lv) => (
               <button
                 key={lv}
                 onClick={() => handleLevelChange(lv)}
                 style={level === lv ? { backgroundColor: accent } : { backgroundColor: '#fff' }}
                 className={tabClass(level === lv)}
               >
-                {{ basic: '日常', cet4: 'CET-4', cet6: 'CET-6' }[lv]}
+                {{ cet4: 'CET-4', cet6: 'CET-6' }[lv]}
               </button>
             ))}
           </div>

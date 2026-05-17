@@ -3,7 +3,8 @@ export interface AppSettings {
   apiEndpoint: string
   model: string
   partnerName: string
-  vocabLevel: 'basic' | 'cet4' | 'cet6'
+  vocabLevel: 'cet4' | 'cet6'
+  activePersonaId: string
   userAvatar: string
   aiAvatar: string
 }
@@ -14,6 +15,7 @@ const defaults: AppSettings = {
   model: 'deepseek-chat',
   partnerName: 'Alex',
   vocabLevel: 'cet4',
+  activePersonaId: '__default_alex__',
   userAvatar: '',
   aiAvatar: '',
 }

@@ -61,7 +61,7 @@ export function useChat(chatId?: string) {
   const startNewChat = useCallback(async () => {
     setLoading(true)
     setError(null)
-    const { partnerName, vocabLevel } = getSettings()
+    const { partnerName, vocabLevel, activePersonaId } = getSettings()
 
     try {
       const greeting = await generateGreeting(partnerName, vocabLevel)
@@ -72,6 +72,7 @@ export function useChat(chatId?: string) {
         title: greeting.slice(0, 40) + '...',
         level: vocabLevel,
         partnerName,
+        personaId: activePersonaId,
         createdAt: Date.now(),
         updatedAt: Date.now(),
       }
