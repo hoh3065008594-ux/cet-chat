@@ -5,8 +5,10 @@ import { getSettings, saveSettings } from '../services/settings'
 import WordTooltip from '../components/WordTooltip'
 import { Search } from 'lucide-react'
 
+const accent = '#8128af'
+
 export default function VocabularyPage() {
-  const [level, setLevel] = useState<'cet4' | 'cet6'>(getSettings().vocabLevel)
+  const [level, setLevel] = useState<'basic' | 'cet4' | 'cet6'>(getSettings().vocabLevel)
   const [words, setWords] = useState<VocabWord[]>([])
   const [search, setSearch] = useState('')
   const [selectedWord, setSelectedWord] = useState<VocabWord | null>(null)
@@ -22,7 +24,7 @@ export default function VocabularyPage() {
       w.meaning.includes(search)
   )
 
-  const handleLevelChange = (lv: 'cet4' | 'cet6') => {
+  const handleLevelChange = (lv: 'basic' | 'cet4' | 'cet6') => {
     setLevel(lv)
     saveSettings({ vocabLevel: lv })
   }
@@ -32,54 +34,60 @@ export default function VocabularyPage() {
     setTooltipPos({ x: e.clientX, y: e.clientY })
   }
 
+  const tabClass = (active: boolean) =>
+    `px-4 py-1.5 text-[13px] font-medium transition-colors ${
+      active ? 'text-white' : 'text-black hover:bg-[#f0f0f0]'
+    }`
+
   return (
-    <div className="h-full flex flex-col">
-      <div className="px-6 py-4 border-b border-gray-200 bg-white space-y-3">
-        <h2 className="text-lg font-semibold text-gray-800">词库预览</h2>
+    <div className="h-full flex flex-col bg-[#fafafa]">
+      <div className="px-6 py-4 bg-white space-y-3" style={{ borderBottom: '1px solid #e8e8e8' }}>
+        <h2 className="text-[17px] font-bold text-black">词库预览</h2>
         <div className="flex items-center gap-3">
-          <div className="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
-            <button
-              onClick={() => handleLevelChange('cet4')}
-              className={`px-4 py-1.5 ${level === 'cet4' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
-            >
-              CET-4
-            </button>
-            <button
-              onClick={() => handleLevelChange('cet6')}
-              className={`px-4 py-1.5 ${level === 'cet6' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
-            >
-              CET-6
-            </button>
+          <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: '1px solid #dbdbdb' }}>
+            {(['basic', 'cet4', 'cet6'] as const).map((lv) => (
+              <button
+                key={lv}
+                onClick={() => handleLevelChange(lv)}
+                style={level === lv ? { backgroundColor: accent } : { backgroundColor: '#fff' }}
+                className={tabClass(level === lv)}
+              >
+                {{ basic: '日常', cet4: 'CET-4', cet6: 'CET-6' }[lv]}
+              </button>
+            ))}
           </div>
           <div className="relative flex-1 max-w-xs">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+            <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#8e8e8e' }} />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="搜索单词..."
-              className="w-full border border-gray-300 rounded-lg pl-9 pr-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full rounded-[14px] pl-9 pr-3 py-1.5 text-[13px] focus:outline-none bg-[#f0f0f0] placeholder-[#8e8e8e]"
             />
           </div>
-          <span className="text-xs text-gray-500">{filtered.length} 词</span>
+          <span className="text-[12px]" style={{ color: '#8e8e8e' }}>{filtered.length} 词</span>
         </div>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1.5 sm:gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1.5">
           {filtered.map((w) => (
             <button
               key={`${w.level}-${w.word}`}
               onClick={(e) => handleWordClick(w, e)}
-              className="text-left p-2 sm:p-3 rounded-lg border border-gray-200 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors"
+              className="text-left p-2.5 rounded-[14px] bg-white transition-colors"
+              style={{ border: '1px solid #e8e8e8' }}
+              onMouseEnter={(e) => { (e.target as HTMLElement).style.borderColor = accent; (e.target as HTMLElement).style.backgroundColor = '#faf5fd' }}
+              onMouseLeave={(e) => { (e.target as HTMLElement).style.borderColor = '#e8e8e8'; (e.target as HTMLElement).style.backgroundColor = '#fff' }}
             >
-              <span className="font-medium text-gray-900 text-xs sm:text-sm">{w.word}</span>
-              <span className="text-[10px] sm:text-xs text-gray-400 block mt-0.5 truncate">{w.meaning}</span>
+              <span className="font-semibold text-black text-[13px]">{w.word}</span>
+              <span className="text-[11px] block mt-0.5 truncate" style={{ color: '#8e8e8e' }}>{w.meaning}</span>
             </button>
           ))}
         </div>
         {filtered.length === 0 && (
-          <p className="text-center text-gray-400 mt-10">没有找到匹配的单词</p>
+          <p className="text-center mt-10 text-[13px]" style={{ color: '#8e8e8e' }}>没有找到匹配的单词</p>
         )}
       </div>
 

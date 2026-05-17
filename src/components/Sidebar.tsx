@@ -1,11 +1,13 @@
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
-import { BookOpen, BarChart3, Settings, Plus, Trash2, X } from 'lucide-react'
+import { BookOpen, BarChart3, Settings, Plus, Trash2, X, PenLine } from 'lucide-react'
 import { useChat } from '../hooks/useChat'
 
 interface Props {
   open: boolean
   onClose: () => void
 }
+
+const accent = '#8128af'
 
 export default function Sidebar({ open, onClose }: Props) {
   const { chatId } = useParams<{ chatId: string }>()
@@ -33,28 +35,32 @@ export default function Sidebar({ open, onClose }: Props) {
   return (
     <>
       {open && (
-        <div className="fixed inset-0 bg-black/30 z-40 lg:hidden" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={onClose} />
       )}
       <aside
-        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 flex flex-col shrink-0 transition-transform lg:translate-x-0 ${
+        className={`fixed lg:static inset-y-0 left-0 z-50 w-72 flex flex-col shrink-0 transition-transform lg:translate-x-0 ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
+        style={{ backgroundColor: '#fff', borderRight: '1px solid #e8e8e8' }}
       >
-        <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+        {/* Brand */}
+        <div className="px-4 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid #e8e8e8' }}>
           <div>
-            <h1 className="text-lg font-bold text-gray-800">CET Chat</h1>
-            <p className="text-xs text-gray-500 mt-0.5">英语对话学习伙伴</p>
+            <h1 className="text-[17px] font-bold text-black">CET Chat</h1>
+            <p className="text-[11px] mt-0.5" style={{ color: '#8e8e8e' }}>英语对话学习伙伴</p>
           </div>
-          <button onClick={onClose} className="lg:hidden text-gray-400 hover:text-gray-600">
+          <button onClick={onClose} className="lg:hidden p-1 rounded-lg" style={{ color: '#8e8e8e' }}>
             <X size={20} />
           </button>
         </div>
 
-        <div className="px-3 pt-3">
+        {/* New Chat Button */}
+        <div className="px-3 pt-3 pb-2">
           <button
             onClick={handleNewChat}
             disabled={loading}
-            className="w-full flex items-center justify-center gap-2 px-3 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 text-white rounded-[14px] text-sm font-semibold disabled:opacity-50 transition-colors"
+            style={{ backgroundColor: accent }}
           >
             <Plus size={16} />
             新建对话
@@ -62,26 +68,34 @@ export default function Sidebar({ open, onClose }: Props) {
         </div>
 
         {error && (
-          <div className="px-3 py-1.5 text-xs text-red-600 bg-red-50 mx-3 rounded mt-1">
+          <div className="px-3 py-1.5 text-xs mx-3 rounded-lg" style={{ color: '#dd2a7b', backgroundColor: '#fef0f5' }}>
             {error}
           </div>
         )}
 
-        <div className="flex-1 overflow-y-auto px-3 py-2 space-y-0.5">
+        {/* Chat List */}
+        <div className="flex-1 overflow-y-auto px-2 py-1 space-y-0.5">
           {chats.map((chat) => (
             <div key={chat.id} className="group relative">
               <NavLink
                 to={`/chat/${chat.id}`}
                 onClick={handleSelect}
                 className={({ isActive }) =>
-                  `block px-3 py-2 rounded-lg text-sm transition-colors truncate pr-8 ${
+                  `flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors truncate pr-8 ${
                     isActive
-                      ? 'bg-indigo-50 text-indigo-700'
-                      : 'text-gray-600 hover:bg-gray-100'
+                      ? 'font-semibold text-black'
+                      : 'text-black hover:bg-[#f0f0f0]'
                   }`
                 }
+                style={({ isActive }) =>
+                  isActive ? { backgroundColor: '#f0e6f6' } : {}
+                }
               >
-                {chat.title}
+                <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold shrink-0"
+                  style={{ backgroundColor: `color-mix(in srgb, ${accent} 15%, white)`, color: accent }}>
+                  {chat.title.charAt(0)}
+                </div>
+                <span className="truncate text-[14px]">{chat.title}</span>
               </NavLink>
               <button
                 onClick={(e) => {
@@ -92,54 +106,44 @@ export default function Sidebar({ open, onClose }: Props) {
                     if (chat.id === chatId) navigate('/')
                   }
                 }}
-                className="absolute right-1 top-1/2 -translate-y-1/2 p-1 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 opacity-0 group-hover:opacity-100 transition-all rounded-full"
+                style={{ color: '#8e8e8e' }}
               >
                 <Trash2 size={14} />
               </button>
             </div>
           ))}
           {chats.length === 0 && (
-            <p className="text-xs text-gray-400 text-center py-6">暂无对话</p>
+            <p className="text-xs text-center py-8" style={{ color: '#8e8e8e' }}>暂无对话</p>
           )}
         </div>
 
-        <nav className="p-3 space-y-1 border-t border-gray-200">
-          <NavLink
-            to="/vocabulary"
-            onClick={handleSelect}
-            className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
-                isActive ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-100'
-              }`
-            }
-          >
-            <BookOpen size={18} />
-            词库预览
-          </NavLink>
-          <NavLink
-            to="/stats"
-            onClick={handleSelect}
-            className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
-                isActive ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-100'
-              }`
-            }
-          >
-            <BarChart3 size={18} />
-            统计
-          </NavLink>
-          <NavLink
-            to="/settings"
-            onClick={handleSelect}
-            className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
-                isActive ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-100'
-              }`
-            }
-          >
-            <Settings size={18} />
-            设置
-          </NavLink>
+        {/* Nav links */}
+        <nav className="p-2 space-y-1" style={{ borderTop: '1px solid #e8e8e8' }}>
+          {[
+            { to: '/diary', icon: PenLine, label: '英语日记' },
+            { to: '/vocabulary', icon: BookOpen, label: '词库预览' },
+            { to: '/stats', icon: BarChart3, label: '学习统计' },
+            { to: '/settings', icon: Settings, label: '设置' },
+          ].map(({ to, icon: Icon, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              onClick={handleSelect}
+              className={({ isActive }) =>
+                `flex items-center gap-3 px-3 py-2.5 rounded-[14px] text-[14px] transition-colors ${
+                  isActive ? 'font-semibold' : ''
+                }`
+              }
+              style={({ isActive }) => ({
+                backgroundColor: isActive ? '#f0e6f6' : 'transparent',
+                color: isActive ? accent : '#000',
+              })}
+            >
+              <Icon size={18} />
+              {label}
+            </NavLink>
+          ))}
         </nav>
       </aside>
     </>

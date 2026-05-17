@@ -8,30 +8,30 @@ export interface ChatMessage {
 
 function buildSystemPrompt(
   partnerName: string,
-  level: 'cet4' | 'cet6',
+  level: 'basic' | 'cet4' | 'cet6',
   vocabWords: string[]
 ): string {
-  const levelName = level === 'cet4' ? '四级' : '六级'
+  const levelLabel = { basic: '基础日常', cet4: '四级', cet6: '六级' }[level]
   const wordSample = vocabWords.slice(0, 800).join(', ')
   return `你是一个友好的英语聊天伙伴，名字是${partnerName}。
 
 你的对话规则：
 1. 用日常、自然的英语与用户聊天
-2. 尽可能只使用以下${levelName}词库中的词汇，避免超纲词
+2. 尽可能只使用以下${levelLabel}词库中的词汇，避免超纲词
 3. 如果遇到必须用超纲词表达的概念，用词库中的简单词汇解释
 4. 每次新对话开始时，随机选一个日常话题主动打招呼
 5. 保持轻松、友好的语气，像朋友聊天一样
 6. 回复末尾另起一行，用"📖 Used CET words:"列出你回复中用到的考纲词汇（仅列出词库中存在的词）
 
-${levelName}词库参考（共${vocabWords.length}词，以下是部分词汇）：
+${levelLabel}词库参考（共${vocabWords.length}词，以下是部分词汇）：
 ${wordSample}
 
-用户选择了${levelName}词库，共${vocabWords.length}个词汇。请严格遵守以上规则。`
+用户选择了${levelLabel}词库，共${vocabWords.length}个词汇。请严格遵守以上规则。`
 }
 
 export async function generateGreeting(
   partnerName: string,
-  level: 'cet4' | 'cet6'
+  level: 'basic' | 'cet4' | 'cet6'
 ): Promise<string> {
   const vocabWords = await getAvailableWords(level)
   const { apiKey, apiEndpoint, model } = getApiConfig()
@@ -68,7 +68,7 @@ export async function generateGreeting(
 
 export async function sendChatMessage(
   messages: ChatMessage[],
-  level: 'cet4' | 'cet6'
+  level: 'basic' | 'cet4' | 'cet6'
 ): Promise<{ content: string; usedVocab: string[] }> {
   const vocabWords = await getAvailableWords(level)
   const { apiKey, apiEndpoint, model } = getApiConfig()
@@ -109,7 +109,7 @@ export async function sendChatMessage(
 
 async function extractUsedVocab(
   content: string,
-  level: 'cet4' | 'cet6'
+  level: 'basic' | 'cet4' | 'cet6'
 ): Promise<string[]> {
   // Remove the vocab summary line and extract actual words
   const cleanContent = content.replace(/\n?📖 Used CET words:.*$/is, '')

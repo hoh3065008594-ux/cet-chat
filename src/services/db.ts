@@ -4,7 +4,7 @@ import type { DBSchema } from 'idb'
 export interface Chat {
   id: string
   title: string
-  level: 'cet4' | 'cet6'
+  level: 'basic' | 'cet4' | 'cet6'
   partnerName: string
   createdAt: number
   updatedAt: number
@@ -19,6 +19,14 @@ export interface Message {
   timestamp: number
 }
 
+export interface DiaryEntry {
+  date: string // YYYY-MM-DD
+  content: string
+  mood?: string // emoji or mood key
+  createdAt: number
+  updatedAt: number
+}
+
 interface CetChatDB extends DBSchema {
   chats: {
     key: string
@@ -29,13 +37,24 @@ interface CetChatDB extends DBSchema {
     value: Message
     indexes: { chatId: string }
   }
+  diary: {
+    key: string
+    value: DiaryEntry
+    indexes: { updatedAt: number }
+  }
 }
 
-const dbPromise = openDB<CetChatDB>('cet-chat', 1, {
-  upgrade(db) {
-    db.createObjectStore('chats', { keyPath: 'id' })
-    const msgStore = db.createObjectStore('messages', { keyPath: 'id' })
-    msgStore.createIndex('chatId', 'chatId')
+const dbPromise = openDB<CetChatDB>('cet-chat', 2, {
+  upgrade(db, oldVersion) {
+    if (oldVersion < 1) {
+      db.createObjectStore('chats', { keyPath: 'id' })
+      const msgStore = db.createObjectStore('messages', { keyPath: 'id' })
+      msgStore.createIndex('chatId', 'chatId')
+    }
+    if (oldVersion < 2) {
+      const diaryStore = db.createObjectStore('diary', { keyPath: 'date' })
+      diaryStore.createIndex('updatedAt', 'updatedAt')
+    }
   },
 })
 
@@ -98,4 +117,32 @@ export async function getLastMessage(chatId: string): Promise<Message | undefine
   const msgs = await getMessages(chatId)
   msgs.sort((a, b) => b.timestamp - a.timestamp)
   return msgs[0]
+}
+
+// --- Diary ---
+
+export async function getDiaryEntry(date: string): Promise<DiaryEntry | undefined> {
+  const db = await dbPromise
+  return db.get('diary', date)
+}
+
+export async function saveDiaryEntry(entry: DiaryEntry): Promise<void> {
+  const db = await dbPromise
+  await db.put('diary', entry)
+}
+
+export async function deleteDiaryEntry(date: string): Promise<void> {
+  const db = await dbPromise
+  await db.delete('diary', date)
+}
+
+export async function getAllDiaryEntries(): Promise<DiaryEntry[]> {
+  const db = await dbPromise
+  return db.getAllFromIndex('diary', 'updatedAt')
+}
+
+export async function getDiaryDates(): Promise<string[]> {
+  const db = await dbPromise
+  const all = await db.getAll('diary')
+  return all.map((e) => e.date)
 }

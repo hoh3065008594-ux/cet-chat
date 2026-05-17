@@ -3,7 +3,7 @@ export interface AppSettings {
   apiEndpoint: string
   model: string
   partnerName: string
-  vocabLevel: 'cet4' | 'cet6'
+  vocabLevel: 'basic' | 'cet4' | 'cet6'
   userAvatar: string
   aiAvatar: string
 }

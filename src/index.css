@@ -1,6 +1,49 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-bg: #ffffff;
+  --color-surface: #fafafa;
+  --color-chat-other: #f0f0f0;
+  --color-chat-self: #8128af;
+  --color-chat-self-text: #ffffff;
+  --color-border-light: #e8e8e8;
+  --color-border: #dbdbdb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #8e8e8e;
+  --color-accent: #8128af;
+  --color-accent-light: #f0e6f6;
+  --color-danger: #dd2a7b;
+  --color-online: #22c55e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #000;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d1d1; border-radius: 2px; }
+
+/* Chat bubble styles */
+.chat-bubble-other {
+  background-color: #f0f0f0;
+  color: #000;
+  border-radius: 18px 18px 18px 4px;
+}
+.chat-bubble-self {
+  background-color: #8128af;
+  color: #fff;
+  border-radius: 18px 18px 4px 18px;
 }

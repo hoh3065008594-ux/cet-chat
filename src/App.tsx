@@ -6,6 +6,7 @@ import ChatView from './components/ChatView'
 import VocabularyPage from './pages/VocabularyPage'
 import StatsPage from './pages/StatsPage'
 import SettingsPage from './pages/SettingsPage'
+import DiaryPage from './pages/DiaryPage'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -28,6 +29,7 @@ function App() {
           <Route path="/chat/:chatId" element={<ChatView />} />
           <Route path="/vocabulary" element={<VocabularyPage />} />
           <Route path="/stats" element={<StatsPage />} />
+          <Route path="/diary" element={<DiaryPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </main>
