@@ -196,12 +196,6 @@ function loadPersonasFromLocalStorage(): Persona[] {
   } catch { return [] }
 }
 
-async function syncAllPersonas(): Promise<void> {
-  const db = await dbPromise
-  const all = await db.getAll('personas')
-  syncPersonasToLocalStorage(all)
-}
-
 export async function createPersona(persona: Persona): Promise<void> {
   const db = await dbPromise
   await db.add('personas', persona)
