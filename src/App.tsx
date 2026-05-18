@@ -26,15 +26,17 @@ function App() {
           </button>
           <span className="font-semibold text-gray-800 text-[15px]">CET Chat</span>
         </div>
-        <Routes>
-          <Route path="/" element={<PersonaSelectPage />} />
-          <Route path="/personas/new" element={<PersonaWorkshop />} />
-          <Route path="/chat/:chatId" element={<ChatView />} />
-          <Route path="/vocabulary" element={<VocabularyPage />} />
-          <Route path="/stats" element={<StatsPage />} />
-          <Route path="/diary" element={<DiaryPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-        </Routes>
+        <div className="flex-1 overflow-hidden">
+          <Routes>
+            <Route path="/" element={<PersonaSelectPage />} />
+            <Route path="/personas/new" element={<PersonaWorkshop />} />
+            <Route path="/chat/:chatId" element={<ChatView />} />
+            <Route path="/vocabulary" element={<VocabularyPage />} />
+            <Route path="/stats" element={<StatsPage />} />
+            <Route path="/diary" element={<DiaryPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+          </Routes>
+        </div>
       </main>
     </div>
   )
