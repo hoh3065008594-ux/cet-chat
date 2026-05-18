@@ -183,19 +183,60 @@ export async function getDiaryDates(): Promise<string[]> {
 
 // --- Personas ---
 
+const PERSONAS_LS = 'cet-chat-personas'
+
+function syncPersonasToLocalStorage(personas: Persona[]): void {
+  try { localStorage.setItem(PERSONAS_LS, JSON.stringify(personas)) } catch {}
+}
+
+function loadPersonasFromLocalStorage(): Persona[] {
+  try {
+    const raw = localStorage.getItem(PERSONAS_LS)
+    return raw ? JSON.parse(raw) : []
+  } catch { return [] }
+}
+
+async function syncAllPersonas(): Promise<void> {
+  const db = await dbPromise
+  const all = await db.getAll('personas')
+  syncPersonasToLocalStorage(all)
+}
+
 export async function createPersona(persona: Persona): Promise<void> {
   const db = await dbPromise
   await db.add('personas', persona)
+  syncPersonasToLocalStorage(await db.getAll('personas'))
 }
 
 export async function getPersona(id: string): Promise<Persona | undefined> {
   const db = await dbPromise
-  return db.get('personas', id)
+  const fromDb = await db.get('personas', id)
+  if (fromDb) return fromDb
+  // Fallback to localStorage (PWA sync)
+  const ls = loadPersonasFromLocalStorage()
+  const fromLs = ls.find((p) => p.id === id)
+  if (fromLs) {
+    // Restore to IndexedDB
+    await db.put('personas', fromLs)
+    return fromLs
+  }
 }
 
 export async function getAllPersonas(): Promise<Persona[]> {
   const db = await dbPromise
-  return db.getAll('personas')
+  const fromDb = await db.getAll('personas')
+  // Merge with localStorage personas not yet in IndexedDB
+  const ls = loadPersonasFromLocalStorage()
+  for (const p of ls) {
+    if (!fromDb.find((x) => x.id === p.id)) {
+      fromDb.push(p)
+      await db.put('personas', p).catch(() => {})
+    }
+  }
+  if (fromDb.length > ls.length) {
+    syncPersonasToLocalStorage(fromDb)
+  }
+  return fromDb
 }
 
 export async function updatePersona(id: string, updates: Partial<Persona>): Promise<void> {
@@ -204,10 +245,12 @@ export async function updatePersona(id: string, updates: Partial<Persona>): Prom
   if (persona) {
     Object.assign(persona, updates, { updatedAt: Date.now() })
     await db.put('personas', persona)
+    syncPersonasToLocalStorage(await db.getAll('personas'))
   }
 }
 
 export async function deletePersona(id: string): Promise<void> {
   const db = await dbPromise
   await db.delete('personas', id)
+  syncPersonasToLocalStorage(await db.getAll('personas'))
 }
