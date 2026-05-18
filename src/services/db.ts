@@ -21,14 +21,22 @@ export interface Message {
   timestamp: number
 }
 
+export interface DiaryComment {
+  id: string
+  partnerId: string
+  partnerName: string
+  avatar?: string
+  content: string
+  reply?: string
+  createdAt: number
+}
+
 export interface DiaryEntry {
+  id: string
   date: string
   content: string
   mood?: string
-  comment?: string
-  commentPartnerId?: string
-  commentPartnerName?: string
-  reply?: string
+  comments?: DiaryComment[]
   createdAt: number
   updatedAt: number
 }
@@ -46,7 +54,7 @@ interface CetChatDB extends DBSchema {
   diary: {
     key: string
     value: DiaryEntry
-    indexes: { updatedAt: number }
+    indexes: { date: string; updatedAt: number }
   }
   personas: {
     key: string
@@ -54,7 +62,7 @@ interface CetChatDB extends DBSchema {
   }
 }
 
-const dbPromise = openDB<CetChatDB>('cet-chat', 3, {
+const dbPromise = openDB<CetChatDB>('cet-chat', 4, {
   upgrade(db, oldVersion) {
     if (oldVersion < 1) {
       db.createObjectStore('chats', { keyPath: 'id' })
@@ -67,6 +75,14 @@ const dbPromise = openDB<CetChatDB>('cet-chat', 3, {
     }
     if (oldVersion < 3) {
       db.createObjectStore('personas', { keyPath: 'id' })
+    }
+    if (oldVersion < 4) {
+      // v3→v4: diary key changed from 'date' to 'id', added date index
+      // Old entries (keyed by date) get id = date; multiple entries allowed going forward
+      db.deleteObjectStore('diary')
+      const diaryStore = db.createObjectStore('diary', { keyPath: 'id' })
+      diaryStore.createIndex('date', 'date')
+      diaryStore.createIndex('updatedAt', 'updatedAt')
     }
   },
 })
@@ -134,9 +150,14 @@ export async function getLastMessage(chatId: string): Promise<Message | undefine
 
 // --- Diary ---
 
-export async function getDiaryEntry(date: string): Promise<DiaryEntry | undefined> {
+export async function getDiaryEntry(id: string): Promise<DiaryEntry | undefined> {
   const db = await dbPromise
-  return db.get('diary', date)
+  return db.get('diary', id)
+}
+
+export async function getEntriesByDate(date: string): Promise<DiaryEntry[]> {
+  const db = await dbPromise
+  return db.getAllFromIndex('diary', 'date', date)
 }
 
 export async function saveDiaryEntry(entry: DiaryEntry): Promise<void> {
@@ -144,9 +165,9 @@ export async function saveDiaryEntry(entry: DiaryEntry): Promise<void> {
   await db.put('diary', entry)
 }
 
-export async function deleteDiaryEntry(date: string): Promise<void> {
+export async function deleteDiaryEntry(id: string): Promise<void> {
   const db = await dbPromise
-  await db.delete('diary', date)
+  await db.delete('diary', id)
 }
 
 export async function getAllDiaryEntries(): Promise<DiaryEntry[]> {
@@ -157,7 +178,7 @@ export async function getAllDiaryEntries(): Promise<DiaryEntry[]> {
 export async function getDiaryDates(): Promise<string[]> {
   const db = await dbPromise
   const all = await db.getAll('diary')
-  return all.map((e) => e.date)
+  return [...new Set(all.map((e) => e.date))]
 }
 
 // --- Personas ---

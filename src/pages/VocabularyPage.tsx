@@ -5,7 +5,18 @@ import { getSettings, saveSettings } from '../services/settings'
 import WordTooltip from '../components/WordTooltip'
 import { Search } from 'lucide-react'
 
-const accent = 'oklch(45% 0.21 310)'
+const c = {
+  accent: 'oklch(45% 0.21 310)',
+  accentLight: 'oklch(92% 0.03 310)',
+  accentWash: 'oklch(97% 0.015 310)',
+  bg: 'oklch(98.5% 0.002 310)',
+  white: 'oklch(100% 0 0)',
+  text: 'oklch(12% 0.002 310)',
+  textSecondary: 'oklch(55% 0.003 310)',
+  border: 'oklch(88% 0.003 310)',
+  borderDashed: 'oklch(80% 0.003 310)',
+  surfaceHover: 'oklch(96.5% 0.002 310)',
+}
 
 export default function VocabularyPage() {
   const [level, setLevel] = useState<'cet4' | 'cet6'>(getSettings().vocabLevel)
@@ -34,39 +45,38 @@ export default function VocabularyPage() {
     setTooltipPos({ x: e.clientX, y: e.clientY })
   }
 
-  const tabClass = (active: boolean) =>
-    `px-4 py-1.5 text-[13px] font-medium transition-colors ${
-      active ? 'text-white' : 'text-black hover:bg-[#f0f0f0]'
-    }`
-
   return (
-    <div className="h-full flex flex-col bg-[#fafafa]">
-      <div className="px-6 py-4 bg-white space-y-3" style={{ borderBottom: '1px solid #e8e8e8' }}>
-        <h2 className="text-[17px] font-bold text-black">词库预览</h2>
+    <div className="h-full flex flex-col" style={{ backgroundColor: c.bg }}>
+      <div className="px-6 py-4 space-y-3" style={{ backgroundColor: c.white, borderBottom: `1px solid ${c.border}` }}>
+        <h2 className="text-[17px] font-bold" style={{ color: c.text }}>词库预览</h2>
         <div className="flex items-center gap-3">
-          <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: '1px solid #dbdbdb' }}>
+          <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: `1px solid ${c.borderDashed}` }}>
             {(['cet4', 'cet6'] as const).map((lv) => (
               <button
                 key={lv}
                 onClick={() => handleLevelChange(lv)}
-                style={level === lv ? { backgroundColor: accent } : { backgroundColor: '#fff' }}
-                className={tabClass(level === lv)}
+                style={{
+                  backgroundColor: level === lv ? c.accent : c.white,
+                  color: level === lv ? c.white : c.text,
+                }}
+                className="px-4 py-1.5 text-[13px] font-medium transition-colors"
               >
                 {{ cet4: 'CET-4', cet6: 'CET-6' }[lv]}
               </button>
             ))}
           </div>
           <div className="relative flex-1 max-w-xs">
-            <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#8e8e8e' }} />
+            <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: c.textSecondary }} />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="搜索单词..."
-              className="w-full rounded-[14px] pl-9 pr-3 py-1.5 text-[13px] focus:outline-none bg-[#f0f0f0] placeholder-[#8e8e8e]"
+              className="w-full rounded-[14px] pl-9 pr-3 py-1.5 text-[13px] focus:outline-none"
+              style={{ backgroundColor: c.surfaceHover, color: c.text }}
             />
           </div>
-          <span className="text-[12px]" style={{ color: '#8e8e8e' }}>{filtered.length} 词</span>
+          <span className="text-[12px]" style={{ color: c.textSecondary }}>{filtered.length} 词</span>
         </div>
       </div>
 
@@ -76,18 +86,16 @@ export default function VocabularyPage() {
             <button
               key={`${w.level}-${w.word}`}
               onClick={(e) => handleWordClick(w, e)}
-              className="text-left p-2.5 rounded-[14px] bg-white transition-colors"
-              style={{ border: '1px solid #e8e8e8' }}
-              onMouseEnter={(e) => { (e.target as HTMLElement).style.borderColor = accent; (e.target as HTMLElement).style.backgroundColor = '#faf5fd' }}
-              onMouseLeave={(e) => { (e.target as HTMLElement).style.borderColor = '#e8e8e8'; (e.target as HTMLElement).style.backgroundColor = '#fff' }}
+              className="word-card text-left p-2.5 rounded-[14px] transition-all cursor-pointer"
+              style={{ border: `1px solid ${c.border}`, backgroundColor: c.white }}
             >
-              <span className="font-semibold text-black text-[13px]">{w.word}</span>
-              <span className="text-[11px] block mt-0.5 truncate" style={{ color: '#8e8e8e' }}>{w.meaning}</span>
+              <span className="font-semibold text-[13px]" style={{ color: c.text }}>{w.word}</span>
+              <span className="text-[11px] block mt-0.5 truncate" style={{ color: c.textSecondary }}>{w.meaning}</span>
             </button>
           ))}
         </div>
         {filtered.length === 0 && (
-          <p className="text-center mt-10 text-[13px]" style={{ color: '#8e8e8e' }}>没有找到匹配的单词</p>
+          <p className="text-center mt-10 text-[13px]" style={{ color: c.textSecondary }}>没有找到匹配的单词</p>
         )}
       </div>
 

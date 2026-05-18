@@ -1,24 +1,26 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Sparkles, Trash2, Calendar, Plus } from 'lucide-react'
 import { useDictionary } from '../hooks/useDictionary'
 import { getSettings } from '../services/settings'
-import type { DiaryEntry } from '../services/db'
-import { getDiaryEntry, saveDiaryEntry, deleteDiaryEntry, getDiaryDates, getAllDiaryEntries, getPersona, getAllPersonas } from '../services/db'
+import type { DiaryEntry, DiaryComment } from '../services/db'
+import { getDiaryEntry, getEntriesByDate, saveDiaryEntry, deleteDiaryEntry, getDiaryDates, getAllDiaryEntries, getPersona, getAllPersonas } from '../services/db'
 import { DEFAULT_PERSONA, buildPersonaPrompt } from '../types/persona'
 import type { Persona } from '../types/persona'
 import WordTooltip from '../components/WordTooltip'
 import Avatar from '../components/Avatar'
 
-// ── Morandi-inspired palette ──
+// ── OKLCH brand palette ──
 const colors = {
-  bg: '#f5f0eb',
-  card: '#ffffff',
-  accent: '#b8956a',
-  accentLight: '#f0ebe3',
-  text: '#4a3f35',
-  textSecondary: '#9b8e82',
-  border: '#e8e0d5',
-  shadow: '0 2px 12px rgba(74,63,53,0.06)',
+  bg: 'oklch(98.5% 0.002 310)',
+  card: 'oklch(100% 0 0)',
+  accent: 'oklch(45% 0.21 310)',
+  accentHover: 'oklch(49% 0.23 310)',
+  accentLight: 'oklch(92% 0.03 310)',
+  text: 'oklch(12% 0.002 310)',
+  textSecondary: 'oklch(55% 0.003 310)',
+  border: 'oklch(88% 0.003 310)',
+  borderLight: 'oklch(92% 0.003 310)',
+  shadow: '0 2px 12px rgba(129,40,175,0.06)',
 }
 
 // ── Mood options ──
@@ -47,27 +49,26 @@ const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六']
 function todayStr() { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` }
 function fmtDate(s: string) { const [y,m,d]=s.split('-'); return `${y}年${Number(m)}月${Number(d)}日` }
 function fmtShort(s: string) { const [,m,d]=s.split('-'); return `${Number(m)}/${Number(d)}` }
+function uid(): string { return crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}` }
 
 export default function DiaryPage() {
   const today = todayStr()
   const [entries, setEntries] = useState<DiaryEntry[]>([])
   const [entryDates, setEntryDates] = useState<Set<string>>(new Set())
   const [selectedDate, setSelectedDate] = useState(today)
+  const [selectedId, setSelectedId] = useState<string | null>(null)
   const [editing, setEditing] = useState(false)
   const [content, setContent] = useState('')
   const [mood, setMood] = useState('')
   const [saving, setSaving] = useState(false)
+  const [dirty, setDirty] = useState(false)
   const [aiLoading, setAiLoading] = useState(false)
   const [commentLoading, setCommentLoading] = useState(false)
-  const [comment, setComment] = useState('')
-  const [commentPartnerId, setCommentPartnerId] = useState('')
-  const [commentPartnerName, setCommentPartnerName] = useState('')
-  const [reply, setReply] = useState('')
+  const [comments, setComments] = useState<DiaryComment[]>([])
   const [showPartnerPicker, setShowPartnerPicker] = useState(false)
-  const [replyText, setReplyText] = useState('')
-  const [replyLoading, setReplyLoading] = useState(false)
+  const [replyText, setReplyText] = useState<Record<string, string>>({})
+  const [replyLoading, setReplyLoading] = useState<Record<string, boolean>>({})
   const [showCalendar, setShowCalendar] = useState(false)
-  const saveTimerRef = useRef<ReturnType<typeof setTimeout>>()
   const { selectedWord, position, lookUp, clearWord } = useDictionary()
 
   // Calendar state
@@ -84,40 +85,77 @@ export default function DiaryPage() {
 
   useEffect(() => { loadAll() }, [loadAll])
 
-  const selectEntry = useCallback(async (date: string) => {
-    setSelectedDate(date)
+  const selectEntry = useCallback(async (id: string) => {
+    setSelectedId(id)
     setEditing(false)
-    const entry = await getDiaryEntry(date)
-    setContent(entry?.content || '')
-    setMood(entry?.mood || '')
-    setComment(entry?.comment || '')
-    setCommentPartnerId(entry?.commentPartnerId || '')
-    setCommentPartnerName(entry?.commentPartnerName || '')
-    setReply(entry?.reply || '')
+    setDirty(false)
+    const entry = await getDiaryEntry(id)
+    if (entry) {
+      setSelectedDate(entry.date)
+      setContent(entry.content)
+      setMood(entry.mood || '')
+      setComments(entry.comments || [])
+    }
+    setReplyText({})
+    setReplyLoading({})
   }, [])
 
+  // Open the latest entry for a date (calendar click)
+  const openDate = useCallback(async (date: string) => {
+    setSelectedDate(date)
+    const all = await getEntriesByDate(date)
+    if (all.length > 0) {
+      const latest = all.reduce((a, b) => a.updatedAt > b.updatedAt ? a : b)
+      await selectEntry(latest.id)
+    } else {
+      setSelectedId(null)
+      setContent('')
+      setMood('')
+      setComments([])
+      setEditing(false)
+      setDirty(false)
+    }
+  }, [selectEntry])
+
   // Auto-select today on mount
-  useEffect(() => { selectEntry(today) }, [selectEntry, today])
+  useEffect(() => { openDate(today) }, [today])
 
-  const autoSave = useCallback((text: string, m: string) => {
-    if (saveTimerRef.current) clearTimeout(saveTimerRef.current)
-    saveTimerRef.current = setTimeout(async () => {
-      setSaving(true)
-      const now2 = Date.now()
-      const existing = await getDiaryEntry(selectedDate)
-      await saveDiaryEntry({ date: selectedDate, content: text, mood: m || undefined, createdAt: existing?.createdAt || now2, updatedAt: now2 })
-      setEntryDates((prev) => new Set(prev).add(selectedDate))
-      await loadAll()
-      setSaving(false)
-    }, 600)
-  }, [selectedDate, loadAll])
+  const handlePublish = async () => {
+    if (!content.trim()) return
+    setSaving(true)
+    const now2 = Date.now()
+    const id = selectedId || uid()
+    // If editing an existing entry, preserve its comments; new entry starts empty
+    let publishComments = comments
+    if (selectedId) {
+      const existing = await getDiaryEntry(selectedId)
+      if (existing) {
+        publishComments = existing.comments || []
+      }
+    }
+    await saveDiaryEntry({
+      id,
+      date: selectedDate,
+      content,
+      mood: mood || undefined,
+      comments: publishComments,
+      createdAt: now2,
+      updatedAt: now2,
+    })
+    setEntryDates((prev) => new Set(prev).add(selectedDate))
+    await loadAll()
+    setSelectedId(id)
+    setDirty(false)
+    setEditing(false)
+    setSaving(false)
+  }
 
-  const handleChange = (t: string) => { setContent(t); autoSave(t, mood) }
-  const handleMood = (key: string) => { const m = mood === key ? '' : key; setMood(m); autoSave(content, m) }
+  const handleChange = (t: string) => { setEditing(true); setContent(t); setDirty(true) }
+  const handleMood = (key: string) => { const m = mood === key ? '' : key; setMood(m); setDirty(true) }
   const handleDelete = async () => {
+    if (!selectedId) return
     if (!confirm('删除这篇日记？')) return
-    await deleteDiaryEntry(selectedDate); setContent(''); setMood('')
-    setEntryDates((prev) => { const n = new Set(prev); n.delete(selectedDate); return n })
+    await deleteDiaryEntry(selectedId); setContent(''); setMood('')
     await loadAll()
   }
 
@@ -134,7 +172,7 @@ export default function DiaryPage() {
       if (!res.ok) throw new Error(`API error ${res.status}`)
       const data = await res.json()
       setContent(data.choices[0].message.content)
-      autoSave(data.choices[0].message.content, mood)
+      setDirty(true)
     } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
     finally { setAiLoading(false) }
   }
@@ -155,44 +193,55 @@ export default function DiaryPage() {
       if (!res.ok) throw new Error(`API error ${res.status}`)
       const data = await res.json()
       const text = data.choices[0].message.content
-      setComment(text)
-      setCommentPartnerId(p.id)
-      setCommentPartnerName(p.name)
+      const newComment: DiaryComment = {
+        id: crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${p.id}`,
+        partnerId: p.id,
+        partnerName: p.name,
+        avatar: p.avatar,
+        content: text,
+        createdAt: Date.now(),
+      }
+      const updated = [...comments, newComment]
+      setComments(updated)
       const now2 = Date.now()
-      const existing = await getDiaryEntry(selectedDate)
-      await saveDiaryEntry({ date: selectedDate, content, mood, comment: text, commentPartnerId: p.id, commentPartnerName: p.name, createdAt: existing?.createdAt || now2, updatedAt: now2 })
+      const existing = selectedId ? await getDiaryEntry(selectedId) : undefined
+      await saveDiaryEntry({ id: selectedId || uid(), date: selectedDate, content, mood, comments: updated, createdAt: existing?.createdAt || now2, updatedAt: now2 })
       await loadAll()
     } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
     finally { setCommentLoading(false) }
   }
 
-  const handleReply = async () => {
-    if (!replyText.trim() || !commentPartnerId) return
+  const handleReply = async (commentId: string) => {
+    const text = replyText[commentId]?.trim()
+    if (!text) return
+    const target = comments.find((c) => c.id === commentId)
+    if (!target) return
     const { apiKey, apiEndpoint, model } = getSettings()
     if (!apiKey) { alert('请先设置 API Key'); return }
-    setReplyLoading(true)
+    setReplyLoading((prev) => ({ ...prev, [commentId]: true }))
     try {
       let personaPrompt = ''
-      if (commentPartnerId !== '__default_alex__') {
-        const p = await getPersona(commentPartnerId)
+      if (target.partnerId !== '__default_alex__') {
+        const p = await getPersona(target.partnerId)
         personaPrompt = p ? buildPersonaPrompt(p) : buildPersonaPrompt(DEFAULT_PERSONA)
       }
       const system = `${personaPrompt}\n\n用户回复了你对ta日记的评论。用你的语气自然地回应。保持简短，像朋友聊天。`
       const res = await fetch(`${apiEndpoint}/chat/completions`, {
         method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-        body: JSON.stringify({ model, messages: [{ role: 'system', content: system }, { role: 'user', content: `My diary was about: ${content.slice(0, 500)}\n\nYou commented: ${comment}\n\nMy reply to you: ${replyText}\n\nRespond naturally.` }], temperature: 0.8, max_tokens: 300 }),
+        body: JSON.stringify({ model, messages: [{ role: 'system', content: system }, { role: 'user', content: `My diary was about: ${content.slice(0, 500)}\n\nYou commented: ${target.content}\n\nMy reply to you: ${text}\n\nRespond naturally.` }], temperature: 0.8, max_tokens: 300 }),
       })
       if (!res.ok) throw new Error(`API error ${res.status}`)
       const data = await res.json()
       const response = data.choices[0].message.content
-      setReply(response)
-      setReplyText('')
+      const updated = comments.map((c) => c.id === commentId ? { ...c, reply: response } : c)
+      setComments(updated)
+      setReplyText((prev) => { const n = { ...prev }; delete n[commentId]; return n })
       const now2 = Date.now()
-      const existing = await getDiaryEntry(selectedDate)
-      await saveDiaryEntry({ date: selectedDate, content, mood, comment, commentPartnerId, commentPartnerName, reply: response, createdAt: existing?.createdAt || now2, updatedAt: now2 })
+      const existing = selectedId ? await getDiaryEntry(selectedId) : undefined
+      await saveDiaryEntry({ id: selectedId || uid(), date: selectedDate, content, mood, comments: updated, createdAt: existing?.createdAt || now2, updatedAt: now2 })
       await loadAll()
     } catch (e) { alert(e instanceof Error ? e.message : 'AI 请求失败') }
-    finally { setReplyLoading(false) }
+    finally { setReplyLoading((prev) => ({ ...prev, [commentId]: false })) }
   }
 
   // Calendar cells
@@ -217,7 +266,7 @@ export default function DiaryPage() {
             <Calendar size={18} />
           </button>
           <button
-            onClick={() => { setSelectedDate(today); setEditing(true) }}
+            onClick={() => { setSelectedDate(today); setSelectedId(null); setContent(''); setMood(''); setComments([]); setDirty(false); setEditing(true) }}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors"
             style={{ backgroundColor: colors.accent, color: '#fff' }}
           >
@@ -230,11 +279,11 @@ export default function DiaryPage() {
       {showCalendar && (
         <div className="shrink-0 px-4 py-3" style={{ backgroundColor: colors.card, borderBottom: `1px solid ${colors.border}` }}>
           <div className="flex items-center justify-between mb-2">
-            <button onClick={() => viewMonth===0?(setViewYear(viewYear-1),setViewMonth(11)):setViewMonth(viewMonth-1)} className="p-1 rounded-lg hover:bg-[#f0ebe3]"><ChevronLeft size={16} style={{color:colors.textSecondary}} /></button>
+            <button onClick={() => viewMonth===0?(setViewYear(viewYear-1),setViewMonth(11)):setViewMonth(viewMonth-1)} className="p-1 rounded-lg"><ChevronLeft size={16} style={{color:colors.textSecondary}} /></button>
             <button onClick={()=>{setViewYear(now.getFullYear());setViewMonth(now.getMonth())}} className="text-[14px] font-semibold" style={{color:colors.text}}>
               {viewYear}年 {MONTHS[viewMonth]}
             </button>
-            <button onClick={() => viewMonth===11?(setViewYear(viewYear+1),setViewMonth(0)):setViewMonth(viewMonth+1)} className="p-1 rounded-lg hover:bg-[#f0ebe3]"><ChevronRight size={16} style={{color:colors.textSecondary}} /></button>
+            <button onClick={() => viewMonth===11?(setViewYear(viewYear+1),setViewMonth(0)):setViewMonth(viewMonth+1)} className="p-1 rounded-lg"><ChevronRight size={16} style={{color:colors.textSecondary}} /></button>
           </div>
           <div className="grid grid-cols-7 mb-1">
             {WEEKDAYS.map(d=><div key={d} className="text-center text-[10px] py-0.5" style={{color:colors.textSecondary}}>{d}</div>)}
@@ -244,7 +293,7 @@ export default function DiaryPage() {
               if (day===null) return <div key={`ec${i}`} />
               const ds=`${viewYear}-${String(viewMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`
               const isSel=ds===selectedDate, isTD=ds===today, has=entryDates.has(ds)
-              return <button key={ds} onClick={()=>{setSelectedDate(ds);setEditing(false);selectEntry(ds);setShowCalendar(false)}}
+              return <button key={ds} onClick={()=>{openDate(ds);setShowCalendar(false)}}
                 className="text-[11px] py-1.5 rounded-lg font-medium transition-colors relative"
                 style={{backgroundColor:isSel?colors.accent:isTD?colors.accentLight:'transparent',color:isSel?'#fff':isTD?colors.accent:colors.text}}>
                 {day}{has&&<span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full" style={{backgroundColor:isSel?'#fff':colors.accent}}/>}
@@ -267,7 +316,7 @@ export default function DiaryPage() {
                 <p className="text-[12px] mt-1" style={{ color: colors.textSecondary }}>点击右上角开始写吧</p>
               </div>
             ) : (
-              <Timeline entries={entries} selectedDate={selectedDate} onSelect={selectEntry} />
+              <Timeline entries={entries} selectedId={selectedId} onSelect={selectEntry} />
             )}
           </div>
         </div>
@@ -281,11 +330,15 @@ export default function DiaryPage() {
                 {selectedDate===today?'今天':fmtDate(selectedDate)}
               </span>
               {currentMood && <span className="text-lg">{currentMood.emoji}</span>}
-              {saving && <span className="text-[11px] animate-pulse" style={{color:colors.textSecondary}}>保存中...</span>}
+              {dirty && <span className="text-[11px]" style={{color:colors.accent}}>未发布</span>}
+              {saving && <span className="text-[11px] animate-pulse" style={{color:colors.textSecondary}}>发布中...</span>}
             </div>
             <div className="flex items-center gap-2">
               <span className="text-[11px]" style={{color:colors.textSecondary}}>{wordCount} 词</span>
-              {!editing && hasContent && (
+              {(editing || dirty) && hasContent && (
+                <button onClick={handlePublish} disabled={saving} className="text-[12px] font-medium px-3 py-1 rounded-full transition-colors disabled:opacity-50" style={{backgroundColor:colors.accent,color:'#fff'}}>{saving ? '发布中...' : '发布'}</button>
+              )}
+              {!editing && !dirty && hasContent && (
                 <button onClick={() => setEditing(true)} className="text-[12px] font-medium px-3 py-1 rounded-full transition-colors" style={{backgroundColor:colors.accentLight,color:colors.accent}}>编辑</button>
               )}
               <div className="relative">
@@ -338,45 +391,49 @@ export default function DiaryPage() {
                     <span className="text-[11px]" style={{ color: colors.textSecondary }}>{wordCount} 词</span>
                   </div>
                 )}
-                {comment && (
-                  <div className="mt-4 p-4 rounded-2xl" style={{ backgroundColor: colors.accentLight }}>
-                    <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>
-                      {commentPartnerName || getSettings().partnerName} 说
-                    </p>
-                    <p className="text-[14px] leading-relaxed" style={{ color: colors.text }}>
-                      {comment.split('\n').map((line, li) => (
-                        <span key={li}>{li > 0 && <br />}{line}</span>
-                      ))}
-                    </p>
-                    {reply ? (
-                      <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
-                        <div className="p-3 rounded-xl" style={{ backgroundColor: 'oklch(98% 0.002 310)' }}>
-                          <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>{commentPartnerName || '伙伴'} 回应</p>
-                          <p className="text-[13px] leading-relaxed" style={{ color: colors.text }}>{reply}</p>
-                        </div>
+                {comments.length > 0 && (
+                  <div className="mt-4 space-y-3">
+                    {comments.map((c) => (
+                      <div key={c.id} className="p-4 rounded-2xl" style={{ backgroundColor: colors.accentLight }}>
+                        <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>
+                          {c.partnerName || '伙伴'} 说
+                        </p>
+                        <p className="text-[14px] leading-relaxed" style={{ color: colors.text }}>
+                          {c.content.split('\n').map((line, li) => (
+                            <span key={li}>{li > 0 && <br />}{line}</span>
+                          ))}
+                        </p>
+                        {c.reply ? (
+                          <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
+                            <div className="p-3 rounded-xl" style={{ backgroundColor: colors.bg }}>
+                              <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>{c.partnerName || '伙伴'} 回应</p>
+                              <p className="text-[13px] leading-relaxed" style={{ color: colors.text }}>{c.reply}</p>
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
+                            <div className="flex items-center gap-2">
+                              <input
+                                value={replyText[c.id] || ''}
+                                onChange={(e) => setReplyText((prev) => ({ ...prev, [c.id]: e.target.value }))}
+                                placeholder={`回复${c.partnerName || '伙伴'}...`}
+                                className="flex-1 text-[12px] px-3 py-1.5 rounded-xl focus:outline-none"
+                                style={{ backgroundColor: colors.bg, color: colors.text }}
+                                onKeyDown={(e) => e.key === 'Enter' && handleReply(c.id)}
+                              />
+                              <button
+                                onClick={() => handleReply(c.id)}
+                                disabled={!replyText[c.id]?.trim() || replyLoading[c.id]}
+                                className="text-[11px] font-medium px-3 py-1.5 rounded-xl disabled:opacity-40 transition-colors"
+                                style={{ backgroundColor: colors.accent, color: '#fff' }}
+                              >
+                                {replyLoading[c.id] ? '...' : '发送'}
+                              </button>
+                            </div>
+                          </div>
+                        )}
                       </div>
-                    ) : (
-                      <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
-                        <div className="flex items-center gap-2">
-                          <input
-                            value={replyText}
-                            onChange={(e) => setReplyText(e.target.value)}
-                            placeholder={`回复${commentPartnerName || '伙伴'}...`}
-                            className="flex-1 text-[12px] px-3 py-1.5 rounded-xl focus:outline-none"
-                            style={{ backgroundColor: 'oklch(98% 0.002 310)', color: colors.text }}
-                            onKeyDown={(e) => e.key === 'Enter' && handleReply()}
-                          />
-                          <button
-                            onClick={handleReply}
-                            disabled={!replyText.trim() || replyLoading}
-                            className="text-[11px] font-medium px-3 py-1.5 rounded-xl disabled:opacity-40 transition-colors"
-                            style={{ backgroundColor: colors.accent, color: '#fff' }}
-                          >
-                            {replyLoading ? '...' : '发送'}
-                          </button>
-                        </div>
-                      </div>
-                    )}
+                    ))}
                   </div>
                 )}
               </div>
@@ -390,10 +447,10 @@ export default function DiaryPage() {
   )
 }
 
-function Timeline({ entries, selectedDate, onSelect }: {
+function Timeline({ entries, selectedId, onSelect }: {
   entries: DiaryEntry[]
-  selectedDate: string
-  onSelect: (date: string) => void
+  selectedId: string | null
+  onSelect: (id: string) => void
 }) {
   const byYear = new Map<string, DiaryEntry[]>()
   for (const e of entries) {
@@ -414,11 +471,13 @@ function Timeline({ entries, selectedDate, onSelect }: {
             {byYear.get(year)!.map((entry) => {
               const entryMood = MOODS.find((m) => m.key === entry.mood)
               const preview = entry.content.replace(/\n/g, ' ').slice(0, 60)
-              const isActive = entry.date === selectedDate
+              const isActive = entry.id === selectedId
+              const time = new Date(entry.createdAt)
+              const timeStr = `${String(time.getHours()).padStart(2, '0')}:${String(time.getMinutes()).padStart(2, '0')}`
               return (
                 <button
-                  key={entry.date}
-                  onClick={() => onSelect(entry.date)}
+                  key={entry.id}
+                  onClick={() => onSelect(entry.id)}
                   className="w-full text-left px-3 py-2.5 rounded-2xl transition-all"
                   style={{
                     backgroundColor: isActive ? colors.accentLight : 'transparent',
@@ -426,7 +485,7 @@ function Timeline({ entries, selectedDate, onSelect }: {
                   }}
                 >
                   <div className="flex items-center gap-2">
-                    <span className="text-[13px] font-semibold" style={{ color: colors.text }}>{fmtShort(entry.date)}</span>
+                    <span className="text-[13px] font-semibold" style={{ color: colors.text }}>{fmtShort(entry.date)} {timeStr}</span>
                     {entryMood && <span className="text-sm">{entryMood.emoji}</span>}
                   </div>
                   <p className="text-[12px] mt-0.5 truncate" style={{ color: colors.textSecondary }}>{preview || '(空内容)'}</p>
@@ -451,7 +510,7 @@ function PartnerPicker({ onSelect, onClose }: { onSelect: (p: Persona) => void; 
           <button
             key={p.id}
             onClick={() => onSelect(p)}
-            className="w-full text-left px-4 py-2.5 text-[13px] text-black hover:bg-[#f0ebe3] flex items-center gap-2.5"
+            className="w-full text-left px-4 py-2.5 text-[13px] flex items-center gap-2.5 hover:bg-[oklch(92%_0.03_310)]" style={{ color: colors.text }}
           >
             <Avatar src={p.avatar} name={p.name} size={24} />
             <span>{p.name}</span>

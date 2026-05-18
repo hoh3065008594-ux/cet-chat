@@ -111,16 +111,10 @@ export default function Sidebar({ open, onClose }: Props) {
             <button
               key={p.id}
               onClick={() => handleSelectPersona(p)}
-              className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors text-left"
+              className="persona-item w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors text-left cursor-pointer"
               style={{
                 backgroundColor: p.id === activeId ? 'oklch(92% 0.03 310)' : 'transparent',
-                color: '#000',
-              }}
-              onMouseEnter={(e) => {
-                if (p.id !== activeId) (e.currentTarget as HTMLElement).style.backgroundColor = 'oklch(96% 0.002 310)'
-              }}
-              onMouseLeave={(e) => {
-                if (p.id !== activeId) (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'
+                color: 'oklch(12% 0.002 310)',
               }}
             >
               <Avatar src={p.avatar} name={p.name} size={30} />
