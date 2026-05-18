@@ -185,13 +185,29 @@ export async function getDiaryDates(): Promise<string[]> {
 
 const PERSONAS_LS = 'cet-chat-personas'
 
+function cookieGet(key: string): string | null {
+  const cookies = document.cookie.split(';')
+  for (const c of cookies) {
+    const [k, ...v] = c.trim().split('=')
+    if (k === key) return decodeURIComponent(v.join('='))
+  }
+  return null
+}
+
+function cookieSet(key: string, value: string): void {
+  document.cookie = key + '=' + encodeURIComponent(value) + ';path=/;max-age=31536000;SameSite=Lax'
+}
+
 function syncPersonasToLocalStorage(personas: Persona[]): void {
-  try { localStorage.setItem(PERSONAS_LS, JSON.stringify(personas)) } catch {}
+  const json = JSON.stringify(personas)
+  try { localStorage.setItem(PERSONAS_LS, json) } catch {}
+  try { cookieSet(PERSONAS_LS, json) } catch {}
 }
 
 function loadPersonasFromLocalStorage(): Persona[] {
   try {
-    const raw = localStorage.getItem(PERSONAS_LS)
+    let raw = localStorage.getItem(PERSONAS_LS)
+    if (!raw) raw = cookieGet(PERSONAS_LS)
     return raw ? JSON.parse(raw) : []
   } catch { return [] }
 }
