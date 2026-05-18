@@ -47,7 +47,7 @@ export default function VocabularyPage() {
 
   return (
     <div className="h-full flex flex-col" style={{ backgroundColor: c.bg }}>
-      <div className="px-6 py-4 space-y-3" style={{ backgroundColor: c.white, borderBottom: `1px solid ${c.border}` }}>
+      <div className="px-4 py-3 space-y-2.5" style={{ backgroundColor: c.white, borderBottom: `1px solid ${c.border}` }}>
         <h2 className="text-[17px] font-bold" style={{ color: c.text }}>词库预览</h2>
         <div className="flex items-center gap-3">
           <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: `1px solid ${c.borderDashed}` }}>

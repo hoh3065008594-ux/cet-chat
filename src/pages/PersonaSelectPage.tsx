@@ -133,7 +133,7 @@ export default function PersonaSelectPage() {
       <div className="max-w-lg mx-auto px-4 py-8 sm:py-12">
         <div className="text-center mb-8">
           <h1 className="text-[20px] font-bold mb-1" style={{ color: c.text }}>CET Chat</h1>
-          <p className="text-[14px]" style={{ color: c.textSecondary }}>选择一位伙伴开始英语对话</p>
+          <p className="text-[13px]" style={{ color: c.textSecondary }}>选择一位伙伴开始英语对话</p>
           {isCreating && (
             <p className="text-[12px] flex items-center justify-center gap-1.5 mt-2" style={{ color: c.accent }}>
               <Loader2 size={12} className="animate-spin" />
@@ -142,12 +142,12 @@ export default function PersonaSelectPage() {
           )}
         </div>
 
-        <div className={`grid grid-cols-2 gap-3 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
+        <div className={`grid grid-cols-2 gap-2.5 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
           {personas.map((p) => (
             <button
               key={p.id}
               onClick={() => handleSelect(p)}
-              className="flex flex-col items-center gap-2.5 p-5 rounded-[18px] bg-white transition-all text-left"
+              className="flex flex-col items-center gap-2 p-4 rounded-[18px] bg-white transition-all text-left"
               style={{ border: `1px solid ${c.border}` }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.borderColor = c.accent
@@ -158,7 +158,7 @@ export default function PersonaSelectPage() {
                 ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
               }}
             >
-              <Avatar src={p.avatar} name={p.name} size={52} />
+              <Avatar src={p.avatar} name={p.name} size={44} />
               <div className="text-center">
                 <p className="text-[14px] font-semibold" style={{ color: c.text }}>{p.name}</p>
                 <p className="text-[11px] mt-0.5" style={{ color: c.textSecondary }}>
@@ -184,7 +184,7 @@ export default function PersonaSelectPage() {
           {/* Create new persona card */}
           <button
             onClick={() => navigate('/personas/new')}
-            className="flex flex-col items-center justify-center gap-2 p-5 rounded-[18px] border border-dashed transition-all min-h-[140px]"
+            className="flex flex-col items-center justify-center gap-2 p-4 rounded-[18px] border border-dashed transition-all min-h-[120px]"
             style={{ borderColor: c.borderDashed }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLElement).style.borderColor = c.accent

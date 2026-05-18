@@ -92,7 +92,7 @@ export default function ChatView() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-3 py-2 space-y-2">
+      <div className="flex-1 overflow-y-auto px-3 py-3 space-y-2.5">
         {messages.length === 0 && !loading && (
           <div className="text-center mt-10">
             <p className="text-[13px] text-[oklch(55%_0.003_310)]">等待 AI 伙伴回复...</p>
@@ -112,7 +112,7 @@ export default function ChatView() {
                 size={22}
               />
               <div
-                className={`max-w-[75%] px-3 py-2 text-[14px] leading-relaxed break-words ${
+                className={`max-w-[78%] px-3.5 py-2.5 text-[14px] leading-relaxed break-words ${
                   msg.role === 'user'
                     ? 'chat-bubble-self'
                     : 'chat-bubble-other'

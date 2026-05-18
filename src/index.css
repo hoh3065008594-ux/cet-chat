@@ -53,6 +53,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: var(--font-size-base);
   line-height: 1.6;
@@ -60,6 +61,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-surface);
   color: var(--color-text-primary);
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Focus ring — consistent across all interactive elements */
