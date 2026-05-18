@@ -6,7 +6,6 @@ import { generateGreeting } from '../services/ai'
 import { getSettings, saveSettings } from '../services/settings'
 import { DEFAULT_PERSONA } from '../types/persona'
 import type { Persona } from '../types/persona'
-import type { Chat, Message } from '../services/db'
 import Avatar from './Avatar'
 
 interface Props {

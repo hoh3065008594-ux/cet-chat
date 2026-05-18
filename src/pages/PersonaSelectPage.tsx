@@ -230,14 +230,14 @@ function ExistingChats({ onSelect }: { onSelect: (id: string) => void }) {
     <div className="mt-6">
       <p className="text-[12px] font-medium mb-2" style={{ color: c.textSecondary }}>最近对话</p>
       <div className="space-y-0.5">
-        {chats.map((c) => (
+        {chats.map((chat) => (
           <button
-            key={c.id}
-            onClick={() => onSelect(c.id)}
+            key={chat.id}
+            onClick={() => onSelect(chat.id)}
             className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[12px] text-left text-[13px] transition-colors" style={{ color: c.text }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = c.surfaceHover }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent' }}
           >
             <MessageCircle size={14} style={{ color: c.textSecondary }} />
-            <span className="truncate flex-1">{c.title}</span>
+            <span className="truncate flex-1">{chat.title}</span>
           </button>
         ))}
       </div>

@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Sparkles, Trash2, Calendar, Plus } from 'luc
 import { useDictionary } from '../hooks/useDictionary'
 import { getSettings } from '../services/settings'
 import type { DiaryEntry, DiaryComment } from '../services/db'
-import { getDiaryEntry, getEntriesByDate, saveDiaryEntry, deleteDiaryEntry, getDiaryDates, getAllDiaryEntries, getPersona, getAllPersonas } from '../services/db'
+import { getDiaryEntry, getEntriesByDate, saveDiaryEntry, deleteDiaryEntry, getAllDiaryEntries, getPersona, getAllPersonas } from '../services/db'
 import { DEFAULT_PERSONA, buildPersonaPrompt } from '../types/persona'
 import type { Persona } from '../types/persona'
 import WordTooltip from '../components/WordTooltip'
@@ -251,7 +251,6 @@ export default function DiaryPage() {
   for (let i = 0; i < firstDay; i++) cells.push(null)
   for (let d = 1; d <= daysInMonth; d++) cells.push(d)
 
-  const currentEntry = entries.find((e) => e.date === selectedDate)
   const hasContent = content.trim().length > 0
   const wordCount = content.trim() ? content.trim().split(/\s+/).length : 0
   const currentMood = MOODS.find((m) => m.key === mood)

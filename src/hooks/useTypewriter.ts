@@ -4,7 +4,7 @@ export function useTypewriter(text: string, speed = 20) {
   const [displayed, setDisplayed] = useState('')
   const [done, setDone] = useState(false)
   const idxRef = useRef(0)
-  const timerRef = useRef<ReturnType<typeof setInterval>>()
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
 
   useEffect(() => {
     // Speed 0 = instant, no animation

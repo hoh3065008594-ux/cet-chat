@@ -6,7 +6,6 @@ import { getSettings } from '../services/settings'
 import { analyzeChatForPersona } from '../services/ai'
 import type { PersonaAnalysis } from '../services/ai'
 import type { Persona } from '../types/persona'
-import Avatar from '../components/Avatar'
 
 const accent = 'oklch(45% 0.21 310)'
 

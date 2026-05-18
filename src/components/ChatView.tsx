@@ -12,17 +12,15 @@ import WordTooltip from './WordTooltip'
 import Avatar from './Avatar'
 
 const accent = 'oklch(45% 0.21 310)'
-const accentHover = 'oklch(49% 0.23 310)'
-
 export default function ChatView() {
   const { chatId } = useParams<{ chatId: string }>()
   const navigate = useNavigate()
-  const { chats, messages, loading, error, startNewChat, sendMessage } = useChat(chatId)
+  const { chats, messages, loading, error, sendMessage } = useChat(chatId)
   const { selectedWord, position, lookUp, clearWord } = useDictionary()
   const [input, setInput] = useState('')
   const [persona, setPersona] = useState<Persona>(DEFAULT_PERSONA)
 
-  const { userAvatar, aiAvatar, partnerName } = getSettings()
+  const { userAvatar } = getSettings()
 
   // Load persona: prefer chat's persona, fallback to active persona
   useEffect(() => {
@@ -36,11 +34,6 @@ export default function ChatView() {
       }
     })
   }, [chatId])
-
-  const handleNewChat = async () => {
-    const id = await startNewChat()
-    if (id) navigate(`/chat/${id}`)
-  }
 
   const handleSend = async () => {
     if (!input.trim() || loading) return

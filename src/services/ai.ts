@@ -9,7 +9,6 @@ export interface ChatMessage {
 }
 
 function buildSystemPrompt(
-  partnerName: string,
   level: 'cet4' | 'cet6',
   vocabWords: string[],
   persona?: Persona
@@ -44,7 +43,7 @@ async function getActivePersona(): Promise<Persona> {
 }
 
 export async function generateGreeting(
-  partnerName: string,
+  _partnerName: string,
   level: 'cet4' | 'cet6'
 ): Promise<string> {
   const vocabWords = await getAvailableWords(level)
@@ -53,7 +52,7 @@ export async function generateGreeting(
 
   if (!apiKey) throw new Error('API Key 未设置')
 
-  const systemPrompt = buildSystemPrompt(partnerName, level, vocabWords, persona)
+  const systemPrompt = buildSystemPrompt(level, vocabWords, persona)
 
   const res = await fetch(`${apiEndpoint}/chat/completions`, {
     method: 'POST',
@@ -87,12 +86,11 @@ export async function sendChatMessage(
 ): Promise<{ content: string; usedVocab: string[] }> {
   const vocabWords = await getAvailableWords(level)
   const { apiKey, apiEndpoint, model } = getApiConfig()
-  const { partnerName } = getSettings()
   const persona = await getActivePersona()
 
   if (!apiKey) throw new Error('API Key 未设置')
 
-  const systemPrompt = buildSystemPrompt(partnerName, level, vocabWords, persona)
+  const systemPrompt = buildSystemPrompt(level, vocabWords, persona)
   const allMessages = [{ role: 'system' as const, content: systemPrompt }, ...messages]
 
   const res = await fetch(`${apiEndpoint}/chat/completions`, {
