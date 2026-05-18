@@ -1,0 +1,3446 @@
+[
+  {
+    "word": "afraid",
+    "phonetic": "/əˈfreɪd/",
+    "meaning": "adj. 害怕的",
+    "level": "basic"
+  },
+  {
+    "word": "afternoon",
+    "phonetic": "/ˌæftərˈnuːn/",
+    "meaning": "n. 下午",
+    "level": "basic"
+  },
+  {
+    "word": "again",
+    "phonetic": "/əˈɡen/",
+    "meaning": "adv. 再次",
+    "level": "basic"
+  },
+  {
+    "word": "agree",
+    "phonetic": "/əˈɡriː/",
+    "meaning": "v. 同意",
+    "level": "basic"
+  },
+  {
+    "word": "airport",
+    "phonetic": "/ˈerpɔːrt/",
+    "meaning": "n. 机场",
+    "level": "basic"
+  },
+  {
+    "word": "almost",
+    "phonetic": "/ˈɔːlmoʊst/",
+    "meaning": "adv. 几乎",
+    "level": "basic"
+  },
+  {
+    "word": "already",
+    "phonetic": "/ɔːlˈredi/",
+    "meaning": "adv. 已经",
+    "level": "basic"
+  },
+  {
+    "word": "always",
+    "phonetic": "/ˈɔːlweɪz/",
+    "meaning": "adv. 总是",
+    "level": "basic"
+  },
+  {
+    "word": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "meaning": "adj. 生气的",
+    "level": "basic"
+  },
+  {
+    "word": "app",
+    "phonetic": "/æp/",
+    "meaning": "n. 应用程序",
+    "level": "basic"
+  },
+  {
+    "word": "apple",
+    "phonetic": "/ˈæpl/",
+    "meaning": "n. 苹果",
+    "level": "basic"
+  },
+  {
+    "word": "April",
+    "phonetic": "/ˈeɪprəl/",
+    "meaning": "n. 四月",
+    "level": "basic"
+  },
+  {
+    "word": "arm",
+    "phonetic": "/ɑːrm/",
+    "meaning": "n. 手臂",
+    "level": "basic"
+  },
+  {
+    "word": "arrive",
+    "phonetic": "/əˈraɪv/",
+    "meaning": "v. 到达",
+    "level": "basic"
+  },
+  {
+    "word": "August",
+    "phonetic": "/ˈɔːɡəst/",
+    "meaning": "n. 八月",
+    "level": "basic"
+  },
+  {
+    "word": "aunt",
+    "phonetic": "/ænt/",
+    "meaning": "n. 阿姨；姑姑；婶婶",
+    "level": "basic"
+  },
+  {
+    "word": "baby",
+    "phonetic": "/ˈbeɪbi/",
+    "meaning": "n. 婴儿；宝宝",
+    "level": "basic"
+  },
+  {
+    "word": "back",
+    "phonetic": "/bæk/",
+    "meaning": "n. 背部；adv. 向后",
+    "level": "basic"
+  },
+  {
+    "word": "bad",
+    "phonetic": "/bæd/",
+    "meaning": "adj. 坏的",
+    "level": "basic"
+  },
+  {
+    "word": "bag",
+    "phonetic": "/bæɡ/",
+    "meaning": "n. 包；袋",
+    "level": "basic"
+  },
+  {
+    "word": "balcony",
+    "phonetic": "/ˈbælkəni/",
+    "meaning": "n. 阳台",
+    "level": "basic"
+  },
+  {
+    "word": "ball",
+    "phonetic": "/bɔːl/",
+    "meaning": "n. 球",
+    "level": "basic"
+  },
+  {
+    "word": "banana",
+    "phonetic": "/bəˈnænə/",
+    "meaning": "n. 香蕉",
+    "level": "basic"
+  },
+  {
+    "word": "bank",
+    "phonetic": "/bæŋk/",
+    "meaning": "n. 银行",
+    "level": "basic"
+  },
+  {
+    "word": "basketball",
+    "phonetic": "/ˈbæskɪtbɔːl/",
+    "meaning": "n. 篮球",
+    "level": "basic"
+  },
+  {
+    "word": "bathroom",
+    "phonetic": "/ˈbæθruːm/",
+    "meaning": "n. 浴室；卫生间",
+    "level": "basic"
+  },
+  {
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "meaning": "n. 海滩",
+    "level": "basic"
+  },
+  {
+    "word": "bear",
+    "phonetic": "/ber/",
+    "meaning": "n. 熊",
+    "level": "basic"
+  },
+  {
+    "word": "beautiful",
+    "phonetic": "/ˈbjuːtɪfl/",
+    "meaning": "adj. 美丽的",
+    "level": "basic"
+  },
+  {
+    "word": "become",
+    "phonetic": "/bɪˈkʌm/",
+    "meaning": "v. 成为",
+    "level": "basic"
+  },
+  {
+    "word": "bed",
+    "phonetic": "/bed/",
+    "meaning": "n. 床",
+    "level": "basic"
+  },
+  {
+    "word": "bedroom",
+    "phonetic": "/ˈbedruːm/",
+    "meaning": "n. 卧室",
+    "level": "basic"
+  },
+  {
+    "word": "beef",
+    "phonetic": "/biːf/",
+    "meaning": "n. 牛肉",
+    "level": "basic"
+  },
+  {
+    "word": "beer",
+    "phonetic": "/bɪr/",
+    "meaning": "n. 啤酒",
+    "level": "basic"
+  },
+  {
+    "word": "begin",
+    "phonetic": "/bɪˈɡɪn/",
+    "meaning": "v. 开始",
+    "level": "basic"
+  },
+  {
+    "word": "believe",
+    "phonetic": "/bɪˈliːv/",
+    "meaning": "v. 相信",
+    "level": "basic"
+  },
+  {
+    "word": "belt",
+    "phonetic": "/belt/",
+    "meaning": "n. 腰带；皮带",
+    "level": "basic"
+  },
+  {
+    "word": "big",
+    "phonetic": "/bɪɡ/",
+    "meaning": "adj. 大的",
+    "level": "basic"
+  },
+  {
+    "word": "bike",
+    "phonetic": "/baɪk/",
+    "meaning": "n. 自行车",
+    "level": "basic"
+  },
+  {
+    "word": "bird",
+    "phonetic": "/bɜːrd/",
+    "meaning": "n. 鸟",
+    "level": "basic"
+  },
+  {
+    "word": "birthday",
+    "phonetic": "/ˈbɜːrθdeɪ/",
+    "meaning": "n. 生日",
+    "level": "basic"
+  },
+  {
+    "word": "black",
+    "phonetic": "/blæk/",
+    "meaning": "adj. 黑色的",
+    "level": "basic"
+  },
+  {
+    "word": "blanket",
+    "phonetic": "/ˈblæŋkɪt/",
+    "meaning": "n. 毯子",
+    "level": "basic"
+  },
+  {
+    "word": "blue",
+    "phonetic": "/bluː/",
+    "meaning": "adj. 蓝色的",
+    "level": "basic"
+  },
+  {
+    "word": "boat",
+    "phonetic": "/boʊt/",
+    "meaning": "n. 船",
+    "level": "basic"
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "meaning": "n. 书",
+    "level": "basic"
+  },
+  {
+    "word": "boot",
+    "phonetic": "/buːt/",
+    "meaning": "n. 靴子",
+    "level": "basic"
+  },
+  {
+    "word": "boring",
+    "phonetic": "/ˈbɔːrɪŋ/",
+    "meaning": "adj. 无聊的",
+    "level": "basic"
+  },
+  {
+    "word": "bottle",
+    "phonetic": "/ˈbɑːtl/",
+    "meaning": "n. 瓶子",
+    "level": "basic"
+  },
+  {
+    "word": "box",
+    "phonetic": "/bɑːks/",
+    "meaning": "n. 盒子",
+    "level": "basic"
+  },
+  {
+    "word": "boy",
+    "phonetic": "/bɔɪ/",
+    "meaning": "n. 男孩",
+    "level": "basic"
+  },
+  {
+    "word": "brave",
+    "phonetic": "/breɪv/",
+    "meaning": "adj. 勇敢的",
+    "level": "basic"
+  },
+  {
+    "word": "bread",
+    "phonetic": "/bred/",
+    "meaning": "n. 面包",
+    "level": "basic"
+  },
+  {
+    "word": "break",
+    "phonetic": "/breɪk/",
+    "meaning": "v. 打破；折断",
+    "level": "basic"
+  },
+  {
+    "word": "breakfast",
+    "phonetic": "/ˈbrekfəst/",
+    "meaning": "n. 早餐",
+    "level": "basic"
+  },
+  {
+    "word": "bridge",
+    "phonetic": "/brɪdʒ/",
+    "meaning": "n. 桥",
+    "level": "basic"
+  },
+  {
+    "word": "bring",
+    "phonetic": "/brɪŋ/",
+    "meaning": "v. 带来",
+    "level": "basic"
+  },
+  {
+    "word": "brother",
+    "phonetic": "/ˈbrʌðər/",
+    "meaning": "n. 兄弟；哥哥；弟弟",
+    "level": "basic"
+  },
+  {
+    "word": "brown",
+    "phonetic": "/braʊn/",
+    "meaning": "adj. 棕色的",
+    "level": "basic"
+  },
+  {
+    "word": "build",
+    "phonetic": "/bɪld/",
+    "meaning": "v. 建造",
+    "level": "basic"
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "meaning": "n. 公共汽车",
+    "level": "basic"
+  },
+  {
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "meaning": "adj. 忙碌的",
+    "level": "basic"
+  },
+  {
+    "word": "butter",
+    "phonetic": "/ˈbʌtər/",
+    "meaning": "n. 黄油",
+    "level": "basic"
+  },
+  {
+    "word": "butterfly",
+    "phonetic": "/ˈbʌtərflaɪ/",
+    "meaning": "n. 蝴蝶",
+    "level": "basic"
+  },
+  {
+    "word": "button",
+    "phonetic": "/ˈbʌtn/",
+    "meaning": "n. 纽扣；按钮",
+    "level": "basic"
+  },
+  {
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "meaning": "v. 购买",
+    "level": "basic"
+  },
+  {
+    "word": "bye",
+    "phonetic": "/baɪ/",
+    "meaning": "int. 再见",
+    "level": "basic"
+  },
+  {
+    "word": "cake",
+    "phonetic": "/keɪk/",
+    "meaning": "n. 蛋糕",
+    "level": "basic"
+  },
+  {
+    "word": "calendar",
+    "phonetic": "/ˈkælɪndər/",
+    "meaning": "n. 日历",
+    "level": "basic"
+  },
+  {
+    "word": "call",
+    "phonetic": "/kɔːl/",
+    "meaning": "v. 打电话；称呼",
+    "level": "basic"
+  },
+  {
+    "word": "calm",
+    "phonetic": "/kɑːm/",
+    "meaning": "adj. 冷静的",
+    "level": "basic"
+  },
+  {
+    "word": "camera",
+    "phonetic": "/ˈkæmərə/",
+    "meaning": "n. 照相机",
+    "level": "basic"
+  },
+  {
+    "word": "camping",
+    "phonetic": "/ˈkæmpɪŋ/",
+    "meaning": "n. 露营",
+    "level": "basic"
+  },
+  {
+    "word": "candy",
+    "phonetic": "/ˈkændi/",
+    "meaning": "n. 糖果",
+    "level": "basic"
+  },
+  {
+    "word": "car",
+    "phonetic": "/kɑːr/",
+    "meaning": "n. 汽车",
+    "level": "basic"
+  },
+  {
+    "word": "card",
+    "phonetic": "/kɑːrd/",
+    "meaning": "n. 卡片",
+    "level": "basic"
+  },
+  {
+    "word": "carefully",
+    "phonetic": "/ˈkerfəli/",
+    "meaning": "adv. 小心地",
+    "level": "basic"
+  },
+  {
+    "word": "carpet",
+    "phonetic": "/ˈkɑːrpɪt/",
+    "meaning": "n. 地毯",
+    "level": "basic"
+  },
+  {
+    "word": "carry",
+    "phonetic": "/ˈkæri/",
+    "meaning": "v. 携带；搬运",
+    "level": "basic"
+  },
+  {
+    "word": "cat",
+    "phonetic": "/kæt/",
+    "meaning": "n. 猫",
+    "level": "basic"
+  },
+  {
+    "word": "catch",
+    "phonetic": "/kætʃ/",
+    "meaning": "v. 抓住；接住",
+    "level": "basic"
+  },
+  {
+    "word": "ceiling",
+    "phonetic": "/ˈsiːlɪŋ/",
+    "meaning": "n. 天花板",
+    "level": "basic"
+  },
+  {
+    "word": "chair",
+    "phonetic": "/tʃer/",
+    "meaning": "n. 椅子",
+    "level": "basic"
+  },
+  {
+    "word": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "meaning": "v. 改变；n. 零钱",
+    "level": "basic"
+  },
+  {
+    "word": "check",
+    "phonetic": "/tʃek/",
+    "meaning": "v. 检查",
+    "level": "basic"
+  },
+  {
+    "word": "cheers",
+    "phonetic": "/tʃɪrz/",
+    "meaning": "int. 干杯；谢谢",
+    "level": "basic"
+  },
+  {
+    "word": "cheese",
+    "phonetic": "/tʃiːz/",
+    "meaning": "n. 奶酪",
+    "level": "basic"
+  },
+  {
+    "word": "chess",
+    "phonetic": "/tʃes/",
+    "meaning": "n. 国际象棋",
+    "level": "basic"
+  },
+  {
+    "word": "chicken",
+    "phonetic": "/ˈtʃɪkɪn/",
+    "meaning": "n. 鸡肉；鸡",
+    "level": "basic"
+  },
+  {
+    "word": "child",
+    "phonetic": "/tʃaɪld/",
+    "meaning": "n. 孩子；儿童",
+    "level": "basic"
+  },
+  {
+    "word": "chocolate",
+    "phonetic": "/ˈtʃɑːklət/",
+    "meaning": "n. 巧克力",
+    "level": "basic"
+  },
+  {
+    "word": "church",
+    "phonetic": "/tʃɜːrtʃ/",
+    "meaning": "n. 教堂",
+    "level": "basic"
+  },
+  {
+    "word": "cinema",
+    "phonetic": "/ˈsɪnəmə/",
+    "meaning": "n. 电影院",
+    "level": "basic"
+  },
+  {
+    "word": "city",
+    "phonetic": "/ˈsɪti/",
+    "meaning": "n. 城市",
+    "level": "basic"
+  },
+  {
+    "word": "clean",
+    "phonetic": "/kliːn/",
+    "meaning": "v. 清洁；打扫",
+    "level": "basic"
+  },
+  {
+    "word": "clean",
+    "phonetic": "/kliːn/",
+    "meaning": "adj. 干净的",
+    "level": "basic"
+  },
+  {
+    "word": "clock",
+    "phonetic": "/klɑːk/",
+    "meaning": "n. 时钟",
+    "level": "basic"
+  },
+  {
+    "word": "close",
+    "phonetic": "/kloʊz/",
+    "meaning": "v. 关闭；adj. 近的",
+    "level": "basic"
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning": "n. 云",
+    "level": "basic"
+  },
+  {
+    "word": "coat",
+    "phonetic": "/koʊt/",
+    "meaning": "n. 外套；大衣",
+    "level": "basic"
+  },
+  {
+    "word": "coffee",
+    "phonetic": "/ˈkɔːfi/",
+    "meaning": "n. 咖啡",
+    "level": "basic"
+  },
+  {
+    "word": "cold",
+    "phonetic": "/koʊld/",
+    "meaning": "adj. 冷的",
+    "level": "basic"
+  },
+  {
+    "word": "color",
+    "phonetic": "/ˈkʌlər/",
+    "meaning": "n. 颜色",
+    "level": "basic"
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtər/",
+    "meaning": "n. 电脑",
+    "level": "basic"
+  },
+  {
+    "word": "confused",
+    "phonetic": "/kənˈfjuːzd/",
+    "meaning": "adj. 困惑的",
+    "level": "basic"
+  },
+  {
+    "word": "congratulations",
+    "phonetic": "/kənˌɡrætʃuˈleɪʃnz/",
+    "meaning": "n. 祝贺；恭喜",
+    "level": "basic"
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "meaning": "v. 烹饪；做饭",
+    "level": "basic"
+  },
+  {
+    "word": "cookie",
+    "phonetic": "/ˈkʊki/",
+    "meaning": "n. 饼干；曲奇",
+    "level": "basic"
+  },
+  {
+    "word": "cooking",
+    "phonetic": "/ˈkʊkɪŋ/",
+    "meaning": "n. 烹饪",
+    "level": "basic"
+  },
+  {
+    "word": "cool",
+    "phonetic": "/kuːl/",
+    "meaning": "adj. 凉爽的；酷的",
+    "level": "basic"
+  },
+  {
+    "word": "country",
+    "phonetic": "/ˈkʌntri/",
+    "meaning": "n. 国家；乡村",
+    "level": "basic"
+  },
+  {
+    "word": "cousin",
+    "phonetic": "/ˈkʌzn/",
+    "meaning": "n. 堂兄弟姐妹；表兄弟姐妹",
+    "level": "basic"
+  },
+  {
+    "word": "cow",
+    "phonetic": "/kaʊ/",
+    "meaning": "n. 奶牛",
+    "level": "basic"
+  },
+  {
+    "word": "cry",
+    "phonetic": "/kraɪ/",
+    "meaning": "v. 哭；喊",
+    "level": "basic"
+  },
+  {
+    "word": "cup",
+    "phonetic": "/kʌp/",
+    "meaning": "n. 杯子",
+    "level": "basic"
+  },
+  {
+    "word": "cupboard",
+    "phonetic": "/ˈkʌbərd/",
+    "meaning": "n. 橱柜",
+    "level": "basic"
+  },
+  {
+    "word": "curtain",
+    "phonetic": "/ˈkɜːrtn/",
+    "meaning": "n. 窗帘",
+    "level": "basic"
+  },
+  {
+    "word": "cut",
+    "phonetic": "/kʌt/",
+    "meaning": "v. 切；割",
+    "level": "basic"
+  },
+  {
+    "word": "dance",
+    "phonetic": "/dæns/",
+    "meaning": "v. 跳舞",
+    "level": "basic"
+  },
+  {
+    "word": "dark",
+    "phonetic": "/dɑːrk/",
+    "meaning": "adj. 黑暗的；深色的",
+    "level": "basic"
+  },
+  {
+    "word": "daughter",
+    "phonetic": "/ˈdɔːtər/",
+    "meaning": "n. 女儿",
+    "level": "basic"
+  },
+  {
+    "word": "December",
+    "phonetic": "/dɪˈsembər/",
+    "meaning": "n. 十二月",
+    "level": "basic"
+  },
+  {
+    "word": "desk",
+    "phonetic": "/desk/",
+    "meaning": "n. 书桌",
+    "level": "basic"
+  },
+  {
+    "word": "difficult",
+    "phonetic": "/ˈdɪfɪkəlt/",
+    "meaning": "adj. 困难的",
+    "level": "basic"
+  },
+  {
+    "word": "dinner",
+    "phonetic": "/ˈdɪnər/",
+    "meaning": "n. 晚餐；正餐",
+    "level": "basic"
+  },
+  {
+    "word": "dirty",
+    "phonetic": "/ˈdɜːrti/",
+    "meaning": "adj. 脏的",
+    "level": "basic"
+  },
+  {
+    "word": "dog",
+    "phonetic": "/dɔːɡ/",
+    "meaning": "n. 狗",
+    "level": "basic"
+  },
+  {
+    "word": "door",
+    "phonetic": "/dɔːr/",
+    "meaning": "n. 门",
+    "level": "basic"
+  },
+  {
+    "word": "draw",
+    "phonetic": "/drɔː/",
+    "meaning": "v. 画",
+    "level": "basic"
+  },
+  {
+    "word": "dress",
+    "phonetic": "/dres/",
+    "meaning": "n. 连衣裙；v. 穿衣服",
+    "level": "basic"
+  },
+  {
+    "word": "drink",
+    "phonetic": "/drɪŋk/",
+    "meaning": "v. 喝",
+    "level": "basic"
+  },
+  {
+    "word": "drive",
+    "phonetic": "/draɪv/",
+    "meaning": "v. 驾驶",
+    "level": "basic"
+  },
+  {
+    "word": "driver",
+    "phonetic": "/ˈdraɪvər/",
+    "meaning": "n. 司机",
+    "level": "basic"
+  },
+  {
+    "word": "dry",
+    "phonetic": "/draɪ/",
+    "meaning": "adj. 干的",
+    "level": "basic"
+  },
+  {
+    "word": "duck",
+    "phonetic": "/dʌk/",
+    "meaning": "n. 鸭子",
+    "level": "basic"
+  },
+  {
+    "word": "ear",
+    "phonetic": "/ɪr/",
+    "meaning": "n. 耳朵",
+    "level": "basic"
+  },
+  {
+    "word": "early",
+    "phonetic": "/ˈɜːrli/",
+    "meaning": "adv. 早地",
+    "level": "basic"
+  },
+  {
+    "word": "earth",
+    "phonetic": "/ɜːrθ/",
+    "meaning": "n. 地球；泥土",
+    "level": "basic"
+  },
+  {
+    "word": "easily",
+    "phonetic": "/ˈiːzəli/",
+    "meaning": "adv. 容易地",
+    "level": "basic"
+  },
+  {
+    "word": "easy",
+    "phonetic": "/ˈiːzi/",
+    "meaning": "adj. 容易的",
+    "level": "basic"
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "meaning": "v. 吃",
+    "level": "basic"
+  },
+  {
+    "word": "egg",
+    "phonetic": "/eɡ/",
+    "meaning": "n. 鸡蛋",
+    "level": "basic"
+  },
+  {
+    "word": "eight",
+    "phonetic": "/eɪt/",
+    "meaning": "num. 八",
+    "level": "basic"
+  },
+  {
+    "word": "elephant",
+    "phonetic": "/ˈelɪfənt/",
+    "meaning": "n. 大象",
+    "level": "basic"
+  },
+  {
+    "word": "eleven",
+    "phonetic": "/ɪˈlevn/",
+    "meaning": "num. 十一",
+    "level": "basic"
+  },
+  {
+    "word": "email",
+    "phonetic": "/ˈiːmeɪl/",
+    "meaning": "n. 电子邮件",
+    "level": "basic"
+  },
+  {
+    "word": "empty",
+    "phonetic": "/ˈempti/",
+    "meaning": "adj. 空的",
+    "level": "basic"
+  },
+  {
+    "word": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "meaning": "v. 享受；喜欢",
+    "level": "basic"
+  },
+  {
+    "word": "enough",
+    "phonetic": "/ɪˈnʌf/",
+    "meaning": "adv. 足够地",
+    "level": "basic"
+  },
+  {
+    "word": "evening",
+    "phonetic": "/ˈiːvnɪŋ/",
+    "meaning": "n. 傍晚；晚上",
+    "level": "basic"
+  },
+  {
+    "word": "excited",
+    "phonetic": "/ɪkˈsaɪtɪd/",
+    "meaning": "adj. 兴奋的",
+    "level": "basic"
+  },
+  {
+    "word": "exciting",
+    "phonetic": "/ɪkˈsaɪtɪŋ/",
+    "meaning": "adj. 令人兴奋的",
+    "level": "basic"
+  },
+  {
+    "word": "excuse",
+    "phonetic": "/ɪkˈskjuːz/",
+    "meaning": "v. 原谅",
+    "level": "basic"
+  },
+  {
+    "word": "excuse",
+    "phonetic": "/ɪkˈskjuːs/",
+    "meaning": "v. 原谅；劳驾",
+    "level": "basic"
+  },
+  {
+    "word": "eye",
+    "phonetic": "/aɪ/",
+    "meaning": "n. 眼睛",
+    "level": "basic"
+  },
+  {
+    "word": "face",
+    "phonetic": "/feɪs/",
+    "meaning": "n. 脸",
+    "level": "basic"
+  },
+  {
+    "word": "factory",
+    "phonetic": "/ˈfæktəri/",
+    "meaning": "n. 工厂",
+    "level": "basic"
+  },
+  {
+    "word": "fall",
+    "phonetic": "/fɔːl/",
+    "meaning": "n. 秋天；v. 落下",
+    "level": "basic"
+  },
+  {
+    "word": "false",
+    "phonetic": "/fɔːls/",
+    "meaning": "adj. 错误的；假的",
+    "level": "basic"
+  },
+  {
+    "word": "fast",
+    "phonetic": "/fæst/",
+    "meaning": "adj. 快的",
+    "level": "basic"
+  },
+  {
+    "word": "fat",
+    "phonetic": "/fæt/",
+    "meaning": "adj. 胖的",
+    "level": "basic"
+  },
+  {
+    "word": "father",
+    "phonetic": "/ˈfɑːðər/",
+    "meaning": "n. 父亲；爸爸",
+    "level": "basic"
+  },
+  {
+    "word": "February",
+    "phonetic": "/ˈfebrueri/",
+    "meaning": "n. 二月",
+    "level": "basic"
+  },
+  {
+    "word": "feel",
+    "phonetic": "/fiːl/",
+    "meaning": "v. 感觉",
+    "level": "basic"
+  },
+  {
+    "word": "feeling",
+    "phonetic": "/ˈfiːlɪŋ/",
+    "meaning": "n. 感觉；感情",
+    "level": "basic"
+  },
+  {
+    "word": "finger",
+    "phonetic": "/ˈfɪŋɡər/",
+    "meaning": "n. 手指",
+    "level": "basic"
+  },
+  {
+    "word": "finish",
+    "phonetic": "/ˈfɪnɪʃ/",
+    "meaning": "v. 完成",
+    "level": "basic"
+  },
+  {
+    "word": "fire",
+    "phonetic": "/ˈfaɪər/",
+    "meaning": "n. 火",
+    "level": "basic"
+  },
+  {
+    "word": "first",
+    "phonetic": "/fɜːrst/",
+    "meaning": "adj. 第一",
+    "level": "basic"
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "meaning": "n. 鱼",
+    "level": "basic"
+  },
+  {
+    "word": "fishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning": "n. 钓鱼",
+    "level": "basic"
+  },
+  {
+    "word": "five",
+    "phonetic": "/faɪv/",
+    "meaning": "num. 五",
+    "level": "basic"
+  },
+  {
+    "word": "fix",
+    "phonetic": "/fɪks/",
+    "meaning": "v. 修理；固定",
+    "level": "basic"
+  },
+  {
+    "word": "floor",
+    "phonetic": "/flɔːr/",
+    "meaning": "n. 地板；楼层",
+    "level": "basic"
+  },
+  {
+    "word": "flower",
+    "phonetic": "/ˈflaʊər/",
+    "meaning": "n. 花",
+    "level": "basic"
+  },
+  {
+    "word": "fly",
+    "phonetic": "/flaɪ/",
+    "meaning": "v. 飞；乘飞机",
+    "level": "basic"
+  },
+  {
+    "word": "fog",
+    "phonetic": "/fɔːɡ/",
+    "meaning": "n. 雾",
+    "level": "basic"
+  },
+  {
+    "word": "follow",
+    "phonetic": "/ˈfɑːloʊ/",
+    "meaning": "v. 跟随",
+    "level": "basic"
+  },
+  {
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "meaning": "n. 食物",
+    "level": "basic"
+  },
+  {
+    "word": "foot",
+    "phonetic": "/fʊt/",
+    "meaning": "n. 脚",
+    "level": "basic"
+  },
+  {
+    "word": "football",
+    "phonetic": "/ˈfʊtbɔːl/",
+    "meaning": "n. 足球",
+    "level": "basic"
+  },
+  {
+    "word": "forest",
+    "phonetic": "/ˈfɔːrɪst/",
+    "meaning": "n. 森林",
+    "level": "basic"
+  },
+  {
+    "word": "forget",
+    "phonetic": "/fərˈɡet/",
+    "meaning": "v. 忘记",
+    "level": "basic"
+  },
+  {
+    "word": "fork",
+    "phonetic": "/fɔːrk/",
+    "meaning": "n. 叉子",
+    "level": "basic"
+  },
+  {
+    "word": "four",
+    "phonetic": "/fɔːr/",
+    "meaning": "num. 四",
+    "level": "basic"
+  },
+  {
+    "word": "free",
+    "phonetic": "/friː/",
+    "meaning": "adj. 自由的；空闲的；免费的",
+    "level": "basic"
+  },
+  {
+    "word": "Friday",
+    "phonetic": "/ˈfraɪdeɪ/",
+    "meaning": "n. 星期五",
+    "level": "basic"
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning": "n. 朋友",
+    "level": "basic"
+  },
+  {
+    "word": "friendly",
+    "phonetic": "/ˈfrendli/",
+    "meaning": "adj. 友好的",
+    "level": "basic"
+  },
+  {
+    "word": "frog",
+    "phonetic": "/frɔːɡ/",
+    "meaning": "n. 青蛙",
+    "level": "basic"
+  },
+  {
+    "word": "fruit",
+    "phonetic": "/fruːt/",
+    "meaning": "n. 水果",
+    "level": "basic"
+  },
+  {
+    "word": "full",
+    "phonetic": "/fʊl/",
+    "meaning": "adj. 满的；饱的",
+    "level": "basic"
+  },
+  {
+    "word": "fun",
+    "phonetic": "/fʌn/",
+    "meaning": "adj. 有趣的；n. 乐趣",
+    "level": "basic"
+  },
+  {
+    "word": "funny",
+    "phonetic": "/ˈfʌni/",
+    "meaning": "adj. 有趣的；好笑的",
+    "level": "basic"
+  },
+  {
+    "word": "game",
+    "phonetic": "/ɡeɪm/",
+    "meaning": "n. 游戏；比赛",
+    "level": "basic"
+  },
+  {
+    "word": "garage",
+    "phonetic": "/ɡəˈrɑːʒ/",
+    "meaning": "n. 车库",
+    "level": "basic"
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːrdn/",
+    "meaning": "n. 花园",
+    "level": "basic"
+  },
+  {
+    "word": "gift",
+    "phonetic": "/ɡɪft/",
+    "meaning": "n. 礼物",
+    "level": "basic"
+  },
+  {
+    "word": "girl",
+    "phonetic": "/ɡɜːrl/",
+    "meaning": "n. 女孩",
+    "level": "basic"
+  },
+  {
+    "word": "give",
+    "phonetic": "/ɡɪv/",
+    "meaning": "v. 给",
+    "level": "basic"
+  },
+  {
+    "word": "glove",
+    "phonetic": "/ɡlʌv/",
+    "meaning": "n. 手套",
+    "level": "basic"
+  },
+  {
+    "word": "good",
+    "phonetic": "/ɡʊd/",
+    "meaning": "adj. 好的",
+    "level": "basic"
+  },
+  {
+    "word": "goodbye",
+    "phonetic": "/ɡʊdˈbaɪ/",
+    "meaning": "int. 再见",
+    "level": "basic"
+  },
+  {
+    "word": "grandfather",
+    "phonetic": "/ˈɡrænfɑːðər/",
+    "meaning": "n. 爷爷；外公",
+    "level": "basic"
+  },
+  {
+    "word": "grandmother",
+    "phonetic": "/ˈɡrænmʌðər/",
+    "meaning": "n. 奶奶；外婆",
+    "level": "basic"
+  },
+  {
+    "word": "grape",
+    "phonetic": "/ɡreɪp/",
+    "meaning": "n. 葡萄",
+    "level": "basic"
+  },
+  {
+    "word": "grass",
+    "phonetic": "/ɡræs/",
+    "meaning": "n. 草；草地",
+    "level": "basic"
+  },
+  {
+    "word": "gray",
+    "phonetic": "/ɡreɪ/",
+    "meaning": "adj. 灰色的",
+    "level": "basic"
+  },
+  {
+    "word": "green",
+    "phonetic": "/ɡriːn/",
+    "meaning": "adj. 绿色的",
+    "level": "basic"
+  },
+  {
+    "word": "grow",
+    "phonetic": "/ɡroʊ/",
+    "meaning": "v. 成长；种植",
+    "level": "basic"
+  },
+  {
+    "word": "guess",
+    "phonetic": "/ɡes/",
+    "meaning": "v. 猜测",
+    "level": "basic"
+  },
+  {
+    "word": "guest",
+    "phonetic": "/ɡest/",
+    "meaning": "n. 客人；宾客",
+    "level": "basic"
+  },
+  {
+    "word": "hair",
+    "phonetic": "/her/",
+    "meaning": "n. 头发",
+    "level": "basic"
+  },
+  {
+    "word": "hamburger",
+    "phonetic": "/ˈhæmbɜːrɡər/",
+    "meaning": "n. 汉堡包",
+    "level": "basic"
+  },
+  {
+    "word": "hand",
+    "phonetic": "/hænd/",
+    "meaning": "n. 手",
+    "level": "basic"
+  },
+  {
+    "word": "happen",
+    "phonetic": "/ˈhæpən/",
+    "meaning": "v. 发生",
+    "level": "basic"
+  },
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæpi/",
+    "meaning": "adj. 快乐的",
+    "level": "basic"
+  },
+  {
+    "word": "hard",
+    "phonetic": "/hɑːrd/",
+    "meaning": "adj. 硬的；困难的",
+    "level": "basic"
+  },
+  {
+    "word": "hat",
+    "phonetic": "/hæt/",
+    "meaning": "n. 帽子",
+    "level": "basic"
+  },
+  {
+    "word": "hate",
+    "phonetic": "/heɪt/",
+    "meaning": "v. 讨厌",
+    "level": "basic"
+  },
+  {
+    "word": "head",
+    "phonetic": "/hed/",
+    "meaning": "n. 头",
+    "level": "basic"
+  },
+  {
+    "word": "healthy",
+    "phonetic": "/ˈhelθi/",
+    "meaning": "adj. 健康的",
+    "level": "basic"
+  },
+  {
+    "word": "hear",
+    "phonetic": "/hɪr/",
+    "meaning": "v. 听见",
+    "level": "basic"
+  },
+  {
+    "word": "heart",
+    "phonetic": "/hɑːrt/",
+    "meaning": "n. 心脏；心",
+    "level": "basic"
+  },
+  {
+    "word": "hello",
+    "phonetic": "/həˈloʊ/",
+    "meaning": "int. 你好",
+    "level": "basic"
+  },
+  {
+    "word": "help",
+    "phonetic": "/help/",
+    "meaning": "v. 帮助",
+    "level": "basic"
+  },
+  {
+    "word": "high",
+    "phonetic": "/haɪ/",
+    "meaning": "adj. 高的",
+    "level": "basic"
+  },
+  {
+    "word": "hit",
+    "phonetic": "/hɪt/",
+    "meaning": "v. 打；击",
+    "level": "basic"
+  },
+  {
+    "word": "hobby",
+    "phonetic": "/ˈhɑːbi/",
+    "meaning": "n. 爱好",
+    "level": "basic"
+  },
+  {
+    "word": "holiday",
+    "phonetic": "/ˈhɑːlədeɪ/",
+    "meaning": "n. 假日；假期",
+    "level": "basic"
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning": "n. 家",
+    "level": "basic"
+  },
+  {
+    "word": "hope",
+    "phonetic": "/hoʊp/",
+    "meaning": "v. 希望",
+    "level": "basic"
+  },
+  {
+    "word": "horse",
+    "phonetic": "/hɔːrs/",
+    "meaning": "n. 马",
+    "level": "basic"
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɑːspɪtl/",
+    "meaning": "n. 医院",
+    "level": "basic"
+  },
+  {
+    "word": "hot",
+    "phonetic": "/hɑːt/",
+    "meaning": "adj. 热的",
+    "level": "basic"
+  },
+  {
+    "word": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "meaning": "n. 酒店",
+    "level": "basic"
+  },
+  {
+    "word": "hour",
+    "phonetic": "/ˈaʊər/",
+    "meaning": "n. 小时",
+    "level": "basic"
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "meaning": "n. 房子",
+    "level": "basic"
+  },
+  {
+    "word": "how",
+    "phonetic": "/haʊ/",
+    "meaning": "adv. 怎样；如何",
+    "level": "basic"
+  },
+  {
+    "word": "hundred",
+    "phonetic": "/ˈhʌndrəd/",
+    "meaning": "num. 一百",
+    "level": "basic"
+  },
+  {
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋɡri/",
+    "meaning": "adj. 饥饿的",
+    "level": "basic"
+  },
+  {
+    "word": "hurry",
+    "phonetic": "/ˈhʌri/",
+    "meaning": "v. 赶快",
+    "level": "basic"
+  },
+  {
+    "word": "husband",
+    "phonetic": "/ˈhʌzbənd/",
+    "meaning": "n. 丈夫",
+    "level": "basic"
+  },
+  {
+    "word": "ice",
+    "phonetic": "/aɪs/",
+    "meaning": "n. 冰",
+    "level": "basic"
+  },
+  {
+    "word": "insect",
+    "phonetic": "/ˈɪnsekt/",
+    "meaning": "n. 昆虫",
+    "level": "basic"
+  },
+  {
+    "word": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ/",
+    "meaning": "adj. 有趣的",
+    "level": "basic"
+  },
+  {
+    "word": "internet",
+    "phonetic": "/ˈɪntərnet/",
+    "meaning": "n. 互联网",
+    "level": "basic"
+  },
+  {
+    "word": "island",
+    "phonetic": "/ˈaɪlənd/",
+    "meaning": "n. 岛屿",
+    "level": "basic"
+  },
+  {
+    "word": "jacket",
+    "phonetic": "/ˈdʒækɪt/",
+    "meaning": "n. 夹克；外套",
+    "level": "basic"
+  },
+  {
+    "word": "January",
+    "phonetic": "/ˈdʒænjueri/",
+    "meaning": "n. 一月",
+    "level": "basic"
+  },
+  {
+    "word": "jealous",
+    "phonetic": "/ˈdʒeləs/",
+    "meaning": "adj. 嫉妒的",
+    "level": "basic"
+  },
+  {
+    "word": "juice",
+    "phonetic": "/dʒuːs/",
+    "meaning": "n. 果汁",
+    "level": "basic"
+  },
+  {
+    "word": "July",
+    "phonetic": "/dʒuˈlaɪ/",
+    "meaning": "n. 七月",
+    "level": "basic"
+  },
+  {
+    "word": "June",
+    "phonetic": "/dʒuːn/",
+    "meaning": "n. 六月",
+    "level": "basic"
+  },
+  {
+    "word": "just",
+    "phonetic": "/dʒʌst/",
+    "meaning": "adv. 刚才；只是",
+    "level": "basic"
+  },
+  {
+    "word": "keep",
+    "phonetic": "/kiːp/",
+    "meaning": "v. 保持；保留",
+    "level": "basic"
+  },
+  {
+    "word": "key",
+    "phonetic": "/kiː/",
+    "meaning": "n. 钥匙；关键；按键",
+    "level": "basic"
+  },
+  {
+    "word": "kind",
+    "phonetic": "/kaɪnd/",
+    "meaning": "adj. 友善的；n. 种类",
+    "level": "basic"
+  },
+  {
+    "word": "kitchen",
+    "phonetic": "/ˈkɪtʃɪn/",
+    "meaning": "n. 厨房",
+    "level": "basic"
+  },
+  {
+    "word": "knee",
+    "phonetic": "/niː/",
+    "meaning": "n. 膝盖",
+    "level": "basic"
+  },
+  {
+    "word": "knife",
+    "phonetic": "/naɪf/",
+    "meaning": "n. 刀",
+    "level": "basic"
+  },
+  {
+    "word": "know",
+    "phonetic": "/noʊ/",
+    "meaning": "v. 知道",
+    "level": "basic"
+  },
+  {
+    "word": "lake",
+    "phonetic": "/leɪk/",
+    "meaning": "n. 湖",
+    "level": "basic"
+  },
+  {
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "meaning": "n. 灯",
+    "level": "basic"
+  },
+  {
+    "word": "late",
+    "phonetic": "/leɪt/",
+    "meaning": "adv. 晚地；迟到地",
+    "level": "basic"
+  },
+  {
+    "word": "laugh",
+    "phonetic": "/læf/",
+    "meaning": "v. 笑",
+    "level": "basic"
+  },
+  {
+    "word": "lay",
+    "phonetic": "/leɪ/",
+    "meaning": "v. 躺下；放置",
+    "level": "basic"
+  },
+  {
+    "word": "lead",
+    "phonetic": "/liːd/",
+    "meaning": "v. 带领；领导",
+    "level": "basic"
+  },
+  {
+    "word": "learn",
+    "phonetic": "/lɜːrn/",
+    "meaning": "v. 学习",
+    "level": "basic"
+  },
+  {
+    "word": "leave",
+    "phonetic": "/liːv/",
+    "meaning": "v. 离开",
+    "level": "basic"
+  },
+  {
+    "word": "leg",
+    "phonetic": "/leɡ/",
+    "meaning": "n. 腿",
+    "level": "basic"
+  },
+  {
+    "word": "letter",
+    "phonetic": "/ˈletər/",
+    "meaning": "n. 信件；字母",
+    "level": "basic"
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪbreri/",
+    "meaning": "n. 图书馆",
+    "level": "basic"
+  },
+  {
+    "word": "light",
+    "phonetic": "/laɪt/",
+    "meaning": "n. 光；adj. 浅色的；轻的",
+    "level": "basic"
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "meaning": "v. 喜欢；prep. 像",
+    "level": "basic"
+  },
+  {
+    "word": "lion",
+    "phonetic": "/ˈlaɪən/",
+    "meaning": "n. 狮子",
+    "level": "basic"
+  },
+  {
+    "word": "lip",
+    "phonetic": "/lɪp/",
+    "meaning": "n. 嘴唇",
+    "level": "basic"
+  },
+  {
+    "word": "listen",
+    "phonetic": "/ˈlɪsn/",
+    "meaning": "v. 听",
+    "level": "basic"
+  },
+  {
+    "word": "living room",
+    "phonetic": "/ˈlɪvɪŋ ruːm/",
+    "meaning": "n. 客厅",
+    "level": "basic"
+  },
+  {
+    "word": "lonely",
+    "phonetic": "/ˈloʊnli/",
+    "meaning": "adj. 孤独的",
+    "level": "basic"
+  },
+  {
+    "word": "long",
+    "phonetic": "/lɔːŋ/",
+    "meaning": "adj. 长的",
+    "level": "basic"
+  },
+  {
+    "word": "look",
+    "phonetic": "/lʊk/",
+    "meaning": "v. 看",
+    "level": "basic"
+  },
+  {
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "meaning": "v. 爱；热爱",
+    "level": "basic"
+  },
+  {
+    "word": "low",
+    "phonetic": "/loʊ/",
+    "meaning": "adj. 低的",
+    "level": "basic"
+  },
+  {
+    "word": "lunch",
+    "phonetic": "/lʌntʃ/",
+    "meaning": "n. 午餐",
+    "level": "basic"
+  },
+  {
+    "word": "man",
+    "phonetic": "/mæn/",
+    "meaning": "n. 男人",
+    "level": "basic"
+  },
+  {
+    "word": "March",
+    "phonetic": "/mɑːrtʃ/",
+    "meaning": "n. 三月",
+    "level": "basic"
+  },
+  {
+    "word": "market",
+    "phonetic": "/ˈmɑːrkɪt/",
+    "meaning": "n. 市场",
+    "level": "basic"
+  },
+  {
+    "word": "May",
+    "phonetic": "/meɪ/",
+    "meaning": "n. 五月",
+    "level": "basic"
+  },
+  {
+    "word": "maybe",
+    "phonetic": "/ˈmeɪbi/",
+    "meaning": "adv. 也许",
+    "level": "basic"
+  },
+  {
+    "word": "meat",
+    "phonetic": "/miːt/",
+    "meaning": "n. 肉",
+    "level": "basic"
+  },
+  {
+    "word": "meet",
+    "phonetic": "/miːt/",
+    "meaning": "v. 见面；遇见",
+    "level": "basic"
+  },
+  {
+    "word": "message",
+    "phonetic": "/ˈmesɪdʒ/",
+    "meaning": "n. 消息；信息",
+    "level": "basic"
+  },
+  {
+    "word": "milk",
+    "phonetic": "/mɪlk/",
+    "meaning": "n. 牛奶",
+    "level": "basic"
+  },
+  {
+    "word": "minute",
+    "phonetic": "/ˈmɪnɪt/",
+    "meaning": "n. 分钟",
+    "level": "basic"
+  },
+  {
+    "word": "mirror",
+    "phonetic": "/ˈmɪrər/",
+    "meaning": "n. 镜子",
+    "level": "basic"
+  },
+  {
+    "word": "Monday",
+    "phonetic": "/ˈmʌndeɪ/",
+    "meaning": "n. 星期一",
+    "level": "basic"
+  },
+  {
+    "word": "money",
+    "phonetic": "/ˈmʌni/",
+    "meaning": "n. 钱",
+    "level": "basic"
+  },
+  {
+    "word": "monkey",
+    "phonetic": "/ˈmʌŋki/",
+    "meaning": "n. 猴子",
+    "level": "basic"
+  },
+  {
+    "word": "month",
+    "phonetic": "/mʌnθ/",
+    "meaning": "n. 月",
+    "level": "basic"
+  },
+  {
+    "word": "moon",
+    "phonetic": "/muːn/",
+    "meaning": "n. 月亮",
+    "level": "basic"
+  },
+  {
+    "word": "morning",
+    "phonetic": "/ˈmɔːrnɪŋ/",
+    "meaning": "n. 早晨；上午",
+    "level": "basic"
+  },
+  {
+    "word": "mother",
+    "phonetic": "/ˈmʌðər/",
+    "meaning": "n. 母亲；妈妈",
+    "level": "basic"
+  },
+  {
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntn/",
+    "meaning": "n. 山",
+    "level": "basic"
+  },
+  {
+    "word": "mouse",
+    "phonetic": "/maʊs/",
+    "meaning": "n. 老鼠；鼠标",
+    "level": "basic"
+  },
+  {
+    "word": "mouth",
+    "phonetic": "/maʊθ/",
+    "meaning": "n. 嘴",
+    "level": "basic"
+  },
+  {
+    "word": "move",
+    "phonetic": "/muːv/",
+    "meaning": "v. 移动；搬家",
+    "level": "basic"
+  },
+  {
+    "word": "movie",
+    "phonetic": "/ˈmuːvi/",
+    "meaning": "n. 电影",
+    "level": "basic"
+  },
+  {
+    "word": "museum",
+    "phonetic": "/mjuˈziːəm/",
+    "meaning": "n. 博物馆",
+    "level": "basic"
+  },
+  {
+    "word": "music",
+    "phonetic": "/ˈmjuːzɪk/",
+    "meaning": "n. 音乐",
+    "level": "basic"
+  },
+  {
+    "word": "neck",
+    "phonetic": "/nek/",
+    "meaning": "n. 脖子",
+    "level": "basic"
+  },
+  {
+    "word": "need",
+    "phonetic": "/niːd/",
+    "meaning": "v. 需要",
+    "level": "basic"
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪbər/",
+    "meaning": "n. 邻居",
+    "level": "basic"
+  },
+  {
+    "word": "nephew",
+    "phonetic": "/ˈnefjuː/",
+    "meaning": "n. 侄子；外甥",
+    "level": "basic"
+  },
+  {
+    "word": "nervous",
+    "phonetic": "/ˈnɜːrvəs/",
+    "meaning": "adj. 紧张的",
+    "level": "basic"
+  },
+  {
+    "word": "never",
+    "phonetic": "/ˈnevər/",
+    "meaning": "adv. 从不",
+    "level": "basic"
+  },
+  {
+    "word": "new",
+    "phonetic": "/nuː/",
+    "meaning": "adj. 新的",
+    "level": "basic"
+  },
+  {
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "meaning": "adj. 好的；友善的",
+    "level": "basic"
+  },
+  {
+    "word": "niece",
+    "phonetic": "/niːs/",
+    "meaning": "n. 侄女；外甥女",
+    "level": "basic"
+  },
+  {
+    "word": "night",
+    "phonetic": "/naɪt/",
+    "meaning": "n. 夜晚",
+    "level": "basic"
+  },
+  {
+    "word": "nine",
+    "phonetic": "/naɪn/",
+    "meaning": "num. 九",
+    "level": "basic"
+  },
+  {
+    "word": "noodle",
+    "phonetic": "/ˈnuːdl/",
+    "meaning": "n. 面条",
+    "level": "basic"
+  },
+  {
+    "word": "nose",
+    "phonetic": "/noʊz/",
+    "meaning": "n. 鼻子",
+    "level": "basic"
+  },
+  {
+    "word": "November",
+    "phonetic": "/noʊˈvembər/",
+    "meaning": "n. 十一月",
+    "level": "basic"
+  },
+  {
+    "word": "ocean",
+    "phonetic": "/ˈoʊʃn/",
+    "meaning": "n. 海洋",
+    "level": "basic"
+  },
+  {
+    "word": "October",
+    "phonetic": "/ɑːkˈtoʊbər/",
+    "meaning": "n. 十月",
+    "level": "basic"
+  },
+  {
+    "word": "office",
+    "phonetic": "/ˈɔːfɪs/",
+    "meaning": "n. 办公室",
+    "level": "basic"
+  },
+  {
+    "word": "often",
+    "phonetic": "/ˈɔːfn/",
+    "meaning": "adv. 经常",
+    "level": "basic"
+  },
+  {
+    "word": "oil",
+    "phonetic": "/ɔɪl/",
+    "meaning": "n. 油",
+    "level": "basic"
+  },
+  {
+    "word": "old",
+    "phonetic": "/oʊld/",
+    "meaning": "adj. 老的；旧的",
+    "level": "basic"
+  },
+  {
+    "word": "one",
+    "phonetic": "/wʌn/",
+    "meaning": "num. 一",
+    "level": "basic"
+  },
+  {
+    "word": "online",
+    "phonetic": "/ˌɑːnˈlaɪn/",
+    "meaning": "adj. 在线的",
+    "level": "basic"
+  },
+  {
+    "word": "open",
+    "phonetic": "/ˈoʊpən/",
+    "meaning": "v. 打开；adj. 开着的",
+    "level": "basic"
+  },
+  {
+    "word": "orange",
+    "phonetic": "/ˈɔːrɪndʒ/",
+    "meaning": "n. 橙子；adj. 橙色的",
+    "level": "basic"
+  },
+  {
+    "word": "painting",
+    "phonetic": "/ˈpeɪntɪŋ/",
+    "meaning": "n. 绘画",
+    "level": "basic"
+  },
+  {
+    "word": "pants",
+    "phonetic": "/pænts/",
+    "meaning": "n. 裤子",
+    "level": "basic"
+  },
+  {
+    "word": "paper",
+    "phonetic": "/ˈpeɪpər/",
+    "meaning": "n. 纸；报纸",
+    "level": "basic"
+  },
+  {
+    "word": "parent",
+    "phonetic": "/ˈperənt/",
+    "meaning": "n. 父亲；母亲；家长",
+    "level": "basic"
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "meaning": "n. 公园",
+    "level": "basic"
+  },
+  {
+    "word": "pass",
+    "phonetic": "/pæs/",
+    "meaning": "v. 通过；传递",
+    "level": "basic"
+  },
+  {
+    "word": "passenger",
+    "phonetic": "/ˈpæsɪndʒər/",
+    "meaning": "n. 乘客",
+    "level": "basic"
+  },
+  {
+    "word": "pay",
+    "phonetic": "/peɪ/",
+    "meaning": "v. 付款",
+    "level": "basic"
+  },
+  {
+    "word": "pen",
+    "phonetic": "/pen/",
+    "meaning": "n. 笔；钢笔",
+    "level": "basic"
+  },
+  {
+    "word": "pencil",
+    "phonetic": "/ˈpensl/",
+    "meaning": "n. 铅笔",
+    "level": "basic"
+  },
+  {
+    "word": "perhaps",
+    "phonetic": "/pərˈhæps/",
+    "meaning": "adv. 也许；可能",
+    "level": "basic"
+  },
+  {
+    "word": "pet",
+    "phonetic": "/pet/",
+    "meaning": "n. 宠物",
+    "level": "basic"
+  },
+  {
+    "word": "phone",
+    "phonetic": "/foʊn/",
+    "meaning": "n. 电话",
+    "level": "basic"
+  },
+  {
+    "word": "photo",
+    "phonetic": "/ˈfoʊtoʊ/",
+    "meaning": "n. 照片",
+    "level": "basic"
+  },
+  {
+    "word": "picture",
+    "phonetic": "/ˈpɪktʃər/",
+    "meaning": "n. 图片；照片",
+    "level": "basic"
+  },
+  {
+    "word": "pig",
+    "phonetic": "/pɪɡ/",
+    "meaning": "n. 猪",
+    "level": "basic"
+  },
+  {
+    "word": "pillow",
+    "phonetic": "/ˈpɪloʊ/",
+    "meaning": "n. 枕头",
+    "level": "basic"
+  },
+  {
+    "word": "pink",
+    "phonetic": "/pɪŋk/",
+    "meaning": "adj. 粉红色的",
+    "level": "basic"
+  },
+  {
+    "word": "pizza",
+    "phonetic": "/ˈpiːtsə/",
+    "meaning": "n. 比萨饼",
+    "level": "basic"
+  },
+  {
+    "word": "plane",
+    "phonetic": "/pleɪn/",
+    "meaning": "n. 飞机",
+    "level": "basic"
+  },
+  {
+    "word": "plate",
+    "phonetic": "/pleɪt/",
+    "meaning": "n. 盘子",
+    "level": "basic"
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning": "v. 玩；演奏",
+    "level": "basic"
+  },
+  {
+    "word": "please",
+    "phonetic": "/pliːz/",
+    "meaning": "v. 请；使高兴",
+    "level": "basic"
+  },
+  {
+    "word": "please",
+    "phonetic": "/pliːz/",
+    "meaning": "int. 请",
+    "level": "basic"
+  },
+  {
+    "word": "pocket",
+    "phonetic": "/ˈpɑːkɪt/",
+    "meaning": "n. 口袋",
+    "level": "basic"
+  },
+  {
+    "word": "poor",
+    "phonetic": "/pʊr/",
+    "meaning": "adj. 贫穷的",
+    "level": "basic"
+  },
+  {
+    "word": "pork",
+    "phonetic": "/pɔːrk/",
+    "meaning": "n. 猪肉",
+    "level": "basic"
+  },
+  {
+    "word": "practice",
+    "phonetic": "/ˈpræktɪs/",
+    "meaning": "v. 练习",
+    "level": "basic"
+  },
+  {
+    "word": "pretty",
+    "phonetic": "/ˈprɪti/",
+    "meaning": "adj. 漂亮的",
+    "level": "basic"
+  },
+  {
+    "word": "proud",
+    "phonetic": "/praʊd/",
+    "meaning": "adj. 自豪的",
+    "level": "basic"
+  },
+  {
+    "word": "pull",
+    "phonetic": "/pʊl/",
+    "meaning": "v. 拉",
+    "level": "basic"
+  },
+  {
+    "word": "purple",
+    "phonetic": "/ˈpɜːrpl/",
+    "meaning": "adj. 紫色的",
+    "level": "basic"
+  },
+  {
+    "word": "push",
+    "phonetic": "/pʊʃ/",
+    "meaning": "v. 推",
+    "level": "basic"
+  },
+  {
+    "word": "put",
+    "phonetic": "/pʊt/",
+    "meaning": "v. 放；放置",
+    "level": "basic"
+  },
+  {
+    "word": "quickly",
+    "phonetic": "/ˈkwɪkli/",
+    "meaning": "adv. 快速地",
+    "level": "basic"
+  },
+  {
+    "word": "quite",
+    "phonetic": "/kwaɪt/",
+    "meaning": "adv. 相当；十分",
+    "level": "basic"
+  },
+  {
+    "word": "rabbit",
+    "phonetic": "/ˈræbɪt/",
+    "meaning": "n. 兔子",
+    "level": "basic"
+  },
+  {
+    "word": "radio",
+    "phonetic": "/ˈreɪdioʊ/",
+    "meaning": "n. 收音机",
+    "level": "basic"
+  },
+  {
+    "word": "rain",
+    "phonetic": "/reɪn/",
+    "meaning": "n. 雨；v. 下雨",
+    "level": "basic"
+  },
+  {
+    "word": "rainbow",
+    "phonetic": "/ˈreɪnboʊ/",
+    "meaning": "n. 彩虹",
+    "level": "basic"
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "meaning": "v. 阅读",
+    "level": "basic"
+  },
+  {
+    "word": "ready",
+    "phonetic": "/ˈredi/",
+    "meaning": "adj. 准备好的",
+    "level": "basic"
+  },
+  {
+    "word": "real",
+    "phonetic": "/ˈriːəl/",
+    "meaning": "adj. 真实的",
+    "level": "basic"
+  },
+  {
+    "word": "really",
+    "phonetic": "/ˈriːəli/",
+    "meaning": "adv. 真正地；非常",
+    "level": "basic"
+  },
+  {
+    "word": "receive",
+    "phonetic": "/rɪˈsiːv/",
+    "meaning": "v. 收到",
+    "level": "basic"
+  },
+  {
+    "word": "red",
+    "phonetic": "/red/",
+    "meaning": "adj. 红色的",
+    "level": "basic"
+  },
+  {
+    "word": "remember",
+    "phonetic": "/rɪˈmembər/",
+    "meaning": "v. 记住",
+    "level": "basic"
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈrestrɑːnt/",
+    "meaning": "n. 餐厅",
+    "level": "basic"
+  },
+  {
+    "word": "rice",
+    "phonetic": "/raɪs/",
+    "meaning": "n. 米饭；大米",
+    "level": "basic"
+  },
+  {
+    "word": "rich",
+    "phonetic": "/rɪtʃ/",
+    "meaning": "adj. 富有的",
+    "level": "basic"
+  },
+  {
+    "word": "ride",
+    "phonetic": "/raɪd/",
+    "meaning": "v. 骑；乘",
+    "level": "basic"
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "meaning": "adj. 正确的；右边的",
+    "level": "basic"
+  },
+  {
+    "word": "river",
+    "phonetic": "/ˈrɪvər/",
+    "meaning": "n. 河流",
+    "level": "basic"
+  },
+  {
+    "word": "road",
+    "phonetic": "/roʊd/",
+    "meaning": "n. 道路",
+    "level": "basic"
+  },
+  {
+    "word": "roof",
+    "phonetic": "/ruːf/",
+    "meaning": "n. 屋顶",
+    "level": "basic"
+  },
+  {
+    "word": "room",
+    "phonetic": "/ruːm/",
+    "meaning": "n. 房间",
+    "level": "basic"
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning": "v. 跑",
+    "level": "basic"
+  },
+  {
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "meaning": "adj. 悲伤的",
+    "level": "basic"
+  },
+  {
+    "word": "salad",
+    "phonetic": "/ˈsæləd/",
+    "meaning": "n. 沙拉",
+    "level": "basic"
+  },
+  {
+    "word": "salt",
+    "phonetic": "/sɔːlt/",
+    "meaning": "n. 盐",
+    "level": "basic"
+  },
+  {
+    "word": "sandwich",
+    "phonetic": "/ˈsænwɪtʃ/",
+    "meaning": "n. 三明治",
+    "level": "basic"
+  },
+  {
+    "word": "Saturday",
+    "phonetic": "/ˈsætərdeɪ/",
+    "meaning": "n. 星期六",
+    "level": "basic"
+  },
+  {
+    "word": "save",
+    "phonetic": "/seɪv/",
+    "meaning": "v. 保存；节省；救",
+    "level": "basic"
+  },
+  {
+    "word": "scarf",
+    "phonetic": "/skɑːrf/",
+    "meaning": "n. 围巾",
+    "level": "basic"
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning": "n. 学校",
+    "level": "basic"
+  },
+  {
+    "word": "screen",
+    "phonetic": "/skriːn/",
+    "meaning": "n. 屏幕",
+    "level": "basic"
+  },
+  {
+    "word": "season",
+    "phonetic": "/ˈsiːzn/",
+    "meaning": "n. 季节",
+    "level": "basic"
+  },
+  {
+    "word": "second",
+    "phonetic": "/ˈsekənd/",
+    "meaning": "n. 秒；adj. 第二",
+    "level": "basic"
+  },
+  {
+    "word": "second",
+    "phonetic": "/ˈsekənd/",
+    "meaning": "adj. 第二",
+    "level": "basic"
+  },
+  {
+    "word": "see",
+    "phonetic": "/siː/",
+    "meaning": "v. 看见",
+    "level": "basic"
+  },
+  {
+    "word": "sell",
+    "phonetic": "/sel/",
+    "meaning": "v. 卖",
+    "level": "basic"
+  },
+  {
+    "word": "send",
+    "phonetic": "/send/",
+    "meaning": "v. 发送",
+    "level": "basic"
+  },
+  {
+    "word": "September",
+    "phonetic": "/sepˈtembər/",
+    "meaning": "n. 九月",
+    "level": "basic"
+  },
+  {
+    "word": "seven",
+    "phonetic": "/ˈsevn/",
+    "meaning": "num. 七",
+    "level": "basic"
+  },
+  {
+    "word": "share",
+    "phonetic": "/ʃer/",
+    "meaning": "v. 分享",
+    "level": "basic"
+  },
+  {
+    "word": "sheep",
+    "phonetic": "/ʃiːp/",
+    "meaning": "n. 羊；绵羊",
+    "level": "basic"
+  },
+  {
+    "word": "shelf",
+    "phonetic": "/ʃelf/",
+    "meaning": "n. 架子",
+    "level": "basic"
+  },
+  {
+    "word": "ship",
+    "phonetic": "/ʃɪp/",
+    "meaning": "n. 轮船",
+    "level": "basic"
+  },
+  {
+    "word": "shirt",
+    "phonetic": "/ʃɜːrt/",
+    "meaning": "n. 衬衫",
+    "level": "basic"
+  },
+  {
+    "word": "shoes",
+    "phonetic": "/ʃuːz/",
+    "meaning": "n. 鞋子",
+    "level": "basic"
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɑːp/",
+    "meaning": "n. 商店",
+    "level": "basic"
+  },
+  {
+    "word": "shopping",
+    "phonetic": "/ˈʃɑːpɪŋ/",
+    "meaning": "n. 购物",
+    "level": "basic"
+  },
+  {
+    "word": "short",
+    "phonetic": "/ʃɔːrt/",
+    "meaning": "adj. 短的；矮的",
+    "level": "basic"
+  },
+  {
+    "word": "shoulder",
+    "phonetic": "/ˈʃoʊldər/",
+    "meaning": "n. 肩膀",
+    "level": "basic"
+  },
+  {
+    "word": "shout",
+    "phonetic": "/ʃaʊt/",
+    "meaning": "v. 喊叫",
+    "level": "basic"
+  },
+  {
+    "word": "shy",
+    "phonetic": "/ʃaɪ/",
+    "meaning": "adj. 害羞的",
+    "level": "basic"
+  },
+  {
+    "word": "shy",
+    "phonetic": "/ʃaɪ/",
+    "meaning": "adj. 害羞的",
+    "level": "basic"
+  },
+  {
+    "word": "sick",
+    "phonetic": "/sɪk/",
+    "meaning": "adj. 生病的",
+    "level": "basic"
+  },
+  {
+    "word": "sing",
+    "phonetic": "/sɪŋ/",
+    "meaning": "v. 唱歌",
+    "level": "basic"
+  },
+  {
+    "word": "sister",
+    "phonetic": "/ˈsɪstər/",
+    "meaning": "n. 姐妹；姐姐；妹妹",
+    "level": "basic"
+  },
+  {
+    "word": "sit",
+    "phonetic": "/sɪt/",
+    "meaning": "v. 坐",
+    "level": "basic"
+  },
+  {
+    "word": "six",
+    "phonetic": "/sɪks/",
+    "meaning": "num. 六",
+    "level": "basic"
+  },
+  {
+    "word": "skin",
+    "phonetic": "/skɪn/",
+    "meaning": "n. 皮肤",
+    "level": "basic"
+  },
+  {
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "meaning": "n. 裙子",
+    "level": "basic"
+  },
+  {
+    "word": "sky",
+    "phonetic": "/skaɪ/",
+    "meaning": "n. 天空",
+    "level": "basic"
+  },
+  {
+    "word": "sleep",
+    "phonetic": "/sliːp/",
+    "meaning": "v. 睡觉",
+    "level": "basic"
+  },
+  {
+    "word": "slow",
+    "phonetic": "/sloʊ/",
+    "meaning": "adj. 慢的",
+    "level": "basic"
+  },
+  {
+    "word": "slowly",
+    "phonetic": "/ˈsloʊli/",
+    "meaning": "adv. 慢慢地",
+    "level": "basic"
+  },
+  {
+    "word": "small",
+    "phonetic": "/smɔːl/",
+    "meaning": "adj. 小的",
+    "level": "basic"
+  },
+  {
+    "word": "smell",
+    "phonetic": "/smel/",
+    "meaning": "v. 闻",
+    "level": "basic"
+  },
+  {
+    "word": "smile",
+    "phonetic": "/smaɪl/",
+    "meaning": "v. 微笑",
+    "level": "basic"
+  },
+  {
+    "word": "snack",
+    "phonetic": "/snæk/",
+    "meaning": "n. 小吃；零食",
+    "level": "basic"
+  },
+  {
+    "word": "snake",
+    "phonetic": "/sneɪk/",
+    "meaning": "n. 蛇",
+    "level": "basic"
+  },
+  {
+    "word": "snow",
+    "phonetic": "/snoʊ/",
+    "meaning": "n. 雪；v. 下雪",
+    "level": "basic"
+  },
+  {
+    "word": "sock",
+    "phonetic": "/sɑːk/",
+    "meaning": "n. 袜子",
+    "level": "basic"
+  },
+  {
+    "word": "sofa",
+    "phonetic": "/ˈsoʊfə/",
+    "meaning": "n. 沙发",
+    "level": "basic"
+  },
+  {
+    "word": "soft",
+    "phonetic": "/sɔːft/",
+    "meaning": "adj. 软的",
+    "level": "basic"
+  },
+  {
+    "word": "sometimes",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "meaning": "adv. 有时候",
+    "level": "basic"
+  },
+  {
+    "word": "son",
+    "phonetic": "/sʌn/",
+    "meaning": "n. 儿子",
+    "level": "basic"
+  },
+  {
+    "word": "song",
+    "phonetic": "/sɔːŋ/",
+    "meaning": "n. 歌曲",
+    "level": "basic"
+  },
+  {
+    "word": "sorry",
+    "phonetic": "/ˈsɑːri/",
+    "meaning": "adj. 抱歉的；遗憾的",
+    "level": "basic"
+  },
+  {
+    "word": "sorry",
+    "phonetic": "/ˈsɑːri/",
+    "meaning": "int. 对不起",
+    "level": "basic"
+  },
+  {
+    "word": "soup",
+    "phonetic": "/suːp/",
+    "meaning": "n. 汤",
+    "level": "basic"
+  },
+  {
+    "word": "spoon",
+    "phonetic": "/spuːn/",
+    "meaning": "n. 勺子",
+    "level": "basic"
+  },
+  {
+    "word": "sport",
+    "phonetic": "/spɔːrt/",
+    "meaning": "n. 体育；运动",
+    "level": "basic"
+  },
+  {
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "meaning": "n. 春天",
+    "level": "basic"
+  },
+  {
+    "word": "stair",
+    "phonetic": "/ster/",
+    "meaning": "n. 楼梯",
+    "level": "basic"
+  },
+  {
+    "word": "stand",
+    "phonetic": "/stænd/",
+    "meaning": "v. 站立",
+    "level": "basic"
+  },
+  {
+    "word": "star",
+    "phonetic": "/stɑːr/",
+    "meaning": "n. 星星",
+    "level": "basic"
+  },
+  {
+    "word": "station",
+    "phonetic": "/ˈsteɪʃn/",
+    "meaning": "n. 车站",
+    "level": "basic"
+  },
+  {
+    "word": "stay",
+    "phonetic": "/steɪ/",
+    "meaning": "v. 停留；待",
+    "level": "basic"
+  },
+  {
+    "word": "still",
+    "phonetic": "/stɪl/",
+    "meaning": "adv. 仍然；还",
+    "level": "basic"
+  },
+  {
+    "word": "stomach",
+    "phonetic": "/ˈstʌmək/",
+    "meaning": "n. 胃；肚子",
+    "level": "basic"
+  },
+  {
+    "word": "stop",
+    "phonetic": "/stɑːp/",
+    "meaning": "v. 停止",
+    "level": "basic"
+  },
+  {
+    "word": "store",
+    "phonetic": "/stɔːr/",
+    "meaning": "n. 商店",
+    "level": "basic"
+  },
+  {
+    "word": "storm",
+    "phonetic": "/stɔːrm/",
+    "meaning": "n. 暴风雨",
+    "level": "basic"
+  },
+  {
+    "word": "street",
+    "phonetic": "/striːt/",
+    "meaning": "n. 街道",
+    "level": "basic"
+  },
+  {
+    "word": "strong",
+    "phonetic": "/strɔːŋ/",
+    "meaning": "adj. 强壮的",
+    "level": "basic"
+  },
+  {
+    "word": "study",
+    "phonetic": "/ˈstʌdi/",
+    "meaning": "v. 学习；研究",
+    "level": "basic"
+  },
+  {
+    "word": "sugar",
+    "phonetic": "/ˈʃʊɡər/",
+    "meaning": "n. 糖",
+    "level": "basic"
+  },
+  {
+    "word": "suit",
+    "phonetic": "/suːt/",
+    "meaning": "n. 套装；西服",
+    "level": "basic"
+  },
+  {
+    "word": "summer",
+    "phonetic": "/ˈsʌmər/",
+    "meaning": "n. 夏天",
+    "level": "basic"
+  },
+  {
+    "word": "sun",
+    "phonetic": "/sʌn/",
+    "meaning": "n. 太阳",
+    "level": "basic"
+  },
+  {
+    "word": "Sunday",
+    "phonetic": "/ˈsʌndeɪ/",
+    "meaning": "n. 星期日",
+    "level": "basic"
+  },
+  {
+    "word": "supermarket",
+    "phonetic": "/ˈsuːpərmɑːrkɪt/",
+    "meaning": "n. 超市",
+    "level": "basic"
+  },
+  {
+    "word": "sure",
+    "phonetic": "/ʃʊr/",
+    "meaning": "adj. 确定的",
+    "level": "basic"
+  },
+  {
+    "word": "surprise",
+    "phonetic": "/sərˈpraɪz/",
+    "meaning": "v. 使惊讶；n. 惊喜",
+    "level": "basic"
+  },
+  {
+    "word": "sweater",
+    "phonetic": "/ˈswetər/",
+    "meaning": "n. 毛衣",
+    "level": "basic"
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "meaning": "v. 游泳",
+    "level": "basic"
+  },
+  {
+    "word": "table",
+    "phonetic": "/ˈteɪbl/",
+    "meaning": "n. 桌子",
+    "level": "basic"
+  },
+  {
+    "word": "tail",
+    "phonetic": "/teɪl/",
+    "meaning": "n. 尾巴",
+    "level": "basic"
+  },
+  {
+    "word": "take",
+    "phonetic": "/teɪk/",
+    "meaning": "v. 拿；取",
+    "level": "basic"
+  },
+  {
+    "word": "tall",
+    "phonetic": "/tɔːl/",
+    "meaning": "adj. 高的",
+    "level": "basic"
+  },
+  {
+    "word": "taste",
+    "phonetic": "/teɪst/",
+    "meaning": "v. 品尝；n. 味道",
+    "level": "basic"
+  },
+  {
+    "word": "taxi",
+    "phonetic": "/ˈtæksi/",
+    "meaning": "n. 出租车",
+    "level": "basic"
+  },
+  {
+    "word": "tea",
+    "phonetic": "/tiː/",
+    "meaning": "n. 茶",
+    "level": "basic"
+  },
+  {
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "meaning": "v. 教",
+    "level": "basic"
+  },
+  {
+    "word": "television",
+    "phonetic": "/ˈtelɪvɪʒn/",
+    "meaning": "n. 电视机",
+    "level": "basic"
+  },
+  {
+    "word": "ten",
+    "phonetic": "/ten/",
+    "meaning": "num. 十",
+    "level": "basic"
+  },
+  {
+    "word": "tennis",
+    "phonetic": "/ˈtenɪs/",
+    "meaning": "n. 网球",
+    "level": "basic"
+  },
+  {
+    "word": "thank",
+    "phonetic": "/θæŋk/",
+    "meaning": "v. 感谢",
+    "level": "basic"
+  },
+  {
+    "word": "thanks",
+    "phonetic": "/θæŋks/",
+    "meaning": "int. 谢谢",
+    "level": "basic"
+  },
+  {
+    "word": "thick",
+    "phonetic": "/θɪk/",
+    "meaning": "adj. 厚的；粗的",
+    "level": "basic"
+  },
+  {
+    "word": "thin",
+    "phonetic": "/θɪn/",
+    "meaning": "adj. 瘦的；薄的",
+    "level": "basic"
+  },
+  {
+    "word": "think",
+    "phonetic": "/θɪŋk/",
+    "meaning": "v. 想；认为",
+    "level": "basic"
+  },
+  {
+    "word": "third",
+    "phonetic": "/θɜːrd/",
+    "meaning": "adj. 第三",
+    "level": "basic"
+  },
+  {
+    "word": "thirsty",
+    "phonetic": "/ˈθɜːrsti/",
+    "meaning": "adj. 口渴的",
+    "level": "basic"
+  },
+  {
+    "word": "thirteen",
+    "phonetic": "/ˌθɜːrˈtiːn/",
+    "meaning": "num. 十三",
+    "level": "basic"
+  },
+  {
+    "word": "thirty",
+    "phonetic": "/ˈθɜːrti/",
+    "meaning": "num. 三十",
+    "level": "basic"
+  },
+  {
+    "word": "thousand",
+    "phonetic": "/ˈθaʊznd/",
+    "meaning": "num. 一千",
+    "level": "basic"
+  },
+  {
+    "word": "three",
+    "phonetic": "/θriː/",
+    "meaning": "num. 三",
+    "level": "basic"
+  },
+  {
+    "word": "throw",
+    "phonetic": "/θroʊ/",
+    "meaning": "v. 扔；投",
+    "level": "basic"
+  },
+  {
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːrzdeɪ/",
+    "meaning": "n. 星期四",
+    "level": "basic"
+  },
+  {
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "meaning": "n. 票",
+    "level": "basic"
+  },
+  {
+    "word": "tie",
+    "phonetic": "/taɪ/",
+    "meaning": "n. 领带；v. 系；绑",
+    "level": "basic"
+  },
+  {
+    "word": "tiger",
+    "phonetic": "/ˈtaɪɡər/",
+    "meaning": "n. 老虎",
+    "level": "basic"
+  },
+  {
+    "word": "tired",
+    "phonetic": "/ˈtaɪərd/",
+    "meaning": "adj. 累的",
+    "level": "basic"
+  },
+  {
+    "word": "today",
+    "phonetic": "/təˈdeɪ/",
+    "meaning": "n. 今天",
+    "level": "basic"
+  },
+  {
+    "word": "together",
+    "phonetic": "/təˈɡeðər/",
+    "meaning": "adv. 一起",
+    "level": "basic"
+  },
+  {
+    "word": "tomorrow",
+    "phonetic": "/təˈmɑːroʊ/",
+    "meaning": "n. 明天",
+    "level": "basic"
+  },
+  {
+    "word": "tongue",
+    "phonetic": "/tʌŋ/",
+    "meaning": "n. 舌头",
+    "level": "basic"
+  },
+  {
+    "word": "too",
+    "phonetic": "/tuː/",
+    "meaning": "adv. 太；也",
+    "level": "basic"
+  },
+  {
+    "word": "tooth",
+    "phonetic": "/tuːθ/",
+    "meaning": "n. 牙齿",
+    "level": "basic"
+  },
+  {
+    "word": "touch",
+    "phonetic": "/tʌtʃ/",
+    "meaning": "v. 触摸",
+    "level": "basic"
+  },
+  {
+    "word": "town",
+    "phonetic": "/taʊn/",
+    "meaning": "n. 城镇",
+    "level": "basic"
+  },
+  {
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "meaning": "n. 玩具",
+    "level": "basic"
+  },
+  {
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "meaning": "n. 火车",
+    "level": "basic"
+  },
+  {
+    "word": "travel",
+    "phonetic": "/ˈtrævl/",
+    "meaning": "v. 旅行",
+    "level": "basic"
+  },
+  {
+    "word": "tree",
+    "phonetic": "/triː/",
+    "meaning": "n. 树",
+    "level": "basic"
+  },
+  {
+    "word": "truck",
+    "phonetic": "/trʌk/",
+    "meaning": "n. 卡车",
+    "level": "basic"
+  },
+  {
+    "word": "true",
+    "phonetic": "/truː/",
+    "meaning": "adj. 真实的",
+    "level": "basic"
+  },
+  {
+    "word": "try",
+    "phonetic": "/traɪ/",
+    "meaning": "v. 尝试",
+    "level": "basic"
+  },
+  {
+    "word": "Tuesday",
+    "phonetic": "/ˈtuːzdeɪ/",
+    "meaning": "n. 星期二",
+    "level": "basic"
+  },
+  {
+    "word": "turn",
+    "phonetic": "/tɜːrn/",
+    "meaning": "v. 转动；转身",
+    "level": "basic"
+  },
+  {
+    "word": "twelve",
+    "phonetic": "/twelv/",
+    "meaning": "num. 十二",
+    "level": "basic"
+  },
+  {
+    "word": "twenty",
+    "phonetic": "/ˈtwenti/",
+    "meaning": "num. 二十",
+    "level": "basic"
+  },
+  {
+    "word": "two",
+    "phonetic": "/tuː/",
+    "meaning": "num. 二",
+    "level": "basic"
+  },
+  {
+    "word": "ugly",
+    "phonetic": "/ˈʌɡli/",
+    "meaning": "adj. 丑陋的",
+    "level": "basic"
+  },
+  {
+    "word": "uncle",
+    "phonetic": "/ˈʌŋkl/",
+    "meaning": "n. 叔叔；伯伯；舅舅",
+    "level": "basic"
+  },
+  {
+    "word": "understand",
+    "phonetic": "/ˌʌndərˈstænd/",
+    "meaning": "v. 理解",
+    "level": "basic"
+  },
+  {
+    "word": "usually",
+    "phonetic": "/ˈjuːʒuəli/",
+    "meaning": "adv. 通常",
+    "level": "basic"
+  },
+  {
+    "word": "vacation",
+    "phonetic": "/veɪˈkeɪʃn/",
+    "meaning": "n. 假期；休假",
+    "level": "basic"
+  },
+  {
+    "word": "vegetable",
+    "phonetic": "/ˈvedʒtəbl/",
+    "meaning": "n. 蔬菜",
+    "level": "basic"
+  },
+  {
+    "word": "very",
+    "phonetic": "/ˈveri/",
+    "meaning": "adv. 非常",
+    "level": "basic"
+  },
+  {
+    "word": "video",
+    "phonetic": "/ˈvɪdioʊ/",
+    "meaning": "n. 视频",
+    "level": "basic"
+  },
+  {
+    "word": "village",
+    "phonetic": "/ˈvɪlɪdʒ/",
+    "meaning": "n. 村庄",
+    "level": "basic"
+  },
+  {
+    "word": "visit",
+    "phonetic": "/ˈvɪzɪt/",
+    "meaning": "v. 拜访；参观",
+    "level": "basic"
+  },
+  {
+    "word": "wait",
+    "phonetic": "/weɪt/",
+    "meaning": "v. 等待",
+    "level": "basic"
+  },
+  {
+    "word": "wake",
+    "phonetic": "/weɪk/",
+    "meaning": "v. 醒来；叫醒",
+    "level": "basic"
+  },
+  {
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "meaning": "v. 走路；散步",
+    "level": "basic"
+  },
+  {
+    "word": "wall",
+    "phonetic": "/wɔːl/",
+    "meaning": "n. 墙壁",
+    "level": "basic"
+  },
+  {
+    "word": "want",
+    "phonetic": "/wɑːnt/",
+    "meaning": "v. 想要",
+    "level": "basic"
+  },
+  {
+    "word": "warm",
+    "phonetic": "/wɔːrm/",
+    "meaning": "adj. 温暖的",
+    "level": "basic"
+  },
+  {
+    "word": "wash",
+    "phonetic": "/wɑːʃ/",
+    "meaning": "v. 洗",
+    "level": "basic"
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɑːtʃ/",
+    "meaning": "n. 手表；v. 观看",
+    "level": "basic"
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɑːtʃ/",
+    "meaning": "v. 观看",
+    "level": "basic"
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "meaning": "n. 水",
+    "level": "basic"
+  },
+  {
+    "word": "weak",
+    "phonetic": "/wiːk/",
+    "meaning": "adj. 虚弱的",
+    "level": "basic"
+  },
+  {
+    "word": "weather",
+    "phonetic": "/ˈweðər/",
+    "meaning": "n. 天气",
+    "level": "basic"
+  },
+  {
+    "word": "website",
+    "phonetic": "/ˈwebsaɪt/",
+    "meaning": "n. 网站",
+    "level": "basic"
+  },
+  {
+    "word": "Wednesday",
+    "phonetic": "/ˈwenzdeɪ/",
+    "meaning": "n. 星期三",
+    "level": "basic"
+  },
+  {
+    "word": "week",
+    "phonetic": "/wiːk/",
+    "meaning": "n. 星期；周",
+    "level": "basic"
+  },
+  {
+    "word": "weekend",
+    "phonetic": "/ˈwiːkend/",
+    "meaning": "n. 周末",
+    "level": "basic"
+  },
+  {
+    "word": "welcome",
+    "phonetic": "/ˈwelkəm/",
+    "meaning": "v. 欢迎；adj. 受欢迎的",
+    "level": "basic"
+  },
+  {
+    "word": "wet",
+    "phonetic": "/wet/",
+    "meaning": "adj. 湿的",
+    "level": "basic"
+  },
+  {
+    "word": "what",
+    "phonetic": "/wʌt/",
+    "meaning": "pron. 什么",
+    "level": "basic"
+  },
+  {
+    "word": "when",
+    "phonetic": "/wen/",
+    "meaning": "adv. 什么时候",
+    "level": "basic"
+  },
+  {
+    "word": "where",
+    "phonetic": "/wer/",
+    "meaning": "adv. 哪里",
+    "level": "basic"
+  },
+  {
+    "word": "which",
+    "phonetic": "/wɪtʃ/",
+    "meaning": "pron. 哪一个",
+    "level": "basic"
+  },
+  {
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "meaning": "adj. 白色的",
+    "level": "basic"
+  },
+  {
+    "word": "who",
+    "phonetic": "/huː/",
+    "meaning": "pron. 谁",
+    "level": "basic"
+  },
+  {
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "meaning": "pron. 谁的",
+    "level": "basic"
+  },
+  {
+    "word": "why",
+    "phonetic": "/waɪ/",
+    "meaning": "adv. 为什么",
+    "level": "basic"
+  },
+  {
+    "word": "wife",
+    "phonetic": "/waɪf/",
+    "meaning": "n. 妻子",
+    "level": "basic"
+  },
+  {
+    "word": "wind",
+    "phonetic": "/wɪnd/",
+    "meaning": "n. 风",
+    "level": "basic"
+  },
+  {
+    "word": "window",
+    "phonetic": "/ˈwɪndoʊ/",
+    "meaning": "n. 窗户",
+    "level": "basic"
+  },
+  {
+    "word": "wine",
+    "phonetic": "/waɪn/",
+    "meaning": "n. 葡萄酒",
+    "level": "basic"
+  },
+  {
+    "word": "wing",
+    "phonetic": "/wɪŋ/",
+    "meaning": "n. 翅膀",
+    "level": "basic"
+  },
+  {
+    "word": "winter",
+    "phonetic": "/ˈwɪntər/",
+    "meaning": "n. 冬天",
+    "level": "basic"
+  },
+  {
+    "word": "wish",
+    "phonetic": "/wɪʃ/",
+    "meaning": "v. 希望；祝愿",
+    "level": "basic"
+  },
+  {
+    "word": "woman",
+    "phonetic": "/ˈwʊmən/",
+    "meaning": "n. 女人",
+    "level": "basic"
+  },
+  {
+    "word": "worry",
+    "phonetic": "/ˈwʌri/",
+    "meaning": "v. 担心",
+    "level": "basic"
+  },
+  {
+    "word": "write",
+    "phonetic": "/raɪt/",
+    "meaning": "v. 写",
+    "level": "basic"
+  },
+  {
+    "word": "wrong",
+    "phonetic": "/rɔːŋ/",
+    "meaning": "adj. 错误的",
+    "level": "basic"
+  },
+  {
+    "word": "yard",
+    "phonetic": "/jɑːrd/",
+    "meaning": "n. 院子",
+    "level": "basic"
+  },
+  {
+    "word": "year",
+    "phonetic": "/jɪr/",
+    "meaning": "n. 年",
+    "level": "basic"
+  },
+  {
+    "word": "yellow",
+    "phonetic": "/ˈjeloʊ/",
+    "meaning": "adj. 黄色的",
+    "level": "basic"
+  },
+  {
+    "word": "yesterday",
+    "phonetic": "/ˈjestərdeɪ/",
+    "meaning": "n. 昨天",
+    "level": "basic"
+  },
+  {
+    "word": "young",
+    "phonetic": "/jʌŋ/",
+    "meaning": "adj. 年轻的",
+    "level": "basic"
+  },
+  {
+    "word": "zero",
+    "phonetic": "/ˈzɪroʊ/",
+    "meaning": "num. 零",
+    "level": "basic"
+  }
+]
