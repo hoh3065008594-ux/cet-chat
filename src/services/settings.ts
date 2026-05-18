@@ -20,11 +20,30 @@ const defaults: AppSettings = {
   aiAvatar: '',
 }
 
+function cookieGet(key: string): string | null {
+  const match = document.cookie.match(new RegExp('(?:^|; )' + key + '=([^;]*)'))
+  return match ? decodeURIComponent(match[1]) : null
+}
+
+function cookieSet(key: string, value: string): void {
+  document.cookie = key + '=' + encodeURIComponent(value) + ';path=/;max-age=31536000;SameSite=Lax'
+}
+
 export function getSettings(): AppSettings {
   try {
-    const raw = localStorage.getItem('cet-chat-settings')
+    let raw = localStorage.getItem('cet-chat-settings')
+    // Fallback to cookie (for iOS PWA separate storage)
+    if (!raw) {
+      const cookieRaw = cookieGet('cet-chat-settings')
+      if (cookieRaw) raw = cookieRaw
+    }
     if (!raw) return { ...defaults }
-    return { ...defaults, ...JSON.parse(raw) }
+    const parsed = { ...defaults, ...JSON.parse(raw) }
+    // Restore to localStorage if only in cookie
+    if (!localStorage.getItem('cet-chat-settings')) {
+      localStorage.setItem('cet-chat-settings', JSON.stringify(parsed))
+    }
+    return parsed
   } catch {
     return { ...defaults }
   }
@@ -33,7 +52,9 @@ export function getSettings(): AppSettings {
 export function saveSettings(settings: Partial<AppSettings>): void {
   const current = getSettings()
   const merged = { ...current, ...settings }
-  localStorage.setItem('cet-chat-settings', JSON.stringify(merged))
+  const json = JSON.stringify(merged)
+  localStorage.setItem('cet-chat-settings', json)
+  cookieSet('cet-chat-settings', json)
 }
 
 export function getApiKey(): string {
