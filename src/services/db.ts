@@ -322,6 +322,20 @@ export async function updatePersona(id: string, updates: Partial<Persona>): Prom
 
 export async function deletePersona(id: string): Promise<void> {
   const db = await dbPromise
+  // Delete all chats and messages using this persona
+  const allChats = await db.getAll('chats')
+  const matchingChats = allChats.filter((c) => c.personaId === id)
+  for (const chat of matchingChats) {
+    const msgs = await db.getAllFromIndex('messages', 'chatId', chat.id)
+    const tx = db.transaction('messages', 'readwrite')
+    for (const m of msgs) {
+      await tx.store.delete(m.id)
+    }
+    await tx.done
+    await db.delete('chats', chat.id)
+    try { localStorage.removeItem(MSGS_LS_PREFIX + chat.id) } catch {}
+  }
   await db.delete('personas', id)
   syncPersonasToLocalStorage(await db.getAll('personas'))
+  syncChatsToLs(await db.getAll('chats'))
 }
