@@ -100,8 +100,8 @@ export default function PersonaSelectPage() {
       await addMessage(aiMsg)
 
       navigate(`/chat/${chatId}`)
-    } catch {
-      navigate('/settings')
+    } catch (err) {
+      alert('创建对话失败: ' + (err instanceof Error ? err.message : String(err)))
     } finally {
       setCreating(false)
     }

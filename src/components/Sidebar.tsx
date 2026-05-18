@@ -60,8 +60,8 @@ export default function Sidebar({ open, onClose }: Props) {
       await createChat({ id: chatId, title: greeting.slice(0, 40) + '...', level: vocabLevel, partnerName, personaId: activePersonaId, createdAt: Date.now(), updatedAt: Date.now() })
       await addMessage({ id: uid(), chatId, role: 'assistant', content: greeting, usedVocab: [], timestamp: Date.now() })
       navigate(`/chat/${chatId}`)
-    } catch {
-      navigate('/settings')
+    } catch (err) {
+      alert('创建对话失败: ' + (err instanceof Error ? err.message : String(err)))
     }
   }
 

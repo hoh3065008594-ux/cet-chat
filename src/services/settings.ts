@@ -21,8 +21,12 @@ const defaults: AppSettings = {
 }
 
 function cookieGet(key: string): string | null {
-  const match = document.cookie.match(new RegExp('(?:^|; )' + key + '=([^;]*)'))
-  return match ? decodeURIComponent(match[1]) : null
+  const cookies = document.cookie.split(';')
+  for (const c of cookies) {
+    const [k, ...v] = c.trim().split('=')
+    if (k === key) return decodeURIComponent(v.join('='))
+  }
+  return null
 }
 
 function cookieSet(key: string, value: string): void {
