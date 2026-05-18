@@ -91,6 +91,11 @@ button, a, input, select {
   background-color: var(--color-surface-hover);
 }
 
+/* Safe area for mobile bottom bars */
+.safe-bottom {
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+}
+
 /* Chat bubble styles */
 .chat-bubble-other {
   background-color: var(--color-chat-other);

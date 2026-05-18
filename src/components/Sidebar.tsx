@@ -87,8 +87,8 @@ export default function Sidebar({ open, onClose }: Props) {
             <h1 className="text-[17px] font-bold text-black">CET Chat</h1>
             <p className="text-[11px] mt-0.5" style={{ color: 'oklch(55% 0.003 310)' }}>英语对话学习伙伴</p>
           </div>
-          <button onClick={onClose} className="lg:hidden p-1 rounded-lg" style={{ color: 'oklch(55% 0.003 310)' }}>
-            <X size={20} />
+          <button onClick={onClose} className="lg:hidden p-2 rounded-lg" style={{ color: 'oklch(55% 0.003 310)' }}>
+            <X size={22} />
           </button>
         </div>
 

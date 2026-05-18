@@ -20,11 +20,11 @@ function App() {
         <div className="lg:hidden px-4 py-2 border-b border-gray-200 bg-white flex items-center gap-3 shrink-0">
           <button
             onClick={() => setSidebarOpen(true)}
-            className="text-gray-600 hover:text-gray-800 p-1"
+            className="text-gray-600 hover:text-gray-800 p-2"
           >
-            <Menu size={22} />
+            <Menu size={24} />
           </button>
-          <span className="font-semibold text-gray-800 text-sm">CET Chat</span>
+          <span className="font-semibold text-gray-800 text-[15px]">CET Chat</span>
         </div>
         <Routes>
           <Route path="/" element={<PersonaSelectPage />} />

@@ -142,7 +142,7 @@ export default function PersonaSelectPage() {
           )}
         </div>
 
-        <div className={`grid grid-cols-2 gap-2.5 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-2.5 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
           {personas.map((p) => (
             <button
               key={p.id}
@@ -158,7 +158,7 @@ export default function PersonaSelectPage() {
                 ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
               }}
             >
-              <Avatar src={p.avatar} name={p.name} size={44} />
+              <Avatar src={p.avatar} name={p.name} size={48} />
               <div className="text-center">
                 <p className="text-[14px] font-semibold" style={{ color: c.text }}>{p.name}</p>
                 <p className="text-[11px] mt-0.5" style={{ color: c.textSecondary }}>

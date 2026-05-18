@@ -49,8 +49,8 @@ export default function VocabularyPage() {
     <div className="h-full flex flex-col" style={{ backgroundColor: c.bg }}>
       <div className="px-4 py-3 space-y-2.5" style={{ backgroundColor: c.white, borderBottom: `1px solid ${c.border}` }}>
         <h2 className="text-[17px] font-bold" style={{ color: c.text }}>词库预览</h2>
-        <div className="flex items-center gap-3">
-          <div className="flex rounded-[14px] overflow-hidden text-sm" style={{ border: `1px solid ${c.borderDashed}` }}>
+        <div className="flex items-center gap-2">
+          <div className="flex rounded-[14px] overflow-hidden text-sm shrink-0" style={{ border: `1px solid ${c.borderDashed}` }}>
             {(['cet4', 'cet6'] as const).map((lv) => (
               <button
                 key={lv}
@@ -59,29 +59,28 @@ export default function VocabularyPage() {
                   backgroundColor: level === lv ? c.accent : c.white,
                   color: level === lv ? c.white : c.text,
                 }}
-                className="px-4 py-1.5 text-[13px] font-medium transition-colors"
+                className="px-3 py-1.5 text-[13px] font-medium transition-colors"
               >
                 {{ cet4: 'CET-4', cet6: 'CET-6' }[lv]}
               </button>
             ))}
           </div>
-          <div className="relative flex-1 max-w-xs">
+          <div className="relative flex-1">
             <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: c.textSecondary }} />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="搜索单词..."
-              className="w-full rounded-[14px] pl-9 pr-3 py-1.5 text-[13px] focus:outline-none"
+              className="w-full rounded-[14px] pl-9 pr-3 py-2 text-[14px] focus:outline-none"
               style={{ backgroundColor: c.surfaceHover, color: c.text }}
             />
           </div>
-          <span className="text-[12px]" style={{ color: c.textSecondary }}>{filtered.length} 词</span>
         </div>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1.5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2">
           {filtered.map((w) => (
             <button
               key={`${w.level}-${w.word}`}

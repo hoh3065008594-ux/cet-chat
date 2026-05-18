@@ -164,23 +164,23 @@ export default function ChatView() {
       </div>
 
       {/* Input */}
-      <div className="px-3 py-2.5 bg-white" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
+      <div className="px-3 py-3 bg-white safe-bottom" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
         <div className="flex items-center gap-2 max-w-3xl mx-auto">
-          <div className="flex-1 flex items-center gap-2 rounded-[24px] px-4 py-2" style={{ backgroundColor: 'oklch(96% 0.002 310)' }}>
+          <div className="flex-1 flex items-center gap-2 rounded-[24px] px-4 py-2.5" style={{ backgroundColor: 'oklch(96% 0.002 310)' }}>
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-              placeholder="Message..."
+              placeholder="输入对话..."
               disabled={loading}
-              className="flex-1 bg-transparent text-[14px] placeholder-[oklch(55%_0.003_310)] focus:outline-none disabled:opacity-50"
+              className="flex-1 bg-transparent text-[16px] placeholder-[oklch(55%_0.003_310)] focus:outline-none disabled:opacity-50"
             />
           </div>
           <button
             onClick={handleSend}
             disabled={!input.trim() || loading}
-            className="w-9 h-9 rounded-full flex items-center justify-center transition-opacity disabled:opacity-30 shrink-0"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-opacity disabled:opacity-30 shrink-0"
             style={{ backgroundColor: accent }}
           >
             <Send size={16} color="#fff" />
