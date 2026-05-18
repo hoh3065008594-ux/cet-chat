@@ -14,7 +14,7 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex h-dvh bg-gray-50">
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <main className="flex-1 overflow-hidden flex flex-col">
         <div className="lg:hidden px-4 py-2 border-b border-gray-200 bg-white flex items-center gap-3 shrink-0">
