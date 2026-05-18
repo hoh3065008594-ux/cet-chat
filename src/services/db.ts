@@ -89,19 +89,68 @@ const dbPromise = openDB<CetChatDB>('cet-chat', 4, {
 
 // --- Chats ---
 
+const CHATS_LS = 'cet-chat-chats'
+const MSGS_LS_PREFIX = 'cet-chat-msgs-'
+
+function syncChatsToLs(chats: Chat[]): void {
+  const json = JSON.stringify(chats)
+  try { localStorage.setItem(CHATS_LS, json) } catch {}
+  try { cookieSet(CHATS_LS, json) } catch {}
+}
+
+function loadChatsFromLs(): Chat[] {
+  try {
+    let raw = localStorage.getItem(CHATS_LS)
+    if (!raw) raw = cookieGet(CHATS_LS)
+    return raw ? JSON.parse(raw) : []
+  } catch { return [] }
+}
+
+function syncMessagesToLs(chatId: string, msgs: Message[]): void {
+  try { localStorage.setItem(MSGS_LS_PREFIX + chatId, JSON.stringify(msgs)) } catch {}
+}
+
+function loadMessagesFromLs(chatId: string): Message[] {
+  try {
+    const raw = localStorage.getItem(MSGS_LS_PREFIX + chatId)
+    return raw ? JSON.parse(raw) : []
+  } catch { return [] }
+}
+
 export async function createChat(chat: Chat): Promise<void> {
   const db = await dbPromise
   await db.add('chats', chat)
+  syncChatsToLs(await db.getAll('chats'))
 }
 
 export async function getChat(id: string): Promise<Chat | undefined> {
   const db = await dbPromise
-  return db.get('chats', id)
+  const fromDb = await db.get('chats', id)
+  if (fromDb) return fromDb
+  const ls = loadChatsFromLs()
+  const fromLs = ls.find((c) => c.id === id)
+  if (fromLs) {
+    await db.put('chats', fromLs).catch(() => {})
+    return fromLs
+  }
 }
 
 export async function getAllChats(): Promise<Chat[]> {
   const db = await dbPromise
-  return db.getAll('chats')
+  const fromDb = await db.getAll('chats')
+  const ls = loadChatsFromLs()
+  let changed = false
+  for (const c of ls) {
+    if (!fromDb.find((x) => x.id === c.id)) {
+      fromDb.push(c)
+      await db.put('chats', c).catch(() => {})
+      changed = true
+    }
+  }
+  if (fromDb.length > ls.length || changed) {
+    syncChatsToLs(fromDb)
+  }
+  return fromDb
 }
 
 export async function updateChat(id: string, updates: Partial<Chat>): Promise<void> {
@@ -110,19 +159,21 @@ export async function updateChat(id: string, updates: Partial<Chat>): Promise<vo
   if (chat) {
     Object.assign(chat, updates, { updatedAt: Date.now() })
     await db.put('chats', chat)
+    syncChatsToLs(await db.getAll('chats'))
   }
 }
 
 export async function deleteChat(id: string): Promise<void> {
   const db = await dbPromise
   await db.delete('chats', id)
-  // Also delete all messages of this chat
   const msgs = await db.getAllFromIndex('messages', 'chatId', id)
   const tx = db.transaction('messages', 'readwrite')
   for (const m of msgs) {
     await tx.store.delete(m.id)
   }
   await tx.done
+  syncChatsToLs(await db.getAll('chats'))
+  try { localStorage.removeItem(MSGS_LS_PREFIX + id) } catch {}
 }
 
 // --- Messages ---
@@ -130,16 +181,26 @@ export async function deleteChat(id: string): Promise<void> {
 export async function addMessage(msg: Message): Promise<void> {
   const db = await dbPromise
   await db.add('messages', msg)
+  // Sync all messages of this chat to localStorage
+  const msgs = await db.getAllFromIndex('messages', 'chatId', msg.chatId)
+  syncMessagesToLs(msg.chatId, msgs)
 }
 
 export async function getMessages(chatId: string): Promise<Message[]> {
   const db = await dbPromise
-  return db.getAllFromIndex('messages', 'chatId', chatId)
+  const fromDb = await db.getAllFromIndex('messages', 'chatId', chatId)
+  if (fromDb.length > 0) return fromDb
+  // Fallback to localStorage
+  const ls = loadMessagesFromLs(chatId)
+  for (const m of ls) {
+    await db.put('messages', m).catch(() => {})
+  }
+  return ls
 }
 
 export async function getMessageCount(chatId: string): Promise<number> {
-  const db = await dbPromise
-  return db.countFromIndex('messages', 'chatId', chatId)
+  const msgs = await getMessages(chatId)
+  return msgs.length
 }
 
 export async function getLastMessage(chatId: string): Promise<Message | undefined> {
