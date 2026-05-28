@@ -10,7 +10,7 @@ const vocabCache = new Map<string, VocabWord[]>()
 async function loadVocab(level: 'cet4' | 'cet6'): Promise<VocabWord[]> {
   if (vocabCache.has(level)) return vocabCache.get(level)!
   try {
-    const res = await fetch(`/vocab-data/${level}.json`)
+    const res = await fetch(`${import.meta.env.BASE_URL}vocab-data/${level}.json`)
     const data: VocabWord[] = await res.json()
     vocabCache.set(level, data)
     return data

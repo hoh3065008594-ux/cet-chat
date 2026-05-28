@@ -14,13 +14,11 @@ export default function Avatar({ src, name, size = 36 }: Props) {
   }
 
   const letter = name.charAt(0).toUpperCase()
-  const bg = '#f0e6f6'
-  const fg = '#8128af'
 
   return (
     <div
       className="rounded-full flex items-center justify-center shrink-0 font-bold"
-      style={{ width: size, height: size, fontSize: size * 0.42, backgroundColor: bg, color: fg }}
+      style={{ width: size, height: size, fontSize: size * 0.42, backgroundColor: '#f1f4f7', color: '#444950' }}
     >
       {letter}
     </div>

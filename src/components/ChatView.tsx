@@ -11,7 +11,6 @@ import type { Persona } from '../types/persona'
 import WordTooltip from './WordTooltip'
 import Avatar from './Avatar'
 
-const accent = 'oklch(45% 0.21 310)'
 export default function ChatView() {
   const { chatId } = useParams<{ chatId: string }>()
   const navigate = useNavigate()
@@ -22,7 +21,6 @@ export default function ChatView() {
 
   const { userAvatar } = getSettings()
 
-  // Load persona: prefer chat's persona, fallback to active persona
   useEffect(() => {
     if (!chatId) return
     getChat(chatId).then((chat) => {
@@ -46,28 +44,26 @@ export default function ChatView() {
     lookUp(word, e)
   }
 
-  // Track loading transitions — only animate messages that just arrived from API
   const prevLoading = useRef(loading)
   const freshMessage = useRef(false)
   if (prevLoading.current && !loading) {
     freshMessage.current = true
   }
   prevLoading.current = loading
-  // Reset after render, so historical messages on next load don't animate
   useEffect(() => { freshMessage.current = false })
 
   if (!chatId) {
     return (
-      <div className="flex flex-col h-full bg-[oklch(98.5%_0.002_310)]">
+      <div className="flex flex-col h-full bg-[#f1f4f7]">
         <div className="flex-1 flex flex-col items-center justify-center space-y-5 px-6">
-          <div className="w-20 h-20 rounded-full bg-[oklch(92%_0.03_310)] flex items-center justify-center">
-            <Send size={32} style={{ color: accent }} />
+          <div className="w-20 h-20 rounded-full bg-[#f1f4f7] flex items-center justify-center">
+            <Send size={32} className="text-[#5d6c7b]" />
           </div>
-          <p className="text-[15px] font-medium text-black">选择一位伙伴开始英语对话</p>
+          <p className="text-base font-medium text-[#0a1317]">选择一位伙伴开始英语对话</p>
           <button
             onClick={() => navigate('/')}
-            className="text-white px-6 py-2.5 rounded-[18px] text-sm font-semibold transition-colors"
-            style={{ backgroundColor: accent }}
+            className="text-white px-6 py-3 rounded-[100px] text-sm font-bold tracking-[-0.14px] transition-colors"
+            style={{ backgroundColor: '#000000' }}
           >
             选择伙伴
           </button>
@@ -77,15 +73,15 @@ export default function ChatView() {
   }
 
   return (
-    <div className="flex flex-col h-full relative bg-[oklch(98.5%_0.002_310)]">
+    <div className="flex flex-col h-full relative bg-[#f1f4f7]">
       {/* Header */}
-      <div className="px-4 py-3 bg-white flex items-center shrink-0" style={{ borderBottom: '1px solid oklch(92% 0.003 310)' }}>
+      <div className="px-4 py-3 bg-white flex items-center shrink-0" style={{ borderBottom: '1px solid #dee3e9' }}>
         <Avatar src={persona.avatar} name={persona.name} size={28} />
         <div className="ml-2.5 min-w-0">
-          <h2 className="text-[14px] font-semibold text-black truncate">
+          <h2 className="text-sm font-bold tracking-[-0.14px] text-[#0a1317] truncate">
             {chats.find((c) => c.id === chatId)?.title || '新对话'}
           </h2>
-          <p className="text-[11px]" style={{ color: 'oklch(55% 0.003 310)' }}>
+          <p className="text-xs text-[#8595a4]">
             {persona.name} · {persona.profile.role || '朋友'}
           </p>
         </div>
@@ -95,7 +91,7 @@ export default function ChatView() {
       <div className="flex-1 overflow-y-auto px-3 py-3 space-y-2.5">
         {messages.length === 0 && !loading && (
           <div className="text-center mt-10">
-            <p className="text-[13px] text-[oklch(55%_0.003_310)]">等待 AI 伙伴回复...</p>
+            <p className="text-sm text-[#8595a4]">等待 AI 伙伴回复...</p>
           </div>
         )}
         {messages.map((msg, idx) => {
@@ -112,7 +108,7 @@ export default function ChatView() {
                 size={22}
               />
               <div
-                className={`max-w-[78%] px-3.5 py-2.5 text-[14px] leading-relaxed break-words ${
+                className={`max-w-[78%] px-3.5 py-2.5 text-sm leading-relaxed break-words ${
                   msg.role === 'user'
                     ? 'chat-bubble-self'
                     : 'chat-bubble-other'
@@ -129,7 +125,7 @@ export default function ChatView() {
                   msg.content
                 )}
                 {msg.usedVocab.length > 0 && (
-                  <div className="mt-2 pt-2 flex flex-wrap gap-1 text-[11px] opacity-70" style={{ borderTop: `1px solid ${msg.role === 'user' ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.1)'}` }}>
+                  <div className="mt-2 pt-2 flex flex-wrap gap-1 text-xs opacity-70" style={{ borderTop: `1px solid ${msg.role === 'user' ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.1)'}` }}>
                     📖 {msg.usedVocab.map((w) => (
                       <span
                         key={w}
@@ -149,7 +145,7 @@ export default function ChatView() {
         {loading && (
           <div className="flex items-end gap-1.5">
             <Avatar src={persona.avatar} name={persona.name} size={22} />
-            <div className="px-4 py-2.5 text-[13px] text-[oklch(55%_0.003_310)] flex items-center gap-2" style={{ backgroundColor: 'oklch(96% 0.002 310)', borderRadius: '18px 18px 18px 4px' }}>
+            <div className="px-4 py-2.5 text-sm text-[#5d6c7b] flex items-center gap-2" style={{ backgroundColor: '#f1f4f7', borderRadius: '24px 24px 24px 8px' }}>
               <Loader2 size={14} className="animate-spin" />
               输入中...
             </div>
@@ -157,16 +153,16 @@ export default function ChatView() {
         )}
 
         {error && (
-          <div className="text-center text-[13px] text-[oklch(52%_0.22_10)] bg-[oklch(97%_0.02_10)] rounded-xl py-2 px-4 mx-4">
+          <div className="text-center text-sm text-[#e41e3f] bg-[#fef2f2] rounded-[16px] py-2 px-4 mx-4">
             {error}
           </div>
         )}
       </div>
 
-      {/* Input */}
-      <div className="px-3 py-3 bg-white safe-bottom" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
+      {/* Input — Meta pill input + cobalt send button */}
+      <div className="px-3 py-3 bg-white safe-bottom" style={{ borderTop: '1px solid #dee3e9' }}>
         <div className="flex items-center gap-2 max-w-3xl mx-auto">
-          <div className="flex-1 flex items-center gap-2 rounded-[24px] px-4 py-2.5" style={{ backgroundColor: 'oklch(96% 0.002 310)' }}>
+          <div className="flex-1 flex items-center gap-2 rounded-[100px] px-5 h-[44px]" style={{ backgroundColor: '#f1f4f7' }}>
             <input
               type="text"
               value={input}
@@ -174,16 +170,18 @@ export default function ChatView() {
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="输入对话..."
               disabled={loading}
-              className="flex-1 bg-transparent text-[16px] placeholder-[oklch(55%_0.003_310)] focus:outline-none disabled:opacity-50"
+              className="flex-1 bg-transparent text-[14px] tracking-[-0.14px] text-[#1c1e21] placeholder-[#8595a4] focus:outline-none disabled:opacity-50"
+              style={{ fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif" }}
             />
           </div>
           <button
             onClick={handleSend}
             disabled={!input.trim() || loading}
-            className="w-10 h-10 rounded-full flex items-center justify-center transition-opacity disabled:opacity-30 shrink-0"
-            style={{ backgroundColor: accent }}
+            className="h-[44px] px-5 rounded-[100px] flex items-center justify-center gap-2 transition-colors disabled:opacity-40 shrink-0"
+            style={{ backgroundColor: '#0064e0' }}
           >
             <Send size={16} color="#fff" />
+            <span className="text-sm font-bold tracking-[-0.14px] text-white hidden sm:inline">发送</span>
           </button>
         </div>
       </div>
@@ -210,7 +208,7 @@ function AssistantContent({
   const { displayed, done } = useTypewriter(clean, animate ? 25 : 0)
   const text = animate ? displayed : clean
   const blinking = animate && !done
-  const wordColor = isSelf ? 'rgba(255,255,255,0.9)' : accent
+  const wordColor = isSelf ? 'rgba(255,255,255,0.9)' : '#0064e0'
 
   const lines = text.split('\n')
 
@@ -235,7 +233,7 @@ function AssistantContent({
         </p>
       ))}
       {blinking && (
-        <span className="inline-block w-1.5 h-4 ml-0.5 animate-pulse align-middle rounded-sm" style={{ backgroundColor: accent }} />
+        <span className="inline-block w-1.5 h-4 ml-0.5 animate-pulse align-middle rounded-sm" style={{ backgroundColor: '#0064e0' }} />
       )}
     </>
   )

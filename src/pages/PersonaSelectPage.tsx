@@ -9,21 +9,6 @@ import type { Persona } from '../types/persona'
 import type { Chat, Message } from '../services/db'
 import Avatar from '../components/Avatar'
 
-const c = {
-  bg: 'oklch(98.5% 0.002 310)',
-  white: 'oklch(100% 0 0)',
-  accent: 'oklch(45% 0.21 310)',
-  accentHover: 'oklch(49% 0.23 310)',
-  accentLight: 'oklch(92% 0.03 310)',
-  accentWash: 'oklch(97% 0.015 310)',
-  text: 'oklch(12% 0.002 310)',
-  textSecondary: 'oklch(55% 0.003 310)',
-  border: 'oklch(88% 0.003 310)',
-  borderDashed: 'oklch(80% 0.003 310)',
-  surfaceHover: 'oklch(96.5% 0.002 310)',
-  shadow: '0 4px 16px rgba(129,40,175,0.1)',
-}
-
 function uid(): string {
   try { return crypto.randomUUID() }
   catch {
@@ -60,8 +45,6 @@ export default function PersonaSelectPage() {
       return
     }
 
-    // Check if there's an existing chat with this persona
-    // Old chats without personaId are treated as default persona
     const allChats = await getAllChats()
     const existing = allChats
       .filter((c) => c.personaId === p.id || (!c.personaId && p.id === '__default_alex__'))
@@ -71,7 +54,6 @@ export default function PersonaSelectPage() {
       return
     }
 
-    // No existing chat — create a new one
     setCreating(true)
     try {
       const { partnerName, vocabLevel, activePersonaId } = getSettings()
@@ -120,8 +102,8 @@ export default function PersonaSelectPage() {
 
   if (loading) {
     return (
-      <div className="h-full flex items-center justify-center" style={{ backgroundColor: c.bg }}>
-        <Loader2 size={22} className="animate-spin" style={{ color: c.accent }} />
+      <div className="h-full flex items-center justify-center bg-[#f1f4f7]">
+        <Loader2 size={22} className="animate-spin text-[#0064e0]" />
       </div>
     )
   }
@@ -129,39 +111,31 @@ export default function PersonaSelectPage() {
   const isCreating = creating
 
   return (
-    <div className="h-full overflow-y-auto" style={{ backgroundColor: c.bg }}>
+    <div className="h-full overflow-y-auto bg-[#f1f4f7]">
       <div className="max-w-lg mx-auto px-4 py-8 sm:py-12">
         <div className="text-center mb-8">
-          <h1 className="text-[20px] font-bold mb-1" style={{ color: c.text }}>CET Chat</h1>
-          <p className="text-[13px]" style={{ color: c.textSecondary }}>选择一位伙伴开始英语对话</p>
+          <h1 className="text-2xl font-medium text-[#0a1317] tracking-[-0.24px] mb-1">CET Chat</h1>
+          <p className="text-sm text-[#5d6c7b] tracking-[-0.14px]">选择一位伙伴开始英语对话</p>
           {isCreating && (
-            <p className="text-[12px] flex items-center justify-center gap-1.5 mt-2" style={{ color: c.accent }}>
+            <p className="text-xs flex items-center justify-center gap-1.5 mt-2 text-[#0064e0]">
               <Loader2 size={12} className="animate-spin" />
               正在创建对话...
             </p>
           )}
         </div>
 
-        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-2.5 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 ${isCreating ? 'pointer-events-none opacity-60' : ''}`}>
           {personas.map((p) => (
             <button
               key={p.id}
               onClick={() => handleSelect(p)}
-              className="flex flex-col items-center gap-2 p-4 rounded-[18px] bg-white transition-all text-left"
-              style={{ border: `1px solid ${c.border}` }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = c.accent
-                ;(e.currentTarget as HTMLElement).style.boxShadow = c.shadow
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = c.border
-                ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
-              }}
+              className="flex flex-col items-center gap-2 p-6 rounded-[32px] bg-white transition-all text-left hover:border-[#ced0d4]"
+              style={{ border: '1px solid #dee3e9' }}
             >
               <Avatar src={p.avatar} name={p.name} size={48} />
               <div className="text-center">
-                <p className="text-[14px] font-semibold" style={{ color: c.text }}>{p.name}</p>
-                <p className="text-[11px] mt-0.5" style={{ color: c.textSecondary }}>
+                <p className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">{p.name}</p>
+                <p className="text-xs mt-0.5 text-[#8595a4]">
                   {roleIcon(p.profile.role)} {p.profile.role || '朋友'}
                 </p>
                 {p.profile.traits.length > 0 && (
@@ -169,8 +143,8 @@ export default function PersonaSelectPage() {
                     {p.profile.traits.slice(0, 2).map((t) => (
                       <span
                         key={t}
-                        className="text-[10px] px-1.5 py-0.5 rounded-full"
-                        style={{ backgroundColor: c.accentLight, color: c.accent }}
+                        className="text-xs px-2.5 py-0.5 rounded-[100px] font-bold"
+                        style={{ backgroundColor: '#f1f4f7', color: '#444950' }}
                       >
                         {t}
                       </span>
@@ -184,28 +158,19 @@ export default function PersonaSelectPage() {
           {/* Create new persona card */}
           <button
             onClick={() => navigate('/personas/new')}
-            className="flex flex-col items-center justify-center gap-2 p-4 rounded-[18px] border border-dashed transition-all min-h-[120px]"
-            style={{ borderColor: c.borderDashed }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = c.accent
-              ;(e.currentTarget as HTMLElement).style.backgroundColor = c.accentWash
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = c.borderDashed
-              ;(e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'
-            }}
+            className="flex flex-col items-center justify-center gap-2 p-4 rounded-[32px] border border-dashed transition-all min-h-[120px] hover:border-[#0064e0] hover:bg-[#f1f4f7]"
+            style={{ borderColor: '#ced0d4' }}
           >
             <div
               className="w-12 h-12 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: c.accentLight }}
+              style={{ backgroundColor: '#f1f4f7' }}
             >
-              <Plus size={22} style={{ color: c.accent }} />
+              <Plus size={22} style={{ color: '#0064e0' }} />
             </div>
-            <span className="text-[13px] font-medium" style={{ color: c.accent }}>创建新的人格</span>
+            <span className="text-sm font-bold tracking-[-0.14px] text-[#0064e0]">创建新的人格</span>
           </button>
         </div>
 
-        {/* Quick resume: existing chats */}
         <ExistingChats onSelect={(chatId) => navigate(`/chat/${chatId}`)} />
       </div>
     </div>
@@ -228,15 +193,15 @@ function ExistingChats({ onSelect }: { onSelect: (id: string) => void }) {
 
   return (
     <div className="mt-6">
-      <p className="text-[12px] font-medium mb-2" style={{ color: c.textSecondary }}>最近对话</p>
+      <p className="text-xs font-bold text-[#5d6c7b] mb-2">最近对话</p>
       <div className="space-y-0.5">
         {chats.map((chat) => (
           <button
             key={chat.id}
             onClick={() => onSelect(chat.id)}
-            className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[12px] text-left text-[13px] transition-colors" style={{ color: c.text }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = c.surfaceHover }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent' }}
+            className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[16px] text-left text-sm tracking-[-0.14px] text-[#0a1317] hover:bg-[#f1f4f7] transition-colors"
           >
-            <MessageCircle size={14} style={{ color: c.textSecondary }} />
+            <MessageCircle size={14} className="text-[#8595a4]" />
             <span className="truncate flex-1">{chat.title}</span>
           </button>
         ))}

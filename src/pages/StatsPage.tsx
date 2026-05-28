@@ -6,8 +6,6 @@ import { getSettings } from '../services/settings'
 import { MessageSquare, Hash, BookOpen, Loader2 } from 'lucide-react'
 import WordTooltip from '../components/WordTooltip'
 
-const accent = 'oklch(45% 0.21 310)'
-
 export default function StatsPage() {
   const [totalChats, setTotalChats] = useState(0)
   const [totalMessages, setTotalMessages] = useState(0)
@@ -56,54 +54,54 @@ export default function StatsPage() {
 
   if (loading) {
     return (
-      <div className="h-full flex items-center justify-center bg-[#fafafa]">
-        <Loader2 size={22} className="animate-spin" style={{ color: accent }} />
+      <div className="h-full flex items-center justify-center bg-[#f1f4f7]">
+        <Loader2 size={22} className="animate-spin text-[#0064e0]" />
       </div>
     )
   }
 
   const statItems = [
-    { icon: MessageSquare, value: totalChats, label: '对话总数', color: accent },
-    { icon: Hash, value: totalMessages, label: '消息总数', color: '#dd2a7b' },
-    { icon: BookOpen, value: usedWords.length, label: '已用考纲词', color: '#22c55e' },
+    { icon: MessageSquare, value: totalChats, label: '对话总数', color: '#0064e0' },
+    { icon: Hash, value: totalMessages, label: '消息总数', color: '#e41e3f' },
+    { icon: BookOpen, value: usedWords.length, label: '已用考纲词', color: '#31a24c' },
   ]
 
   return (
-    <div className="h-full overflow-y-auto p-6 bg-[#fafafa]">
-      <h2 className="text-[17px] font-bold text-black mb-5">学习统计</h2>
+    <div className="h-full overflow-y-auto p-6 bg-[#f1f4f7]">
+      <h2 className="text-lg font-bold tracking-[-0.18px] text-[#0a1317] mb-5">学习统计</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
         {statItems.map(({ icon: Icon, value, label, color }) => (
-          <div key={label} className="bg-white rounded-[18px] p-5" style={{ border: '1px solid #e8e8e8' }}>
+          <div key={label} className="bg-white rounded-[16px] p-5" style={{ border: '1px solid #dee3e9' }}>
             <Icon size={22} style={{ color, marginBottom: 8 }} />
-            <p className="text-[24px] font-bold text-black">{value}</p>
-            <p className="text-[13px]" style={{ color: '#8e8e8e' }}>{label}</p>
+            <p className="text-2xl font-bold text-[#0a1317]">{value}</p>
+            <p className="text-sm text-[#8595a4]">{label}</p>
           </div>
         ))}
       </div>
 
-      <div className="bg-white rounded-[18px] p-5 mb-6" style={{ border: '1px solid #e8e8e8' }}>
-        <h3 className="text-[14px] font-semibold text-black mb-3">词库覆盖率</h3>
-        <div className="w-full h-2.5 rounded-full bg-[#f0f0f0] overflow-hidden">
-          <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(Number(coverage), 100)}%`, backgroundColor: accent }} />
+      <div className="bg-white rounded-[16px] p-5 mb-6" style={{ border: '1px solid #dee3e9' }}>
+        <h3 className="text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-3">词库覆盖率</h3>
+        <div className="w-full h-2.5 rounded-full bg-[#f1f4f7] overflow-hidden">
+          <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(Number(coverage), 100)}%`, backgroundColor: '#0064e0' }} />
         </div>
-        <p className="text-[12px] mt-2" style={{ color: '#8e8e8e' }}>
+        <p className="text-xs mt-2 text-[#8595a4]">
           {usedWords.length} / {vocabSize} 词 ({coverage}%)
         </p>
       </div>
 
-      <div className="bg-white rounded-[18px] p-5" style={{ border: '1px solid #e8e8e8' }}>
-        <h3 className="text-[14px] font-semibold text-black mb-3">已用考纲词列表</h3>
+      <div className="bg-white rounded-[16px] p-5" style={{ border: '1px solid #dee3e9' }}>
+        <h3 className="text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-3">已用考纲词列表</h3>
         {usedWords.length === 0 ? (
-          <p className="text-[13px]" style={{ color: '#8e8e8e' }}>暂无数据，开始对话后这里会显示用过的词汇</p>
+          <p className="text-sm text-[#8595a4]">暂无数据，开始对话后这里会显示用过的词汇</p>
         ) : (
           <div className="flex flex-wrap gap-1.5">
             {usedWords.map((w) => (
               <button
                 key={w}
                 onClick={(e) => handleWordClick(w, e)}
-                className="px-2.5 py-1 rounded-[10px] text-[12px] font-medium transition-colors"
-                style={{ backgroundColor: '#f0e6f6', color: accent }}
+                className="px-2.5 py-1 rounded-[100px] text-xs font-bold transition-colors"
+                style={{ backgroundColor: '#f1f4f7', color: '#444950' }}
               >
                 {w}
               </button>

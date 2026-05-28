@@ -9,21 +9,6 @@ import type { Persona } from '../types/persona'
 import WordTooltip from '../components/WordTooltip'
 import Avatar from '../components/Avatar'
 
-// ── OKLCH brand palette ──
-const colors = {
-  bg: 'oklch(98.5% 0.002 310)',
-  card: 'oklch(100% 0 0)',
-  accent: 'oklch(45% 0.21 310)',
-  accentHover: 'oklch(49% 0.23 310)',
-  accentLight: 'oklch(92% 0.03 310)',
-  text: 'oklch(12% 0.002 310)',
-  textSecondary: 'oklch(55% 0.003 310)',
-  border: 'oklch(88% 0.003 310)',
-  borderLight: 'oklch(92% 0.003 310)',
-  shadow: '0 2px 12px rgba(129,40,175,0.06)',
-}
-
-// ── Mood options ──
 const MOODS = [
   { emoji: '😊', key: 'happy', label: '开心' },
   { emoji: '😌', key: 'calm', label: '平静' },
@@ -71,7 +56,6 @@ export default function DiaryPage() {
   const [showCalendar, setShowCalendar] = useState(false)
   const { selectedWord, position, lookUp, clearWord } = useDictionary()
 
-  // Calendar state
   const now = new Date()
   const [viewYear, setViewYear] = useState(now.getFullYear())
   const [viewMonth, setViewMonth] = useState(now.getMonth())
@@ -100,7 +84,6 @@ export default function DiaryPage() {
     setReplyLoading({})
   }, [])
 
-  // Open the latest entry for a date (calendar click)
   const openDate = useCallback(async (date: string) => {
     setSelectedDate(date)
     const all = await getEntriesByDate(date)
@@ -117,7 +100,6 @@ export default function DiaryPage() {
     }
   }, [selectEntry])
 
-  // Auto-select today on mount
   useEffect(() => { openDate(today) }, [today])
 
   const handlePublish = async () => {
@@ -125,7 +107,6 @@ export default function DiaryPage() {
     setSaving(true)
     const now2 = Date.now()
     const id = selectedId || uid()
-    // If editing an existing entry, preserve its comments; new entry starts empty
     let publishComments = comments
     if (selectedId) {
       const existing = await getDiaryEntry(selectedId)
@@ -244,7 +225,6 @@ export default function DiaryPage() {
     finally { setReplyLoading((prev) => ({ ...prev, [commentId]: false })) }
   }
 
-  // Calendar cells
   const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate()
   const firstDay = new Date(viewYear, viewMonth, 1).getDay()
   const cells: (number | null)[] = []
@@ -256,36 +236,36 @@ export default function DiaryPage() {
   const currentMood = MOODS.find((m) => m.key === mood)
 
   return (
-    <div className="h-full flex flex-col" style={{ backgroundColor: colors.bg }}>
-      {/* ── Header ── */}
-      <div className="px-5 py-3 flex items-center justify-between shrink-0" style={{ backgroundColor: colors.card, borderBottom: `1px solid ${colors.border}` }}>
-        <h2 className="text-[17px] font-bold tracking-wide" style={{ color: colors.text }}>英语日记</h2>
+    <div className="h-full flex flex-col bg-[#f1f4f7]">
+      {/* Header */}
+      <div className="px-5 py-3 flex items-center justify-between shrink-0 bg-white" style={{ borderBottom: '1px solid #dee3e9' }}>
+        <h2 className="text-lg font-bold tracking-[-0.18px] text-[#0a1317]">英语日记</h2>
         <div className="flex items-center gap-2">
-          <button onClick={() => setShowCalendar(!showCalendar)} className="p-2 rounded-xl transition-colors" style={{ color: colors.accent, backgroundColor: showCalendar ? colors.accentLight : 'transparent' }}>
+          <button onClick={() => setShowCalendar(!showCalendar)} className="p-2 rounded-[16px] transition-colors text-[#0064e0]" style={{ backgroundColor: showCalendar ? '#f1f4f7' : 'transparent' }}>
             <Calendar size={18} />
           </button>
           <button
             onClick={() => { setSelectedDate(today); setSelectedId(null); setContent(''); setMood(''); setComments([]); setDirty(false); setEditing(true) }}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors"
-            style={{ backgroundColor: colors.accent, color: '#fff' }}
+            className="flex items-center gap-1.5 px-4 py-1.5 rounded-[100px] text-sm font-bold tracking-[-0.14px] transition-colors text-white"
+            style={{ backgroundColor: '#000000' }}
           >
             <Plus size={15} />写日记
           </button>
         </div>
       </div>
 
-      {/* ── Calendar popup ── */}
+      {/* Calendar popup */}
       {showCalendar && (
-        <div className="shrink-0 px-4 py-3" style={{ backgroundColor: colors.card, borderBottom: `1px solid ${colors.border}` }}>
+        <div className="shrink-0 px-4 py-3 bg-white" style={{ borderBottom: '1px solid #dee3e9' }}>
           <div className="flex items-center justify-between mb-2">
-            <button onClick={() => viewMonth===0?(setViewYear(viewYear-1),setViewMonth(11)):setViewMonth(viewMonth-1)} className="p-1 rounded-lg"><ChevronLeft size={16} style={{color:colors.textSecondary}} /></button>
-            <button onClick={()=>{setViewYear(now.getFullYear());setViewMonth(now.getMonth())}} className="text-[14px] font-semibold" style={{color:colors.text}}>
+            <button onClick={() => viewMonth===0?(setViewYear(viewYear-1),setViewMonth(11)):setViewMonth(viewMonth-1)} className="p-1 rounded-lg"><ChevronLeft size={16} className="text-[#8595a4]" /></button>
+            <button onClick={()=>{setViewYear(now.getFullYear());setViewMonth(now.getMonth())}} className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">
               {viewYear}年 {MONTHS[viewMonth]}
             </button>
-            <button onClick={() => viewMonth===11?(setViewYear(viewYear+1),setViewMonth(0)):setViewMonth(viewMonth+1)} className="p-1 rounded-lg"><ChevronRight size={16} style={{color:colors.textSecondary}} /></button>
+            <button onClick={() => viewMonth===11?(setViewYear(viewYear+1),setViewMonth(0)):setViewMonth(viewMonth+1)} className="p-1 rounded-lg"><ChevronRight size={16} className="text-[#8595a4]" /></button>
           </div>
           <div className="grid grid-cols-7 mb-1">
-            {WEEKDAYS.map(d=><div key={d} className="text-center text-[10px] py-0.5" style={{color:colors.textSecondary}}>{d}</div>)}
+            {WEEKDAYS.map(d=><div key={d} className="text-center text-xs py-0.5 text-[#8595a4]">{d}</div>)}
           </div>
           <div className="grid grid-cols-7 gap-1">
             {cells.map((day,i)=>{
@@ -293,26 +273,26 @@ export default function DiaryPage() {
               const ds=`${viewYear}-${String(viewMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`
               const isSel=ds===selectedDate, isTD=ds===today, has=entryDates.has(ds)
               return <button key={ds} onClick={()=>{openDate(ds);setShowCalendar(false)}}
-                className="text-[11px] py-1.5 rounded-lg font-medium transition-colors relative"
-                style={{backgroundColor:isSel?colors.accent:isTD?colors.accentLight:'transparent',color:isSel?'#fff':isTD?colors.accent:colors.text}}>
-                {day}{has&&<span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full" style={{backgroundColor:isSel?'#fff':colors.accent}}/>}
+                className="text-xs py-1.5 rounded-lg font-bold transition-colors relative"
+                style={{backgroundColor:isSel?'#0a1317':isTD?'#f1f4f7':'transparent',color:isSel?'#fff':isTD?'#0064e0':'#1c1e21'}}>
+                {day}{has&&<span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full" style={{backgroundColor:isSel?'#fff':'#0064e0'}}/>}
               </button>
             })}
           </div>
         </div>
       )}
 
-      {/* ── Main content ── */}
+      {/* Main content */}
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
-        {/* ── Timeline sidebar ── */}
-        <div className="lg:w-80 shrink-0 overflow-y-auto" style={{ borderRight: `1px solid ${colors.border}`, backgroundColor: colors.card }}>
+        {/* Timeline sidebar */}
+        <div className="lg:w-80 shrink-0 overflow-y-auto bg-white" style={{ borderRight: '1px solid #dee3e9' }}>
           <div className="p-3">
-            <h3 className="text-[12px] font-semibold uppercase tracking-wider mb-2 px-2" style={{ color: colors.textSecondary }}>时间线</h3>
+            <h3 className="text-xs font-bold uppercase tracking-wider mb-2 px-2 text-[#5d6c7b]">时间线</h3>
             {entries.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-[40px] mb-2">📝</p>
-                <p className="text-[13px]" style={{ color: colors.textSecondary }}>还没有日记</p>
-                <p className="text-[12px] mt-1" style={{ color: colors.textSecondary }}>点击右上角开始写吧</p>
+                <p className="text-sm text-[#8595a4]">还没有日记</p>
+                <p className="text-xs mt-1 text-[#8595a4]">点击右上角开始写吧</p>
               </div>
             ) : (
               <Timeline entries={entries} selectedId={selectedId} onSelect={selectEntry} />
@@ -320,43 +300,43 @@ export default function DiaryPage() {
           </div>
         </div>
 
-        {/* ── Detail / Editor ── */}
+        {/* Detail / Editor */}
         <div className="flex-1 flex flex-col min-h-0">
           {/* Date + mood bar */}
-          <div className="px-5 py-3 flex items-center justify-between shrink-0" style={{ backgroundColor: colors.card, borderBottom: `1px solid ${colors.border}` }}>
+          <div className="px-5 py-3 flex items-center justify-between shrink-0 bg-white" style={{ borderBottom: '1px solid #dee3e9' }}>
             <div className="flex items-center gap-3">
-              <span className="text-[14px] font-semibold" style={{ color: colors.text }}>
+              <span className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">
                 {selectedDate===today?'今天':fmtDate(selectedDate)}
               </span>
               {currentMood && <span className="text-lg">{currentMood.emoji}</span>}
-              {dirty && <span className="text-[11px]" style={{color:colors.accent}}>未发布</span>}
-              {saving && <span className="text-[11px] animate-pulse" style={{color:colors.textSecondary}}>发布中...</span>}
+              {dirty && <span className="text-xs text-[#0064e0]">未发布</span>}
+              {saving && <span className="text-xs animate-pulse text-[#8595a4]">发布中...</span>}
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[11px]" style={{color:colors.textSecondary}}>{wordCount} 词</span>
+              <span className="text-xs text-[#8595a4]">{wordCount} 词</span>
               {(editing || dirty) && hasContent && (
-                <button onClick={handlePublish} disabled={saving} className="text-[12px] font-medium px-3 py-1 rounded-full transition-colors disabled:opacity-50" style={{backgroundColor:colors.accent,color:'#fff'}}>{saving ? '发布中...' : '发布'}</button>
+                <button onClick={handlePublish} disabled={saving} className="text-xs font-bold px-3 py-1 rounded-[100px] transition-colors disabled:opacity-50 text-white" style={{backgroundColor:'#000000'}}>{saving ? '发布中...' : '发布'}</button>
               )}
               {!editing && !dirty && hasContent && (
-                <button onClick={() => setEditing(true)} className="text-[12px] font-medium px-3 py-1 rounded-full transition-colors" style={{backgroundColor:colors.accentLight,color:colors.accent}}>编辑</button>
+                <button onClick={() => setEditing(true)} className="text-xs font-bold px-3 py-1 rounded-[100px] transition-colors" style={{backgroundColor:'#f1f4f7',color:'#0064e0'}}>编辑</button>
               )}
               <div className="relative">
-                <button onClick={() => setShowPartnerPicker(!showPartnerPicker)} disabled={commentLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium disabled:opacity-40 transition-colors"
-                  style={{backgroundColor:colors.accentLight,color:colors.accent}}><Sparkles size={12}/>{commentLoading?'评论中':'伙伴评论'}</button>
+                <button onClick={() => setShowPartnerPicker(!showPartnerPicker)} disabled={commentLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-[100px] text-xs font-bold disabled:opacity-40 transition-colors"
+                  style={{backgroundColor:'#f1f4f7',color:'#0064e0'}}><Sparkles size={12}/>{commentLoading?'评论中':'伙伴评论'}</button>
                 {showPartnerPicker && <PartnerPicker onSelect={handleComment} onClose={() => setShowPartnerPicker(false)} />}
               </div>
-              <button onClick={handleAiAssist} disabled={aiLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium disabled:opacity-40 transition-colors"
+              <button onClick={handleAiAssist} disabled={aiLoading||!hasContent} className="flex items-center gap-1 px-2.5 py-1 rounded-[100px] text-xs font-bold disabled:opacity-40 transition-colors"
                 style={{backgroundColor:'#fef9e7',color:'#b7950b'}}><Sparkles size={12}/>{aiLoading?'润色中':'AI 纠错'}</button>
-              {hasContent && <button onClick={handleDelete} className="p-1 rounded-lg" style={{color:colors.textSecondary}}><Trash2 size={15}/></button>}
+              {hasContent && <button onClick={handleDelete} className="p-1 rounded-lg text-[#8595a4]"><Trash2 size={15}/></button>}
             </div>
           </div>
 
           {/* Mood selector */}
-          <div className="px-4 py-2 flex gap-1.5 overflow-x-auto shrink-0" style={{ backgroundColor: colors.card, borderBottom: `1px solid ${colors.border}` }}>
+          <div className="px-4 py-2 flex gap-1.5 overflow-x-auto shrink-0 bg-white" style={{ borderBottom: '1px solid #dee3e9' }}>
             {MOODS.map((m) => (
               <button key={m.key} onClick={() => handleMood(m.key)}
                 className="shrink-0 text-lg px-1.5 py-0.5 rounded-xl transition-all"
-                style={{ backgroundColor: mood === m.key ? colors.accentLight : 'transparent', filter: mood && mood !== m.key ? 'grayscale(0.5) opacity(0.5)' : 'none' }}
+                style={{ backgroundColor: mood === m.key ? '#f1f4f7' : 'transparent', filter: mood && mood !== m.key ? 'grayscale(0.5) opacity(0.5)' : 'none' }}
                 title={m.label}>{m.emoji}</button>
             ))}
           </div>
@@ -366,65 +346,64 @@ export default function DiaryPage() {
             <textarea
               value={content} onChange={(e) => handleChange(e.target.value)}
               placeholder={`${fmtDate(selectedDate)} 用英语记录今天...`}
-              className="flex-1 p-5 resize-none focus:outline-none text-[15px] leading-relaxed"
-              style={{ backgroundColor: colors.bg, color: colors.text }}
+              className="flex-1 p-5 resize-none focus:outline-none text-base leading-relaxed bg-[#f1f4f7] text-[#0a1317]"
+              style={{ fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif" }}
             />
           ) : (
             <div className="flex-1 overflow-y-auto p-5">
               <div className="max-w-2xl">
                 {content.split('\n').map((line, li) => (
-                  <p key={li} className="text-[15px] leading-relaxed" style={{ color: colors.text, marginTop: li > 0 ? 8 : 0 }}>
+                  <p key={li} className="text-base leading-relaxed text-[#1c1e21]" style={{ marginTop: li > 0 ? 8 : 0 }}>
                     {line.split(/([a-zA-Z]+)/).map((part, i) =>
                       /^[a-zA-Z]{3,}$/.test(part) ? (
                         <span key={i} className="cursor-pointer underline decoration-dotted underline-offset-2"
-                          style={{ color: colors.accent, textDecorationColor: colors.accent }}
+                          style={{ color: '#0064e0', textDecorationColor: '#0064e0' }}
                           onClick={(e) => lookUp(part, e)}>{part}</span>
                       ) : (<span key={i}>{part}</span>)
                     )}
                   </p>
                 ))}
                 {content.trim() && (
-                  <div className="mt-6 pt-4 flex items-center gap-3" style={{ borderTop: `1px solid ${colors.border}` }}>
-                    <span className="text-[11px]" style={{ color: colors.textSecondary }}>{fmtDate(selectedDate)}</span>
+                  <div className="mt-6 pt-4 flex items-center gap-3" style={{ borderTop: '1px solid #dee3e9' }}>
+                    <span className="text-xs text-[#8595a4]">{fmtDate(selectedDate)}</span>
                     {currentMood && <span className="text-sm">{currentMood.emoji} {currentMood.label}</span>}
-                    <span className="text-[11px]" style={{ color: colors.textSecondary }}>{wordCount} 词</span>
+                    <span className="text-xs text-[#8595a4]">{wordCount} 词</span>
                   </div>
                 )}
                 {comments.length > 0 && (
                   <div className="mt-4 space-y-3">
                     {comments.map((c) => (
-                      <div key={c.id} className="p-4 rounded-2xl" style={{ backgroundColor: colors.accentLight }}>
-                        <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>
+                      <div key={c.id} className="p-4 rounded-[16px]" style={{ backgroundColor: '#f1f4f7' }}>
+                        <p className="text-xs font-bold mb-1 text-[#0064e0]">
                           {c.partnerName || '伙伴'} 说
                         </p>
-                        <p className="text-[14px] leading-relaxed" style={{ color: colors.text }}>
+                        <p className="text-sm leading-relaxed text-[#1c1e21]">
                           {c.content.split('\n').map((line, li) => (
                             <span key={li}>{li > 0 && <br />}{line}</span>
                           ))}
                         </p>
                         {c.reply ? (
-                          <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
-                            <div className="p-3 rounded-xl" style={{ backgroundColor: colors.bg }}>
-                              <p className="text-[11px] font-semibold mb-1" style={{ color: colors.accent }}>{c.partnerName || '伙伴'} 回应</p>
-                              <p className="text-[13px] leading-relaxed" style={{ color: colors.text }}>{c.reply}</p>
+                          <div className="mt-3 pt-3" style={{ borderTop: '1px solid #dee3e9' }}>
+                            <div className="p-3 rounded-xl bg-[#ffffff]">
+                              <p className="text-xs font-bold mb-1 text-[#0064e0]">{c.partnerName || '伙伴'} 回应</p>
+                              <p className="text-sm leading-relaxed text-[#1c1e21]">{c.reply}</p>
                             </div>
                           </div>
                         ) : (
-                          <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${colors.border}` }}>
+                          <div className="mt-3 pt-3" style={{ borderTop: '1px solid #dee3e9' }}>
                             <div className="flex items-center gap-2">
                               <input
                                 value={replyText[c.id] || ''}
                                 onChange={(e) => setReplyText((prev) => ({ ...prev, [c.id]: e.target.value }))}
                                 placeholder={`回复${c.partnerName || '伙伴'}...`}
-                                className="flex-1 text-[12px] px-3 py-1.5 rounded-xl focus:outline-none"
-                                style={{ backgroundColor: colors.bg, color: colors.text }}
+                                className="flex-1 text-xs px-3 py-1.5 rounded-xl focus:outline-none bg-white text-[#1c1e21]"
                                 onKeyDown={(e) => e.key === 'Enter' && handleReply(c.id)}
                               />
                               <button
                                 onClick={() => handleReply(c.id)}
                                 disabled={!replyText[c.id]?.trim() || replyLoading[c.id]}
-                                className="text-[11px] font-medium px-3 py-1.5 rounded-xl disabled:opacity-40 transition-colors"
-                                style={{ backgroundColor: colors.accent, color: '#fff' }}
+                                className="text-xs font-bold px-3 py-1.5 rounded-[100px] disabled:opacity-40 transition-colors text-white"
+                                style={{ backgroundColor: '#000000' }}
                               >
                                 {replyLoading[c.id] ? '...' : '发送'}
                               </button>
@@ -463,7 +442,7 @@ function Timeline({ entries, selectedId, onSelect }: {
     <div className="space-y-4">
       {years.map((year) => (
         <div key={year}>
-          <p className="text-[11px] font-semibold uppercase tracking-widest px-3 mb-1.5" style={{ color: colors.textSecondary }}>
+          <p className="text-xs font-bold uppercase tracking-widest px-3 mb-1.5 text-[#5d6c7b]">
             {year}
           </p>
           <div className="space-y-1">
@@ -477,17 +456,17 @@ function Timeline({ entries, selectedId, onSelect }: {
                 <button
                   key={entry.id}
                   onClick={() => onSelect(entry.id)}
-                  className="w-full text-left px-3 py-2.5 rounded-2xl transition-all"
+                  className="w-full text-left px-3 py-2.5 rounded-[16px] transition-all"
                   style={{
-                    backgroundColor: isActive ? colors.accentLight : 'transparent',
-                    boxShadow: isActive ? colors.shadow : 'none',
+                    backgroundColor: isActive ? '#f1f4f7' : 'transparent',
+                    border: isActive ? '2px solid #0a1317' : '2px solid transparent',
                   }}
                 >
                   <div className="flex items-center gap-2">
-                    <span className="text-[13px] font-semibold" style={{ color: colors.text }}>{fmtShort(entry.date)} {timeStr}</span>
+                    <span className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">{fmtShort(entry.date)} {timeStr}</span>
                     {entryMood && <span className="text-sm">{entryMood.emoji}</span>}
                   </div>
-                  <p className="text-[12px] mt-0.5 truncate" style={{ color: colors.textSecondary }}>{preview || '(空内容)'}</p>
+                  <p className="text-xs mt-0.5 truncate text-[#8595a4]">{preview || '(空内容)'}</p>
                 </button>
               )
             })}
@@ -504,12 +483,12 @@ function PartnerPicker({ onSelect, onClose }: { onSelect: (p: Persona) => void; 
   return (
     <>
       <div className="fixed inset-0 z-10" onClick={onClose} />
-      <div className="absolute right-0 top-full mt-1 z-20 bg-white rounded-2xl shadow-lg border py-1 min-w-[160px]" style={{ borderColor: colors.border }}>
+      <div className="absolute right-0 top-full mt-1 z-20 bg-white rounded-[16px] shadow-lg border py-1 min-w-[160px]" style={{ borderColor: '#dee3e9', boxShadow: 'rgba(20, 22, 26, 0.3) 0px 1px 4px 0px' }}>
         {list.map((p) => (
           <button
             key={p.id}
             onClick={() => onSelect(p)}
-            className="w-full text-left px-4 py-2.5 text-[13px] flex items-center gap-2.5 hover:bg-[oklch(92%_0.03_310)]" style={{ color: colors.text }}
+            className="w-full text-left px-4 py-2.5 text-sm tracking-[-0.14px] flex items-center gap-2.5 hover:bg-[#f1f4f7] text-[#0a1317]"
           >
             <Avatar src={p.avatar} name={p.name} size={24} />
             <span>{p.name}</span>

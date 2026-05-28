@@ -26,31 +26,31 @@ export default function WordTooltip({ word, position, onClose }: Props) {
         style={{
           left: Math.min(position.x, window.innerWidth - 300),
           top: position.y + 12,
-          backgroundColor: '#fff',
-          borderRadius: 18,
-          boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
-          border: '1px solid #e8e8e8',
+          backgroundColor: '#ffffff',
+          borderRadius: 16,
+          boxShadow: 'rgba(20, 22, 26, 0.3) 0px 1px 4px 0px',
+          border: '1px solid #dee3e9',
         }}
       >
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="text-[17px] font-bold text-black">{word.word}</span>
-            <span className="text-[10px] px-1.5 py-0.5 rounded-full font-medium"
-              style={{ backgroundColor: '#f0e6f6', color: '#8128af' }}>
+            <span className="text-lg font-bold tracking-[-0.18px] text-[#0a1317]">{word.word}</span>
+            <span className="text-xs px-1.5 py-0.5 rounded-[100px] font-bold tracking-[-0.14px]"
+              style={{ backgroundColor: '#f1f4f7', color: '#444950' }}>
               {levelLabel}
             </span>
           </div>
           <button
             onClick={onClose}
-            className="text-[#8e8e8e] text-sm leading-none shrink-0 hover:text-black"
+            className="text-[#8595a4] text-sm leading-none shrink-0 hover:text-[#0a1317]"
           >
             ✕
           </button>
         </div>
         {word.phonetic && (
-          <p className="text-[13px] mt-0.5" style={{ color: '#8e8e8e' }}>{word.phonetic}</p>
+          <p className="text-sm mt-0.5 text-[#8595a4]">{word.phonetic}</p>
         )}
-        <p className="text-[14px] text-black mt-2 leading-relaxed">{word.meaning}</p>
+        <p className="text-sm text-[#1c1e21] mt-2 leading-relaxed tracking-[-0.14px]">{word.meaning}</p>
       </div>
     </>
   )

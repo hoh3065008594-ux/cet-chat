@@ -7,8 +7,6 @@ import { analyzeChatForPersona } from '../services/ai'
 import type { PersonaAnalysis } from '../services/ai'
 import type { Persona } from '../types/persona'
 
-const accent = 'oklch(45% 0.21 310)'
-
 function uid(): string {
   try { return crypto.randomUUID() }
   catch {
@@ -25,7 +23,6 @@ interface FormData {
   mbti: string
   zodiac: string
   traitsInput: string
-  // From analysis
   chatFile: File | null
   chatPreview: string
   analyzing: boolean
@@ -36,7 +33,8 @@ interface FormData {
 const mbtiTypes = ['', 'INTJ', 'INTP', 'ENTJ', 'ENTP', 'INFJ', 'INFP', 'ENFJ', 'ENFP', 'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ', 'ISTP', 'ISFP', 'ESTP', 'ESFP']
 const zodiacs = ['', '白羊座', '金牛座', '双子座', '巨蟹座', '狮子座', '处女座', '天秤座', '天蝎座', '射手座', '摩羯座', '水瓶座', '双鱼座']
 
-const inputClass = "w-full rounded-[14px] px-4 py-2.5 text-[14px] focus:outline-none bg-[#f0f0f0] placeholder-[#8e8e8e]"
+const inputClass = "w-full rounded-[8px] px-4 py-2.5 text-sm tracking-[-0.14px] focus:outline-none bg-[#f1f4f7] placeholder-[#8595a4] text-[#1c1e21] font-medium"
+const accent = '#0064e0'
 
 export default function PersonaWorkshop() {
   const navigate = useNavigate()
@@ -118,20 +116,20 @@ export default function PersonaWorkshop() {
 
   const canNext = (() => {
     if (step === 0) return form.name.trim().length > 0
-    return true // other steps optional
+    return true
   })()
 
   return (
-    <div className="h-full overflow-y-auto bg-[#fafafa]">
+    <div className="h-full overflow-y-auto bg-[#f1f4f7]">
       <div className="max-w-lg mx-auto px-4 py-6">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <button onClick={() => step === 0 ? navigate('/') : setStep(step - 1)} className="p-1">
-            <ArrowLeft size={20} style={{ color: '#8e8e8e' }} />
+            <ArrowLeft size={20} style={{ color: '#8595a4' }} />
           </button>
-          <h2 className="text-[17px] font-bold text-black">创建新的人格</h2>
+          <h2 className="text-lg font-bold tracking-[-0.18px] text-[#0a1317]">创建新的人格</h2>
           <div className="flex-1" />
-          <span className="text-[12px]" style={{ color: '#8e8e8e' }}>步骤 {step + 1}/3</span>
+          <span className="text-xs text-[#8595a4]">步骤 {step + 1}/3</span>
         </div>
 
         {/* Step indicator */}
@@ -140,7 +138,7 @@ export default function PersonaWorkshop() {
             <div
               key={i}
               className="flex-1 h-1 rounded-full transition-colors"
-              style={{ backgroundColor: i <= step ? accent : '#e8e8e8' }}
+              style={{ backgroundColor: i <= step ? accent : '#ced0d4' }}
             />
           ))}
         </div>
@@ -148,7 +146,7 @@ export default function PersonaWorkshop() {
         {/* Step 0: Nickname */}
         {step === 0 && (
           <div className="space-y-4">
-            <label className="block text-[14px] font-semibold text-black">
+            <label className="block text-sm font-bold tracking-[-0.14px] text-[#0a1317]">
               给这个 AI 伙伴取个昵称 <span style={{ color: accent }}>*</span>
             </label>
             <input
@@ -160,7 +158,7 @@ export default function PersonaWorkshop() {
               autoFocus
               onKeyDown={(e) => e.key === 'Enter' && canNext && setStep(1)}
             />
-            <p className="text-[12px]" style={{ color: '#8e8e8e' }}>
+            <p className="text-xs text-[#8595a4]">
               这就是你在对话中会看到的伙伴名字
             </p>
           </div>
@@ -169,10 +167,10 @@ export default function PersonaWorkshop() {
         {/* Step 1: Personality tags */}
         {step === 1 && (
           <div className="space-y-4">
-            <p className="text-[14px] font-semibold text-black">性格画像（全部可选，跳过也行）</p>
+            <p className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">性格画像（全部可选，跳过也行）</p>
 
             <div>
-              <label className="block text-[13px] font-medium text-black mb-1">角色定位</label>
+              <label className="block text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-1">角色定位</label>
               <input
                 type="text"
                 value={form.role}
@@ -184,7 +182,7 @@ export default function PersonaWorkshop() {
 
             <div className="flex gap-3">
               <div className="flex-1">
-                <label className="block text-[13px] font-medium text-black mb-1">MBTI</label>
+                <label className="block text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-1">MBTI</label>
                 <select
                   value={form.mbti}
                   onChange={(e) => update({ mbti: e.target.value })}
@@ -196,7 +194,7 @@ export default function PersonaWorkshop() {
                 </select>
               </div>
               <div className="flex-1">
-                <label className="block text-[13px] font-medium text-black mb-1">星座</label>
+                <label className="block text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-1">星座</label>
                 <select
                   value={form.zodiac}
                   onChange={(e) => update({ zodiac: e.target.value })}
@@ -210,7 +208,7 @@ export default function PersonaWorkshop() {
             </div>
 
             <div>
-              <label className="block text-[13px] font-medium text-black mb-1">性格标签</label>
+              <label className="block text-sm font-bold tracking-[-0.14px] text-[#0a1317] mb-1">性格标签</label>
               <input
                 type="text"
                 value={form.traitsInput}
@@ -225,8 +223,8 @@ export default function PersonaWorkshop() {
         {/* Step 2: Chat import + AI analysis */}
         {step === 2 && (
           <div className="space-y-4">
-            <p className="text-[14px] font-semibold text-black">导入聊天记录（可选）</p>
-            <p className="text-[12px]" style={{ color: '#8e8e8e' }}>
+            <p className="text-sm font-bold tracking-[-0.14px] text-[#0a1317]">导入聊天记录（可选）</p>
+            <p className="text-xs text-[#8595a4]">
               上传微信/QQ导出的 .txt 聊天记录，AI 将自动分析说话风格。跳过则仅凭你填的标签生成人格。
             </p>
 
@@ -241,21 +239,21 @@ export default function PersonaWorkshop() {
             {!form.chatFile ? (
               <button
                 onClick={() => fileRef.current?.click()}
-                className="w-full flex flex-col items-center gap-2 py-8 rounded-[18px] border border-dashed transition-colors"
-                style={{ borderColor: '#dbdbdb' }}
+                className="w-full flex flex-col items-center gap-2 py-8 rounded-[16px] border border-dashed transition-colors hover:border-[#0064e0] hover:bg-[#f1f4f7]"
+                style={{ borderColor: '#ced0d4' }}
               >
-                <Upload size={24} style={{ color: '#8e8e8e' }} />
-                <span className="text-[13px] font-medium" style={{ color: accent }}>点击上传聊天记录文件</span>
-                <span className="text-[11px]" style={{ color: '#8e8e8e' }}>支持 .txt 格式，建议使用私聊记录</span>
+                <Upload size={24} style={{ color: '#8595a4' }} />
+                <span className="text-sm font-bold tracking-[-0.14px] text-[#0064e0]">点击上传聊天记录文件</span>
+                <span className="text-xs text-[#8595a4]">支持 .txt 格式，建议使用私聊记录</span>
               </button>
             ) : (
               <div className="space-y-3">
-                <div className="flex items-center gap-2 text-[13px] font-medium text-black">
-                  <Check size={16} style={{ color: '#22c55e' }} />
+                <div className="flex items-center gap-2 text-sm font-bold tracking-[-0.14px] text-[#0a1317]">
+                  <Check size={16} style={{ color: '#31a24c' }} />
                   {form.chatFile.name} ({form.chatPreview.length.toLocaleString()} 字符)
                   <button
                     onClick={() => update({ chatFile: null, chatPreview: '', analysis: null })}
-                    className="text-[12px] ml-auto" style={{ color: '#dd2a7b' }}
+                    className="text-xs ml-auto text-[#e41e3f]"
                   >
                     移除
                   </button>
@@ -265,7 +263,7 @@ export default function PersonaWorkshop() {
                   <button
                     onClick={handleAnalyze}
                     disabled={form.analyzing}
-                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-[14px] text-white text-[14px] font-semibold disabled:opacity-50 transition-colors"
+                    className="w-full flex items-center justify-center gap-2 py-3 rounded-[100px] text-white text-sm font-bold tracking-[-0.14px] disabled:opacity-50 transition-colors"
                     style={{ backgroundColor: accent }}
                   >
                     {form.analyzing ? (
@@ -277,49 +275,49 @@ export default function PersonaWorkshop() {
                 )}
 
                 {form.analysisError && (
-                  <p className="text-[13px]" style={{ color: '#dd2a7b' }}>{form.analysisError}</p>
+                  <p className="text-sm text-[#e41e3f]">{form.analysisError}</p>
                 )}
 
                 {form.analysis && (
-                  <div className="bg-white rounded-[18px] p-4 space-y-3" style={{ border: '1px solid #e8e8e8' }}>
-                    <p className="text-[13px] font-semibold text-black flex items-center gap-1.5">
+                  <div className="bg-white rounded-[16px] p-4 space-y-3" style={{ border: '1px solid #dee3e9' }}>
+                    <p className="text-sm font-bold tracking-[-0.14px] text-[#0a1317] flex items-center gap-1.5">
                       <Sparkles size={14} style={{ color: accent }} />
                       AI 分析结果
                     </p>
 
-                    <div className="grid grid-cols-2 gap-2 text-[12px]">
+                    <div className="grid grid-cols-2 gap-2 text-xs">
                       <div>
-                        <span style={{ color: '#8e8e8e' }}>角色定位：</span>
+                        <span className="text-[#8595a4]">角色定位：</span>
                         <input
                           value={form.analysis.role}
                           onChange={(e) => update({ analysis: { ...form.analysis!, role: e.target.value } })}
-                          className="text-[12px] bg-transparent font-medium w-20"
+                          className="text-xs bg-transparent font-bold w-20"
                         />
                       </div>
                       <div>
-                        <span style={{ color: '#8e8e8e' }}>语气：</span>
+                        <span className="text-[#8595a4]">语气：</span>
                         <input
                           value={form.analysis.tone}
                           onChange={(e) => update({ analysis: { ...form.analysis!, tone: e.target.value } })}
-                          className="text-[12px] bg-transparent font-medium w-24"
+                          className="text-xs bg-transparent font-bold w-24"
                         />
                       </div>
                       <div>
-                        <span style={{ color: '#8e8e8e' }}>消息风格：</span>
+                        <span className="text-[#8595a4]">消息风格：</span>
                         <select
                           value={form.analysis.messageStyle}
                           onChange={(e) => update({ analysis: { ...form.analysis!, messageStyle: e.target.value } })}
-                          className="text-[12px] bg-transparent font-medium"
+                          className="text-xs bg-transparent font-bold"
                         >
                           {['短句', '长句', '混合'].map((s) => (<option key={s} value={s}>{s}</option>))}
                         </select>
                       </div>
                       <div>
-                        <span style={{ color: '#8e8e8e' }}>Emoji使用：</span>
+                        <span className="text-[#8595a4]">Emoji使用：</span>
                         <select
                           value={form.analysis.emojiUsage}
                           onChange={(e) => update({ analysis: { ...form.analysis!, emojiUsage: e.target.value } })}
-                          className="text-[12px] bg-transparent font-medium"
+                          className="text-xs bg-transparent font-bold"
                         >
                           {['频繁', '偶尔', '不用'].map((s) => (<option key={s} value={s}>{s}</option>))}
                         </select>
@@ -327,13 +325,13 @@ export default function PersonaWorkshop() {
                     </div>
 
                     <div>
-                      <p className="text-[11px] mb-1" style={{ color: '#8e8e8e' }}>性格标签：</p>
+                      <p className="text-xs mb-1 text-[#8595a4]">性格标签：</p>
                       <div className="flex flex-wrap gap-1">
                         {form.analysis.traits.map((t, i) => (
                           <span
                             key={i}
-                            className="text-[11px] px-2 py-0.5 rounded-full"
-                            style={{ backgroundColor: '#f0e6f6', color: accent }}
+                            className="text-xs px-2 py-0.5 rounded-[100px] font-bold"
+                            style={{ backgroundColor: '#f1f4f7', color: '#444950' }}
                           >
                             {t}
                           </span>
@@ -342,13 +340,13 @@ export default function PersonaWorkshop() {
                     </div>
 
                     <div>
-                      <p className="text-[11px] mb-1" style={{ color: '#8e8e8e' }}>口头禅：</p>
+                      <p className="text-xs mb-1 text-[#8595a4]">口头禅：</p>
                       <div className="flex flex-wrap gap-1">
                         {form.analysis.catchphrases.map((c, i) => (
                           <span
                             key={i}
-                            className="text-[11px] px-2 py-0.5 rounded-full"
-                            style={{ backgroundColor: '#f0f0f0', color: '#000' }}
+                            className="text-xs px-2 py-0.5 rounded-[100px] font-bold"
+                            style={{ backgroundColor: '#f1f4f7', color: '#1c1e21' }}
                           >
                             {c}
                           </span>
@@ -357,8 +355,8 @@ export default function PersonaWorkshop() {
                     </div>
 
                     <div>
-                      <p className="text-[11px] mb-1" style={{ color: '#8e8e8e' }}>说话风格摘要：</p>
-                      <p className="text-[12px] text-black leading-relaxed bg-[#fafafa] rounded-[10px] p-2.5">
+                      <p className="text-xs mb-1 text-[#8595a4]">说话风格摘要：</p>
+                      <p className="text-xs text-[#1c1e21] leading-relaxed bg-[#f1f4f7] rounded-[8px] p-2.5 tracking-[-0.14px]">
                         {form.analysis.rawAnalysis}
                       </p>
                     </div>
@@ -370,8 +368,7 @@ export default function PersonaWorkshop() {
             {!form.chatFile && (
               <button
                 onClick={() => handleSave()}
-                className="w-full py-2.5 rounded-[14px] text-[13px] text-center transition-colors"
-                style={{ color: '#8e8e8e' }}
+                className="w-full py-2.5 rounded-[100px] text-sm tracking-[-0.14px] text-center transition-colors text-[#8595a4]"
               >
                 跳过，仅凭标签创建
               </button>
@@ -384,7 +381,7 @@ export default function PersonaWorkshop() {
           {step > 0 && (
             <button
               onClick={() => setStep(step - 1)}
-              className="flex items-center gap-1.5 px-4 py-2.5 rounded-[14px] text-[14px] font-medium transition-colors bg-[#f0f0f0]"
+              className="flex items-center gap-1.5 px-5 py-3 rounded-[100px] text-sm font-bold tracking-[-0.14px] transition-colors bg-[#f1f4f7] text-[#0a1317]"
             >
               <ArrowLeft size={16} />
               上一步
@@ -394,8 +391,8 @@ export default function PersonaWorkshop() {
             <button
               onClick={() => setStep(step + 1)}
               disabled={!canNext}
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-[14px] text-[14px] font-semibold text-white transition-colors ml-auto disabled:opacity-40"
-              style={{ backgroundColor: accent }}
+              className="flex items-center gap-1.5 px-6 py-3 rounded-[100px] text-sm font-bold tracking-[-0.14px] text-white transition-colors ml-auto disabled:opacity-40"
+              style={{ backgroundColor: '#000000' }}
             >
               下一步
               <ArrowRight size={16} />
@@ -404,8 +401,8 @@ export default function PersonaWorkshop() {
             <button
               onClick={handleSave}
               disabled={saving}
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-[14px] text-[14px] font-semibold text-white transition-colors ml-auto disabled:opacity-50"
-              style={{ backgroundColor: accent }}
+              className="flex items-center gap-1.5 px-6 py-3 rounded-[100px] text-sm font-bold tracking-[-0.14px] text-white transition-colors ml-auto disabled:opacity-50"
+              style={{ backgroundColor: '#000000' }}
             >
               {saving ? (
                 <><Loader2 size={16} className="animate-spin" /> 保存中...</>

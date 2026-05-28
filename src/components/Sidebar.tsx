@@ -13,8 +13,6 @@ interface Props {
   onClose: () => void
 }
 
-const accent = 'oklch(45% 0.21 310)'
-
 function uid(): string {
   try { return crypto.randomUUID() }
   catch {
@@ -41,7 +39,6 @@ export default function Sidebar({ open, onClose }: Props) {
     const settings = getSettings()
     if (!settings.apiKey) { navigate('/settings'); return }
 
-    // Check for existing chat
     const allChats = await getAllChats()
     const existing = allChats
       .filter((c) => c.personaId === p.id || (!c.personaId && p.id === '__default_alex__'))
@@ -52,7 +49,6 @@ export default function Sidebar({ open, onClose }: Props) {
       return
     }
 
-    // No existing chat — create one
     try {
       const { partnerName, vocabLevel, activePersonaId } = getSettings()
       const greeting = await generateGreeting(partnerName, vocabLevel)
@@ -79,25 +75,25 @@ export default function Sidebar({ open, onClose }: Props) {
         className={`fixed lg:static inset-y-0 left-0 z-50 w-64 flex flex-col shrink-0 transition-transform lg:translate-x-0 ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
-        style={{ backgroundColor: 'oklch(100% 0 0)', borderRight: '1px solid oklch(92% 0.003 310)' }}
+        style={{ backgroundColor: '#ffffff', borderRight: '1px solid #dee3e9' }}
       >
         {/* Brand */}
-        <div className="px-4 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid oklch(92% 0.003 310)' }}>
+        <div className="px-4 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid #dee3e9' }}>
           <div>
-            <h1 className="text-[17px] font-bold text-black">CET Chat</h1>
-            <p className="text-[11px] mt-0.5" style={{ color: 'oklch(55% 0.003 310)' }}>英语对话学习伙伴</p>
+            <h1 className="text-[17px] font-bold text-[#0a1317]">CET Chat</h1>
+            <p className="text-xs mt-0.5 text-[#8595a4]">英语对话学习伙伴</p>
           </div>
-          <button onClick={onClose} className="lg:hidden p-2 rounded-lg" style={{ color: 'oklch(55% 0.003 310)' }}>
+          <button onClick={onClose} className="lg:hidden p-2 rounded-lg text-[#5d6c7b]">
             <X size={22} />
           </button>
         </div>
 
-        {/* New Chat Button */}
+        {/* New Chat Button — Meta black pill */}
         <div className="px-3 pt-3 pb-2">
           <button
             onClick={handleNewChat}
-            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 text-white rounded-[14px] text-sm font-semibold transition-colors"
-            style={{ backgroundColor: accent }}
+            className="w-full flex items-center justify-center gap-2 px-3 py-3 text-white rounded-[100px] text-sm font-bold tracking-[-0.14px] transition-colors"
+            style={{ backgroundColor: '#000000' }}
           >
             <Plus size={16} />
             新建对话
@@ -110,16 +106,17 @@ export default function Sidebar({ open, onClose }: Props) {
             <button
               key={p.id}
               onClick={() => handleSelectPersona(p)}
-              className="persona-item w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[14px] text-sm transition-colors text-left cursor-pointer"
+              className="persona-item w-full flex items-center gap-2.5 px-3 py-2.5 rounded-[16px] text-sm transition-colors text-left cursor-pointer"
               style={{
-                backgroundColor: p.id === activeId ? 'oklch(92% 0.03 310)' : 'transparent',
-                color: 'oklch(12% 0.002 310)',
+                backgroundColor: p.id === activeId ? '#f1f4f7' : 'transparent',
+                border: p.id === activeId ? '2px solid #0a1317' : '2px solid transparent',
+                color: '#0a1317',
               }}
             >
               <Avatar src={p.avatar} name={p.name} size={30} />
               <div className="flex-1 min-w-0 text-left">
-                <p className="text-[13px] font-medium truncate">{p.name}</p>
-                <p className="text-[11px] truncate" style={{ color: 'oklch(55% 0.003 310)' }}>
+                <p className="text-[13px] font-bold tracking-[-0.14px] truncate">{p.name}</p>
+                <p className="text-xs truncate text-[#8595a4]">
                   {p.profile.role || '朋友'}
                 </p>
               </div>
@@ -128,7 +125,7 @@ export default function Sidebar({ open, onClose }: Props) {
         </div>
 
         {/* Nav links */}
-        <nav className="p-2 space-y-1" style={{ borderTop: '1px solid oklch(92% 0.003 310)' }}>
+        <nav className="p-2 space-y-1" style={{ borderTop: '1px solid #dee3e9' }}>
           {[
             { to: '/personas/new', icon: Sparkles, label: '人格工坊' },
             { to: '/diary', icon: PenLine, label: '英语日记' },
@@ -141,13 +138,13 @@ export default function Sidebar({ open, onClose }: Props) {
               to={to}
               onClick={() => onClose()}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2.5 rounded-[14px] text-[14px] transition-colors ${
-                  isActive ? 'font-semibold' : ''
+                `flex items-center gap-3 px-3 py-2.5 rounded-[16px] text-[14px] font-bold tracking-[-0.14px] transition-colors ${
+                  isActive ? '' : ''
                 }`
               }
               style={({ isActive }) => ({
-                backgroundColor: isActive ? 'oklch(92% 0.03 310)' : 'transparent',
-                color: isActive ? accent : 'oklch(12% 0.002 310)',
+                backgroundColor: isActive ? '#0a1317' : 'transparent',
+                color: isActive ? '#ffffff' : '#0a1317',
               })}
             >
               <Icon size={18} />
