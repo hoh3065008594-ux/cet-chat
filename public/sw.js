@@ -1,4 +1,5 @@
-const CACHE = 'cetchat-v2';
+const CACHE = 'cetchat-v3';
+const SCOPE = '/cet-chat/';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();
