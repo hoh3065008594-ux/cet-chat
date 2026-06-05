@@ -44,13 +44,15 @@ export default function ChatView() {
     lookUp(word, e)
   }
 
-  const prevLoading = useRef(loading)
-  const freshMessage = useRef(false)
-  if (prevLoading.current && !loading) {
-    freshMessage.current = true
-  }
-  prevLoading.current = loading
-  useEffect(() => { freshMessage.current = false })
+  const [freshMessage, setFreshMessage] = useState(false)
+  const prevLoadingRef = useRef(loading)
+  useEffect(() => {
+    if (prevLoadingRef.current && !loading) {
+      setFreshMessage(true)
+      requestAnimationFrame(() => setFreshMessage(false))
+    }
+    prevLoadingRef.current = loading
+  }, [loading])
 
   if (!chatId) {
     return (
@@ -96,7 +98,7 @@ export default function ChatView() {
         )}
         {messages.map((msg, idx) => {
           const isLatestAi = msg.role === 'assistant' && idx === messages.length - 1
-          const shouldAnimate = isLatestAi && freshMessage.current
+          const shouldAnimate = isLatestAi && freshMessage
           return (
             <div
               key={msg.id}

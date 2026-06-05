@@ -30,7 +30,7 @@ function buildIndex(words: VocabWord[]): Map<string, VocabWord> {
 
 const indexCache = new Map<string, Map<string, VocabWord>>()
 
-async function getIndex(level: 'cet4' | 'cet6'): Promise<Map<string, VocabWord>> {
+export async function getIndex(level: 'cet4' | 'cet6'): Promise<Map<string, VocabWord>> {
   if (indexCache.has(level)) return indexCache.get(level)!
   const words = await loadVocab(level)
   const idx = buildIndex(words)

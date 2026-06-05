@@ -157,8 +157,8 @@ export async function updateChat(id: string, updates: Partial<Chat>): Promise<vo
   const db = await dbPromise
   const chat = await db.get('chats', id)
   if (chat) {
-    Object.assign(chat, updates, { updatedAt: Date.now() })
-    await db.put('chats', chat)
+    const updated = { ...chat, ...updates, updatedAt: Date.now() }
+    await db.put('chats', updated)
     syncChatsToLs(await db.getAll('chats'))
   }
 }
@@ -204,9 +204,10 @@ export async function getMessageCount(chatId: string): Promise<number> {
 }
 
 export async function getLastMessage(chatId: string): Promise<Message | undefined> {
-  const msgs = await getMessages(chatId)
-  msgs.sort((a, b) => b.timestamp - a.timestamp)
-  return msgs[0]
+  const db = await dbPromise
+  const msgs = await db.getAllFromIndex('messages', 'chatId', chatId)
+  if (msgs.length === 0) return undefined
+  return msgs.reduce((latest, m) => m.timestamp > latest.timestamp ? m : latest)
 }
 
 // --- Diary ---
@@ -314,8 +315,8 @@ export async function updatePersona(id: string, updates: Partial<Persona>): Prom
   const db = await dbPromise
   const persona = await db.get('personas', id)
   if (persona) {
-    Object.assign(persona, updates, { updatedAt: Date.now() })
-    await db.put('personas', persona)
+    const updated = { ...persona, ...updates, updatedAt: Date.now() }
+    await db.put('personas', updated)
     syncPersonasToLocalStorage(await db.getAll('personas'))
   }
 }

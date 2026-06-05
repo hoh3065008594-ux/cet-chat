@@ -1,4 +1,4 @@
-import { getAvailableWords, lookupWord } from './dictionary'
+import { getAvailableWords, getIndex } from './dictionary'
 import { getApiConfig, getSettings } from './settings'
 import { getPersona } from './db'
 import { type Persona, DEFAULT_PERSONA, buildPersonaPrompt } from '../types/persona'
@@ -125,15 +125,17 @@ async function extractUsedVocab(
   content: string,
   level: 'cet4' | 'cet6'
 ): Promise<string[]> {
-  // Remove the vocab summary line and extract actual words
   const cleanContent = content.replace(/\n?📖 Used CET words:.*$/is, '')
   const words = cleanContent.match(/[a-zA-Z]+/g) || []
   const uniqueWords = [...new Set(words.map((w) => w.toLowerCase()))]
 
+  // Pre-fetch index once, then lookup synchronously (avoids N+1 async overhead)
+  const idx = await getIndex(level)
+
   const result: string[] = []
   for (const w of uniqueWords) {
     if (w.length < 3) continue
-    const found = await lookupWord(w, level)
+    const found = idx.get(w)
     if (found) result.push(found.word)
   }
   return result

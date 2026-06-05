@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import type {
   Chat,
   Message,
@@ -15,24 +15,15 @@ import {
 import { sendChatMessage, generateGreeting } from '../services/ai'
 import type { ChatMessage } from '../services/ai'
 import { getSettings } from '../services/settings'
-
-function uid(): string {
-  try {
-    return crypto.randomUUID()
-  } catch {
-    // Fallback for non-secure contexts (HTTP)
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-      const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 3)
-      return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16)
-    })
-  }
-}
+import { uid } from '../lib/uid'
 
 export function useChat(chatId?: string) {
   const [chats, setChats] = useState<Chat[]>([])
   const [messages, setMessages] = useState<Message[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const messagesRef = useRef(messages)
+  messagesRef.current = messages
 
   const loadChats = useCallback(async () => {
     const all = await getAllChats()
@@ -124,8 +115,9 @@ export function useChat(chatId?: string) {
           await updateChat(chatId, { title: chat.title })
         }
 
-        const allMsgs = [...messages, userMsg]
-        const apiMessages: ChatMessage[] = allMsgs.map((m) => ({
+        // Use ref to avoid stale closure over messages state
+        const currentMsgs = [...messagesRef.current, userMsg]
+        const apiMessages: ChatMessage[] = currentMsgs.map((m) => ({
           role: m.role as 'user' | 'assistant',
           content: m.content,
         }))
@@ -150,7 +142,7 @@ export function useChat(chatId?: string) {
         setLoading(false)
       }
     },
-    [chatId, messages, loadChats]
+    [chatId, loadChats]
   )
 
   const removeChat = useCallback(

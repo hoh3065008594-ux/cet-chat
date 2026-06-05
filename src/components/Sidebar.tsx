@@ -6,21 +6,12 @@ import { generateGreeting } from '../services/ai'
 import { getSettings, saveSettings } from '../services/settings'
 import { DEFAULT_PERSONA } from '../types/persona'
 import type { Persona } from '../types/persona'
+import { uid } from '../lib/uid'
 import Avatar from './Avatar'
 
 interface Props {
   open: boolean
   onClose: () => void
-}
-
-function uid(): string {
-  try { return crypto.randomUUID() }
-  catch {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-      const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 3)
-      return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16)
-    })
-  }
 }
 
 export default function Sidebar({ open, onClose }: Props) {
